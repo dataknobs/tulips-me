@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Grow Tulips: The Ultimate Beginner's Guide (Planting, Care & Tips)</title>
+  <meta name="description" content="Learn how to grow tulips successfully with this complete guide. Discover when to plant tulips, how to care for them, and tips for bigger, brighter blooms." />
+  <link rel="canonical" href="https://yoursite.com/how-to-grow-tulips" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "When should I plant tulips?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tulips should be planted in the fall before the ground freezes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do tulips come back every year?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tulips can come back every year in cold climates if cared for properly."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long do tulips take to grow?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tulips bloom in spring after being planted in fall, typically taking several months due to winter dormancy."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How deep should tulip bulbs be planted?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tulip bulbs should be planted about 6–8 inches deep."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do tulips need full sun?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, tulips grow best in full sun but can tolerate partial shade."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fraunces:ital,wght@0,300;0,600;1,300;1,500&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --leaf:     #2d5a27;
+      --leaf-lt:  #4a8c42;
+      --sprout:   #6ab05e;
+      --moss:     #8fbd85;
+      --sage:     #d4e8cf;
+      --cream:    #f7faf5;
+      --parchment:#eef5ea;
+      --soil:     #6b4c2a;
+      --soil-lt:  #9b6f45;
+      --tulip:    #c23b3b;
+      --gold:     #c8963a;
+      --ink:      #1a2e18;
+      --muted:    #6b7d68;
+      --border:   #c8ddc4;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      line-height: 1.78;
+      font-size: 16.5px;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      background: var(--leaf);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: stretch;
+      min-height: 480px;
+    }
+    /* organic blob shapes */
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -120px; right: -100px;
+      width: 500px; height: 500px;
+      border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%;
+      background: rgba(106,176,94,0.18);
+      pointer-events: none;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -80px; left: -60px;
+      width: 380px; height: 380px;
+      border-radius: 45% 55% 40% 60% / 60% 40% 55% 45%;
+      background: rgba(200,150,58,0.12);
+      pointer-events: none;
+    }
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      width: 100%;
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      position: relative;
+      z-index: 2;
+      align-items: stretch;
+    }
+    @media (max-width: 720px) {
+      .hero-inner { grid-template-columns: 1fr; }
+      .hero-img-wrap { display: none; }
+    }
+    .hero-text {
+      padding: 4rem 2.5rem 4rem 0.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: rgba(255,255,255,0.9);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.35rem 0.85rem;
+      border-radius: 100px;
+      margin-bottom: 1.2rem;
+      width: fit-content;
+      opacity: 0;
+      animation: popIn 0.5s 0.1s ease forwards;
+    }
+    .hero h1 {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(2rem, 4.5vw, 3.2rem);
+      font-weight: 600;
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+      opacity: 0;
+      animation: popIn 0.5s 0.3s ease forwards;
+    }
+    .hero h1 em { font-style: italic; color: var(--moss); }
+    .hero-desc {
+      font-size: 1rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.75);
+      max-width: 380px;
+      margin-bottom: 1.75rem;
+      opacity: 0;
+      animation: popIn 0.5s 0.45s ease forwards;
+    }
+    /* quick stats row */
+    .hero-stats {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: popIn 0.5s 0.6s ease forwards;
+    }
+    .hstat { text-align: center; }
+    .hstat .val {
+      font-family: 'Fraunces', serif;
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: var(--moss);
+      line-height: 1;
+      display: block;
+    }
+    .hstat .lbl { font-size: 0.72rem; color: rgba(255,255,255,0.55); text-transform: uppercase; letter-spacing: 0.1em; }
+
+    .hero-img-wrap {
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-img-wrap img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+    .hero-img-wrap::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(to right, var(--leaf) 0%, transparent 30%);
+      z-index: 1;
+    }
+
+    @keyframes popIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── Nav ── */
+    .topnav {
+      background: var(--leaf);
+      border-top: 1px solid rgba(255,255,255,0.1);
+      display: flex;
+      justify-content: center;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+      padding: 0.5rem 1rem;
+      font-size: 0.76rem;
+      font-weight: 500;
+    }
+    .topnav a { color: rgba(255,255,255,0.6); text-decoration: none; padding: 0.15rem 0.5rem; border-radius: 3px; transition: color 0.2s; }
+    .topnav a:hover { color: var(--moss); }
+    .topnav .sep { color: rgba(255,255,255,0.2); }
+
+    /* ── Breadcrumb ── */
+    .breadcrumb {
+      font-size: 0.79rem;
+      padding: 0.85rem 1.5rem;
+      color: var(--muted);
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .breadcrumb a { color: var(--leaf-lt); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    /* ── Layout ── */
+    .container { max-width: 860px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* ── Snippet ── */
+    .snippet {
+      background: var(--parchment);
+      border-left: 4px solid var(--sprout);
+      border-radius: 4px;
+      padding: 1.35rem 1.7rem;
+      margin: 2rem 0 2.5rem;
+      font-size: 1.01rem;
+    }
+    .snippet strong {
+      display: block;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--leaf);
+      margin-bottom: 0.4rem;
+      font-weight: 700;
+    }
+
+    /* ── Sections ── */
+    section { padding: 2.5rem 0; border-bottom: 1px solid var(--border); }
+    section:last-of-type { border-bottom: none; }
+
+    h2 {
+      font-family: 'Fraunces', serif;
+      font-size: clamp(1.45rem, 3vw, 2rem);
+      font-weight: 600;
+      color: var(--leaf);
+      margin-bottom: 1rem;
+      line-height: 1.2;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    h2 .h-icon { font-size: 1.3rem; flex-shrink: 0; }
+    h3 {
+      font-family: 'Fraunces', serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 0.4rem;
+    }
+    p { margin-bottom: 1rem; color: #253a22; }
+    p:last-child { margin-bottom: 0; }
+
+    /* ── Timing callout ── */
+    .timing-bar {
+      background: var(--leaf);
+      border-radius: 10px;
+      padding: 1.5rem 1.75rem;
+      margin: 1.25rem 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1rem;
+      text-align: center;
+    }
+    @media (max-width: 520px) { .timing-bar { grid-template-columns: 1fr; } }
+    .tb-item .tb-icon { font-size: 1.8rem; display: block; margin-bottom: 0.35rem; }
+    .tb-item .tb-label {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--moss);
+      display: block;
+      margin-bottom: 0.15rem;
+    }
+    .tb-item .tb-desc { font-size: 0.82rem; color: rgba(255,255,255,0.6); }
+
+    /* ── Location requirements ── */
+    .req-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1.25rem 0;
+    }
+    @media (max-width: 520px) { .req-grid { grid-template-columns: 1fr; } }
+    .req-card {
+      background: var(--parchment);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.1rem 1.25rem;
+    }
+    .req-card h3 { font-size: 1rem; display: flex; align-items: center; gap: 0.4rem; }
+    .req-card ul { list-style: none; padding: 0; margin-top: 0.6rem; }
+    .req-card ul li {
+      font-size: 0.9rem;
+      padding: 0.28rem 0;
+      color: var(--ink);
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .req-card ul li:last-child { border-bottom: none; }
+    .req-card ul li::before { content: '✓'; color: var(--sprout); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+    .warning {
+      background: #fff8e8;
+      border: 1px solid #e5c96a;
+      border-radius: 6px;
+      padding: 0.75rem 1rem;
+      font-size: 0.88rem;
+      color: #7a5a10;
+      display: flex;
+      gap: 0.5rem;
+      align-items: flex-start;
+      margin-top: 1rem;
+    }
+
+    /* ── Step-by-step planting ── */
+    .steps {
+      margin: 1.5rem 0;
+      counter-reset: step;
+    }
+    .step {
+      display: grid;
+      grid-template-columns: 52px 1fr;
+      gap: 1.1rem;
+      margin-bottom: 1.1rem;
+      align-items: flex-start;
+    }
+    .step:last-child { margin-bottom: 0; }
+    .step-num {
+      width: 52px; height: 52px;
+      background: var(--leaf);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Fraunces', serif;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #fff;
+      flex-shrink: 0;
+    }
+    .step-body {
+      background: var(--parchment);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+    }
+    .step-body h3 { font-size: 1rem; margin-bottom: 0.35rem; color: var(--leaf); }
+    .step-body ul { list-style: none; padding: 0; }
+    .step-body ul li {
+      font-size: 0.9rem;
+      color: var(--ink);
+      padding: 0.2rem 0;
+      display: flex;
+      gap: 0.5rem;
+    }
+    .step-body ul li::before { content: '→'; color: var(--sprout); flex-shrink: 0; }
+    .step-tip {
+      display: inline-block;
+      background: var(--leaf);
+      color: var(--moss);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.15rem 0.55rem;
+      border-radius: 3px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-top: 0.4rem;
+    }
+
+    /* ── Care cards ── */
+    .care-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+      margin: 1.25rem 0;
+    }
+    .care-card {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.18s, box-shadow 0.18s;
+    }
+    .care-card:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(45,90,39,0.1); }
+    .care-card-top {
+      padding: 0.65rem 1rem;
+      font-weight: 700;
+      font-size: 0.88rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .cc-water  .care-card-top { background: #dceef8; color: #1a6a9a; }
+    .cc-fert   .care-card-top { background: #e8f5d4; color: #2e6b1a; }
+    .cc-dead   .care-card-top { background: #fdeaea; color: #9a2a2a; }
+    .cc-leaf   .care-card-top { background: #fff8e0; color: #8a6010; }
+    .care-card-body { padding: 0.9rem 1rem; background: #fff; font-size: 0.88rem; color: var(--ink); }
+
+    /* ── Perennial vs Annual ── */
+    .climate-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.25rem 0;
+      font-size: 0.92rem;
+    }
+    .climate-table th {
+      background: var(--leaf);
+      color: #fff;
+      padding: 0.65rem 1rem;
+      text-align: left;
+      font-weight: 600;
+    }
+    .climate-table td {
+      padding: 0.7rem 1rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    .climate-table tr:last-child td { border-bottom: none; }
+    .climate-table tr:nth-child(even) td { background: var(--parchment); }
+    .badge-yes { background: #d4edda; color: #155724; padding: 0.15rem 0.55rem; border-radius: 3px; font-size: 0.78rem; font-weight: 700; }
+    .badge-maybe { background: #fff3cd; color: #856404; padding: 0.15rem 0.55rem; border-radius: 3px; font-size: 0.78rem; font-weight: 700; }
+
+    /* ── Container growing ── */
+    .container-tips {
+      background: var(--leaf);
+      border-radius: 10px;
+      padding: 1.75rem 2rem;
+      margin: 1.25rem 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+    @media (max-width: 520px) { .container-tips { grid-template-columns: 1fr; } }
+    .ct-col h3 { color: var(--moss); font-size: 1rem; margin-bottom: 0.7rem; }
+    .ct-col ul { list-style: none; padding: 0; }
+    .ct-col ul li {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.82);
+      padding: 0.28rem 0;
+      display: flex;
+      gap: 0.5rem;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .ct-col ul li:last-child { border-bottom: none; }
+    .ct-col ul li::before { content: '🪴'; font-size: 0.8rem; flex-shrink: 0; margin-top: 2px; }
+
+    /* ── Mistakes ── */
+    .mistakes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.85rem;
+      margin: 1.25rem 0;
+    }
+    @media (max-width: 520px) { .mistakes { grid-template-columns: 1fr; } }
+    .mistake {
+      background: #fff5f5;
+      border: 1px solid #f5c6c6;
+      border-left: 3px solid var(--tulip);
+      border-radius: 0 6px 6px 0;
+      padding: 0.9rem 1.1rem;
+    }
+    .mistake .m-head {
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--tulip);
+      margin-bottom: 0.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .mistake p { font-size: 0.85rem; color: #6a2a2a; margin: 0; }
+
+    /* ── Varieties ── */
+    .variety-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.9rem;
+      margin: 1.25rem 0;
+    }
+    @media (max-width: 560px) { .variety-cards { grid-template-columns: 1fr 1fr; } }
+    .variety-card {
+      background: var(--parchment);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.18s;
+    }
+    .variety-card:hover { transform: translateY(-2px); }
+    .variety-card .v-icon { font-size: 1.8rem; display: block; margin-bottom: 0.4rem; }
+    .variety-card h3 { font-size: 0.9rem; color: var(--leaf); margin-bottom: 0.2rem; }
+    .variety-card p { font-size: 0.8rem; color: var(--muted); margin: 0; }
+
+    /* ── Pro tips ── */
+    .pro-tips {
+      background: linear-gradient(135deg, var(--leaf) 0%, var(--leaf-lt) 100%);
+      border-radius: 10px;
+      padding: 1.75rem 2rem;
+      margin: 1.25rem 0;
+    }
+    .pro-tips h3 { color: var(--moss); font-size: 1rem; margin-bottom: 1rem; }
+    .pro-tip-list { list-style: none; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+    @media (max-width: 480px) { .pro-tip-list { grid-template-columns: 1fr; } }
+    .pro-tip-list li {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.85);
+      display: flex;
+      gap: 0.5rem;
+      align-items: flex-start;
+    }
+    .pro-tip-list li::before { content: '⭐'; font-size: 0.8rem; flex-shrink: 0; margin-top: 2px; }
+
+    /* ── Images ── */
+    .article-img {
+      width: 100%;
+      border-radius: 8px;
+      margin: 2rem 0 0.5rem;
+      display: block;
+      object-fit: cover;
+      max-height: 420px;
+      border: 1px solid var(--border);
+    }
+    .img-caption {
+      text-align: center;
+      font-style: italic;
+      font-size: 0.83rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+
+    /* ── Related ── */
+    .related {
+      background: var(--parchment);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin-top: 1.5rem;
+      border: 1px solid var(--border);
+    }
+    .related h3 { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--leaf); margin-bottom: 0.7rem; font-weight: 700; }
+    .related a {
+      display: block;
+      color: var(--leaf-lt);
+      font-size: 0.91rem;
+      text-decoration: none;
+      padding: 0.28rem 0;
+      border-bottom: 1px dashed var(--border);
+      transition: color 0.2s;
+    }
+    .related a:last-child { border-bottom: none; }
+    .related a:hover { color: var(--leaf); text-decoration: underline; }
+    .related a::before { content: '→  '; }
+
+    /* ── FAQ ── */
+    .faq-list { list-style: none; padding: 0; margin-top: 1rem; }
+    .faq-item { border: 1px solid var(--border); border-radius: 6px; margin-bottom: 0.7rem; overflow: hidden; }
+    .faq-q {
+      width: 100%;
+      background: var(--parchment);
+      border: none;
+      text-align: left;
+      padding: 1rem 1.25rem;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 0.96rem;
+      font-weight: 600;
+      color: var(--ink);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      transition: background 0.2s;
+    }
+    .faq-q:hover { background: var(--sage); }
+    .faq-q .arr { font-size: 0.7rem; transition: transform 0.25s; flex-shrink: 0; color: var(--sprout); }
+    .faq-a {
+      display: none;
+      padding: 1rem 1.25rem;
+      font-size: 0.93rem;
+      border-top: 1px solid var(--border);
+      background: #fff;
+      color: var(--ink);
+    }
+    .faq-item.open .faq-a { display: block; }
+    .faq-item.open .arr { transform: rotate(180deg); }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--leaf);
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.8rem;
+      margin-top: 3.5rem;
+    }
+    footer a { color: var(--moss); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<!-- Hero -->
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <span class="hero-badge">🌱 Article 6 of 20 &nbsp;·&nbsp; Growing Guide</span>
+      <h1>How to Grow Tulips:<br><em>The Complete</em><br>Beginner's Guide</h1>
+      <p class="hero-desc">Planting, watering, care, and expert tips for stunning tulip blooms — season after season.</p>
+      <div class="hero-stats">
+        <div class="hstat">
+          <span class="val">Fall</span>
+          <span class="lbl">Best planting</span>
+        </div>
+        <div class="hstat">
+          <span class="val">6–8"</span>
+          <span class="lbl">Planting depth</span>
+        </div>
+        <div class="hstat">
+          <span class="val">6–8hrs</span>
+          <span class="lbl">Daily sun needed</span>
+        </div>
+        <div class="hstat">
+          <span class="val">Easy</span>
+          <span class="lbl">Skill level</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-img-wrap">
+      <img
+        src="https://storage.googleapis.com/kreatewebsites/photos1000/tulip-festival-2.jpg"
+        alt="Beautiful tulip blooms growing in a garden"
+        width="420" height="480"
+        loading="eager"
+      />
+    </div>
+  </div>
+</div>
+
+<!-- Series nav -->
+<nav class="topnav" aria-label="Series navigation">
+  <a href="/tulip-meaning-symbolism">① Meaning</a>
+  <span class="sep">·</span>
+  <a href="/why-tulips-are-perfect-spring-flower">② Spring</a>
+  <span class="sep">·</span>
+  <a href="/tulips-in-art-poetry-design">③ Art</a>
+  <span class="sep">·</span>
+  <a href="/history-of-tulips">④ History</a>
+  <span class="sep">·</span>
+  <a href="/tulip-mania-explained">⑤ Tulip Mania</a>
+  <span class="sep">·</span>
+  <strong style="color:var(--moss);">⑥ Growing Guide</strong>
+  <span class="sep">·</span>
+  <a href="/tulips">More →</a>
+</nav>
+
+<!-- Breadcrumb -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="/">Home</a> &rsaquo; <a href="/garden">Garden</a> &rsaquo; <a href="/tulips">Tulips</a> &rsaquo; How to Grow Tulips
+</nav>
+
+<div class="container">
+
+  <!-- Snippet -->
+  <div class="snippet" aria-label="Quick Answer">
+    <strong>🔍 Quick Answer</strong>
+    To grow tulips successfully, <strong>plant bulbs in the fall</strong> in well-drained soil with full sun, water lightly after planting, and allow them to go dormant after blooming. Proper planting depth (6–8 inches) and autumn timing are the two most critical factors.
+  </div>
+
+  <!-- Intro -->
+  <section id="intro">
+    <h2><span class="h-icon">🌷</span> Why Tulips Are Perfect for Beginners</h2>
+    <p>Tulips are one of gardening's great rewards — spectacular results with surprisingly little effort. You don't need a green thumb, a large plot, or specialist equipment. You need decent soil, a sunny spot, and a bit of patience across the winter months.</p>
+    <p>The secret is understanding the tulip's natural rhythm. Get the timing and location right, and tulips will do most of the work themselves. This guide walks you through every step — from choosing bulbs to encouraging reblooms year after year.</p>
+  </section>
+
+  <!-- When to Plant -->
+  <section id="when">
+    <h2><span class="h-icon">📅</span> When to Plant Tulips</h2>
+    <p>Timing is the single most important decision in growing tulips. Plant too early and warm soil may cause premature growth. Plant too late and bulbs won't have time to establish roots before the ground freezes.</p>
+
+    <div class="timing-bar">
+      <div class="tb-item">
+        <span class="tb-icon">🍂</span>
+        <span class="tb-label">September – November</span>
+        <span class="tb-desc">Ideal planting window in most climates</span>
+      </div>
+      <div class="tb-item">
+        <span class="tb-icon">🌡️</span>
+        <span class="tb-label">50–55°F (10–13°C)</span>
+        <span class="tb-desc">Target soil temperature at planting time</span>
+      </div>
+      <div class="tb-item">
+        <span class="tb-icon">❄️</span>
+        <span class="tb-label">Before Ground Freezes</span>
+        <span class="tb-desc">Roots need 4–6 weeks to establish</span>
+      </div>
+    </div>
+
+    <p>The reason fall planting is non-negotiable: tulip bulbs require a period of <strong>cold dormancy</strong> (called vernalization) to trigger their spring bloom. Without several weeks of cold temperatures, the biological signal that says "time to grow" never fires.</p>
+  </section>
+
+  <!-- Where to Plant -->
+  <section id="where">
+    <h2><span class="h-icon">☀️</span> Where to Plant Tulips</h2>
+    <p>Location affects everything — bloom quality, stem strength, and how reliably your tulips return each year. Two factors matter most: sunlight and drainage.</p>
+
+    <div class="req-grid">
+      <div class="req-card">
+        <h3>☀️ Sunlight Requirements</h3>
+        <ul>
+          <li>Full sun preferred: 6–8 hours daily</li>
+          <li>Partial shade tolerated in warm climates</li>
+          <li>Avoid deep shade — stems grow weak and floppy</li>
+          <li>South or west-facing beds are ideal</li>
+        </ul>
+      </div>
+      <div class="req-card">
+        <h3>🌍 Soil Conditions</h3>
+        <ul>
+          <li>Well-drained soil is absolutely essential</li>
+          <li>Slightly sandy loam works best</li>
+          <li>Avoid compacted or clay-heavy soil</li>
+          <li>Slightly acidic to neutral pH (6.0–7.0)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="warning">
+      ⚠️ <span><strong>Most common mistake:</strong> Poor drainage leads directly to bulb rot. If your soil holds water after rain, amend it with coarse sand or grit — or raise your bed — before planting.</span>
+    </div>
+
+    <img
+      class="article-img"
+      src="https://storage.googleapis.com/kreatewebsites/photos800/tulip-festival-9.jpg"
+      alt="Rows of tulips thriving in a well-sunlit garden bed"
+      width="800" height="400"
+      loading="lazy"
+    />
+    <p class="img-caption">Full sun and well-drained soil — the two non-negotiables for healthy tulip blooms.</p>
+  </section>
+
+  <!-- How to Plant — Step by Step -->
+  <section id="planting">
+    <h2><span class="h-icon">🪴</span> How to Plant Tulip Bulbs: Step by Step</h2>
+    <p>Follow these four steps precisely and your bulbs will have everything they need to produce strong, beautiful spring blooms.</p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>Dig the Hole</h3>
+          <ul>
+            <li>Dig to a depth of 6–8 inches (15–20 cm)</li>
+            <li>Space holes 4–6 inches apart for a natural look</li>
+            <li>For mass plantings, dig a wider trench</li>
+          </ul>
+          <span class="step-tip">💡 Depth rule: plant a bulb at roughly 3× its own height</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>Place the Bulb Correctly</h3>
+          <ul>
+            <li>Pointed end facing upward — always</li>
+            <li>Flat papery base sits on the soil</li>
+            <li>If unsure which end is which, plant on its side — it will self-correct</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>Cover and Water</h3>
+          <ul>
+            <li>Backfill with soil and gently firm down</li>
+            <li>Water once thoroughly right after planting</li>
+            <li>Avoid overwatering — natural rainfall usually suffices</li>
+          </ul>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <div class="step-body">
+          <h3>Mulch (Highly Recommended)</h3>
+          <ul>
+            <li>Apply 2–3 inches of straw, bark chips, or compost</li>
+            <li>Helps regulate soil temperature through winter</li>
+            <li>Protects bulbs from extreme freeze-thaw cycles</li>
+          </ul>
+          <span class="step-tip">💡 Remove mulch in early spring as shoots emerge</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Watering & Care -->
+  <section id="care">
+    <h2><span class="h-icon">💧</span> Watering &amp; Ongoing Care</h2>
+    <p>Tulips are admirably low-maintenance once established. The key is knowing when to act and — just as importantly — when to leave them alone.</p>
+
+    <div class="care-grid">
+      <div class="care-card cc-water">
+        <div class="care-card-top">💧 Watering</div>
+        <div class="care-card-body">Water once after planting, then rely on rainfall. Tulips dislike sitting in wet soil — water only if spring brings a prolonged dry spell.</div>
+      </div>
+      <div class="care-card cc-fert">
+        <div class="care-card-top">🌿 Fertilizing</div>
+        <div class="care-card-body">Add a slow-release bulb fertilizer at planting time. A light application of balanced fertilizer in early spring as shoots emerge can boost bloom size.</div>
+      </div>
+      <div class="care-card cc-dead">
+        <div class="care-card-top">✂️ Deadheading</div>
+        <div class="care-card-body">Remove spent flower heads after blooming. This stops the plant wasting energy on seed production and redirects it toward next year's bulb.</div>
+      </div>
+      <div class="care-card cc-leaf">
+        <div class="care-card-top">🍃 Foliage Care</div>
+        <div class="care-card-body">Leave leaves completely intact until they turn yellow and die back naturally. Cutting foliage early is the #1 reason tulips fail to rebloom.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Do They Come Back -->
+  <section id="perennial">
+    <h2><span class="h-icon">🔁</span> Do Tulips Come Back Every Year?</h2>
+    <p>This depends largely on your climate — and how you care for the foliage after blooming. Tulips are technically perennial, but in practice their reliability varies considerably by region.</p>
+
+    <table class="climate-table" aria-label="Tulip perennial behavior by climate">
+      <thead>
+        <tr>
+          <th>Climate Type</th>
+          <th>Return Behavior</th>
+          <th>Recommendation</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Cold (Zones 3–6)</td>
+          <td><span class="badge-yes">Returns Reliably</span></td>
+          <td>Plant perennial varieties, let foliage die back fully</td>
+        </tr>
+        <tr>
+          <td>Mild (Zones 7–8)</td>
+          <td><span class="badge-maybe">Inconsistent</span></td>
+          <td>Lift bulbs in summer, refrigerate 8–10 weeks before replanting</td>
+        </tr>
+        <tr>
+          <td>Warm (Zones 9+)</td>
+          <td><span class="badge-maybe">Treat as Annual</span></td>
+          <td>Buy pre-chilled bulbs or refrigerate yourself before fall planting</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p style="margin-top:1rem;"><strong>Best perennial varieties:</strong> Darwin Hybrids are the most reliable reblooming tulips. Choose large, firm, high-quality bulbs from reputable sources — bulb quality directly affects multi-year performance.</p>
+  </section>
+
+  <!-- Container Growing -->
+  <section id="containers">
+    <h2><span class="h-icon">🏡</span> Growing Tulips in Pots &amp; Containers</h2>
+    <p>No garden? No problem. Tulips thrive in containers and window boxes, making them an excellent choice for balconies, patios, and doorstep displays.</p>
+
+    <div class="container-tips">
+      <div class="ct-col">
+        <h3>Container Requirements</h3>
+        <ul>
+          <li>Minimum pot depth: 10–12 inches</li>
+          <li>Drainage holes are non-negotiable</li>
+          <li>Use quality potting mix — not garden soil</li>
+          <li>Layer bulbs "lasagna style" for extended bloom</li>
+          <li>Terracotta pots provide better drainage than plastic</li>
+        </ul>
+      </div>
+      <div class="ct-col">
+        <h3>Winter &amp; Storage Care</h3>
+        <ul>
+          <li>Move pots to a cool (not frozen) location</li>
+          <li>Unheated garage or shed works well</li>
+          <li>Insulate pots with bubble wrap in severe cold</li>
+          <li>Water minimally — just enough to prevent total dryness</li>
+          <li>Return to full sun when shoots emerge in spring</li>
+        </ul>
+      </div>
+    </div>
+
+    <img
+      class="article-img"
+      src="https://storage.googleapis.com/kreatewebsites/photos700/orange-flowers.jpg"
+      alt="Vibrant tulips growing in colorful container pots"
+      width="700" height="360"
+      loading="lazy"
+    />
+    <p class="img-caption">Container tulips bring festival-worthy color to any outdoor space — no garden bed required.</p>
+  </section>
+
+  <!-- Common Mistakes -->
+  <section id="mistakes">
+    <h2><span class="h-icon">⚠️</span> Common Tulip Growing Mistakes to Avoid</h2>
+    <p>Most tulip failures trace back to one of these four mistakes. Avoiding them gives you a dramatic advantage over the average gardener.</p>
+
+    <div class="mistakes">
+      <div class="mistake">
+        <div class="m-head">❌ Planting Too Shallow</div>
+        <p>Bulbs planted under 4 inches produce weak, floppy stems and poor blooms. Always aim for 6–8 inches minimum.</p>
+      </div>
+      <div class="mistake">
+        <div class="m-head">❌ Overwatering</div>
+        <p>Excess moisture causes bulb rot — the fastest way to lose your entire planting. Water once, then trust the rain.</p>
+      </div>
+      <div class="mistake">
+        <div class="m-head">❌ Cutting Leaves Too Early</div>
+        <p>Removing foliage before it yellows starves the bulb of the energy it needs to rebloom next year. Be patient.</p>
+      </div>
+      <div class="mistake">
+        <div class="m-head">❌ Ignoring Drainage</div>
+        <p>The number one killer of tulip bulbs. If water pools in your planting spot after rain, choose a different location.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Best Varieties -->
+  <section id="varieties">
+    <h2><span class="h-icon">🌸</span> Best Tulip Varieties for Beginners</h2>
+    <p>With over 3,000 registered tulip varieties, choosing can feel overwhelming. These three types are the most reliable, forgiving, and widely available — perfect starting points.</p>
+
+    <div class="variety-cards">
+      <div class="variety-card">
+        <span class="v-icon">💪</span>
+        <h3>Darwin Hybrid</h3>
+        <p>Strongest stems, largest blooms, most reliable reblooming. The beginner's best friend.</p>
+      </div>
+      <div class="variety-card">
+        <span class="v-icon">🌷</span>
+        <h3>Triumph Tulips</h3>
+        <p>Classic cup shape, mid-season bloom, huge color range. Consistently beautiful results.</p>
+      </div>
+      <div class="variety-card">
+        <span class="v-icon">⚡</span>
+        <h3>Single Early</h3>
+        <p>First to bloom in spring, compact and sturdy — great for impatient gardeners.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pro Tips for Bigger Blooms -->
+  <section id="tips">
+    <h2><span class="h-icon">⭐</span> Tips for Bigger, Brighter Blooms</h2>
+    <p>Ready to take your tulips from good to spectacular? These five practices make a measurable difference to bloom size, color intensity, and longevity.</p>
+
+    <div class="pro-tips">
+      <h3>Expert Tips for Maximum Bloom Impact</h3>
+      <ul class="pro-tip-list">
+        <li>Plant in full sun — even one or two extra hours makes a real difference</li>
+        <li>Buy the largest bulbs you can find — bigger bulbs mean bigger blooms</li>
+        <li>Space bulbs generously — crowded bulbs compete for nutrients</li>
+        <li>Add a light feed of balanced fertilizer as shoots emerge in spring</li>
+        <li>Remove spent flowers immediately to redirect energy to the bulb</li>
+        <li>Avoid planting in the same spot every year — rotate to prevent disease buildup</li>
+      </ul>
+    </div>
+
+    <div class="related" aria-label="Related articles">
+      <h3>📚 More in This Series</h3>
+      <a href="/tulip-meaning-symbolism">① Tulip Meaning &amp; Symbolism — What Every Color Represents</a>
+      <a href="/tulip-color-meanings">Tulip Color Meanings Guide</a>
+      <a href="/best-tulip-festivals">Best Tulip Festivals Around the World</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <h2><span class="h-icon">❓</span> Frequently Asked Questions</h2>
+    <ul class="faq-list" role="list">
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          When is the best time to plant tulips? <span class="arr">▼</span>
+        </button>
+        <div class="faq-a">
+          Plant tulips in fall — typically September through November in most temperate climates — before the ground freezes. The exact window depends on your location: colder climates plant earlier (September), milder climates can plant as late as November. The soil should ideally be below 55°F (13°C).
+        </div>
+      </li>
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Can you plant tulips in spring? <span class="arr">▼</span>
+        </button>
+        <div class="faq-a">
+          Tulips should almost always be planted in fall. Spring planting skips the cold dormancy period (vernalization) that triggers blooming — without it, bulbs typically produce little or no flowers. If you missed fall planting, refrigerate bulbs for 8–12 weeks and plant in very early spring as a last resort.
+        </div>
+      </li>
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          How deep should tulip bulbs be planted? <span class="arr">▼</span>
+        </button>
+        <div class="faq-a">
+          Plant tulip bulbs 6–8 inches (15–20 cm) deep, measured from the base of the bulb. A simple rule of thumb: plant at a depth equal to about three times the bulb's height. Deeper planting in loose soil generally produces stronger stems and more reliable reblooming.
+        </div>
+      </li>
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Do tulips come back every year? <span class="arr">▼</span>
+        </button>
+        <div class="faq-a">
+          Tulips can return every year, especially in colder climates (Zones 3–6) with proper care. The keys are: choosing Darwin Hybrid varieties, allowing foliage to die back naturally before removing it, and ensuring good drainage. In warmer zones, tulips often perform better when treated as annuals and replanted each fall.
+        </div>
+      </li>
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Do tulips need full sun? <span class="arr">▼</span>
+        </button>
+        <div class="faq-a">
+          Yes — tulips grow best with 6–8 hours of direct sunlight daily. They can tolerate partial shade, particularly in warmer climates where afternoon shade actually helps preserve blooms longer. In cool climates, full sun is strongly preferred for the strongest stems and most vibrant color.
+        </div>
+      </li>
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          How long do tulips take to grow after planting? <span class="arr">▼</span>
+        </button>
+        <div class="faq-a">
+          After fall planting, tulips spend the winter in cold dormancy establishing roots. Shoots typically emerge in early spring, and blooms appear 4–8 weeks later depending on variety and climate. Early varieties bloom in March–April, mid-season in April–May, and late varieties in May–June.
+        </div>
+      </li>
+    </ul>
+  </section>
+
+</div><!-- /container -->
+
+<footer>
+  <p>© 2025 The Garden Journal &nbsp;·&nbsp; <a href="/privacy">Privacy</a> &nbsp;·&nbsp; <a href="/contact">Contact</a> &nbsp;·&nbsp; <a href="/tulips">All Tulip Articles</a></p>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
