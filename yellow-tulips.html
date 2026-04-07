@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yellow Tulips: Meaning, Symbolism, Varieties & Stunning Photos</title>
+  <meta name="description" content="Discover everything about yellow tulips — their meaning, symbolism, best varieties, growing tips, and stunning photography. The complete guide to yellow tulips." />
+  <link rel="canonical" href="https://yoursite.com/yellow-tulips" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What do yellow tulips mean?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yellow tulips symbolize happiness, sunshine, friendship, and optimism. While historically linked to jealousy, today yellow tulips represent cheerful energy, warmth, and the joy of spring."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the best yellow tulip varieties?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Top yellow tulip varieties include Golden Parade (Darwin Hybrid), Strong Gold (Triumph), Yellow Purissima (Fosteriana), West Point (Lily-flowered), Monte Carlo (Double Early), and Yellow Flight."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are yellow tulips good for gifting?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — yellow tulips are among the most cheerful and uplifting flowers you can give. They are ideal for birthdays, get-well gifts, friendship, celebrations, and any occasion where you want to bring joy and warmth."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --cream:       #fdfbf0;
+      --parchment:   #faf3d8;
+      --parchment2:  #f5e8b8;
+      --buttercup:   #f0e070;
+      --yellow:      #c8a020;
+      --yellow-mid:  #e0b830;
+      --yellow-bright:#f0d040;
+      --yellow-pale: #fdf8e0;
+      --deep-yellow: #8a6010;
+      --gold:        #c49a3c;
+      --gold-dark:   #7a5a10;
+      --amber:       #d4820a;
+      --amber-pale:  #fff3e0;
+      --sun:         #f5c020;
+      --leaf:        #4a7a30;
+      --leaf-pale:   #e8f5dc;
+      --ink:         #1e1800;
+      --muted:       #6a5a20;
+      --border:      #e0d098;
+      --border-lt:   #ece8c0;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Lora', Georgia, serif;
+      background: var(--cream);
+      color: var(--ink);
+      line-height: 1.82;
+      font-size: 17px;
+    }
+
+    /* ══ HERO ══ */
+    .hero {
+      position: relative;
+      min-height: 640px;
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+    }
+    .hero-img {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center 40%;
+    }
+    /* warm golden gradient — bottom-heavy so text is readable, top stays luminous */
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(30,24,0,0.0)  0%,
+        rgba(30,24,0,0.18) 40%,
+        rgba(30,24,0,0.78) 80%,
+        rgba(30,24,0,0.92) 100%
+      );
+    }
+    /* warm sunshine burst from top-right */
+    .hero-glow {
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 60% 50% at 80% 10%, rgba(245,192,32,0.22) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .hero-content {
+      position: relative; z-index: 2;
+      max-width: 900px; margin: 0 auto;
+      padding: 3rem 2rem 4rem; width: 100%;
+    }
+    .hero-eyebrow {
+      font-style: italic; font-size: 0.9rem;
+      color: var(--buttercup); letter-spacing: 0.12em;
+      text-transform: uppercase; margin-bottom: 0.85rem;
+      opacity: 0; animation: fadeUp 0.6s 0.1s ease forwards;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(3rem, 8vw, 6rem);
+      font-weight: 900; color: #fff;
+      line-height: 1.0; margin-bottom: 0.5rem;
+      opacity: 0; animation: fadeUp 0.6s 0.3s ease forwards;
+    }
+    .hero h1 em { font-style: italic; font-weight: 300; color: var(--buttercup); display: block; }
+    .hero-tagline {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: clamp(1.05rem, 2.5vw, 1.55rem);
+      color: rgba(255,255,255,0.68);
+      margin-bottom: 1.5rem;
+      opacity: 0; animation: fadeUp 0.6s 0.48s ease forwards;
+    }
+    .hero-sun { font-size: 1.5rem; display: block; margin-bottom: 0.65rem; opacity: 0; animation: fadeUp 0.6s 0.62s ease forwards; }
+    .hero-meta { font-size: 0.84rem; color: rgba(255,255,255,0.4); letter-spacing: 0.07em; opacity: 0; animation: fadeUp 0.6s 0.75s ease forwards; }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ══ SUNSHINE STATS BAR ══ */
+    .sun-bar {
+      background: var(--deep-yellow);
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      text-align: center;
+      border-bottom: 3px solid var(--buttercup);
+    }
+    @media (max-width: 540px) { .sun-bar { grid-template-columns: 1fr 1fr; } }
+    .sb-item { padding: 1.15rem 0.75rem; border-right: 1px solid rgba(255,255,255,0.12); }
+    .sb-item:last-child { border-right: none; }
+    .sb-val { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--buttercup); line-height: 1; display: block; }
+    .sb-lbl { font-size: 0.72rem; color: rgba(255,255,255,0.55); margin-top: 0.22rem; font-style: italic; }
+
+    /* ══ NAV ══ */
+    .topnav {
+      background: var(--yellow);
+      display: flex; justify-content: center;
+      gap: 0.4rem; flex-wrap: wrap;
+      padding: 0.5rem 1rem; font-size: 0.78rem;
+    }
+    .topnav a { color: rgba(255,255,255,0.8); text-decoration: none; padding: 0.15rem 0.55rem; border-radius: 3px; transition: color 0.2s; }
+    .topnav a:hover { color: #fff; }
+    .topnav .sep { color: rgba(255,255,255,0.3); }
+
+    /* ══ BREADCRUMB ══ */
+    .breadcrumb { font-size: 0.8rem; padding: 0.85rem 1.5rem; color: var(--muted); max-width: 920px; margin: 0 auto; }
+    .breadcrumb a { color: var(--yellow); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    /* ══ LAYOUT ══ */
+    .container { max-width: 920px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* ══ SNIPPET ══ */
+    .snippet {
+      background: var(--parchment);
+      border-left: 4px solid var(--yellow);
+      border-radius: 4px;
+      padding: 1.35rem 1.7rem;
+      margin: 2rem 0 2.5rem;
+      font-size: 1.01rem;
+    }
+    .snippet strong { display: block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--yellow); margin-bottom: 0.4rem; font-weight: 700; }
+
+    /* ══ SECTIONS ══ */
+    section { padding: 2.5rem 0; border-bottom: 1px solid var(--border); }
+    section:last-of-type { border-bottom: none; }
+    h2 { font-family: 'Playfair Display', serif; font-size: clamp(1.5rem, 3vw, 2.1rem); font-weight: 700; color: var(--deep-yellow); margin-bottom: 1rem; line-height: 1.2; }
+    h3 { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: var(--ink); margin-bottom: 0.4rem; }
+    p { margin-bottom: 1.05rem; color: #2a1e00; }
+    p:last-child { margin-bottom: 0; }
+
+    /* ══ MEANING PANEL — warm sunshine ══ */
+    .meaning-panel {
+      background: linear-gradient(135deg, var(--deep-yellow) 0%, var(--gold-dark) 100%);
+      border-radius: 12px;
+      padding: 2rem 2.25rem;
+      margin: 1.5rem 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .meaning-panel::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(to right, transparent, var(--buttercup), transparent);
+    }
+    .meaning-panel::after {
+      content: '☀';
+      position: absolute;
+      top: -20px; right: 20px;
+      font-size: 8rem;
+      color: rgba(255,255,255,0.05);
+      line-height: 1;
+      pointer-events: none;
+    }
+    @media (max-width: 560px) { .meaning-panel { grid-template-columns: 1fr 1fr; } }
+    .mp-item { text-align: center; position: relative; z-index: 1; }
+    .mp-icon { font-size: 1.8rem; display: block; margin-bottom: 0.4rem; }
+    .mp-word { font-family: 'Playfair Display', serif; font-size: 1.1rem; font-weight: 700; color: var(--buttercup); display: block; margin-bottom: 0.2rem; }
+    .mp-desc { font-size: 0.83rem; color: rgba(255,255,255,0.65); line-height: 1.45; }
+
+    /* ══ HISTORY MYTH BOX ══ */
+    .myth-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    @media (max-width: 520px) { .myth-box { grid-template-columns: 1fr; } }
+    .myth-col {
+      border-radius: 8px;
+      padding: 1.1rem 1.25rem;
+      border: 1px solid var(--border);
+    }
+    .myth-col.old { background: var(--parchment2); }
+    .myth-col.new { background: var(--leaf-pale); }
+    .myth-col .mc-head {
+      font-size: 0.7rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.14em;
+      margin-bottom: 0.5rem; padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .myth-col.old .mc-head { color: var(--amber); }
+    .myth-col.new .mc-head { color: var(--leaf); }
+    .myth-col p { font-size: 0.9rem; margin: 0; }
+    .myth-col.old p { color: var(--muted); font-style: italic; }
+    .myth-col.new p { color: #2a4a10; }
+
+    /* ══ FULL-WIDTH CINEMATIC ══ */
+    .cinematic {
+      width: 100%; max-height: 540px;
+      object-fit: cover; display: block;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* ══ WIDE ARTICLE IMAGE ══ */
+    .article-img {
+      width: 100%; border-radius: 8px;
+      margin: 2rem 0 0.5rem; display: block;
+      object-fit: cover; max-height: 460px;
+      border: 1px solid var(--border);
+    }
+    .img-caption { text-align: center; font-style: italic; font-size: 0.83rem; color: var(--muted); margin-bottom: 1.5rem; }
+
+    /* ══ PORTRAIT TRIO ══ */
+    .portrait-trio {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.7rem;
+      margin: 2rem 0;
+    }
+    @media (max-width: 520px) { .portrait-trio { grid-template-columns: 1fr 1fr; } }
+    .portrait-trio img {
+      width: 100%; aspect-ratio: 2/3;
+      object-fit: cover; border-radius: 8px;
+      display: block; border: 1px solid var(--border);
+      transition: transform 0.3s, filter 0.3s;
+    }
+    .portrait-trio img:hover { transform: scale(1.02); filter: saturate(1.12) brightness(1.04); }
+
+    /* ══ SIDE-BY-SIDE LANDSCAPE PAIR ══ */
+    .landscape-pair {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      gap: 0.7rem;
+      margin: 2rem 0;
+    }
+    @media (max-width: 520px) { .landscape-pair { grid-template-columns: 1fr; } }
+    .landscape-pair img {
+      width: 100%; height: 320px;
+      object-fit: cover; border-radius: 8px;
+      display: block; border: 1px solid var(--border);
+      transition: transform 0.3s;
+    }
+    .landscape-pair img:hover { transform: scale(1.015); }
+
+    /* ══ SHADES STRIP ══ */
+    .shades-strip {
+      display: grid; grid-template-columns: repeat(5, 1fr);
+      gap: 0; border: 1px solid var(--border);
+      border-radius: 10px; overflow: hidden; margin: 1.5rem 0;
+    }
+    @media (max-width: 480px) { .shades-strip { grid-template-columns: repeat(3, 1fr); } }
+    .shade-item { padding: 1.3rem 0.5rem; text-align: center; border-right: 1px solid var(--border); display: flex; flex-direction: column; align-items: center; gap: 0.4rem; }
+    .shade-item:last-child { border-right: none; }
+    .shade-dot { width: 30px; height: 30px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.65); }
+    .shade-name { font-family: 'Playfair Display', serif; font-size: 0.82rem; font-weight: 700; color: var(--ink); }
+    .shade-word { font-size: 0.69rem; font-style: italic; color: var(--muted); }
+
+    /* ══ OCCASION CARDS ══ */
+    .occasion-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(175px, 1fr)); gap: 0.85rem; margin: 1.5rem 0; }
+    .occasion-card { background: var(--parchment); border: 1px solid var(--border); border-radius: 8px; padding: 1.1rem 1rem; text-align: center; transition: transform 0.2s, box-shadow 0.2s; }
+    .occasion-card:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(200,160,32,0.15); }
+    .occ-icon { font-size: 1.6rem; display: block; margin-bottom: 0.4rem; }
+    .occ-name { font-family: 'Playfair Display', serif; font-size: 0.95rem; font-weight: 700; color: var(--deep-yellow); display: block; margin-bottom: 0.18rem; }
+    .occ-desc { font-size: 0.8rem; color: var(--muted); }
+
+    /* ══ VARIETY CARDS ══ */
+    .variety-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+    .variety-card { background: #fff; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; }
+    .variety-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(200,160,32,0.13); }
+    .vc-bar { height: 5px; }
+    .vc-body { padding: 1.1rem 1.2rem 1.25rem; }
+    .vc-type { font-size: 0.67rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.13em; color: var(--yellow); margin-bottom: 0.25rem; }
+    .vc-name { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; color: var(--ink); margin-bottom: 0.4rem; }
+    .vc-desc { font-size: 0.87rem; color: var(--muted); margin-bottom: 0.65rem; line-height: 1.6; }
+    .vc-traits { display: flex; flex-wrap: wrap; gap: 0.28rem; }
+    .vc-trait { font-size: 0.67rem; padding: 0.12rem 0.45rem; border-radius: 100px; border: 1px solid var(--border); color: var(--muted); }
+
+    /* ══ FULL BLEED PANEL ══ */
+    .full-bleed-panel {
+      position: relative;
+      overflow: hidden;
+      margin: 0;
+    }
+    .full-bleed-panel img {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+      display: block;
+    }
+    .full-bleed-panel .fbp-caption {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      background: linear-gradient(to top, rgba(30,24,0,0.82) 0%, transparent 100%);
+      padding: 2rem 2rem 1.25rem;
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: clamp(1rem, 2.5vw, 1.4rem);
+      color: rgba(255,255,255,0.88);
+    }
+
+    /* ══ MOOD BENEFITS ══ */
+    .mood-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.85rem;
+      margin: 1.5rem 0;
+    }
+    @media (max-width: 560px) { .mood-grid { grid-template-columns: 1fr; } }
+    .mood-card {
+      border-radius: 10px;
+      padding: 1.25rem 1.1rem;
+      text-align: center;
+      border: 1px solid var(--border);
+      background: var(--parchment);
+      transition: transform 0.2s;
+    }
+    .mood-card:hover { transform: translateY(-2px); }
+    .mood-icon { font-size: 1.75rem; display: block; margin-bottom: 0.45rem; }
+    .mood-card h3 { font-size: 0.95rem; color: var(--deep-yellow); margin-bottom: 0.25rem; }
+    .mood-card p  { font-size: 0.84rem; color: var(--muted); margin: 0; }
+
+    /* ══ GROW TIPS ══ */
+    .grow-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem; margin: 1.5rem 0; }
+    @media (max-width: 520px) { .grow-grid { grid-template-columns: 1fr; } }
+    .grow-card { background: var(--parchment); border: 1px solid var(--border); border-radius: 8px; padding: 1rem 1.15rem; display: flex; gap: 0.75rem; align-items: flex-start; }
+    .gc-icon { font-size: 1.35rem; flex-shrink: 0; margin-top: 2px; }
+    .gc-text h3 { font-size: 0.92rem; margin-bottom: 0.18rem; color: var(--deep-yellow); }
+    .gc-text p  { font-size: 0.84rem; color: var(--muted); margin: 0; }
+
+    /* ══ COMBINATION IDEAS ══ */
+    .combo-row { display: flex; flex-wrap: wrap; gap: 0.85rem; margin: 1.5rem 0; }
+    .combo-chip { background: var(--parchment); border: 1px solid var(--border); border-radius: 8px; padding: 0.85rem 1.1rem; flex: 1 1 200px; display: flex; gap: 0.65rem; align-items: flex-start; }
+    .combo-dots { display: flex; gap: 3px; flex-shrink: 0; margin-top: 4px; }
+    .cd { width: 14px; height: 14px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.08); }
+    .combo-chip h3 { font-size: 0.9rem; margin-bottom: 0.15rem; color: var(--deep-yellow); }
+    .combo-chip p  { font-size: 0.82rem; color: var(--muted); margin: 0; }
+
+    /* ══ RELATED ══ */
+    .related { background: var(--parchment); border-radius: 8px; padding: 1.25rem 1.5rem; margin-top: 1.5rem; border: 1px solid var(--border); }
+    .related h3 { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--yellow); margin-bottom: 0.7rem; font-weight: 700; font-style: italic; }
+    .related a { display: block; color: var(--yellow); font-size: 0.9rem; text-decoration: none; padding: 0.26rem 0; border-bottom: 1px dashed var(--border); font-style: italic; transition: color 0.2s; }
+    .related a:last-child { border-bottom: none; }
+    .related a:hover { color: var(--deep-yellow); text-decoration: underline; }
+    .related a::before { content: '→  '; font-style: normal; }
+
+    /* ══ FAQ ══ */
+    .faq-list { list-style: none; padding: 0; margin-top: 1rem; }
+    .faq-item { border: 1px solid var(--border); border-radius: 6px; margin-bottom: 0.7rem; overflow: hidden; }
+    .faq-q { width: 100%; background: var(--parchment); border: none; text-align: left; padding: 1rem 1.25rem; font-family: 'Playfair Display', serif; font-size: 0.97rem; font-weight: 700; color: var(--ink); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 1rem; transition: background 0.2s; }
+    .faq-q:hover { background: var(--parchment2); }
+    .faq-q .arr { font-size: 0.72rem; transition: transform 0.25s; flex-shrink: 0; color: var(--yellow); }
+    .faq-a { display: none; padding: 1rem 1.25rem; font-size: 0.94rem; border-top: 1px solid var(--border); background: #fff; color: var(--ink); }
+    .faq-item.open .faq-a { display: block; }
+    .faq-item.open .arr { transform: rotate(180deg); }
+
+    /* ══ FOOTER ══ */
+    footer { background: var(--deep-yellow); color: rgba(255,255,255,0.5); text-align: center; padding: 2rem 1rem; font-size: 0.8rem; margin-top: 3.5rem; border-top: 2px solid var(--buttercup); }
+    footer a { color: var(--buttercup); text-decoration: none; font-style: italic; }
+  </style>
+</head>
+<body>
+
+<!-- ══ HERO ══ -->
+<div class="hero">
+  <img class="hero-img"
+    src="https://storage.googleapis.com/kreatewebsites/photos1000/IMG_6020.JPG"
+    alt="Brilliant yellow tulips glowing in spring sunshine"
+    width="1000" height="640" loading="eager" />
+  <div class="hero-overlay"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">🌷 The Garden Journal &nbsp;·&nbsp; Color Guide</p>
+    <h1>Yellow<br><em>Tulips</em></h1>
+    <p class="hero-tagline">Happiness · Sunshine · Friendship · Joy</p>
+    <span class="hero-sun">☀️</span>
+    <p class="hero-meta">By The Garden Journal &nbsp;·&nbsp; Spring 2025 &nbsp;·&nbsp; 7 min read</p>
+  </div>
+</div>
+
+<!-- Stats bar -->
+<div class="sun-bar">
+  <div class="sb-item"><span class="sb-val">☀️</span><span class="sb-lbl">Symbol of happiness</span></div>
+  <div class="sb-item"><span class="sb-val">50+</span><span class="sb-lbl">Yellow varieties</span></div>
+  <div class="sb-item"><span class="sb-val">Mar–May</span><span class="sb-lbl">Bloom season</span></div>
+  <div class="sb-item"><span class="sb-val">😊</span><span class="sb-lbl">Most uplifting colour</span></div>
+</div>
+
+<!-- Nav -->
+<nav class="topnav" aria-label="Navigation">
+  <a href="/tulips">← All Tulip Guides</a>
+  <span class="sep">·</span>
+  <a href="/tulip-color-meanings">Color Meanings</a>
+  <span class="sep">·</span>
+  <a href="/red-tulips">Red Tulips</a>
+  <span class="sep">·</span>
+  <a href="/pink-tulips">Pink Tulips</a>
+  <span class="sep">·</span>
+  <a href="/purple-tulips">Purple Tulips</a>
+</nav>
+
+<!-- Breadcrumb -->
+<nav class="breadcrumb">
+  <a href="/">Home</a> &rsaquo; <a href="/flowers">Flowers</a> &rsaquo; <a href="/tulips">Tulips</a> &rsaquo; Yellow Tulips
+</nav>
+
+<div class="container">
+
+  <!-- Snippet -->
+  <div class="snippet" aria-label="Quick Answer">
+    <strong>🔍 Quick Answer</strong>
+    Yellow tulips symbolize <strong>happiness, sunshine, friendship, and optimism</strong>. Once historically linked to jealousy, their meaning has evolved entirely — today they are the most cheerful and uplifting flowers you can give, representing warmth, joy, and the uncomplicated pleasure of spring.
+  </div>
+
+  <!-- Introduction -->
+  <section id="intro">
+    <h2>The Flower That Brings Sunshine Indoors</h2>
+    <p>There is no flower colour quite as immediately, unreservedly joyful as yellow. A vase of yellow tulips transforms any room — their luminous, saturated colour carries what feels like concentrated sunshine, even on the greyest of days.</p>
+    <p>Yellow tulips have been growing in gardens for centuries, but it is their contemporary meaning that makes them so enduringly popular as gifts. They carry no ambiguity, no weight, no complicated symbolism to navigate. They simply say: <em>I want you to feel happy. I'm thinking of you. The world is better for having you in it.</em></p>
+    <p>From the palest primrose to the richest saffron gold, yellow tulips span a spectrum as varied as happiness itself — and this guide explores every shade of it.</p>
+  </section>
+
+</div>
+
+<!-- Cinematic break 1 -->
+<img class="cinematic"
+  src="https://storage.googleapis.com/kreatewebsites/photos1000/IMG_6069.JPG"
+  alt="Field of yellow tulips glowing under a bright spring sky"
+  width="1000" height="500" loading="lazy" />
+
+<div class="container">
+
+  <!-- Meaning & Symbolism -->
+  <section id="meaning">
+    <h2>What Yellow Tulips Mean &amp; Symbolize</h2>
+    <p>Yellow tulips carry one of the most uplifting symbolic meanings in the floral world — and one that has changed dramatically over time, becoming more positive with each passing generation.</p>
+
+    <div class="meaning-panel">
+      <div class="mp-item">
+        <span class="mp-icon">😊</span>
+        <span class="mp-word">Happiness</span>
+        <span class="mp-desc">Pure, uncomplicated joy — the feeling of a sunny morning in spring</span>
+      </div>
+      <div class="mp-item">
+        <span class="mp-icon">☀️</span>
+        <span class="mp-word">Sunshine</span>
+        <span class="mp-desc">Light, warmth, and the energy that makes everything grow</span>
+      </div>
+      <div class="mp-item">
+        <span class="mp-icon">🤝</span>
+        <span class="mp-word">Friendship</span>
+        <span class="mp-desc">Warm, genuine affection between people who truly care</span>
+      </div>
+      <div class="mp-item">
+        <span class="mp-icon">🌱</span>
+        <span class="mp-word">Optimism</span>
+        <span class="mp-desc">Belief in good things ahead — the spirit of renewal and fresh starts</span>
+      </div>
+      <div class="mp-item">
+        <span class="mp-icon">💛</span>
+        <span class="mp-word">Warmth</span>
+        <span class="mp-desc">Genuine care and the comfort of knowing someone is thinking of you</span>
+      </div>
+      <div class="mp-item">
+        <span class="mp-icon">🌷</span>
+        <span class="mp-word">New Beginnings</span>
+        <span class="mp-desc">The hopeful energy of spring — change that feels exciting, not frightening</span>
+      </div>
+    </div>
+
+    <!-- Then & Now: the jealousy myth -->
+    <div class="myth-box">
+      <div class="myth-col old">
+        <div class="mc-head">🕰 Historical Meaning (Victorian Era)</div>
+        <p>In the Victorian language of flowers, yellow tulips were associated with hopeless love and jealousy — a warning message between lovers. Sending yellow flowers carried a note of caution or heartbreak.</p>
+      </div>
+      <div class="myth-col new">
+        <div class="mc-head">☀️ Modern Meaning (Today)</div>
+        <p>That Victorian association is essentially obsolete. Today, yellow tulips universally represent happiness, friendship, and positivity. They are among the most cheerful and welcome flowers you can give to anyone, for any reason.</p>
+      </div>
+    </div>
+
+    <!-- Portrait trio -->
+    <div class="portrait-trio">
+      <img src="https://storage.googleapis.com/kreatewebsites/photos600/IMG_6021.JPG"
+        alt="Bright yellow tulip in close-up showing petal glow" loading="lazy" />
+      <img src="https://storage.googleapis.com/kreatewebsites/photos600/IMG_6070.JPG"
+        alt="Yellow tulip blooms in a spring garden bed" loading="lazy" />
+      <img src="https://storage.googleapis.com/kreatewebsites/photos600/IMG_6071.JPG"
+        alt="Field of yellow tulips stretching into the distance" loading="lazy" />
+    </div>
+    <p class="img-caption">Yellow tulips in their full glory — from the intimate close-up to the sweeping field view, always luminous.</p>
+  </section>
+
+  <!-- Shades of Yellow -->
+  <section id="shades">
+    <h2>The Spectrum of Yellow Tulips</h2>
+    <p>Yellow is one of the most varied colours in the tulip world — ranging from the palest, almost-white primrose to the deepest, richest saffron. Each shade carries its own character and pairs differently in the garden.</p>
+
+    <div class="shades-strip">
+      <div class="shade-item" style="background:#fffef0;">
+        <div class="shade-dot" style="background:#f0f0a0;"></div>
+        <span class="shade-name">Primrose</span>
+        <span class="shade-word">Soft, delicate</span>
+      </div>
+      <div class="shade-item" style="background:#fffde0;">
+        <div class="shade-dot" style="background:#f5e050;"></div>
+        <span class="shade-name">Buttercup</span>
+        <span class="shade-word">Bright, cheerful</span>
+      </div>
+      <div class="shade-item" style="background:#fdf8c8;">
+        <div class="shade-dot" style="background:#e8c030;"></div>
+        <span class="shade-name">Golden</span>
+        <span class="shade-word">Warm, classic</span>
+      </div>
+      <div class="shade-item" style="background:#faf0b0;">
+        <div class="shade-dot" style="background:#c8a020;"></div>
+        <span class="shade-name">Amber</span>
+        <span class="shade-word">Rich, honeyed</span>
+      </div>
+      <div class="shade-item" style="background:#f8e898;">
+        <div class="shade-dot" style="background:#a07010;"></div>
+        <span class="shade-name">Saffron</span>
+        <span class="shade-word">Deep, spiced</span>
+      </div>
+    </div>
+
+    <!-- Wide article image -->
+    <img class="article-img"
+      src="https://storage.googleapis.com/kreatewebsites/photos800/IMG_6064.JPG"
+      alt="A sweep of golden yellow tulips at peak bloom — the colour of concentrated sunshine"
+      width="800" height="420" loading="lazy" />
+    <p class="img-caption">Golden yellow tulips at peak bloom — the colour that most completely captures the spirit of spring.</p>
+  </section>
+
+  <!-- Mood & Wellbeing -->
+  <section id="mood">
+    <h2>Why Yellow Tulips Lift Your Mood</h2>
+    <p>The connection between yellow flowers and wellbeing is not merely symbolic — colour psychology consistently shows that yellow has measurable positive effects on human mood, energy, and mental clarity. Yellow tulips are nature's most concentrated dose of these effects.</p>
+
+    <div class="mood-grid">
+      <div class="mood-card">
+        <span class="mood-icon">⚡</span>
+        <h3>Energy &amp; Vitality</h3>
+        <p>Yellow stimulates mental activity and raises energy levels — explaining why yellow flowers feel so immediately invigorating.</p>
+      </div>
+      <div class="mood-card">
+        <span class="mood-icon">😌</span>
+        <h3>Stress Reduction</h3>
+        <p>Studies show that bright flowers in living and working spaces measurably reduce cortisol levels and feelings of anxiety.</p>
+      </div>
+      <div class="mood-card">
+        <span class="mood-icon">💛</span>
+        <h3>Social Warmth</h3>
+        <p>Yellow is strongly associated with openness, sociability, and connection — yellow tulips genuinely warm the atmosphere of a room.</p>
+      </div>
+    </div>
+
+    <p>This is why yellow tulips are the classic get-well gift, the natural choice for lifting someone's spirits on a difficult day, and the flower most often chosen to brighten a workspace or home during winter months.</p>
+  </section>
+
+</div>
+
+<!-- Full bleed panel with caption overlay -->
+<div class="full-bleed-panel">
+  <img src="https://storage.googleapis.com/kreatewebsites/photos1000/IMG_6102.JPG"
+    alt="Yellow tulips glowing in warm afternoon light — a sea of living sunshine"
+    width="1000" height="500" loading="lazy" />
+  <div class="fbp-caption">"In every yellow tulip, a whole season's worth of sunshine."</div>
+</div>
+
+<div class="container">
+
+  <!-- When to Give -->
+  <section id="occasions">
+    <h2>When to Give Yellow Tulips</h2>
+    <p>Yellow tulips are the most versatile gifting flower — welcomed at almost any occasion and by almost anyone. Their message of warmth and happiness is universally appropriate.</p>
+
+    <div class="occasion-grid">
+      <div class="occasion-card">
+        <span class="occ-icon">🎂</span>
+        <span class="occ-name">Birthdays</span>
+        <span class="occ-desc">Joyful, celebratory, and beautiful — perfect for any age</span>
+      </div>
+      <div class="occasion-card">
+        <span class="occ-icon">🤝</span>
+        <span class="occ-name">Friendship</span>
+        <span class="occ-desc">The ultimate expression of warm, genuine friendship</span>
+      </div>
+      <div class="occasion-card">
+        <span class="occ-icon">💊</span>
+        <span class="occ-name">Get Well</span>
+        <span class="occ-desc">Brighten someone's day when they need it most</span>
+      </div>
+      <div class="occasion-card">
+        <span class="occ-icon">🏠</span>
+        <span class="occ-name">Housewarming</span>
+        <span class="occ-desc">Welcome sunshine into a new home or workspace</span>
+      </div>
+      <div class="occasion-card">
+        <span class="occ-icon">🎉</span>
+        <span class="occ-name">Celebrations</span>
+        <span class="occ-desc">New job, graduation, good news — mark every milestone with joy</span>
+      </div>
+      <div class="occasion-card">
+        <span class="occ-icon">🌷</span>
+        <span class="occ-name">Just Because</span>
+        <span class="occ-desc">Yellow tulips need no occasion — they create one</span>
+      </div>
+    </div>
+
+    <!-- Landscape pair -->
+    <div class="landscape-pair">
+      <img src="https://storage.googleapis.com/kreatewebsites/photos700/IMG_6155.JPG"
+        alt="Yellow tulips in a spring garden border — abundant and luminous"
+        loading="lazy" />
+      <img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6170.JPG"
+        alt="Close-up of yellow tulip bloom in perfect light"
+        loading="lazy" />
+    </div>
+    <p class="img-caption">Yellow tulips — in borders, in bouquets, in any setting — always the most immediately uplifting flower in the arrangement.</p>
+  </section>
+
+  <!-- Best Yellow Varieties -->
+  <section id="varieties">
+    <h2>The Best Yellow Tulip Varieties</h2>
+    <p>Yellow is one of the most richly developed colours in tulip breeding — with exceptional varieties across every group, from the purest butter-yellow to rich amber-gold.</p>
+
+    <div class="variety-grid">
+      <div class="variety-card">
+        <div class="vc-bar" style="background: linear-gradient(to right,#f0d040,#e8b820);"></div>
+        <div class="vc-body">
+          <div class="vc-type">Darwin Hybrid</div>
+          <div class="vc-name">Golden Parade</div>
+          <div class="vc-desc">A classic Darwin Hybrid in rich, warm golden yellow — large, luminous blooms on tall strong stems. Returns reliably for years and is one of the finest perennial yellow tulips available.</div>
+          <div class="vc-traits"><span class="vc-trait">Golden yellow</span><span class="vc-trait">Perennial</span><span class="vc-trait">Tall stems</span><span class="vc-trait">Mid-season</span></div>
+        </div>
+      </div>
+      <div class="variety-card">
+        <div class="vc-bar" style="background: linear-gradient(to right,#f5e040,#e0c820);"></div>
+        <div class="vc-body">
+          <div class="vc-type">Triumph</div>
+          <div class="vc-name">Strong Gold</div>
+          <div class="vc-desc">Vivid, saturated pure-yellow blooms on sturdy stems — widely used by florists for its outstanding colour intensity and long vase life. An excellent garden performer too.</div>
+          <div class="vc-traits"><span class="vc-trait">Pure yellow</span><span class="vc-trait">Vivid colour</span><span class="vc-trait">Cut flower</span><span class="vc-trait">Mid-season</span></div>
+        </div>
+      </div>
+      <div class="variety-card">
+        <div class="vc-bar" style="background: linear-gradient(to right,#f0f0a0,#e8e060);"></div>
+        <div class="vc-body">
+          <div class="vc-type">Fosteriana (Emperor)</div>
+          <div class="vc-name">Yellow Purissima</div>
+          <div class="vc-desc">One of the most beautiful of all tulips — creamy primrose-yellow blooms of extraordinary purity and size. Opens wide in sun to reveal a magnificent interior. An early-season gem.</div>
+          <div class="vc-traits"><span class="vc-trait">Primrose yellow</span><span class="vc-trait">Opens wide</span><span class="vc-trait">Early bloomer</span></div>
+        </div>
+      </div>
+      <div class="variety-card">
+        <div class="vc-bar" style="background: linear-gradient(to right,#e8c820,#c8a010);"></div>
+        <div class="vc-body">
+          <div class="vc-type">Lily-Flowered</div>
+          <div class="vc-name">West Point</div>
+          <div class="vc-desc">The most architecturally striking yellow tulip — long, pointed petals that curve back elegantly at the tips in a clear, bright yellow. Tall, graceful, and wonderful in a vase.</div>
+          <div class="vc-traits"><span class="vc-trait">Pointed petals</span><span class="vc-trait">Bright yellow</span><span class="vc-trait">Late-season</span><span class="vc-trait">Elegant</span></div>
+        </div>
+      </div>
+      <div class="variety-card">
+        <div class="vc-bar" style="background: linear-gradient(to right,#f8e060,#f0c820);"></div>
+        <div class="vc-body">
+          <div class="vc-type">Double Early</div>
+          <div class="vc-name">Monte Carlo</div>
+          <div class="vc-desc">A lush, fully double bloom in warm golden-yellow with a faint honey fragrance — rare in tulips. Peony-like and sumptuous, one of the most popular container tulips in the world.</div>
+          <div class="vc-traits"><span class="vc-trait">Double bloom</span><span class="vc-trait">Fragrant</span><span class="vc-trait">Container</span><span class="vc-trait">Early-season</span></div>
+        </div>
+      </div>
+      <div class="variety-card">
+        <div class="vc-bar" style="background: linear-gradient(to right,#d4820a,#b86010);"></div>
+        <div class="vc-body">
+          <div class="vc-type">Parrot</div>
+          <div class="vc-name">Texas Gold</div>
+          <div class="vc-desc">A bold, dramatically ruffled Parrot tulip in deep golden-amber — one of the most theatrical yellow tulips. Extraordinary in cut flower arrangements where its ruffled edges catch the light magnificently.</div>
+          <div class="vc-traits"><span class="vc-trait">Amber-gold</span><span class="vc-trait">Ruffled petals</span><span class="vc-trait">Dramatic</span><span class="vc-trait">Late-season</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- Final cinematic image -->
+<img class="cinematic"
+  src="https://storage.googleapis.com/kreatewebsites/photos1000/IMG_6173.JPG"
+  alt="Yellow tulips in the late afternoon golden hour — glowing with warmth"
+  width="1000" height="480" loading="lazy" />
+
+<div class="container">
+
+  <!-- Growing Yellow Tulips -->
+  <section id="growing">
+    <h2>Growing Yellow Tulips: Key Tips</h2>
+    <p>Yellow tulips are no more demanding than any other colour, but a few specific points help produce the richest, most saturated yellow blooms and the most reliable return year after year.</p>
+
+    <div class="grow-grid">
+      <div class="grow-card">
+        <span class="gc-icon">📅</span>
+        <div class="gc-text"><h3>Plant in Autumn</h3><p>September–November, when soil drops to 50–55°F. Yellow Darwin Hybrids need the full cold dormancy period to develop their characteristic richness of colour.</p></div>
+      </div>
+      <div class="grow-card">
+        <span class="gc-icon">☀️</span>
+        <div class="gc-text"><h3>Maximum Sun for Deepest Yellow</h3><p>Yellow varieties are particularly responsive to sunlight — full sun (6+ hours) produces the most vivid, saturated colour. Shade noticeably dulls yellow to a pale, washed-out tone.</p></div>
+      </div>
+      <div class="grow-card">
+        <span class="gc-icon">📏</span>
+        <div class="gc-text"><h3>Plant 6–8 Inches Deep</h3><p>Proper depth ensures strong stem development — particularly important for tall Darwin Hybrid yellows like Golden Parade that can reach 24+ inches in height.</p></div>
+      </div>
+      <div class="grow-card">
+        <span class="gc-icon">💧</span>
+        <div class="gc-text"><h3>Well-Drained Soil</h3><p>Wet summer soil causes bulb rot — yellows are no exception. Sandy loam or well-amended soil is ideal. Avoid low-lying areas where water collects after rain.</p></div>
+      </div>
+      <div class="grow-card">
+        <span class="gc-icon">🍃</span>
+        <div class="gc-text"><h3>Leave Foliage to Yellow</h3><p>Allow all foliage to die back naturally before removal — typically 6–8 weeks after bloom. This is essential for Golden Parade and Strong Gold to return with full vigour.</p></div>
+      </div>
+      <div class="grow-card">
+        <span class="gc-icon">🌿</span>
+        <div class="gc-text"><h3>Best Perennial Yellow</h3><p>Golden Parade (Darwin Hybrid) is the outstanding perennial choice — returning strongly in cold climates for 5+ years. West Point (lily-flowered) also has good perennial performance.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Colour Combinations -->
+  <section id="combinations">
+    <h2>Yellow Tulip Colour Combinations</h2>
+    <p>Yellow is one of the most versatile colours in the spring garden — its warmth and brightness works with almost every other colour, though some pairings are particularly striking.</p>
+
+    <div class="combo-row">
+      <div class="combo-chip">
+        <div class="combo-dots"><div class="cd" style="background:#e8c030;"></div><div class="cd" style="background:#7050a8;"></div></div>
+        <div><h3>Yellow + Purple</h3><p>The most striking complementary pairing — warm yellow against cool purple creates maximum visual impact. The classic tulip field combination that looks spectacular in any scale.</p></div>
+      </div>
+      <div class="combo-chip">
+        <div class="combo-dots"><div class="cd" style="background:#e8c030;"></div><div class="cd" style="background:#c02828;"></div></div>
+        <div><h3>Yellow + Red</h3><p>Bold, energetic, and deeply joyful — this warm pairing fills borders with vibrant, celebratory energy. The combination most associated with Dutch tulip fields in spring.</p></div>
+      </div>
+      <div class="combo-chip">
+        <div class="combo-dots"><div class="cd" style="background:#e8c030;"></div><div class="cd" style="background:#fff;border:1px solid #bbb;"></div></div>
+        <div><h3>Yellow + White</h3><p>Fresh, clean, and luminous — white amplifies yellow's brightness without competing. A crisp spring combination that works beautifully in formal and informal settings alike.</p></div>
+      </div>
+      <div class="combo-chip">
+        <div class="combo-dots"><div class="cd" style="background:#e8c030;"></div><div class="cd" style="background:#e890b0;"></div></div>
+        <div><h3>Yellow + Pink</h3><p>Warm, joyful, and abundantly spring-like — yellow and pink together evoke the unrestrained happiness of the season at its peak. Perfect for cottage and informal gardens.</p></div>
+      </div>
+      <div class="combo-chip">
+        <div class="combo-dots"><div class="cd" style="background:#f0f0a0;"></div><div class="cd" style="background:#e8c030;"></div><div class="cd" style="background:#a07010;"></div></div>
+        <div><h3>Pale + Gold + Amber</h3><p>A monochromatic yellow scheme — primrose through golden to saffron-amber — creates extraordinary warmth and depth. Sophisticated, unexpected, and beautiful.</p></div>
+      </div>
+    </div>
+
+    <div class="related" aria-label="Related articles">
+      <h3>📚 Related Guides</h3>
+      <a href="/tulip-color-meanings">Tulip Color Meanings — All Seven Shades Explained</a>
+      <a href="/red-tulips">Red Tulips — Love, Passion &amp; Best Varieties</a>
+      <a href="/pink-tulips">Pink Tulips — Affection, Kindness &amp; Beautiful Photos</a>
+      <a href="/purple-tulips">Purple Tulips — Royalty, Elegance &amp; Best Varieties</a>
+      <a href="/how-to-grow-tulips">How to Grow Tulips — Complete Beginner's Guide</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <ul class="faq-list" role="list">
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">What do yellow tulips symbolize today? <span class="arr">▼</span></button>
+        <div class="faq-a">Today, yellow tulips symbolize happiness, friendship, sunshine, and optimism. The old Victorian association with jealousy has essentially disappeared from modern flower-giving culture. Yellow tulips are now considered among the most cheerful and positive flowers you can give — universally associated with warmth, joy, and goodwill.</div>
+      </li>
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">Did yellow tulips used to mean jealousy? <span class="arr">▼</span></button>
+        <div class="faq-a">In the Victorian language of flowers (floriography), yellow flowers including tulips were sometimes associated with jealousy or hopeless love. This was part of an elaborate symbolic system popular in the 19th century. That meaning is now obsolete — virtually no one today would interpret a gift of yellow tulips as expressing jealousy. Their modern meaning is unambiguously positive: happiness, friendship, and joy.</div>
+      </li>
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">Are yellow tulips good for a friend? <span class="arr">▼</span></button>
+        <div class="faq-a">Yellow tulips are arguably the ideal friendship flower — their symbolism of warmth, joy, and genuine affection maps perfectly onto close friendships. Unlike red (which implies romance) or white (which can suggest sympathy), yellow is uncomplicated in its message of warmth and celebration of the relationship. They are particularly well-suited to birthdays, get-well wishes, and simply brightening a friend's day.</div>
+      </li>
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">What is the best yellow tulip for returning every year? <span class="arr">▼</span></button>
+        <div class="faq-a">Golden Parade (Darwin Hybrid) is the outstanding choice for reliable perennial performance — returning strongly in cold climates (Zones 3–7) for 5 or more years with full sun and good drainage. Strong Gold (Triumph) is another reliable perennial. For the earliest yellow bloom that also naturalises well, Yellow Purissima (Fosteriana) is excellent. West Point (lily-flowered) has solid perennial performance too.</div>
+      </li>
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">Which yellow tulips are fragrant? <span class="arr">▼</span></button>
+        <div class="faq-a">Most tulips are not strongly fragrant, but yellow varieties include some of the most scented. Monte Carlo (Double Early) is prized for its honey-like fragrance — unusual in tulips and one of the reasons it is so popular as a container variety. Apricot Beauty has a light sweet scent. For the most fragrant tulip experience, the Double Early group generally offers the best options in yellow and gold shades.</div>
+      </li>
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">What do yellow tulips pair best with in the garden? <span class="arr">▼</span></button>
+        <div class="faq-a">Yellow tulips are exceptionally versatile garden companions. The most striking pairing is yellow with purple — they are complementary colours that create maximum visual contrast. Yellow with red is joyful and energetic. Yellow with white is fresh and luminous. In mixed border planting, yellow tulips also work beautifully with the blue of grape hyacinths (Muscari) and the silver foliage of emerging alliums.</div>
+      </li>
+    </ul>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2025 The Garden Journal &nbsp;·&nbsp; <a href="/privacy">Privacy</a> &nbsp;·&nbsp; <a href="/contact">Contact</a> &nbsp;·&nbsp; <a href="/tulips">All Tulip Guides</a></p>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

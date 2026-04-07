@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pink Tulips: Meaning, Varieties, Growing Tips & Beautiful Photos</title>
+  <meta name="description" content="Discover everything about pink tulips — their meaning, symbolism, best varieties, growing tips, and stunning photography. The complete guide to pink tulips." />
+  <link rel="canonical" href="https://yoursite.com/pink-tulips" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What do pink tulips mean?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pink tulips symbolize affection, care, kindness, and good wishes. They represent gentle love — warmer than friendship but softer than the passionate intensity of red tulips."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the best pink tulip varieties?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Top pink tulip varieties include Pink Impression (Darwin Hybrid), Angelique (double peony-style), Foxtrot (double early), Menton (single late), and Ballerina (lily-flowered)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When do pink tulips bloom?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pink tulips bloom from March through May depending on the variety. Early varieties bloom in March–April, mid-season in April, and late varieties in April–May."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --cream:      #fdf8f5;
+      --parchment:  #f8eef0;
+      --parchment2: #f0dfe3;
+      --blush-lt:   #fce8ee;
+      --blush:      #f0c8d4;
+      --rose:       #c04878;
+      --deep-rose:  #8b2050;
+      --pink-mid:   #d4709a;
+      --pink-lt:    #e8a0be;
+      --pink-pale:  #fdf0f4;
+      --pink-dark:  #a03060;
+      --leaf:       #3a6b2e;
+      --leaf-lt:    #5a9e4a;
+      --amber:      #c49a3c;
+      --ink:        #2c1218;
+      --muted:      #7a606a;
+      --border:     #e0c8d0;
+      --border-lt:  #eedad e;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Lora', Georgia, serif;
+      background: var(--cream);
+      color: var(--ink);
+      line-height: 1.82;
+      font-size: 17px;
+    }
+
+    /* ── HERO — full-bleed with dominant pink image ── */
+    .hero {
+      position: relative;
+      min-height: 620px;
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+    }
+    .hero-img {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center 35%;
+    }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(44,12,24,0.04) 0%,
+        rgba(44,12,24,0.42) 50%,
+        rgba(44,12,24,0.88) 100%
+      );
+    }
+    /* pink tint wash on hero */
+    .hero-tint {
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, rgba(192,72,120,0.12) 0%, transparent 60%);
+    }
+    .hero-content {
+      position: relative; z-index: 2;
+      max-width: 900px; margin: 0 auto;
+      padding: 3rem 2rem 4rem; width: 100%;
+    }
+    .hero-eyebrow {
+      font-style: italic; font-size: 0.9rem;
+      color: var(--pink-lt); letter-spacing: 0.1em;
+      text-transform: uppercase; margin-bottom: 0.85rem;
+      opacity: 0; animation: fadeUp 0.6s 0.1s ease forwards;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.8rem, 7vw, 5.5rem);
+      font-weight: 900; color: #fff;
+      line-height: 1.05; margin-bottom: 0.75rem;
+      opacity: 0; animation: fadeUp 0.6s 0.3s ease forwards;
+    }
+    .hero h1 em { font-style: italic; font-weight: 400; color: var(--blush); }
+    .hero-tagline {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: clamp(1.1rem, 2.5vw, 1.6rem);
+      color: rgba(255,255,255,0.72);
+      margin-bottom: 1.5rem;
+      opacity: 0; animation: fadeUp 0.6s 0.48s ease forwards;
+    }
+    .hero-meta {
+      font-size: 0.84rem; color: rgba(255,255,255,0.48);
+      letter-spacing: 0.07em;
+      opacity: 0; animation: fadeUp 0.6s 0.62s ease forwards;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── PINK STATS BAR ── */
+    .pink-bar {
+      background: var(--deep-rose);
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      text-align: center;
+    }
+    @media (max-width: 540px) { .pink-bar { grid-template-columns: 1fr 1fr; } }
+    .pb-item { padding: 1.1rem 0.75rem; border-right: 1px solid rgba(255,255,255,0.14); }
+    .pb-item:last-child { border-right: none; }
+    .pb-val {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem; font-weight: 700; color: #fff;
+      line-height: 1; display: block;
+    }
+    .pb-lbl { font-size: 0.72rem; color: rgba(255,255,255,0.62); margin-top: 0.2rem; font-style: italic; }
+
+    /* ── SERIES NAV ── */
+    .topnav {
+      background: var(--rose);
+      display: flex; justify-content: center;
+      gap: 0.4rem; flex-wrap: wrap;
+      padding: 0.5rem 1rem; font-size: 0.78rem;
+    }
+    .topnav a { color: rgba(255,255,255,0.72); text-decoration: none; padding: 0.15rem 0.55rem; border-radius: 3px; transition: color 0.2s; }
+    .topnav a:hover { color: #fff; }
+    .topnav .sep { color: rgba(255,255,255,0.25); }
+
+    /* ── BREADCRUMB ── */
+    .breadcrumb { font-size: 0.8rem; padding: 0.85rem 1.5rem; color: var(--muted); max-width: 900px; margin: 0 auto; }
+    .breadcrumb a { color: var(--rose); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    /* ── LAYOUT ── */
+    .container { max-width: 900px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* ── SNIPPET ── */
+    .snippet {
+      background: var(--parchment);
+      border-left: 4px solid var(--rose);
+      border-radius: 4px;
+      padding: 1.35rem 1.7rem;
+      margin: 2rem 0 2.5rem;
+      font-size: 1.01rem;
+    }
+    .snippet strong {
+      display: block; font-size: 0.72rem;
+      text-transform: uppercase; letter-spacing: 0.14em;
+      color: var(--rose); margin-bottom: 0.4rem; font-weight: 700;
+    }
+
+    /* ── SECTIONS ── */
+    section { padding: 2.5rem 0; border-bottom: 1px solid var(--border); }
+    section:last-of-type { border-bottom: none; }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.5rem, 3vw, 2.1rem);
+      font-weight: 700; color: var(--deep-rose);
+      margin-bottom: 1rem; line-height: 1.2;
+    }
+    h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem; font-weight: 700;
+      color: var(--ink); margin-bottom: 0.4rem;
+    }
+    p { margin-bottom: 1.05rem; color: #321520; }
+    p:last-child { margin-bottom: 0; }
+
+    /* ── MEANING PANEL ── */
+    .meaning-panel {
+      background: var(--deep-rose);
+      border-radius: 12px;
+      padding: 2rem 2.25rem;
+      margin: 1.5rem 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1.25rem;
+    }
+    @media (max-width: 560px) { .meaning-panel { grid-template-columns: 1fr; gap: 0.85rem; } }
+    .mp-item { text-align: center; }
+    .mp-icon { font-size: 1.8rem; display: block; margin-bottom: 0.4rem; }
+    .mp-word {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem; font-weight: 700;
+      color: var(--blush); display: block; margin-bottom: 0.2rem;
+    }
+    .mp-desc { font-size: 0.84rem; color: rgba(255,255,255,0.68); line-height: 1.45; }
+
+    /* ── DUAL IMAGE layout ── */
+    .img-duo {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.85rem;
+      margin: 2rem 0;
+    }
+    @media (max-width: 520px) { .img-duo { grid-template-columns: 1fr; } }
+    .img-duo img {
+      width: 100%; aspect-ratio: 3/4;
+      object-fit: cover; border-radius: 8px;
+      display: block; border: 1px solid var(--border);
+      transition: transform 0.3s;
+    }
+    .img-duo img:hover { transform: scale(1.01); }
+
+    /* ── SINGLE WIDE IMAGE ── */
+    .article-img {
+      width: 100%; border-radius: 8px;
+      margin: 2rem 0 0.5rem; display: block;
+      object-fit: cover; max-height: 480px;
+      border: 1px solid var(--border);
+    }
+    .img-caption {
+      text-align: center; font-style: italic;
+      font-size: 0.83rem; color: var(--muted); margin-bottom: 1.5rem;
+    }
+
+    /* ── SQUARE PHOTO GRID ── */
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.65rem;
+      margin: 2rem 0;
+    }
+    @media (max-width: 520px) { .photo-grid { grid-template-columns: repeat(2, 1fr); } }
+    .photo-grid img {
+      width: 100%; aspect-ratio: 1;
+      object-fit: cover; border-radius: 6px;
+      display: block; border: 1px solid var(--border);
+      transition: transform 0.3s, filter 0.3s;
+    }
+    .photo-grid img:hover { transform: scale(1.03); filter: saturate(1.1); }
+
+    /* ── MOSAIC (asymmetric) ── */
+    .mosaic-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 0.65rem;
+      margin: 2rem 0;
+    }
+    @media (max-width: 520px) { .mosaic-grid { grid-template-columns: 1fr; } }
+    .mosaic-grid .mg-main {
+      grid-row: 1 / 3;
+    }
+    .mosaic-grid img {
+      width: 100%; height: 100%;
+      object-fit: cover; border-radius: 8px;
+      display: block; border: 1px solid var(--border);
+      transition: transform 0.3s;
+    }
+    .mosaic-grid img:hover { transform: scale(1.02); }
+    .mosaic-grid .mg-main img { min-height: 380px; max-height: 480px; }
+    .mosaic-grid .mg-small img { min-height: 180px; max-height: 230px; }
+
+    /* ── OCCASION CARDS ── */
+    .occasion-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+      gap: 0.85rem;
+      margin: 1.5rem 0;
+    }
+    .occasion-card {
+      background: var(--parchment);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.1rem 1rem;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .occasion-card:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(192,72,120,0.1); }
+    .occ-icon { font-size: 1.6rem; display: block; margin-bottom: 0.4rem; }
+    .occ-name { font-family: 'Playfair Display', serif; font-size: 0.95rem; font-weight: 700; color: var(--deep-rose); display: block; margin-bottom: 0.18rem; }
+    .occ-desc { font-size: 0.8rem; color: var(--muted); }
+
+    /* ── VARIETY CARDS ── */
+    .variety-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    .variety-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .variety-card:hover { transform: translateY(-3px); box-shadow: 0 8px 22px rgba(192,72,120,0.1); }
+    .vc-top {
+      height: 6px;
+    }
+    .vc-body { padding: 1.1rem 1.2rem 1.25rem; }
+    .vc-type {
+      font-size: 0.68rem; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.12em;
+      color: var(--rose); margin-bottom: 0.3rem;
+    }
+    .vc-name { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; color: var(--ink); margin-bottom: 0.4rem; }
+    .vc-desc { font-size: 0.87rem; color: var(--muted); margin-bottom: 0.6rem; }
+    .vc-traits { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+    .vc-trait {
+      font-size: 0.68rem; padding: 0.13rem 0.48rem;
+      border-radius: 100px; border: 1px solid var(--border); color: var(--muted);
+    }
+
+    /* ── SHADES STRIP ── */
+    .shades-strip {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 1.5rem 0;
+    }
+    @media (max-width: 480px) { .shades-strip { grid-template-columns: repeat(3, 1fr); } }
+    .shade-item {
+      padding: 1.25rem 0.5rem;
+      text-align: center;
+      border-right: 1px solid var(--border);
+      display: flex; flex-direction: column; align-items: center; gap: 0.4rem;
+    }
+    .shade-item:last-child { border-right: none; }
+    .shade-dot { width: 28px; height: 28px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.7); }
+    .shade-name { font-family: 'Playfair Display', serif; font-size: 0.82rem; font-weight: 700; color: var(--ink); }
+    .shade-word { font-size: 0.7rem; font-style: italic; color: var(--muted); }
+
+    /* ── GROWING TIPS (compact) ── */
+    .grow-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.85rem;
+      margin: 1.5rem 0;
+    }
+    @media (max-width: 520px) { .grow-grid { grid-template-columns: 1fr; } }
+    .grow-card {
+      background: var(--parchment);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem 1.15rem;
+      display: flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+    }
+    .gc-icon { font-size: 1.4rem; flex-shrink: 0; margin-top: 2px; }
+    .gc-text h3 { font-size: 0.92rem; margin-bottom: 0.18rem; color: var(--deep-rose); }
+    .gc-text p  { font-size: 0.84rem; color: var(--muted); margin: 0; }
+
+    /* ── FULL-WIDTH CINEMATIC IMAGE ── */
+    .cinematic {
+      width: 100%;
+      max-height: 520px;
+      object-fit: cover;
+      display: block;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      margin: 0;
+    }
+
+    /* ── COMBINATION IDEAS ── */
+    .combo-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+      margin: 1.5rem 0;
+    }
+    .combo-chip {
+      background: var(--parchment);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0.85rem 1.1rem;
+      flex: 1 1 200px;
+      display: flex;
+      gap: 0.6rem;
+      align-items: flex-start;
+    }
+    .combo-dots { display: flex; gap: 3px; flex-shrink: 0; margin-top: 3px; }
+    .cd { width: 14px; height: 14px; border-radius: 50%; border: 1px solid rgba(0,0,0,0.08); }
+    .combo-chip h3 { font-size: 0.9rem; margin-bottom: 0.15rem; color: var(--deep-rose); }
+    .combo-chip p  { font-size: 0.82rem; color: var(--muted); margin: 0; }
+
+    /* ── RELATED ── */
+    .related {
+      background: var(--parchment); border-radius: 8px;
+      padding: 1.25rem 1.5rem; margin-top: 1.5rem;
+      border: 1px solid var(--border);
+    }
+    .related h3 { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--rose); margin-bottom: 0.7rem; font-weight: 700; font-style: italic; }
+    .related a { display: block; color: var(--rose); font-size: 0.9rem; text-decoration: none; padding: 0.26rem 0; border-bottom: 1px dashed var(--border); font-style: italic; transition: color 0.2s; }
+    .related a:last-child { border-bottom: none; }
+    .related a:hover { color: var(--deep-rose); text-decoration: underline; }
+    .related a::before { content: '→  '; font-style: normal; }
+
+    /* ── FAQ ── */
+    .faq-list { list-style: none; padding: 0; margin-top: 1rem; }
+    .faq-item { border: 1px solid var(--border); border-radius: 6px; margin-bottom: 0.7rem; overflow: hidden; }
+    .faq-q {
+      width: 100%; background: var(--parchment); border: none; text-align: left;
+      padding: 1rem 1.25rem;
+      font-family: 'Playfair Display', serif; font-size: 0.97rem; font-weight: 700;
+      color: var(--ink); cursor: pointer;
+      display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+      transition: background 0.2s;
+    }
+    .faq-q:hover { background: var(--blush-lt); }
+    .faq-q .arr { font-size: 0.72rem; transition: transform 0.25s; flex-shrink: 0; color: var(--rose); }
+    .faq-a { display: none; padding: 1rem 1.25rem; font-size: 0.94rem; border-top: 1px solid var(--border); background: #fff; color: var(--ink); }
+    .faq-item.open .faq-a { display: block; }
+    .faq-item.open .arr { transform: rotate(180deg); }
+
+    /* ── FOOTER ── */
+    footer { background: var(--ink); color: rgba(255,255,255,0.45); text-align: center; padding: 2rem 1rem; font-size: 0.8rem; margin-top: 3.5rem; }
+    footer a { color: var(--blush); text-decoration: none; font-style: italic; }
+  </style>
+</head>
+<body>
+
+<!-- ══ HERO ══ -->
+<div class="hero">
+  <img class="hero-img"
+    src="https://storage.googleapis.com/kreatewebsites/photos1000/IMG_6065.JPG"
+    alt="Beautiful pink tulips in full bloom"
+    width="1000" height="620" loading="eager" />
+  <div class="hero-overlay"></div>
+  <div class="hero-tint"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">🌷 The Garden Journal &nbsp;·&nbsp; Color Guide</p>
+    <h1><em>Pink</em><br>Tulips</h1>
+    <p class="hero-tagline">Meaning · Varieties · Growing · Beauty</p>
+    <p class="hero-meta">By The Garden Journal &nbsp;·&nbsp; Spring 2025 &nbsp;·&nbsp; 7 min read</p>
+  </div>
+</div>
+
+<!-- Stats bar -->
+<div class="pink-bar">
+  <div class="pb-item"><span class="pb-val">💕</span><span class="pb-lbl">Symbol of affection</span></div>
+  <div class="pb-item"><span class="pb-val">50+</span><span class="pb-lbl">Pink varieties</span></div>
+  <div class="pb-item"><span class="pb-val">Mar–May</span><span class="pb-lbl">Bloom season</span></div>
+  <div class="pb-item"><span class="pb-val">All</span><span class="pb-lbl">Zones with care</span></div>
+</div>
+
+<!-- Series nav -->
+<nav class="topnav" aria-label="Navigation">
+  <a href="/tulips">← All Tulip Guides</a>
+  <span class="sep">·</span>
+  <a href="/tulip-color-meanings">Color Meanings</a>
+  <span class="sep">·</span>
+  <a href="/tulip-meaning-symbolism">Symbolism</a>
+  <span class="sep">·</span>
+  <a href="/how-to-grow-tulips">Growing Guide</a>
+</nav>
+
+<!-- Breadcrumb -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="/">Home</a> &rsaquo; <a href="/flowers">Flowers</a> &rsaquo; <a href="/tulips">Tulips</a> &rsaquo; Pink Tulips
+</nav>
+
+<div class="container">
+
+  <!-- Snippet -->
+  <div class="snippet" aria-label="Quick Answer">
+    <strong>🔍 Quick Answer</strong>
+    Pink tulips symbolize <strong>affection, kindness, and care</strong> — a gentle love that sits between the platonic warmth of yellow and the passionate intensity of red. They are among the most versatile tulips, perfect for friends, family, Mother's Day, celebrations, and everyday expressions of appreciation.
+  </div>
+
+  <!-- Introduction -->
+  <section id="intro">
+    <h2>Why Pink Tulips Are So Beloved</h2>
+    <p>Of all the tulip colours, pink is perhaps the most universally appealing. There's something about the range — from the softest blush to deep, vivid cerise — that speaks to almost everyone. Pink tulips don't demand attention the way red does, nor do they retreat into the gentle background of white. They occupy a beautiful, expressive middle ground.</p>
+    <p>They are the tulips you reach for when you want to say something warm and genuine without the weight of grand romantic declaration. A gift of pink tulips says: <em>I care about you. I'm thinking of you. You matter.</em></p>
+    <p>In this guide we explore pink tulips in full — their meaning and symbolism, the best varieties, growing tips, gifting occasions, and of course their extraordinary beauty through the full range of pink shades that nature produces.</p>
+  </section>
+
+</div>
+
+<!-- Full-width cinematic image break -->
+<img class="cinematic"
+  src="https://storage.googleapis.com/kreatewebsites/photos1000/IMG_6154.JPG"
+  alt="Pink tulip field stretching to the horizon in spring bloom"
+  width="1000" height="460" loading="lazy" />
+
+<div class="container">
+
+  <!-- Meaning & Symbolism -->
+  <section id="meaning">
+    <h2>What Pink Tulips Mean &amp; Symbolize</h2>
+    <p>Pink tulips have carried a consistent symbolic meaning across cultures and centuries — one that centres on the tender, everyday expressions of human affection that matter most in life.</p>
+
+    <div class="meaning-panel">
+      <div class="mp-item">
+        <span class="mp-icon">💕</span>
+        <span class="mp-word">Affection</span>
+        <span class="mp-desc">Genuine care and warmth for those closest to you</span>
+      </div>
+      <div class="mp-item">
+        <span class="mp-icon">🤲</span>
+        <span class="mp-word">Kindness</span>
+        <span class="mp-desc">An act of generosity and thoughtful consideration</span>
+      </div>
+      <div class="mp-item">
+        <span class="mp-icon">🌸</span>
+        <span class="mp-word">Good Wishes</span>
+        <span class="mp-desc">Warmth, hope, and positivity for someone you care about</span>
+      </div>
+      <div class="mp-item">
+        <span class="mp-icon">🌱</span>
+        <span class="mp-word">New Beginnings</span>
+        <span class="mp-desc">Fresh starts and the hopefulness of spring renewal</span>
+      </div>
+      <div class="mp-item">
+        <span class="mp-icon">💝</span>
+        <span class="mp-word">Gentle Love</span>
+        <span class="mp-desc">Love that is tender and nurturing rather than passionate</span>
+      </div>
+      <div class="mp-item">
+        <span class="mp-icon">✨</span>
+        <span class="mp-word">Happiness</span>
+        <span class="mp-desc">Joy, celebration, and the pleasure of beautiful things</span>
+      </div>
+    </div>
+
+    <p>Pink tulips sit in an important emotional space in the language of flowers. Where red declares deep romantic love and white offers forgiveness or sympathy, pink expresses something that runs through everyday relationships — the affection for a close friend, the appreciation of a colleague, the love of a parent for a child or a child for their mother. It is perhaps the most human of all the tulip colours.</p>
+
+    <!-- Photo pair -->
+    <div class="img-duo">
+      <img src="https://storage.googleapis.com/kreatewebsites/photos600/IMG_6078.JPG"
+        alt="Close-up of pink tulip petals showing delicate colour gradation"
+        loading="lazy" />
+      <img src="https://storage.googleapis.com/kreatewebsites/photos600/IMG_6132.JPG"
+        alt="Pink tulips in full bloom against a soft background"
+        loading="lazy" />
+    </div>
+    <p class="img-caption">The extraordinary range of pink — from the softest blush to deep cerise — each shade carrying its own emotional register.</p>
+  </section>
+
+  <!-- Shades of Pink -->
+  <section id="shades">
+    <h2>The Many Shades of Pink Tulips</h2>
+    <p>Pink is not a single colour — it is a whole world of hue and feeling. The range available in tulip varieties is remarkable, and different shades carry subtly different meanings and moods.</p>
+
+    <div class="shades-strip">
+      <div class="shade-item" style="background:#fff8f9;">
+        <div class="shade-dot" style="background:#f0c0cc;"></div>
+        <span class="shade-name">Blush</span>
+        <span class="shade-word">Pure, delicate</span>
+      </div>
+      <div class="shade-item" style="background:#fdf0f4;">
+        <div class="shade-dot" style="background:#e8a0b8;"></div>
+        <span class="shade-name">Soft Pink</span>
+        <span class="shade-word">Gentle, warm</span>
+      </div>
+      <div class="shade-item" style="background:#fce8f0;">
+        <div class="shade-dot" style="background:#d4709a;"></div>
+        <span class="shade-name">Rose Pink</span>
+        <span class="shade-word">Classic, full</span>
+      </div>
+      <div class="shade-item" style="background:#f8e0ec;">
+        <div class="shade-dot" style="background:#c04878;"></div>
+        <span class="shade-name">Deep Pink</span>
+        <span class="shade-word">Bold, vivid</span>
+      </div>
+      <div class="shade-item" style="background:#f5d8e8;">
+        <div class="shade-dot" style="background:#a03060;"></div>
+        <span class="shade-name">Cerise</span>
+        <span class="shade-word">Rich, intense</span>
+      </div>
+    </div>
+
+    <!-- 3-image gallery -->
+    <div class="photo-grid">
+      <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6133.JPG"
+        alt="Blush pink tulip variety in early morning light" loading="lazy" />
+      <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6134.JPG"
+        alt="Soft rose-pink tulips in garden planting" loading="lazy" />
+      <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6135.JPG"
+        alt="Deep cerise-pink tulips with vivid colour saturation" loading="lazy" />
+    </div>
+    <p class="img-caption">Three shades from the pink tulip spectrum — blush, mid-rose, and deep cerise — each beautiful in its own way.</p>
+  </section>
+
+  <!-- When to Give Pink Tulips -->
+  <section id="occasions">
+    <h2>When to Give Pink Tulips</h2>
+    <p>Pink tulips are among the most versatile flowers you can give — welcome at almost any occasion that calls for warmth, celebration, or appreciation. Their adaptability is part of what makes them so enduringly popular.</p>
+
+    <div class="occasion-grid">
+      <div class="occasion-card">
+        <span class="occ-icon">💐</span>
+        <span class="occ-name">Mother's Day</span>
+        <span class="occ-desc">Perhaps the most perfect Mother's Day flower — warm, loving, and graceful</span>
+      </div>
+      <div class="occasion-card">
+        <span class="occ-icon">🎂</span>
+        <span class="occ-name">Birthdays</span>
+        <span class="occ-desc">Joyful and celebratory, suitable for anyone at any age</span>
+      </div>
+      <div class="occasion-card">
+        <span class="occ-icon">💒</span>
+        <span class="occ-name">Weddings</span>
+        <span class="occ-desc">A romantic yet gentle choice for bouquets and table arrangements</span>
+      </div>
+      <div class="occasion-card">
+        <span class="occ-icon">🙏</span>
+        <span class="occ-name">Thank You</span>
+        <span class="occ-desc">Express genuine appreciation with warmth and elegance</span>
+      </div>
+      <div class="occasion-card">
+        <span class="occ-icon">🏠</span>
+        <span class="occ-name">Housewarming</span>
+        <span class="occ-desc">Bring spring warmth and good wishes to a new home</span>
+      </div>
+      <div class="occasion-card">
+        <span class="occ-icon">🌷</span>
+        <span class="occ-name">Just Because</span>
+        <span class="occ-desc">Pink tulips need no special occasion — they brighten any ordinary day</span>
+      </div>
+    </div>
+
+    <img class="article-img"
+      src="https://storage.googleapis.com/kreatewebsites/photos800/IMG_6136.JPG"
+      alt="Pink tulips arranged in a beautiful gift bouquet"
+      width="800" height="420" loading="lazy" />
+    <p class="img-caption">Pink tulips make one of the most thoughtful and versatile floral gifts — fitting any occasion that calls for warmth and care.</p>
+  </section>
+
+  <!-- Best Pink Varieties -->
+  <section id="varieties">
+    <h2>The Best Pink Tulip Varieties</h2>
+    <p>With dozens of outstanding pink cultivars to choose from, these are the varieties that consistently impress — whether for their vigour, their colour intensity, or the sheer beauty of their blooms.</p>
+
+    <div class="variety-cards">
+
+      <div class="variety-card">
+        <div class="vc-top" style="background: linear-gradient(to right, #e8a0b8, #c04878);"></div>
+        <div class="vc-body">
+          <div class="vc-type">Darwin Hybrid</div>
+          <div class="vc-name">Pink Impression</div>
+          <div class="vc-desc">The most widely grown pink tulip in the world — large, classic blooms in a rich rosy pink on strong stems. Returns reliably year after year.</div>
+          <div class="vc-traits">
+            <span class="vc-trait">Perennial</span>
+            <span class="vc-trait">Large bloom</span>
+            <span class="vc-trait">Mid-season</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="variety-card">
+        <div class="vc-top" style="background: linear-gradient(to right, #f0c0d0, #e890b0);"></div>
+        <div class="vc-body">
+          <div class="vc-type">Double Late (Peony)</div>
+          <div class="vc-name">Angelique</div>
+          <div class="vc-desc">The most romantic pink tulip — a fully double, peony-like bloom in soft blush pink with ruffled petals. A florist favourite and garden showstopper.</div>
+          <div class="vc-traits">
+            <span class="vc-trait">Peony-style</span>
+            <span class="vc-trait">Soft blush</span>
+            <span class="vc-trait">Late season</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="variety-card">
+        <div class="vc-top" style="background: linear-gradient(to right, #f0b8c8, #d87898);"></div>
+        <div class="vc-body">
+          <div class="vc-type">Double Early</div>
+          <div class="vc-name">Foxtrot</div>
+          <div class="vc-desc">Full, lush double blooms in warm rose-pink that open early in the season. Excellent for containers and one of the finest cut flower tulips available.</div>
+          <div class="vc-traits">
+            <span class="vc-trait">Double bloom</span>
+            <span class="vc-trait">Early season</span>
+            <span class="vc-trait">Container-ready</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="variety-card">
+        <div class="vc-top" style="background: linear-gradient(to right, #e8a8b8, #c05870);"></div>
+        <div class="vc-body">
+          <div class="vc-type">Single Late</div>
+          <div class="vc-name">Menton</div>
+          <div class="vc-desc">Tall, elegant single blooms in a warm salmon-pink with a subtle shimmer. One of the most striking of all the single late tulips — a garden statement piece.</div>
+          <div class="vc-traits">
+            <span class="vc-trait">Tall stems</span>
+            <span class="vc-trait">Salmon-pink</span>
+            <span class="vc-trait">Late season</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="variety-card">
+        <div class="vc-top" style="background: linear-gradient(to right, #f0c8d8, #d890b0);"></div>
+        <div class="vc-body">
+          <div class="vc-type">Double Early</div>
+          <div class="vc-name">Peach Blossom</div>
+          <div class="vc-desc">A charm entirely its own — soft, warm pink double blooms that resemble cherry blossoms. One of the most delicate and beautiful early-season varieties.</div>
+          <div class="vc-traits">
+            <span class="vc-trait">Delicate pink</span>
+            <span class="vc-trait">Cherry-blossom feel</span>
+            <span class="vc-trait">Early season</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="variety-card">
+        <div class="vc-top" style="background: linear-gradient(to right, #e890b0, #c03870);"></div>
+        <div class="vc-body">
+          <div class="vc-type">Lily-Flowered</div>
+          <div class="vc-name">Elegant Lady</div>
+          <div class="vc-desc">Graceful pointed petals that curve back at the tips in a creamy pink-to-rose gradient. The most refined and architectural of the pink varieties.</div>
+          <div class="vc-traits">
+            <span class="vc-trait">Pointed petals</span>
+            <span class="vc-trait">Two-tone pink</span>
+            <span class="vc-trait">Late season</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</div>
+
+<!-- Full-width cinematic break -->
+<img class="cinematic"
+  src="https://storage.googleapis.com/kreatewebsites/photos1000/IMG_6137.JPG"
+  alt="Pink tulips in a spring garden — a sea of soft colour"
+  width="1000" height="480" loading="lazy" />
+
+<div class="container">
+
+  <!-- Growing Pink Tulips -->
+  <section id="growing">
+    <h2>Growing Pink Tulips: Essential Tips</h2>
+    <p>Pink tulips are no more demanding than any other colour — the fundamentals of successful tulip growing apply equally to all shades. A few key points specific to getting the best colour saturation and bloom size from pink varieties are worth knowing.</p>
+
+    <div class="grow-grid">
+      <div class="grow-card">
+        <span class="gc-icon">📅</span>
+        <div class="gc-text">
+          <h3>Plant in Autumn</h3>
+          <p>September–November, when soil temperature drops to 50–55°F (10–13°C). Cold dormancy is essential for spring bloom.</p>
+        </div>
+      </div>
+      <div class="grow-card">
+        <span class="gc-icon">☀️</span>
+        <div class="gc-text">
+          <h3>Full Sun for Best Colour</h3>
+          <p>Pink varieties develop their richest colour saturation in full sun (6+ hours daily). Shade produces paler, weaker blooms.</p>
+        </div>
+      </div>
+      <div class="grow-card">
+        <span class="gc-icon">📏</span>
+        <div class="gc-text">
+          <h3>Plant 6–8 Inches Deep</h3>
+          <p>Proper depth produces the strong stems pink varieties need to hold up their often full, heavy blooms.</p>
+        </div>
+      </div>
+      <div class="grow-card">
+        <span class="gc-icon">💧</span>
+        <div class="gc-text">
+          <h3>Well-Drained Soil Only</h3>
+          <p>Pink tulip bulbs are particularly susceptible to rot in wet soil. Excellent drainage is non-negotiable.</p>
+        </div>
+      </div>
+      <div class="grow-card">
+        <span class="gc-icon">🍃</span>
+        <div class="gc-text">
+          <h3>Leave Foliage to Yellow</h3>
+          <p>After blooming, leave all foliage intact until fully yellow. This stores energy for next year's blooms — especially important for peony-style doubles.</p>
+        </div>
+      </div>
+      <div class="grow-card">
+        <span class="gc-icon">🌿</span>
+        <div class="gc-text">
+          <h3>Choose Darwin Hybrids to Return</h3>
+          <p>For reliable reblooming pink tulips, Pink Impression (Darwin Hybrid) is the outstanding perennial choice — returning strongly for 5+ years.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Asymmetric mosaic using remaining images -->
+    <div class="mosaic-grid" style="margin-top:2rem;">
+      <div class="mg-main">
+        <img src="https://storage.googleapis.com/kreatewebsites/photos700/IMG_6138.JPG"
+          alt="Pink tulips growing in a beautifully tended garden bed"
+          loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:8px;display:block;border:1px solid var(--border);" />
+      </div>
+      <div class="mg-small">
+        <img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6139.JPG"
+          alt="Close-up of pink tulip bud just beginning to open"
+          loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:8px;display:block;border:1px solid var(--border);" />
+      </div>
+      <div class="mg-small" style="margin-top:0;">
+        <img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6065.JPG"
+          alt="Pink tulips in the golden afternoon light"
+          loading="lazy" style="width:100%;height:100%;object-fit:cover;border-radius:8px;display:block;border:1px solid var(--border);" />
+      </div>
+    </div>
+    <p class="img-caption" style="margin-top:0.5rem;">Pink tulips at every stage — from tightly closed bud to fully open bloom in the garden.</p>
+  </section>
+
+  <!-- Colour Combinations -->
+  <section id="combinations">
+    <h2>Pink Tulip Colour Combinations</h2>
+    <p>Pink tulips are wonderfully versatile in mixed plantings and bouquets. Their warmth complements a wide range of colours — here are the pairings that work best.</p>
+
+    <div class="combo-row">
+      <div class="combo-chip">
+        <div class="combo-dots">
+          <div class="cd" style="background:#e890b0;"></div>
+          <div class="cd" style="background:#fff;border:1px solid #bbb;"></div>
+        </div>
+        <div>
+          <h3>Pink + White</h3>
+          <p>A classic pairing — the softness of white amplifies pink's warmth. Clean, elegant, and timeless.</p>
+        </div>
+      </div>
+      <div class="combo-chip">
+        <div class="combo-dots">
+          <div class="cd" style="background:#e890b0;"></div>
+          <div class="cd" style="background:#c04848;"></div>
+        </div>
+        <div>
+          <h3>Pink + Red</h3>
+          <p>Passionate and lush — deep pink paired with red creates a rich, romantic display full of warmth.</p>
+        </div>
+      </div>
+      <div class="combo-chip">
+        <div class="combo-dots">
+          <div class="cd" style="background:#e890b0;"></div>
+          <div class="cd" style="background:#c8a84b;"></div>
+        </div>
+        <div>
+          <h3>Pink + Yellow</h3>
+          <p>Joy and affection combined — a cheerful spring combination that lifts any border or arrangement.</p>
+        </div>
+      </div>
+      <div class="combo-chip">
+        <div class="combo-dots">
+          <div class="cd" style="background:#e890b0;"></div>
+          <div class="cd" style="background:#7d5a9b;"></div>
+        </div>
+        <div>
+          <h3>Pink + Purple</h3>
+          <p>Sophisticated and unexpected — the contrast between warm pink and cool purple creates visual drama.</p>
+        </div>
+      </div>
+      <div class="combo-chip">
+        <div class="combo-dots">
+          <div class="cd" style="background:#f0c0cc;"></div>
+          <div class="cd" style="background:#e890b0;"></div>
+          <div class="cd" style="background:#c04878;"></div>
+        </div>
+        <div>
+          <h3>Pink + Pink + Pink</h3>
+          <p>A monochromatic planting of different pink shades — blush to cerise — creates stunning depth and elegance.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="related" aria-label="Related articles">
+      <h3>📚 Related Guides</h3>
+      <a href="/tulip-color-meanings">Tulip Color Meanings — All Seven Shades Explained</a>
+      <a href="/tulip-meaning-symbolism">Tulip Meaning &amp; Symbolism — The Complete Guide</a>
+      <a href="/how-to-grow-tulips">How to Grow Tulips — Complete Beginner's Guide</a>
+      <a href="/types-of-tulips">Types of Tulips — 50+ Varieties Explained</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <ul class="faq-list" role="list">
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          What do pink tulips symbolize? <span class="arr">▼</span>
+        </button>
+        <div class="faq-a">
+          Pink tulips symbolize affection, kindness, care, and good wishes. They represent a warm, genuine love that is tender rather than passionate — making them ideal for close friends, family members, and any relationship where you want to express sincere care without the intensity of romantic red. Different shades carry subtly different nuances: blush pink is more delicate and innocent, while deep cerise conveys a bolder, more passionate affection.
+        </div>
+      </li>
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Are pink tulips good for Mother's Day? <span class="arr">▼</span>
+        </button>
+        <div class="faq-a">
+          Pink tulips are considered one of the finest Mother's Day flowers precisely because their symbolism aligns so well with the occasion. They express affection, care, and appreciation — the perfect message for a mother. Soft blush pinks like Angelique and Peach Blossom are particularly popular for their gentle, graceful appearance.
+        </div>
+      </li>
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          What are the best pink tulip varieties to grow? <span class="arr">▼</span>
+        </button>
+        <div class="faq-a">
+          For reliable perennial performance, Pink Impression (Darwin Hybrid) is the outstanding choice — large blooms, strong stems, and it returns reliably for 5+ years. For spectacular cut flowers, Angelique (peony-style double) and Foxtrot (double early) are exceptional. For architectural elegance, Menton (single late) is hard to beat. For the most romantic look, Angelique's soft blush double blooms are unmatched.
+        </div>
+      </li>
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          When do pink tulips bloom? <span class="arr">▼</span>
+        </button>
+        <div class="faq-a">
+          Pink tulips bloom from March through May depending on the variety group. Early varieties like Peach Blossom and Foxtrot bloom in March–April. Mid-season varieties like Pink Impression bloom in April. Late varieties like Menton, Angelique, and Elegant Lady bloom in April–May. Planting a mix across these groups gives you pink blooms for 8–10 weeks continuously.
+        </div>
+      </li>
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Do pink tulips come back every year? <span class="arr">▼</span>
+        </button>
+        <div class="faq-a">
+          It depends on the variety and climate. Darwin Hybrid pink tulips (like Pink Impression) are among the most reliably perennial tulips available, returning strongly in cold climates (Zones 3–7) for many years. Peony-style doubles like Angelique tend to be more one-season in performance. In all cases, allowing foliage to die back fully before removal greatly increases the chance of return.
+        </div>
+      </li>
+    </ul>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2025 The Garden Journal &nbsp;·&nbsp; <a href="/privacy">Privacy</a> &nbsp;·&nbsp; <a href="/contact">Contact</a> &nbsp;·&nbsp; <a href="/tulips">All Tulip Guides</a></p>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
