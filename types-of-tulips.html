@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Types of Tulips: 50+ Beautiful Tulip Varieties You Should Know</title>
+  <meta name="description" content="Discover 50+ types of tulips including Darwin, Triumph, Parrot, and more. Learn tulip varieties, bloom times, and which ones are best for your garden." />
+  <link rel="canonical" href="https://yoursite.com/types-of-tulips" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How many types of tulips are there?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "There are over 3,000 tulip varieties grouped into 15 categories."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which tulips come back every year?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Darwin hybrid and species tulips are more likely to return each year."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the most popular tulips?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Triumph and Darwin hybrid tulips are the most popular due to their durability and beauty."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the most unique tulips?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Parrot, fringed, and viridiflora tulips are among the most unique varieties."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg:       #f8f9f4;
+      --surface:  #eef2e8;
+      --white:    #ffffff;
+      --border:   #d4ddc8;
+      --ink:      #1c2416;
+      --muted:    #6b7a60;
+      --leaf:     #3a6b2e;
+      --leaf-lt:  #5a9e4a;
+      --sprout:   #7ec46e;
+      --gold:     #c89a32;
+      --rust:     #b5512a;
+      --tulip:    #c03030;
+      --lavender: #8060b0;
+
+      /* Season colors */
+      --early:  #e8a030;
+      --mid:    #3a8c5a;
+      --late:   #7050c0;
+      --spec:   #b04070;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.78;
+      font-size: 16px;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      position: relative;
+      min-height: 500px;
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+    }
+    .hero-img {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center 35%;
+    }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(12,20,8,0.92) 0%,
+        rgba(12,20,8,0.55) 45%,
+        rgba(12,20,8,0.12) 100%
+      );
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 3.5rem;
+    }
+    .hero-tag {
+      display: inline-block;
+      background: var(--leaf);
+      color: #fff;
+      font-size: 0.71rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      padding: 0.28rem 0.75rem;
+      border-radius: 2px;
+      margin-bottom: 1rem;
+      opacity: 0;
+      animation: up 0.5s 0.1s ease forwards;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.12;
+      margin-bottom: 1rem;
+      max-width: 640px;
+      opacity: 0;
+      animation: up 0.5s 0.3s ease forwards;
+    }
+    .hero-sub {
+      font-size: 1rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.72);
+      max-width: 480px;
+      margin-bottom: 1.75rem;
+      opacity: 0;
+      animation: up 0.5s 0.45s ease forwards;
+    }
+    /* season badges row */
+    .season-badges {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: up 0.5s 0.6s ease forwards;
+    }
+    .s-badge {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.3rem 0.8rem;
+      border-radius: 100px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      border: 1px solid rgba(255,255,255,0.25);
+      color: #fff;
+    }
+    .s-dot { width: 8px; height: 8px; border-radius: 50%; }
+
+    @keyframes up {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── Series nav ── */
+    .topnav {
+      background: var(--ink);
+      display: flex; justify-content: center;
+      gap: 0.4rem; flex-wrap: wrap;
+      padding: 0.5rem 1rem;
+      font-size: 0.75rem; font-weight: 500;
+    }
+    .topnav a { color: rgba(255,255,255,0.55); text-decoration: none; padding: 0.15rem 0.5rem; border-radius: 3px; transition: color 0.2s; }
+    .topnav a:hover { color: var(--sprout); }
+    .topnav .sep { color: rgba(255,255,255,0.2); }
+
+    /* ── Breadcrumb ── */
+    .breadcrumb { font-size: 0.78rem; padding: 0.85rem 1.5rem; color: var(--muted); max-width: 900px; margin: 0 auto; }
+    .breadcrumb a { color: var(--leaf-lt); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    /* ── Layout ── */
+    .container { max-width: 900px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* ── Snippet ── */
+    .snippet {
+      background: var(--surface);
+      border-left: 4px solid var(--leaf);
+      border-radius: 4px;
+      padding: 1.25rem 1.6rem;
+      margin: 2rem 0 2.5rem;
+      font-size: 1rem;
+    }
+    .snippet strong {
+      display: block;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--leaf);
+      margin-bottom: 0.35rem;
+      font-weight: 700;
+    }
+
+    /* ── Sections ── */
+    section { padding: 2.5rem 0; border-bottom: 1px solid var(--border); }
+    section:last-of-type { border-bottom: none; }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.45rem, 3vw, 2rem);
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+    p { margin-bottom: 1rem; color: #26331e; }
+    p:last-child { margin-bottom: 0; }
+
+    /* ── Classification overview ── */
+    .overview-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 1.25rem 0;
+    }
+    @media (max-width: 480px) { .overview-stats { grid-template-columns: 1fr; } }
+    .ov-stat {
+      background: var(--white);
+      padding: 1.25rem 1rem;
+      text-align: center;
+    }
+    .ov-stat .val {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--leaf);
+      line-height: 1;
+      display: block;
+    }
+    .ov-stat .lbl { font-size: 0.82rem; color: var(--muted); margin-top: 0.3rem; }
+
+    /* ── Season header ── */
+    .season-header {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      margin: 2rem 0 1.25rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid;
+    }
+    .season-header .sh-dot {
+      width: 14px; height: 14px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .season-header h2 {
+      margin: 0;
+      font-size: 1.4rem;
+    }
+    .season-header .sh-tag {
+      margin-left: auto;
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 0.2rem 0.65rem;
+      border-radius: 3px;
+      color: #fff;
+      white-space: nowrap;
+    }
+
+    .sh-early { border-color: var(--early); }
+    .sh-early h2 { color: var(--early); }
+    .sh-early .sh-dot { background: var(--early); }
+    .sh-early .sh-tag { background: var(--early); }
+
+    .sh-mid { border-color: var(--mid); }
+    .sh-mid h2 { color: var(--mid); }
+    .sh-mid .sh-dot { background: var(--mid); }
+    .sh-mid .sh-tag { background: var(--mid); }
+
+    .sh-late { border-color: var(--late); }
+    .sh-late h2 { color: var(--late); }
+    .sh-late .sh-dot { background: var(--late); }
+    .sh-late .sh-tag { background: var(--late); }
+
+    .sh-spec { border-color: var(--spec); }
+    .sh-spec h2 { color: var(--spec); }
+    .sh-spec .sh-dot { background: var(--spec); }
+    .sh-spec .sh-tag { background: var(--spec); }
+
+    /* ── Variety cards grid ── */
+    .variety-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .variety-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.18s, box-shadow 0.18s;
+    }
+    .variety-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(30,50,20,0.1);
+    }
+    .vc-top {
+      padding: 0.85rem 1.1rem 0.7rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+    .vc-num {
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      font-family: 'Playfair Display', serif;
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .vc-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.2;
+    }
+    .vc-type {
+      font-size: 0.72rem;
+      color: var(--muted);
+      margin-top: 0.1rem;
+      font-weight: 500;
+    }
+    .vc-body {
+      padding: 0 1.1rem 1.1rem;
+    }
+    .vc-desc { font-size: 0.88rem; color: #333e28; margin-bottom: 0.75rem; }
+    .vc-traits {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-bottom: 0.75rem;
+    }
+    .trait-pill {
+      font-size: 0.72rem;
+      font-weight: 500;
+      padding: 0.18rem 0.6rem;
+      border-radius: 100px;
+      background: var(--surface);
+      color: var(--ink);
+      border: 1px solid var(--border);
+    }
+    .vc-varieties {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    .vc-varieties strong { color: var(--ink); font-weight: 600; }
+    .vc-badge {
+      display: inline-block;
+      font-size: 0.68rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.15rem 0.5rem;
+      border-radius: 3px;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Card accent colors by season */
+    .card-early .vc-num  { background: var(--early); }
+    .card-early .vc-badge { background: #fef3d8; color: var(--early); }
+    .card-mid   .vc-num  { background: var(--mid); }
+    .card-mid   .vc-badge { background: #e4f5eb; color: var(--mid); }
+    .card-late  .vc-num  { background: var(--late); }
+    .card-late  .vc-badge { background: #ede8f8; color: var(--late); }
+    .card-spec  .vc-num  { background: var(--spec); }
+    .card-spec  .vc-badge { background: #fce8ef; color: var(--spec); }
+
+    /* ── Inline image ── */
+    .article-img {
+      width: 100%;
+      border-radius: 8px;
+      margin: 1.5rem 0 0.5rem;
+      display: block;
+      object-fit: cover;
+      max-height: 380px;
+      border: 1px solid var(--border);
+    }
+    .img-caption {
+      text-align: center;
+      font-style: italic;
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    /* ── Blooming timeline ── */
+    .bloom-timeline {
+      margin: 1.5rem 0;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .bt-header {
+      background: var(--ink);
+      color: #fff;
+      padding: 0.75rem 1.25rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+    .bt-row {
+      display: grid;
+      grid-template-columns: 130px 1fr;
+      gap: 0;
+      border-bottom: 1px solid var(--border);
+      align-items: center;
+    }
+    .bt-row:last-child { border-bottom: none; }
+    .bt-season {
+      padding: 0.85rem 1.1rem;
+      font-size: 0.88rem;
+      font-weight: 600;
+      border-right: 1px solid var(--border);
+      background: var(--surface);
+    }
+    .bt-types {
+      padding: 0.85rem 1.25rem;
+      font-size: 0.88rem;
+      background: var(--white);
+    }
+    .bt-types .bt-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.15rem 0.55rem;
+      border-radius: 3px;
+      margin: 0.15rem 0.2rem 0.15rem 0;
+      color: #fff;
+    }
+    @media (max-width: 480px) {
+      .bt-row { grid-template-columns: 1fr; }
+      .bt-season { border-right: none; border-bottom: 1px solid var(--border); }
+    }
+
+    /* ── Chooser guide ── */
+    .chooser-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin: 1.25rem 0;
+    }
+    @media (max-width: 560px) { .chooser-grid { grid-template-columns: 1fr; } }
+    .chooser-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.1rem 1.15rem;
+    }
+    .chooser-card .cc-icon { font-size: 1.5rem; margin-bottom: 0.4rem; display: block; }
+    .chooser-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+      color: var(--leaf);
+    }
+    .chooser-card ul { list-style: none; padding: 0; }
+    .chooser-card ul li {
+      font-size: 0.87rem;
+      padding: 0.25rem 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      gap: 0.5rem;
+    }
+    .chooser-card ul li:last-child { border-bottom: none; }
+    .chooser-card ul li::before { content: '→'; color: var(--sprout); flex-shrink: 0; }
+
+    /* ── Top picks for beginners ── */
+    .beginner-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.85rem;
+      margin: 1.25rem 0;
+    }
+    @media (max-width: 520px) { .beginner-row { grid-template-columns: 1fr; } }
+    .beg-card {
+      background: var(--leaf);
+      border-radius: 8px;
+      padding: 1.1rem 1.15rem;
+      color: #fff;
+      text-align: center;
+    }
+    .beg-card .b-icon { font-size: 2rem; display: block; margin-bottom: 0.4rem; }
+    .beg-card h3 { font-size: 0.95rem; margin-bottom: 0.25rem; color: var(--sprout); }
+    .beg-card p  { font-size: 0.82rem; color: rgba(255,255,255,0.72); margin: 0; }
+    .beg-card .b-badge {
+      background: rgba(255,255,255,0.15);
+      font-size: 0.68rem;
+      padding: 0.15rem 0.5rem;
+      border-radius: 3px;
+      display: inline-block;
+      margin-bottom: 0.4rem;
+      font-weight: 600;
+    }
+
+    /* ── Related ── */
+    .related {
+      background: var(--surface);
+      border-radius: 8px;
+      padding: 1.2rem 1.5rem;
+      margin-top: 1.5rem;
+      border: 1px solid var(--border);
+    }
+    .related h3 { font-size: 0.76rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--leaf); margin-bottom: 0.65rem; font-weight: 700; }
+    .related a { display: block; color: var(--leaf-lt); font-size: 0.9rem; text-decoration: none; padding: 0.25rem 0; border-bottom: 1px dashed var(--border); transition: color 0.2s; }
+    .related a:last-child { border-bottom: none; }
+    .related a:hover { color: var(--leaf); text-decoration: underline; }
+    .related a::before { content: '→  '; }
+
+    /* ── FAQ ── */
+    .faq-list { list-style: none; padding: 0; margin-top: 1rem; }
+    .faq-item { border: 1px solid var(--border); border-radius: 6px; margin-bottom: 0.65rem; overflow: hidden; }
+    .faq-q {
+      width: 100%; background: var(--surface); border: none; text-align: left;
+      padding: 0.95rem 1.2rem;
+      font-family: 'Inter', sans-serif; font-size: 0.95rem; font-weight: 600;
+      color: var(--ink); cursor: pointer;
+      display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+      transition: background 0.2s;
+    }
+    .faq-q:hover { background: #e4eedd; }
+    .faq-q .arr { font-size: 0.7rem; transition: transform 0.25s; flex-shrink: 0; color: var(--leaf); }
+    .faq-a { display: none; padding: 0.95rem 1.2rem; font-size: 0.92rem; border-top: 1px solid var(--border); background: var(--white); color: var(--ink); }
+    .faq-item.open .faq-a { display: block; }
+    .faq-item.open .arr  { transform: rotate(180deg); }
+
+    /* ── Footer ── */
+    footer { background: var(--ink); color: rgba(255,255,255,0.45); text-align: center; padding: 2rem 1rem; font-size: 0.79rem; margin-top: 3.5rem; }
+    footer a { color: var(--sprout); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<!-- Hero -->
+<div class="hero">
+  <img class="hero-img"
+    src="https://storage.googleapis.com/kreatewebsites/photos1000/tulip-festival.jpg"
+    alt="Spectacular field of diverse tulip varieties in bloom"
+    width="1000" height="500" loading="eager" />
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-tag">🌷 Article 8 of 20 &nbsp;·&nbsp; Variety Guide</span>
+    <h1>Types of Tulips: 50+ Varieties Explained</h1>
+    <p class="hero-sub">From classic single tulips to dramatic parrots, fringed, and wild species — a complete guide to every tulip group.</p>
+    <div class="season-badges">
+      <div class="s-badge"><div class="s-dot" style="background:var(--early);"></div> Early Spring</div>
+      <div class="s-badge"><div class="s-dot" style="background:var(--mid);"></div> Mid Spring</div>
+      <div class="s-badge"><div class="s-dot" style="background:var(--late);"></div> Late Spring</div>
+      <div class="s-badge"><div class="s-dot" style="background:var(--spec);"></div> Specialty</div>
+    </div>
+  </div>
+</div>
+
+<!-- Series nav -->
+<nav class="topnav" aria-label="Series navigation">
+  <a href="/tulip-meaning-symbolism">① Meaning</a><span class="sep">·</span>
+  <a href="/why-tulips-are-perfect-spring-flower">② Spring</a><span class="sep">·</span>
+  <a href="/tulips-in-art-poetry-design">③ Art</a><span class="sep">·</span>
+  <a href="/history-of-tulips">④ History</a><span class="sep">·</span>
+  <a href="/how-to-grow-tulips">⑥ Growing</a><span class="sep">·</span>
+  <a href="/tulip-color-meanings">⑦ Colors</a><span class="sep">·</span>
+  <strong style="color:var(--sprout);">⑧ Varieties</strong><span class="sep">·</span>
+  <a href="/tulips">More →</a>
+</nav>
+
+<!-- Breadcrumb -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="/">Home</a> &rsaquo; <a href="/garden">Garden</a> &rsaquo; <a href="/tulips">Tulips</a> &rsaquo; Types of Tulips
+</nav>
+
+<div class="container">
+
+  <!-- Snippet -->
+  <div class="snippet" aria-label="Quick Answer">
+    <strong>🔍 Quick Answer</strong>
+    There are over <strong>3,000 registered tulip varieties</strong> grouped into <strong>15 official categories</strong> based on flower shape, bloom time, and genetic origin. The most popular groups are Triumph and Darwin Hybrid — both ideal for beginner gardeners.
+  </div>
+
+  <!-- Overview -->
+  <section id="overview">
+    <h2>How Tulips Are Classified</h2>
+    <p>The tulip world is vast. With over three thousand registered varieties, the Royal General Bulb Growers' Association (KAVB) organizes them into 15 official groups — making it possible to navigate choices by bloom time, flower form, and garden purpose rather than getting lost in thousands of individual names.</p>
+
+    <div class="overview-stats" aria-label="Tulip statistics overview">
+      <div class="ov-stat">
+        <span class="val">3,000+</span>
+        <span class="lbl">Registered varieties worldwide</span>
+      </div>
+      <div class="ov-stat">
+        <span class="val">15</span>
+        <span class="lbl">Official classification groups</span>
+      </div>
+      <div class="ov-stat">
+        <span class="val">4</span>
+        <span class="lbl">Main bloom seasons</span>
+      </div>
+    </div>
+
+    <p>Each group is defined by a combination of factors: when it blooms (early, mid, or late spring), the shape of its flower (single, double, lily-flowered, fringed, parrot), and its genetic heritage (species, hybrid, or cultivar). Understanding this structure makes choosing varieties far easier — and far more rewarding.</p>
+  </section>
+
+  <!-- ═══ EARLY BLOOMERS ═══ -->
+  <section id="early">
+    <div class="season-header sh-early">
+      <div class="sh-dot"></div>
+      <h2>Early Spring Tulips</h2>
+      <span class="sh-tag">March – April</span>
+    </div>
+    <p>Early bloomers are the trailblazers of the tulip season — arriving while most of the garden is still waking up. They are generally compact, sturdy, and excellent for containers as well as early-season color.</p>
+
+    <div class="variety-grid">
+
+      <!-- Single Early -->
+      <div class="variety-card card-early">
+        <div class="vc-top">
+          <div class="vc-num">1</div>
+          <div>
+            <div class="vc-name">Single Early Tulips</div>
+            <div class="vc-type">Classic · Compact · Container-Friendly</div>
+          </div>
+        </div>
+        <div class="vc-body">
+          <div class="vc-badge">⭐ Beginner Pick</div>
+          <p class="vc-desc">The original garden tulip — a clean, cup-shaped bloom on strong stems. Compact habit makes it perfect for pots, window boxes, and front-of-border planting.</p>
+          <div class="vc-traits">
+            <span class="trait-pill">Classic cup shape</span>
+            <span class="trait-pill">Strong stems</span>
+            <span class="trait-pill">Container-ready</span>
+          </div>
+          <div class="vc-varieties"><strong>Popular varieties:</strong> Apricot Beauty · Christmas Dream · Purple Prince</div>
+        </div>
+      </div>
+
+      <!-- Double Early -->
+      <div class="variety-card card-early">
+        <div class="vc-top">
+          <div class="vc-num">2</div>
+          <div>
+            <div class="vc-name">Double Early Tulips</div>
+            <div class="vc-type">Peony-Like · Lush · Colorful</div>
+          </div>
+        </div>
+        <div class="vc-body">
+          <div class="vc-badge">✦ Showstopper</div>
+          <p class="vc-desc">Packed with extra petals that give the bloom a full, peony-like appearance. Vibrant and eye-catching even from a distance, they add luxury to early spring beds.</p>
+          <div class="vc-traits">
+            <span class="trait-pill">Peony-like fullness</span>
+            <span class="trait-pill">Fuller than singles</span>
+            <span class="trait-pill">Long-lasting</span>
+          </div>
+          <div class="vc-varieties"><strong>Popular varieties:</strong> Monte Carlo · Foxtrot · Peach Blossom</div>
+        </div>
+      </div>
+
+      <!-- Kaufmanniana -->
+      <div class="variety-card card-early">
+        <div class="vc-top">
+          <div class="vc-num">12</div>
+          <div>
+            <div class="vc-name">Kaufmanniana (Water Lily)</div>
+            <div class="vc-type">Species Hybrid · Star-Shaped · Compact</div>
+          </div>
+        </div>
+        <div class="vc-body">
+          <div class="vc-badge">🌊 Earliest Bloomer</div>
+          <p class="vc-desc">Named for their wide-open, star-like flowers that resemble water lilies. Among the earliest of all tulips to bloom — sometimes as soon as late February in mild winters.</p>
+          <div class="vc-traits">
+            <span class="trait-pill">Star-shaped flowers</span>
+            <span class="trait-pill">Very early bloomer</span>
+            <span class="trait-pill">Low-growing</span>
+          </div>
+          <div class="vc-varieties"><strong>Popular varieties:</strong> Showwinner · Johann Strauss</div>
+        </div>
+      </div>
+
+      <!-- Fosteriana -->
+      <div class="variety-card card-early">
+        <div class="vc-top">
+          <div class="vc-num">13</div>
+          <div>
+            <div class="vc-name">Fosteriana (Emperor Tulips)</div>
+            <div class="vc-type">Species Hybrid · Bold · Large</div>
+          </div>
+        </div>
+        <div class="vc-body">
+          <div class="vc-badge">👑 The Emperor</div>
+          <p class="vc-desc">Large, bold blooms that open wide in sunlight to reveal a stunning interior. Impressively vigorous and reliable, with a presence that commands attention in any border.</p>
+          <div class="vc-traits">
+            <span class="trait-pill">Large bold flowers</span>
+            <span class="trait-pill">Opens wide in sun</span>
+            <span class="trait-pill">Very hardy</span>
+          </div>
+          <div class="vc-varieties"><strong>Popular varieties:</strong> Red Emperor · Orange Emperor</div>
+        </div>
+      </div>
+
+    </div><!-- /variety-grid -->
+
+    <img class="article-img"
+      src="https://storage.googleapis.com/kreatewebsites/photos800/tulip-festival-5.jpg"
+      alt="Early spring tulips in full vibrant bloom"
+      width="800" height="380" loading="lazy" />
+    <p class="img-caption">Early tulips bring the first burst of color when the rest of the garden is still emerging.</p>
+  </section>
+
+  <!-- ═══ MID-SEASON ═══ -->
+  <section id="mid">
+    <div class="season-header sh-mid">
+      <div class="sh-dot"></div>
+      <h2>Mid-Season Tulips</h2>
+      <span class="sh-tag">April – May</span>
+    </div>
+    <p>Mid-season tulips are the heart of the tulip calendar — and the most widely grown. This is when gardens peak, festivals open, and the iconic images of tulip fields are captured. The Triumph and Darwin Hybrid groups, both mid-season, are responsible for the majority of the world's commercial tulip production.</p>
+
+    <div class="variety-grid">
+
+      <!-- Triumph -->
+      <div class="variety-card card-mid">
+        <div class="vc-top">
+          <div class="vc-num">3</div>
+          <div>
+            <div class="vc-name">Triumph Tulips</div>
+            <div class="vc-type">Most Popular · Versatile · Strong</div>
+          </div>
+        </div>
+        <div class="vc-body">
+          <div class="vc-badge">⭐ Most Popular Worldwide</div>
+          <p class="vc-desc">The world's most widely grown tulip group — and for good reason. Triumph tulips offer the widest color range of any group, strong upright stems that resist wind, and consistent performance across almost every garden type.</p>
+          <div class="vc-traits">
+            <span class="trait-pill">Widest color range</span>
+            <span class="trait-pill">Wind-resistant stems</span>
+            <span class="trait-pill">Ideal for beginners</span>
+            <span class="trait-pill">Cut flower quality</span>
+          </div>
+          <div class="vc-varieties"><strong>Popular varieties:</strong> Negrita · Barcelona · Gavota · Purple Flag</div>
+        </div>
+      </div>
+
+      <!-- Darwin Hybrid -->
+      <div class="variety-card card-mid">
+        <div class="vc-top">
+          <div class="vc-num">4</div>
+          <div>
+            <div class="vc-name">Darwin Hybrid Tulips</div>
+            <div class="vc-type">Large Blooms · Perennial · Robust</div>
+          </div>
+        </div>
+        <div class="vc-body">
+          <div class="vc-badge">⭐ Best for Reblooming</div>
+          <p class="vc-desc">The premium choice for gardeners who want tulips that return year after year. Darwin Hybrids produce the largest blooms of any tulip group, are exceptionally weather-resistant, and are among the most reliable perennials in cold climates.</p>
+          <div class="vc-traits">
+            <span class="trait-pill">Largest blooms</span>
+            <span class="trait-pill">Returns yearly</span>
+            <span class="trait-pill">Weather-resistant</span>
+            <span class="trait-pill">Cold climate champ</span>
+          </div>
+          <div class="vc-varieties"><strong>Popular varieties:</strong> Apeldoorn · Golden Parade · Pink Impression · World's Favourite</div>
+        </div>
+      </div>
+
+    </div>
+
+    <img class="article-img"
+      src="https://storage.googleapis.com/kreatewebsites/photos800/tulip-festival-4.jpg"
+      alt="Mid-season Darwin Hybrid tulips in classic garden rows"
+      width="800" height="380" loading="lazy" />
+    <p class="img-caption">Darwin Hybrid tulips — mid-season giants prized for their size and reliable return each spring.</p>
+  </section>
+
+  <!-- ═══ LATE BLOOMERS ═══ -->
+  <section id="late">
+    <div class="season-header sh-late">
+      <div class="sh-dot"></div>
+      <h2>Late-Season Tulips</h2>
+      <span class="sh-tag">May – June</span>
+    </div>
+    <p>Late-season tulips extend the show well into May and June. These are often the most architecturally interesting varieties — taller, more dramatic, with unique flower forms that range from refined elegance to theatrical excess. They pair beautifully with alliums and early perennials.</p>
+
+    <div class="variety-grid">
+
+      <!-- Single Late -->
+      <div class="variety-card card-late">
+        <div class="vc-top">
+          <div class="vc-num">5</div>
+          <div>
+            <div class="vc-name">Single Late Tulips</div>
+            <div class="vc-type">Tall · Elegant · Classic</div>
+          </div>
+        </div>
+        <div class="vc-body">
+          <div class="vc-badge">✦ Tall &amp; Stately</div>
+          <p class="vc-desc">The tallest of the standard tulip groups, with an upright, classic tulip silhouette. Excellent for cut flowers and mid-border planting where height creates dramatic impact.</p>
+          <div class="vc-traits">
+            <span class="trait-pill">Tallest stems</span>
+            <span class="trait-pill">Classic tulip form</span>
+            <span class="trait-pill">Cut flower favorite</span>
+          </div>
+          <div class="vc-varieties"><strong>Popular varieties:</strong> Queen of Night · Maureen · Menton · Atlantis</div>
+        </div>
+      </div>
+
+      <!-- Lily-Flowered -->
+      <div class="variety-card card-late">
+        <div class="vc-top">
+          <div class="vc-num">6</div>
+          <div>
+            <div class="vc-name">Lily-Flowered Tulips</div>
+            <div class="vc-type">Pointed Petals · Graceful · Refined</div>
+          </div>
+        </div>
+        <div class="vc-body">
+          <div class="vc-badge">🌸 Most Graceful</div>
+          <p class="vc-desc">Distinguished by their pointed, reflexed petals that curve back elegantly at the tips — evoking the form of a lily. Slender and refined, they bring a sophisticated lightness to arrangements and borders.</p>
+          <div class="vc-traits">
+            <span class="trait-pill">Pointed curved petals</span>
+            <span class="trait-pill">Lily-like elegance</span>
+            <span class="trait-pill">Wind-tolerant</span>
+          </div>
+          <div class="vc-varieties"><strong>Popular varieties:</strong> White Triumphator · Ballerina · Elegant Lady · Maytime</div>
+        </div>
+      </div>
+
+      <!-- Fringed -->
+      <div class="variety-card card-late">
+        <div class="vc-top">
+          <div class="vc-num">7</div>
+          <div>
+            <div class="vc-name">Fringed Tulips</div>
+            <div class="vc-type">Fringed Edges · Textural · Unique</div>
+          </div>
+        </div>
+        <div class="vc-body">
+          <div class="vc-badge">✦ Crystal Edges</div>
+          <p class="vc-desc">The petal edges of fringed tulips appear as though trimmed with fine crystal filaments — a naturally occurring mutation that gives each bloom an almost handmade, ornate quality. Extremely photogenic and eye-catching.</p>
+          <div class="vc-traits">
+            <span class="trait-pill">Feathered petal edges</span>
+            <span class="trait-pill">High visual texture</span>
+            <span class="trait-pill">Unique in any mix</span>
+          </div>
+          <div class="vc-varieties"><strong>Popular varieties:</strong> Cummins · Fancy Frills · Labrador · Hamilton</div>
+        </div>
+      </div>
+
+      <!-- Parrot -->
+      <div class="variety-card card-late">
+        <div class="vc-top">
+          <div class="vc-num">8</div>
+          <div>
+            <div class="vc-name">Parrot Tulips</div>
+            <div class="vc-type">Ruffled · Dramatic · Exotic</div>
+          </div>
+        </div>
+        <div class="vc-body">
+          <div class="vc-badge">🦜 Most Dramatic</div>
+          <p class="vc-desc">The showmen of the tulip world. Parrot tulips feature large, deeply ruffled and slashed petals in wild combinations of color — resembling exotic tropical plumage. No two blooms look quite alike.</p>
+          <div class="vc-traits">
+            <span class="trait-pill">Deeply ruffled petals</span>
+            <span class="trait-pill">Exotic color mixes</span>
+            <span class="trait-pill">Largest petal surface</span>
+          </div>
+          <div class="vc-varieties"><strong>Popular varieties:</strong> Black Parrot · Estella Rijnveld · Flaming Parrot · Rococo</div>
+        </div>
+      </div>
+
+      <!-- Double Late / Peony -->
+      <div class="variety-card card-late">
+        <div class="vc-top">
+          <div class="vc-num">9</div>
+          <div>
+            <div class="vc-name">Double Late (Peony Tulips)</div>
+            <div class="vc-type">Full · Romantic · Peony-Like</div>
+          </div>
+        </div>
+        <div class="vc-body">
+          <div class="vc-badge">🌹 Peony Effect</div>
+          <p class="vc-desc">Late-season equivalents of the Double Early — fully packed blooms that genuinely resemble peonies. A romantic, lush choice for cutting gardens, bridal arrangements, and borders where density of bloom is desired.</p>
+          <div class="vc-traits">
+            <span class="trait-pill">Peony-like blooms</span>
+            <span class="trait-pill">Maximum petal count</span>
+            <span class="trait-pill">Cut flower premium</span>
+          </div>
+          <div class="vc-varieties"><strong>Popular varieties:</strong> Angelique · Blue Diamond · Mount Tacoma · Dior</div>
+        </div>
+      </div>
+
+    </div>
+
+    <img class="article-img"
+      src="https://storage.googleapis.com/kreatewebsites/photos800/tulip-festival-2.jpg"
+      alt="Late-season tulip varieties including parrot and lily-flowered types"
+      width="800" height="380" loading="lazy" />
+    <p class="img-caption">Late-season varieties like Parrot and Lily-Flowered tulips offer the most dramatic and architectural forms.</p>
+  </section>
+
+  <!-- ═══ SPECIALTY ═══ -->
+  <section id="specialty">
+    <div class="season-header sh-spec">
+      <div class="sh-dot"></div>
+      <h2>Specialty &amp; Species Tulips</h2>
+      <span class="sh-tag">Variable · Unique</span>
+    </div>
+    <p>Beyond the mainstream groups lie the specialty tulips — historically significant varieties, wild species, and cultivars with distinctive characteristics that set them apart from everything else.</p>
+
+    <div class="variety-grid">
+
+      <!-- Viridiflora -->
+      <div class="variety-card card-spec">
+        <div class="vc-top">
+          <div class="vc-num">10</div>
+          <div>
+            <div class="vc-name">Viridiflora Tulips</div>
+            <div class="vc-type">Green Streaks · Long-Lasting · Unusual</div>
+          </div>
+        </div>
+        <div class="vc-body">
+          <div class="vc-badge">🌿 Green Streaked</div>
+          <p class="vc-desc">Viridiflora tulips are characterized by distinctive green streaks or flame-like markings on their petals — a unique trait that makes them look almost painted by hand. Among the longest-lasting cut tulips.</p>
+          <div class="vc-traits">
+            <span class="trait-pill">Green petal markings</span>
+            <span class="trait-pill">Longest bloom life</span>
+            <span class="trait-pill">Artist favorite</span>
+          </div>
+          <div class="vc-varieties"><strong>Popular varieties:</strong> Spring Green · Artist · Greenland · Groenland</div>
+        </div>
+      </div>
+
+      <!-- Rembrandt -->
+      <div class="variety-card card-spec">
+        <div class="vc-top">
+          <div class="vc-num">11</div>
+          <div>
+            <div class="vc-name">Rembrandt Tulips</div>
+            <div class="vc-type">Flame Patterns · Historic · Collector</div>
+          </div>
+        </div>
+        <div class="vc-body">
+          <div class="vc-badge">🎨 Historic Flame</div>
+          <p class="vc-desc">The descendants of the "broken" tulips that caused Tulip Mania. Modern Rembrandt types have stable flame-like color striping achieved through breeding rather than virus — all the drama, none of the disease.</p>
+          <div class="vc-traits">
+            <span class="trait-pill">Flame color patterns</span>
+            <span class="trait-pill">Historic lineage</span>
+            <span class="trait-pill">Collector varieties</span>
+          </div>
+          <div class="vc-varieties"><strong>Popular varieties:</strong> Insulinde · Sorbet · Carnaval de Rio</div>
+        </div>
+      </div>
+
+      <!-- Greigii -->
+      <div class="variety-card card-spec">
+        <div class="vc-top">
+          <div class="vc-num">14</div>
+          <div>
+            <div class="vc-name">Greigii Tulips</div>
+            <div class="vc-type">Striped Foliage · Compact · Rock Garden</div>
+          </div>
+        </div>
+        <div class="vc-body">
+          <div class="vc-badge">🍃 Ornamental Foliage</div>
+          <p class="vc-desc">Greigii tulips are remarkable for their attractively mottled or striped foliage — as decorative as their blooms. Compact and low-growing, they thrive in rock gardens, containers, and the front of borders.</p>
+          <div class="vc-traits">
+            <span class="trait-pill">Striped/mottled leaves</span>
+            <span class="trait-pill">Very compact</span>
+            <span class="trait-pill">Rock garden ideal</span>
+          </div>
+          <div class="vc-varieties"><strong>Popular varieties:</strong> Toronto · Red Riding Hood · Oratorio</div>
+        </div>
+      </div>
+
+      <!-- Wild Species -->
+      <div class="variety-card card-spec">
+        <div class="vc-top">
+          <div class="vc-num">15</div>
+          <div>
+            <div class="vc-name">Species (Wild) Tulips</div>
+            <div class="vc-type">Natural · Hardy · Naturalizing</div>
+          </div>
+        </div>
+        <div class="vc-body">
+          <div class="vc-badge">🌿 True Perennial</div>
+          <p class="vc-desc">The original tulips — smaller, more delicate, and often far more reliably perennial than their cultivated descendants. Species tulips naturalize freely, spreading and returning year after year with no lifting required.</p>
+          <div class="vc-traits">
+            <span class="trait-pill">True perennial</span>
+            <span class="trait-pill">Self-naturalizing</span>
+            <span class="trait-pill">No lifting needed</span>
+          </div>
+          <div class="vc-varieties"><strong>Popular varieties:</strong> Tulipa tarda · Tulipa turkestanica · Tulipa sylvestris</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Blooming Timeline -->
+  <section id="timeline">
+    <h2>Tulip Blooming Timeline</h2>
+    <p>The smartest strategy is to plant across multiple groups to enjoy continuous colour from early March through to June. A well-planned tulip sequence means something beautiful is always blooming.</p>
+
+    <div class="bloom-timeline" aria-label="Tulip blooming season timeline">
+      <div class="bt-header">🌷 When Each Tulip Group Blooms</div>
+      <div class="bt-row">
+        <div class="bt-season" style="border-left: 3px solid var(--early);">🌱 Early Spring<br><small style="color:var(--muted);">Mar – Apr</small></div>
+        <div class="bt-types">
+          <span class="bt-tag" style="background:var(--early);">Single Early</span>
+          <span class="bt-tag" style="background:var(--early);">Double Early</span>
+          <span class="bt-tag" style="background:var(--early);">Kaufmanniana</span>
+          <span class="bt-tag" style="background:var(--early);">Fosteriana</span>
+          <span class="bt-tag" style="background:var(--early);">Greigii</span>
+        </div>
+      </div>
+      <div class="bt-row">
+        <div class="bt-season" style="border-left: 3px solid var(--mid);">🌿 Mid Spring<br><small style="color:var(--muted);">Apr – May</small></div>
+        <div class="bt-types">
+          <span class="bt-tag" style="background:var(--mid);">Triumph</span>
+          <span class="bt-tag" style="background:var(--mid);">Darwin Hybrid</span>
+        </div>
+      </div>
+      <div class="bt-row">
+        <div class="bt-season" style="border-left: 3px solid var(--late);">🌸 Late Spring<br><small style="color:var(--muted);">May – Jun</small></div>
+        <div class="bt-types">
+          <span class="bt-tag" style="background:var(--late);">Single Late</span>
+          <span class="bt-tag" style="background:var(--late);">Lily-Flowered</span>
+          <span class="bt-tag" style="background:var(--late);">Parrot</span>
+          <span class="bt-tag" style="background:var(--late);">Fringed</span>
+          <span class="bt-tag" style="background:var(--late);">Double Late</span>
+          <span class="bt-tag" style="background:var(--late);">Viridiflora</span>
+          <span class="bt-tag" style="background:var(--late);">Rembrandt</span>
+        </div>
+      </div>
+      <div class="bt-row">
+        <div class="bt-season" style="border-left: 3px solid var(--spec);">🌿 Variable<br><small style="color:var(--muted);">Mar – May</small></div>
+        <div class="bt-types">
+          <span class="bt-tag" style="background:var(--spec);">Species / Wild</span>
+          <span class="bt-tag" style="background:var(--spec);">Kaufmanniana</span>
+          <span class="bt-tag" style="background:var(--spec);">Greigii</span>
+        </div>
+      </div>
+    </div>
+
+    <img class="article-img"
+      src="https://storage.googleapis.com/kreatewebsites/photos700/tulip-festival-11.jpg"
+      alt="A succession of tulip varieties blooming across the spring season"
+      width="700" height="360" loading="lazy" />
+    <p class="img-caption">Planting across groups ensures continuous colour from March through June — the secret of great tulip gardens.</p>
+  </section>
+
+  <!-- How to Choose -->
+  <section id="chooser">
+    <h2>How to Choose the Right Tulip Type</h2>
+    <p>The best tulip for you depends on three factors: your climate, your aesthetic style, and how you plan to use them in your garden or home.</p>
+
+    <div class="chooser-grid">
+      <div class="chooser-card">
+        <span class="cc-icon">🌡️</span>
+        <h3>By Climate</h3>
+        <ul>
+          <li>Cold regions (Zones 3–6) → Darwin Hybrid</li>
+          <li>Mild regions (Zones 7–8) → Species or Triumph</li>
+          <li>Warm regions (Zones 9+) → Annual treatment</li>
+          <li>Windy gardens → Triumph or Lily-Flowered</li>
+        </ul>
+      </div>
+      <div class="chooser-card">
+        <span class="cc-icon">🎨</span>
+        <h3>By Style</h3>
+        <ul>
+          <li>Classic look → Single Early or Triumph</li>
+          <li>Romantic, lush → Double Late (Peony)</li>
+          <li>Dramatic, exotic → Parrot or Fringed</li>
+          <li>Naturalistic → Species or Viridiflora</li>
+        </ul>
+      </div>
+      <div class="chooser-card">
+        <span class="cc-icon">🪴</span>
+        <h3>By Garden Use</h3>
+        <ul>
+          <li>Pots &amp; containers → Single Early, Greigii</li>
+          <li>Landscaping → Darwin Hybrid</li>
+          <li>Cut flowers → Single Late, Triumph</li>
+          <li>Rock gardens → Species, Kaufmanniana</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Best for Beginners -->
+  <section id="beginners">
+    <h2>Best Tulips for Beginners</h2>
+    <p>With so many varieties to choose from, these three groups offer the best combination of ease, reliability, and visual impact for first-time tulip growers.</p>
+
+    <div class="beginner-row">
+      <div class="beg-card">
+        <span class="b-icon">🌷</span>
+        <span class="b-badge">Most Popular</span>
+        <h3>Triumph Tulips</h3>
+        <p>Widest color range, strong stems, foolproof performance. The safest first choice.</p>
+      </div>
+      <div class="beg-card">
+        <span class="b-icon">💪</span>
+        <span class="b-badge">Best Rebloomer</span>
+        <h3>Darwin Hybrid Tulips</h3>
+        <p>Largest blooms, weather-resistant, returns reliably in cold climates year after year.</p>
+      </div>
+      <div class="beg-card">
+        <span class="b-icon">⚡</span>
+        <span class="b-badge">First to Bloom</span>
+        <h3>Single Early Tulips</h3>
+        <p>Compact, sturdy, and rewarding. Arrive early — exactly when spring colour is most welcome.</p>
+      </div>
+    </div>
+
+    <div class="related" aria-label="Related articles">
+      <h3>📚 More in This Series</h3>
+      <a href="/how-to-grow-tulips">⑥ How to Grow Tulips — Complete Beginner's Guide</a>
+      <a href="/tulip-color-meanings">⑦ Tulip Color Meanings — What Every Shade Symbolizes</a>
+      <a href="/tulip-meaning-symbolism">① Tulip Meaning &amp; Symbolism — History and Culture</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <ul class="faq-list" role="list">
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          How many types of tulips are there? <span class="arr">▼</span>
+        </button>
+        <div class="faq-a">
+          There are over 3,000 registered tulip varieties worldwide, officially grouped into 15 categories by the Royal General Bulb Growers' Association (KAVB). These groups are based on flower shape, bloom time, and genetic origin.
+        </div>
+      </li>
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          What are the most popular tulip varieties? <span class="arr">▼</span>
+        </button>
+        <div class="faq-a">
+          Triumph and Darwin Hybrid tulips are the most widely grown worldwide, valued for their durability, wide color range, and consistent performance. Darwin Hybrids are especially prized for their large blooms and reliable perennial behavior in cold climates.
+        </div>
+      </li>
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Which tulips come back every year? <span class="arr">▼</span>
+        </button>
+        <div class="faq-a">
+          Darwin Hybrid tulips are the most reliably perennial cultivated variety, especially in Zones 3–6. Species (wild) tulips are even more naturally perennial and will naturalize — spreading and returning without being lifted — in suitable conditions. Triumph tulips can also return in colder climates with proper care.
+        </div>
+      </li>
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          What are the most unusual or unique tulip varieties? <span class="arr">▼</span>
+        </button>
+        <div class="faq-a">
+          The most visually distinctive groups are: Parrot tulips (deeply ruffled, exotic petals in wild color combinations), Fringed tulips (crystal-like frilled petal edges), and Viridiflora tulips (distinctive green streaking on petals). Rembrandt tulips, with their historic flame color patterns, are also among the most unique and collectible.
+        </div>
+      </li>
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          How can I have tulips blooming all spring long? <span class="arr">▼</span>
+        </button>
+        <div class="faq-a">
+          Plant a deliberate succession of varieties from different groups. Start with early bloomers like Single Early and Kaufmanniana in March, follow with Triumph and Darwin Hybrids in April–May, and finish with Parrot, Lily-Flowered, and Double Late varieties in May–June. This "tulip lasagna" approach can give you continuous bloom for 10–12 weeks.
+        </div>
+      </li>
+    </ul>
+  </section>
+
+</div><!-- /container -->
+
+<footer>
+  <p>© 2025 The Garden Journal &nbsp;·&nbsp; <a href="/privacy">Privacy</a> &nbsp;·&nbsp; <a href="/contact">Contact</a> &nbsp;·&nbsp; <a href="/tulips">All Tulip Articles</a></p>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Complete Tulip Guide — Everything About Tulips in One Place</title>
+  <meta name="description" content="Your ultimate tulip resource. Explore meaning, symbolism, history, growing guides, color meanings, variety types, Tulip Mania, and more — all in one place." />
+  <link rel="canonical" href="https://yoursite.com/tulips" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "The Complete Tulip Guide",
+    "description": "A comprehensive collection of articles on tulip meaning, history, growing, color symbolism, varieties, and more.",
+    "url": "https://yoursite.com/tulips",
+    "hasPart": [
+      { "@type": "Article", "name": "Tulip Meaning & Symbolism", "url": "/tulip-meaning-symbolism" },
+      { "@type": "Article", "name": "Why Tulips Are the Perfect Spring Flower", "url": "/why-tulips-are-perfect-spring-flower" },
+      { "@type": "Article", "name": "Tulips in Art, Poetry, and Design", "url": "/tulips-in-art-poetry-design" },
+      { "@type": "Article", "name": "History of Tulips", "url": "/history-of-tulips" },
+      { "@type": "Article", "name": "Tulip Mania Explained", "url": "/tulip-mania-explained" },
+      { "@type": "Article", "name": "How to Grow Tulips", "url": "/how-to-grow-tulips" },
+      { "@type": "Article", "name": "Tulip Color Meanings", "url": "/tulip-color-meanings" },
+      { "@type": "Article", "name": "Types of Tulips", "url": "/types-of-tulips" }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg:        #0e0b09;
+      --surface:   #161210;
+      --card:      #1e1915;
+      --card-hover:#262018;
+      --gold:      #c8943c;
+      --gold-lt:   #e8bc6c;
+      --gold-dim:  #7a5820;
+      --rose:      #c04848;
+      --rose-lt:   #e07070;
+      --green:     #3a6e30;
+      --green-lt:  #6aae5e;
+      --lavender:  #7858b8;
+      --cream:     #f0e8d8;
+      --text:      #e8e0d0;
+      --muted:     #8a7e6e;
+      --border:    rgba(200,148,60,0.15);
+      --border-lt: rgba(200,148,60,0.3);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Outfit', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.75;
+      font-size: 16px;
+      overflow-x: hidden;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    /* Multi-image mosaic background */
+    .hero-mosaic {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 2px;
+    }
+    .mosaic-cell {
+      overflow: hidden;
+      position: relative;
+    }
+    .mosaic-cell img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      transform: scale(1.05);
+      transition: transform 8s ease;
+    }
+    .hero:hover .mosaic-cell img { transform: scale(1.12); }
+
+    /* Dark overlay with radial reveal */
+    .hero-mask {
+      position: absolute; inset: 0;
+      background: radial-gradient(
+        ellipse 70% 60% at 50% 50%,
+        rgba(14,11,9,0.65) 0%,
+        rgba(14,11,9,0.88) 60%,
+        rgba(14,11,9,0.97) 100%
+      );
+      z-index: 1;
+    }
+
+    /* Decorative tulip silhouette lines */
+    .hero-deco {
+      position: absolute; inset: 0; z-index: 2;
+      pointer-events: none;
+      overflow: hidden;
+    }
+    .hero-deco::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 50%; transform: translateX(-50%);
+      width: 1px; height: 100%;
+      background: linear-gradient(to bottom, transparent, var(--gold-dim) 30%, var(--gold-dim) 70%, transparent);
+      opacity: 0.3;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 3;
+      text-align: center;
+      padding: 4rem 1.5rem;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .hero-overline {
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.28em;
+      color: var(--gold);
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      animation: fadeIn 0.7s 0.2s ease forwards;
+    }
+
+    .hero h1 {
+      font-family: 'Cormorant', serif;
+      font-size: clamp(3rem, 8vw, 6.5rem);
+      font-weight: 300;
+      color: var(--cream);
+      line-height: 1.02;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.4rem;
+      opacity: 0;
+      animation: fadeIn 0.7s 0.4s ease forwards;
+    }
+    .hero h1 em {
+      font-style: italic;
+      color: var(--gold-lt);
+      font-weight: 300;
+    }
+    .hero-subtitle {
+      font-family: 'Cormorant', serif;
+      font-size: clamp(1.2rem, 3vw, 1.9rem);
+      font-weight: 300;
+      font-style: italic;
+      color: rgba(240,232,216,0.65);
+      margin-bottom: 2rem;
+      opacity: 0;
+      animation: fadeIn 0.7s 0.6s ease forwards;
+    }
+    .hero-desc {
+      font-size: 1rem;
+      font-weight: 300;
+      color: rgba(232,224,208,0.7);
+      max-width: 520px;
+      margin: 0 auto 2.5rem;
+      opacity: 0;
+      animation: fadeIn 0.7s 0.75s ease forwards;
+    }
+
+    /* Article count chips */
+    .hero-chips {
+      display: flex;
+      justify-content: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      margin-bottom: 2.5rem;
+      opacity: 0;
+      animation: fadeIn 0.7s 0.9s ease forwards;
+    }
+    .hero-chip {
+      background: rgba(200,148,60,0.12);
+      border: 1px solid var(--border-lt);
+      color: var(--gold-lt);
+      font-size: 0.78rem;
+      font-weight: 500;
+      padding: 0.3rem 0.85rem;
+      border-radius: 100px;
+    }
+
+    .hero-cta {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--bg);
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      padding: 0.85rem 2rem;
+      border-radius: 2px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s;
+      opacity: 0;
+      animation: fadeIn 0.7s 1.05s ease forwards;
+    }
+    .hero-cta:hover { background: var(--gold-lt); transform: translateY(-1px); }
+
+    /* Scroll indicator */
+    .scroll-hint {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+      opacity: 0;
+      animation: fadeIn 0.7s 1.3s ease forwards;
+    }
+    .scroll-hint span { font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--muted); }
+    .scroll-line {
+      width: 1px; height: 40px;
+      background: linear-gradient(to bottom, var(--gold-dim), transparent);
+      animation: scrollPulse 2s infinite;
+    }
+    @keyframes scrollPulse {
+      0%,100% { opacity: 0.4; transform: scaleY(1); }
+      50%      { opacity: 1;   transform: scaleY(1.2); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── SECTION WRAPPER ── */
+    .section { padding: 5rem 1.5rem; }
+    .section-inner { max-width: 1100px; margin: 0 auto; }
+
+    .section-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.22em;
+      color: var(--gold);
+      margin-bottom: 0.6rem;
+    }
+    .section-title {
+      font-family: 'Cormorant', serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 600;
+      color: var(--cream);
+      line-height: 1.12;
+      margin-bottom: 0.75rem;
+    }
+    .section-title em { font-style: italic; color: var(--gold-lt); }
+    .section-desc {
+      font-size: 0.97rem;
+      font-weight: 300;
+      color: var(--muted);
+      max-width: 540px;
+      margin-bottom: 3rem;
+    }
+
+    /* ── FEATURED ARTICLE (Article 1) ── */
+    .featured {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+    }
+    .featured-card {
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      border: 1px solid var(--border-lt);
+      border-radius: 12px;
+      overflow: hidden;
+      background: var(--card);
+    }
+    @media (max-width: 740px) {
+      .featured-card { grid-template-columns: 1fr; }
+      .featured-img  { min-height: 260px; }
+    }
+    .featured-body {
+      padding: 3rem 2.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .art-num {
+      font-family: 'Cormorant', serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--gold);
+      margin-bottom: 0.75rem;
+    }
+    .featured-body h2 {
+      font-family: 'Cormorant', serif;
+      font-size: clamp(1.7rem, 3.5vw, 2.5rem);
+      font-weight: 600;
+      color: var(--cream);
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+    .featured-body p {
+      font-size: 0.95rem;
+      font-weight: 300;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+      flex: 1;
+    }
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-bottom: 1.5rem;
+    }
+    .tag {
+      font-size: 0.72rem;
+      font-weight: 500;
+      padding: 0.2rem 0.65rem;
+      border-radius: 100px;
+      background: rgba(200,148,60,0.1);
+      border: 1px solid var(--border-lt);
+      color: var(--gold-lt);
+    }
+    .read-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--gold);
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      border-bottom: 1px solid var(--gold-dim);
+      padding-bottom: 0.1rem;
+      width: fit-content;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .read-btn:hover { color: var(--gold-lt); border-color: var(--gold-lt); }
+    .read-btn .arrow { transition: transform 0.2s; }
+    .read-btn:hover .arrow { transform: translateX(4px); }
+
+    .featured-img {
+      position: relative;
+      overflow: hidden;
+    }
+    .featured-img img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+    .featured-card:hover .featured-img img { transform: scale(1.04); }
+    .featured-img::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(to right, var(--card) 0%, transparent 30%);
+      z-index: 1;
+    }
+
+    /* ── ARTICLE GRID ── */
+    .articles-bg { background: var(--bg); border-top: 1px solid var(--border); }
+
+    .article-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .article-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      transition: border-color 0.25s, background 0.25s, transform 0.25s;
+      position: relative;
+    }
+    .article-card:hover {
+      border-color: var(--border-lt);
+      background: var(--card-hover);
+      transform: translateY(-4px);
+    }
+
+    .ac-image {
+      position: relative;
+      height: 200px;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .ac-image img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease;
+      filter: saturate(0.85);
+    }
+    .article-card:hover .ac-image img {
+      transform: scale(1.06);
+      filter: saturate(1);
+    }
+    .ac-image-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(14,11,9,0.7) 0%, rgba(14,11,9,0.1) 60%, transparent 100%);
+    }
+    .ac-num {
+      position: absolute;
+      top: 0.85rem; left: 0.85rem;
+      background: var(--gold);
+      color: var(--bg);
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 0.2rem 0.55rem;
+      border-radius: 2px;
+    }
+    .ac-category {
+      position: absolute;
+      bottom: 0.75rem; left: 0.85rem;
+      font-size: 0.68rem;
+      font-weight: 500;
+      color: rgba(240,232,216,0.65);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+    }
+
+    .ac-body {
+      padding: 1.35rem 1.4rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .ac-title {
+      font-family: 'Cormorant', serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--cream);
+      line-height: 1.22;
+      margin-bottom: 0.6rem;
+    }
+    .ac-desc {
+      font-size: 0.88rem;
+      font-weight: 300;
+      color: var(--muted);
+      line-height: 1.65;
+      flex: 1;
+      margin-bottom: 1.1rem;
+    }
+    .ac-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+      margin-bottom: 1rem;
+    }
+    .ac-tag {
+      font-size: 0.68rem;
+      padding: 0.15rem 0.5rem;
+      border-radius: 100px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+    }
+    .ac-link {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--gold);
+      text-decoration: none;
+      margin-top: auto;
+    }
+    .ac-link .arr { transition: transform 0.2s; }
+    .article-card:hover .ac-link .arr { transform: translateX(4px); }
+
+    /* ── CATEGORY STRIPS ── */
+    .cat-strip {
+      padding: 4rem 1.5rem;
+      border-top: 1px solid var(--border);
+    }
+    .cat-strip-inner { max-width: 1100px; margin: 0 auto; }
+
+    .cat-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    @media (max-width: 700px) { .cat-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 420px) { .cat-grid { grid-template-columns: 1fr; } }
+
+    .cat-item {
+      background: var(--card);
+      padding: 1.75rem 1.4rem;
+      text-align: center;
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      transition: background 0.2s;
+    }
+    .cat-item:hover { background: var(--card-hover); }
+    .cat-icon { font-size: 2rem; }
+    .cat-name {
+      font-family: 'Cormorant', serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--cream);
+    }
+    .cat-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.4; }
+
+    /* ── PHOTO GALLERY STRIP ── */
+    .gallery-strip {
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      height: 220px;
+      overflow: hidden;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    @media (max-width: 700px) { .gallery-strip { grid-template-columns: repeat(4, 1fr); height: 160px; } }
+    @media (max-width: 440px) { .gallery-strip { grid-template-columns: repeat(3, 1fr); height: 140px; } }
+    .gallery-cell {
+      overflow: hidden;
+      position: relative;
+    }
+    .gallery-cell img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+      filter: saturate(0.7) brightness(0.75);
+      transition: filter 0.4s, transform 0.4s;
+    }
+    .gallery-cell:hover img {
+      filter: saturate(1.1) brightness(0.9);
+      transform: scale(1.06);
+    }
+
+    /* ── STATS ROW ── */
+    .stats-row {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 3rem 1.5rem;
+    }
+    .stats-inner {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+    }
+    @media (max-width: 560px) { .stats-inner { grid-template-columns: 1fr 1fr; } }
+    .stat-item { background: var(--card); padding: 1.75rem 1rem; }
+    .stat-val {
+      font-family: 'Cormorant', serif;
+      font-size: 2.8rem;
+      font-weight: 600;
+      color: var(--gold-lt);
+      line-height: 1;
+      display: block;
+    }
+    .stat-lbl { font-size: 0.8rem; color: var(--muted); margin-top: 0.35rem; }
+
+    /* ── LATEST / HIGHLIGHTED (2-col) ── */
+    .highlight-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      margin-top: 1rem;
+    }
+    @media (max-width: 640px) { .highlight-grid { grid-template-columns: 1fr; } }
+
+    .hl-card {
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      background: var(--card);
+      text-decoration: none;
+      display: grid;
+      grid-template-columns: 130px 1fr;
+      transition: border-color 0.2s, background 0.2s, transform 0.2s;
+    }
+    .hl-card:hover {
+      border-color: var(--border-lt);
+      background: var(--card-hover);
+      transform: translateY(-2px);
+    }
+    .hl-img {
+      overflow: hidden;
+    }
+    .hl-img img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s;
+      filter: saturate(0.85);
+    }
+    .hl-card:hover .hl-img img { transform: scale(1.06); filter: saturate(1); }
+    .hl-body {
+      padding: 1.1rem 1.15rem;
+      display: flex;
+      flex-direction: column;
+    }
+    .hl-num {
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--gold);
+      margin-bottom: 0.3rem;
+    }
+    .hl-title {
+      font-family: 'Cormorant', serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--cream);
+      line-height: 1.2;
+      margin-bottom: 0.4rem;
+      flex: 1;
+    }
+    .hl-desc {
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-weight: 300;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+    .footer-inner { max-width: 700px; margin: 0 auto; }
+    .footer-logo {
+      font-family: 'Cormorant', serif;
+      font-size: 2rem;
+      font-style: italic;
+      color: var(--gold-lt);
+      margin-bottom: 0.5rem;
+    }
+    footer p { font-size: 0.85rem; color: var(--muted); margin-bottom: 1.25rem; }
+    .footer-nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.25rem;
+      margin-bottom: 2rem;
+    }
+    .footer-nav a {
+      font-size: 0.82rem;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-nav a:hover { color: var(--gold-lt); }
+    .footer-copy { font-size: 0.76rem; color: rgba(138,126,110,0.5); }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════ HERO ══════════════════ -->
+<div class="hero">
+  <div class="hero-mosaic" aria-hidden="true">
+    <div class="mosaic-cell"><img src="https://storage.googleapis.com/kreatewebsites/photos500/tulips-festival-banner.jpg" alt="" loading="eager" /></div>
+    <div class="mosaic-cell"><img src="https://storage.googleapis.com/kreatewebsites/photos500/tulip-festival-portrait.jpg" alt="" loading="eager" /></div>
+    <div class="mosaic-cell"><img src="https://storage.googleapis.com/kreatewebsites/photos500/tulips-red-yellow.jpg" alt="" loading="eager" /></div>
+    <div class="mosaic-cell"><img src="https://storage.googleapis.com/kreatewebsites/photos500/yellow-tulips.jpg" alt="" loading="eager" /></div>
+    <div class="mosaic-cell"><img src="https://storage.googleapis.com/kreatewebsites/photos500/tulip-festival-2.jpg" alt="" loading="eager" /></div>
+    <div class="mosaic-cell"><img src="https://storage.googleapis.com/kreatewebsites/photos500/tulip-festival-4.jpg" alt="" loading="eager" /></div>
+  </div>
+  <div class="hero-mask"></div>
+  <div class="hero-deco"></div>
+
+  <div class="hero-content">
+    <p class="hero-overline">The Garden Journal &nbsp;·&nbsp; Complete Resource</p>
+    <h1>The World of<br><em>Tulips</em></h1>
+    <p class="hero-subtitle">Meaning · History · Growing · Design</p>
+    <p class="hero-desc">Everything there is to know about the world's most storied flower — in one beautifully curated collection of 20 expert guides.</p>
+    <div class="hero-chips">
+      <span class="hero-chip">🌷 Symbolism</span>
+      <span class="hero-chip">🏛 History</span>
+      <span class="hero-chip">🌱 Growing</span>
+      <span class="hero-chip">🎨 Art & Design</span>
+      <span class="hero-chip">📈 Economics</span>
+      <span class="hero-chip">🌈 Colors</span>
+      <span class="hero-chip">🌸 Varieties</span>
+    </div>
+    <a href="#articles" class="hero-cta">Explore All Guides</a>
+  </div>
+
+  <div class="scroll-hint">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</div>
+
+<!-- ══════════════════ STATS ══════════════════ -->
+<div class="stats-row">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <span class="stat-val">20</span>
+      <span class="stat-lbl">Expert articles</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-val">3,000+</span>
+      <span class="stat-lbl">Tulip varieties covered</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-val">500 yrs</span>
+      <span class="stat-lbl">Of history explored</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-val">15</span>
+      <span class="stat-lbl">Classification groups</span>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ CATEGORIES ══════════════════ -->
+<div class="cat-strip">
+  <div class="cat-strip-inner">
+    <div class="section-label">Browse by Topic</div>
+    <div class="cat-grid">
+      <a href="#symbolism" class="cat-item">
+        <span class="cat-icon">❤️</span>
+        <span class="cat-name">Meaning &amp; Symbolism</span>
+        <span class="cat-desc">Colors, emotions, and cultural significance</span>
+      </a>
+      <a href="#history" class="cat-item">
+        <span class="cat-icon">🏛</span>
+        <span class="cat-name">History</span>
+        <span class="cat-desc">Ottoman origins to Tulip Mania and beyond</span>
+      </a>
+      <a href="#growing" class="cat-item">
+        <span class="cat-icon">🌱</span>
+        <span class="cat-name">Growing Guides</span>
+        <span class="cat-desc">Planting, care, varieties, and expert tips</span>
+      </a>
+      <a href="#culture" class="cat-item">
+        <span class="cat-icon">🎨</span>
+        <span class="cat-name">Art &amp; Culture</span>
+        <span class="cat-desc">Tulips in painting, poetry, and design</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ FEATURED ARTICLE ══════════════════ -->
+<div class="section featured" id="articles">
+  <div class="section-inner">
+    <div class="section-label">Start Here</div>
+    <div class="section-title">The <em>Essential</em> Read</div>
+    <p class="section-desc">Begin your tulip journey with our most comprehensive overview — the complete guide to tulip meaning and symbolism.</p>
+
+    <div class="featured-card">
+      <div class="featured-body">
+        <div class="art-num">Article № 01 &nbsp;·&nbsp; Foundation Guide</div>
+        <h2>Tulip Meaning &amp; Symbolism: What Tulips Represent by Color and Culture</h2>
+        <p>The complete overview of tulip symbolism across cultures and centuries. Discover what red, yellow, white, pink, and purple tulips represent — and why these flowers have carried so much emotional meaning for so long.</p>
+        <div class="tag-row">
+          <span class="tag">Symbolism</span>
+          <span class="tag">Color Meanings</span>
+          <span class="tag">Culture</span>
+          <span class="tag">History</span>
+          <span class="tag">Beginner-Friendly</span>
+        </div>
+        <a href="/tulip-meaning-symbolism" class="read-btn">Read the Guide <span class="arrow">→</span></a>
+      </div>
+      <div class="featured-img">
+        <img src="https://storage.googleapis.com/kreatewebsites/photos800/tulips-festival-banner.jpg"
+          alt="Colorful tulip fields representing the full range of tulip symbolism"
+          width="420" height="480" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ GALLERY STRIP ══════════════════ -->
+<div class="gallery-strip" aria-hidden="true">
+  <div class="gallery-cell"><img src="https://storage.googleapis.com/kreatewebsites/photos300/tulip-festival-5.jpg" alt="" loading="lazy" /></div>
+  <div class="gallery-cell"><img src="https://storage.googleapis.com/kreatewebsites/photos300/pink.jpg" alt="" loading="lazy" /></div>
+  <div class="gallery-cell"><img src="https://storage.googleapis.com/kreatewebsites/photos300/orange.jpg" alt="" loading="lazy" /></div>
+  <div class="gallery-cell"><img src="https://storage.googleapis.com/kreatewebsites/photos300/tulip-festival-10.jpg" alt="" loading="lazy" /></div>
+  <div class="gallery-cell"><img src="https://storage.googleapis.com/kreatewebsites/photos300/yellow-tulips.jpg" alt="" loading="lazy" /></div>
+  <div class="gallery-cell"><img src="https://storage.googleapis.com/kreatewebsites/photos300/tulip-festival-12.jpg" alt="" loading="lazy" /></div>
+</div>
+
+<!-- ══════════════════ MAIN ARTICLE GRID ══════════════════ -->
+<div class="section articles-bg" id="symbolism">
+  <div class="section-inner">
+    <div class="section-label">All Articles</div>
+    <div class="section-title">The <em>Complete</em> Collection</div>
+    <p class="section-desc">Eight in-depth guides — and more coming. Each explores a different dimension of the tulip world.</p>
+
+    <div class="article-grid">
+
+      <!-- Article 2 -->
+      <a href="/why-tulips-are-perfect-spring-flower" class="article-card">
+        <div class="ac-image">
+          <img src="https://storage.googleapis.com/kreatewebsites/photos500/tulip-festival-7.jpg"
+            alt="Tulips blooming in spring" loading="lazy" />
+          <div class="ac-image-overlay"></div>
+          <span class="ac-num">Article 02</span>
+          <span class="ac-category">Spring · Seasonal</span>
+        </div>
+        <div class="ac-body">
+          <div class="ac-title">Why Tulips Are the Perfect Spring Flower</div>
+          <p class="ac-desc">How tulips became spring's defining symbol — their bloom cycle, color psychology, global festivals, and why they lift mood and signal renewal like nothing else.</p>
+          <div class="ac-tags">
+            <span class="ac-tag">Spring</span>
+            <span class="ac-tag">Renewal</span>
+            <span class="ac-tag">Festivals</span>
+            <span class="ac-tag">Wellbeing</span>
+          </div>
+          <span class="ac-link">Read Article <span class="arr">→</span></span>
+        </div>
+      </a>
+
+      <!-- Article 3 -->
+      <a href="/tulips-in-art-poetry-design" class="article-card">
+        <div class="ac-image">
+          <img src="https://storage.googleapis.com/kreatewebsites/photos500/tulip-festival-portrait.jpg"
+            alt="Tulip close-up for art and design inspiration" loading="lazy" />
+          <div class="ac-image-overlay"></div>
+          <span class="ac-num">Article 03</span>
+          <span class="ac-category">Art · Culture · Design</span>
+        </div>
+        <div class="ac-body">
+          <div class="ac-title">Tulips in Art, Poetry &amp; Design</div>
+          <p class="ac-desc">From Dutch Golden Age still-lifes to Ottoman textiles, Romantic poetry, and contemporary interior design — how one elegant flower fuelled centuries of creative expression.</p>
+          <div class="ac-tags">
+            <span class="ac-tag">Art History</span>
+            <span class="ac-tag">Poetry</span>
+            <span class="ac-tag">Textiles</span>
+            <span class="ac-tag">Photography</span>
+          </div>
+          <span class="ac-link">Read Article <span class="arr">→</span></span>
+        </div>
+      </a>
+
+      <!-- Article 4 -->
+      <a href="/history-of-tulips" class="article-card" id="history">
+        <div class="ac-image">
+          <img src="https://storage.googleapis.com/kreatewebsites/photos500/tulip-festival-4.jpg"
+            alt="Vast tulip fields representing the flower's long history" loading="lazy" />
+          <div class="ac-image-overlay"></div>
+          <span class="ac-num">Article 04</span>
+          <span class="ac-category">History · Origins</span>
+        </div>
+        <div class="ac-body">
+          <div class="ac-title">History of Tulips: From Turkey to the Netherlands</div>
+          <p class="ac-desc">A 500-year journey — from wild flowers in Central Asia to Ottoman palace gardens, a botanist's theft in Leiden, and the most spectacular flower market in history.</p>
+          <div class="ac-tags">
+            <span class="ac-tag">Ottoman Empire</span>
+            <span class="ac-tag">Netherlands</span>
+            <span class="ac-tag">Trade Routes</span>
+            <span class="ac-tag">Carolus Clusius</span>
+          </div>
+          <span class="ac-link">Read Article <span class="arr">→</span></span>
+        </div>
+      </a>
+
+      <!-- Article 5 -->
+      <a href="/tulip-mania-explained" class="article-card">
+        <div class="ac-image">
+          <img src="https://storage.googleapis.com/kreatewebsites/photos500/tulip-festival-9.jpg"
+            alt="Tulip fields — site of the world's first financial bubble" loading="lazy" />
+          <div class="ac-image-overlay"></div>
+          <span class="ac-num">Article 05</span>
+          <span class="ac-category">Economics · History</span>
+        </div>
+        <div class="ac-body">
+          <div class="ac-title">Tulip Mania: The World's First Financial Bubble</div>
+          <p class="ac-desc">How a flower bulb became worth more than a house in 1630s Amsterdam — the psychology of speculation, the anatomy of the crash, and what it still teaches us about modern markets.</p>
+          <div class="ac-tags">
+            <span class="ac-tag">Tulip Mania</span>
+            <span class="ac-tag">Economics</span>
+            <span class="ac-tag">1637 Crash</span>
+            <span class="ac-tag">Bubbles</span>
+          </div>
+          <span class="ac-link">Read Article <span class="arr">→</span></span>
+        </div>
+      </a>
+
+      <!-- Article 6 -->
+      <a href="/how-to-grow-tulips" class="article-card" id="growing">
+        <div class="ac-image">
+          <img src="https://storage.googleapis.com/kreatewebsites/photos500/tulip-festival-2.jpg"
+            alt="Tulips growing in a beautifully tended garden" loading="lazy" />
+          <div class="ac-image-overlay"></div>
+          <span class="ac-num">Article 06</span>
+          <span class="ac-category">Growing · Gardening</span>
+        </div>
+        <div class="ac-body">
+          <div class="ac-title">How to Grow Tulips: The Complete Beginner's Guide</div>
+          <p class="ac-desc">Step-by-step planting, care, container growing, common mistakes to avoid, and expert tips for bigger and brighter blooms — everything a beginner needs to succeed.</p>
+          <div class="ac-tags">
+            <span class="ac-tag">Planting Guide</span>
+            <span class="ac-tag">Containers</span>
+            <span class="ac-tag">Beginners</span>
+            <span class="ac-tag">Care Tips</span>
+          </div>
+          <span class="ac-link">Read Article <span class="arr">→</span></span>
+        </div>
+      </a>
+
+      <!-- Article 7 -->
+      <a href="/tulip-color-meanings" class="article-card" id="culture">
+        <div class="ac-image">
+          <img src="https://storage.googleapis.com/kreatewebsites/photos500/tulips-red-yellow.jpg"
+            alt="Vivid red and yellow tulips — color symbolism in bloom" loading="lazy" />
+          <div class="ac-image-overlay"></div>
+          <span class="ac-num">Article 07</span>
+          <span class="ac-category">Symbolism · Color</span>
+        </div>
+        <div class="ac-body">
+          <div class="ac-title">Tulip Color Meanings: Every Shade Explained</div>
+          <p class="ac-desc">Red means love, yellow means happiness, white means forgiveness — but there's so much more. The complete guide to choosing the right tulip color for every occasion and emotion.</p>
+          <div class="ac-tags">
+            <span class="ac-tag">Red Tulips</span>
+            <span class="ac-tag">Yellow</span>
+            <span class="ac-tag">Pink</span>
+            <span class="ac-tag">Purple</span>
+            <span class="ac-tag">White</span>
+          </div>
+          <span class="ac-link">Read Article <span class="arr">→</span></span>
+        </div>
+      </a>
+
+      <!-- Article 8 -->
+      <a href="/types-of-tulips" class="article-card">
+        <div class="ac-image">
+          <img src="https://storage.googleapis.com/kreatewebsites/photos500/tulip-festival-11.jpg"
+            alt="Diverse tulip varieties in bloom at a spring festival" loading="lazy" />
+          <div class="ac-image-overlay"></div>
+          <span class="ac-num">Article 08</span>
+          <span class="ac-category">Varieties · Gardening</span>
+        </div>
+        <div class="ac-body">
+          <div class="ac-title">Types of Tulips: 50+ Varieties Explained</div>
+          <p class="ac-desc">All 15 official tulip groups — from classic Triumphs and Darwin Hybrids to dramatic Parrots, fringed varieties, wild species, and historic Rembrandt tulips. With bloom timelines and chooser guides.</p>
+          <div class="ac-tags">
+            <span class="ac-tag">Darwin Hybrid</span>
+            <span class="ac-tag">Parrot</span>
+            <span class="ac-tag">Fringed</span>
+            <span class="ac-tag">Species</span>
+          </div>
+          <span class="ac-link">Read Article <span class="arr">→</span></span>
+        </div>
+      </a>
+
+      <!-- Coming Soon placeholder -->
+      <div class="article-card" style="opacity:0.5;cursor:default;pointer-events:none;">
+        <div class="ac-image" style="background:var(--card);display:flex;align-items:center;justify-content:center;">
+          <span style="font-size:2.5rem;">🌷</span>
+          <div class="ac-image-overlay"></div>
+          <span class="ac-num">Articles 09–20</span>
+        </div>
+        <div class="ac-body">
+          <div class="ac-title">More Guides Coming Soon</div>
+          <p class="ac-desc">Tulip festivals, gift ideas, wedding arrangements, care after blooming, the best tulip gardens worldwide, and much more — being added regularly.</p>
+          <div class="ac-tags">
+            <span class="ac-tag">Festivals</span>
+            <span class="ac-tag">Gifts</span>
+            <span class="ac-tag">Weddings</span>
+            <span class="ac-tag">Gardens</span>
+          </div>
+          <span class="ac-link" style="color:var(--muted);">Coming Soon</span>
+        </div>
+      </div>
+
+    </div><!-- /article-grid -->
+  </div>
+</div>
+
+<!-- ══════════════════ COMPACT HIGHLIGHT ROW ══════════════════ -->
+<div class="section" style="background:var(--surface);border-top:1px solid var(--border);padding:4rem 1.5rem;">
+  <div class="section-inner">
+    <div class="section-label">Most Read</div>
+    <div class="section-title">Reader <em>Favourites</em></div>
+    <div class="highlight-grid">
+      <a href="/tulip-mania-explained" class="hl-card">
+        <div class="hl-img">
+          <img src="https://storage.googleapis.com/kreatewebsites/photos300/tulip-festival-9.jpg" alt="Tulip Mania" loading="lazy" />
+        </div>
+        <div class="hl-body">
+          <div class="hl-num">Article 05 · Economics</div>
+          <div class="hl-title">Tulip Mania: The World's First Financial Bubble</div>
+          <div class="hl-desc">How a bulb became worth more than a house — and why it still matters today.</div>
+        </div>
+      </a>
+      <a href="/tulip-color-meanings" class="hl-card">
+        <div class="hl-img">
+          <img src="https://storage.googleapis.com/kreatewebsites/photos300/pink.jpg" alt="Tulip colors" loading="lazy" />
+        </div>
+        <div class="hl-body">
+          <div class="hl-num">Article 07 · Symbolism</div>
+          <div class="hl-title">Tulip Color Meanings: Every Shade Explained</div>
+          <div class="hl-desc">Choose the perfect color for every occasion, gift, and emotion.</div>
+        </div>
+      </a>
+      <a href="/how-to-grow-tulips" class="hl-card">
+        <div class="hl-img">
+          <img src="https://storage.googleapis.com/kreatewebsites/photos300/yellow-tulips.jpg" alt="Growing tulips" loading="lazy" />
+        </div>
+        <div class="hl-body">
+          <div class="hl-num">Article 06 · Growing</div>
+          <div class="hl-title">How to Grow Tulips: Beginner's Guide</div>
+          <div class="hl-desc">Everything from planting depth to post-bloom care, step by step.</div>
+        </div>
+      </a>
+      <a href="/history-of-tulips" class="hl-card">
+        <div class="hl-img">
+          <img src="https://storage.googleapis.com/kreatewebsites/photos300/tulip-festival-4.jpg" alt="Tulip history" loading="lazy" />
+        </div>
+        <div class="hl-body">
+          <div class="hl-num">Article 04 · History</div>
+          <div class="hl-title">History of Tulips: Turkey to Netherlands</div>
+          <div class="hl-desc">500 years of trade, culture, obsession, and beauty.</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════ FOOTER ══════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">The Garden Journal</div>
+    <p>Your complete resource for everything tulips — from growing your first bulb to the economics of Tulip Mania.</p>
+    <nav class="footer-nav">
+      <a href="/tulip-meaning-symbolism">Meaning &amp; Symbolism</a>
+      <a href="/why-tulips-are-perfect-spring-flower">Spring Flower</a>
+      <a href="/tulips-in-art-poetry-design">Art &amp; Design</a>
+      <a href="/history-of-tulips">History</a>
+      <a href="/tulip-mania-explained">Tulip Mania</a>
+      <a href="/how-to-grow-tulips">Growing Guide</a>
+      <a href="/tulip-color-meanings">Color Meanings</a>
+      <a href="/types-of-tulips">Varieties</a>
+    </nav>
+    <p class="footer-copy">© 2025 The Garden Journal &nbsp;·&nbsp; All rights reserved</p>
+  </div>
+</footer>
+
+</body>
+</html>

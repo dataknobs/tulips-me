@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tulip Mania Explained: The First Economic Bubble in History (1600s Netherlands)</title>
+  <meta name="description" content="What was Tulip Mania? Learn how tulip bulbs became more valuable than houses in 17th-century Netherlands and why the market suddenly crashed." />
+  <link rel="canonical" href="https://yoursite.com/tulip-mania-explained" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What was Tulip Mania?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tulip Mania was a financial bubble in the Netherlands during the 1630s when tulip prices rose rapidly and then collapsed."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What caused Tulip Mania?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tulip Mania was caused by speculation, high demand, and the belief that prices would continue to rise."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How expensive were tulips during Tulip Mania?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Some tulip bulbs were worth as much as a house or several years' income."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When did Tulip Mania happen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tulip Mania occurred in the Netherlands during the 1630s, with the crash happening in 1637."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is Tulip Mania important?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It is considered one of the first recorded financial bubbles and is used as a lesson in economics and investing."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Serif:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg:        #0d0d0f;
+      --surface:   #141418;
+      --card:      #1c1c22;
+      --gold:      #d4a843;
+      --gold-lt:   #f0cc78;
+      --red:       #c93030;
+      --red-lt:    #e55a5a;
+      --green:     #2e7d5a;
+      --green-lt:  #4ab382;
+      --border:    rgba(255,255,255,0.08);
+      --text:      #e8e4dc;
+      --muted:     #8a8478;
+      --cream:     #fdfaf4;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'IBM Plex Serif', Georgia, serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.82;
+      font-size: 17px;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      position: relative;
+      min-height: 560px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+    .hero-img {
+      position: absolute;
+      inset: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center 40%;
+      opacity: 0.22;
+    }
+    /* ticker-tape lines */
+    .hero-lines {
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        -55deg,
+        transparent,
+        transparent 28px,
+        rgba(212,168,67,0.04) 28px,
+        rgba(212,168,67,0.04) 29px
+      );
+      pointer-events: none;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 5rem 2rem 4rem;
+      width: 100%;
+    }
+    .hero-kicker {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.1rem;
+      opacity: 0;
+      animation: fadeUp 0.5s 0.1s ease forwards;
+    }
+    .hero h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.08;
+      margin-bottom: 1.25rem;
+      max-width: 680px;
+      opacity: 0;
+      animation: fadeUp 0.5s 0.3s ease forwards;
+    }
+    .hero h1 .accent { color: var(--gold); }
+    .hero-sub {
+      font-size: 1.05rem;
+      font-weight: 300;
+      font-style: italic;
+      color: rgba(232,228,220,0.7);
+      max-width: 500px;
+      margin-bottom: 2rem;
+      opacity: 0;
+      animation: fadeUp 0.5s 0.5s ease forwards;
+    }
+    /* price ticker */
+    .hero-ticker {
+      display: inline-flex;
+      align-items: center;
+      gap: 1.25rem;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 0.6rem 1.25rem;
+      font-family: 'Syne', sans-serif;
+      font-size: 0.82rem;
+      opacity: 0;
+      animation: fadeUp 0.5s 0.65s ease forwards;
+    }
+    .ticker-item { display: flex; flex-direction: column; align-items: center; }
+    .ticker-label { font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); }
+    .ticker-val   { font-weight: 700; color: var(--gold-lt); }
+    .ticker-sep   { color: var(--border); font-size: 1.2rem; }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── Series nav ── */
+    .topnav {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      justify-content: center;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+      padding: 0.5rem 1rem;
+      font-family: 'Syne', sans-serif;
+      font-size: 0.76rem;
+    }
+    .topnav a { color: var(--muted); text-decoration: none; padding: 0.15rem 0.55rem; border-radius: 3px; transition: color 0.2s; }
+    .topnav a:hover { color: var(--gold); }
+    .topnav .sep { color: var(--border); }
+
+    /* ── Breadcrumb ── */
+    .breadcrumb {
+      background: var(--surface);
+      font-family: 'Syne', sans-serif;
+      font-size: 0.79rem;
+      padding: 0.75rem 1.5rem;
+      color: var(--muted);
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .breadcrumb a { color: var(--gold); text-decoration: none; }
+
+    /* ── Layout ── */
+    .container { max-width: 860px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* ── Snippet ── */
+    .snippet {
+      background: var(--card);
+      border-left: 3px solid var(--gold);
+      border-radius: 4px;
+      padding: 1.35rem 1.7rem;
+      margin: 2rem 0 2.5rem;
+      font-size: 1.02rem;
+    }
+    .snippet strong {
+      display: block;
+      font-family: 'Syne', sans-serif;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--gold);
+      margin-bottom: 0.4rem;
+    }
+
+    /* ── Sections ── */
+    section { padding: 2.5rem 0; border-bottom: 1px solid var(--border); }
+    section:last-of-type { border-bottom: none; }
+
+    h2 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 1rem;
+      line-height: 1.18;
+    }
+    h3 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--gold-lt);
+      margin-bottom: 0.4rem;
+    }
+    p { margin-bottom: 1.05rem; color: rgba(232,228,220,0.85); }
+    p:last-child { margin-bottom: 0; }
+
+    /* ── Why valuable cards ── */
+    .value-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 0.85rem;
+      margin: 1.4rem 0;
+    }
+    .value-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.1rem 1rem;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .value-card:hover { border-color: var(--gold); transform: translateY(-2px); }
+    .value-card .v-icon { font-size: 1.5rem; margin-bottom: 0.5rem; display: block; }
+    .value-card h3 { font-size: 0.92rem; margin-bottom: 0.25rem; color: var(--gold-lt); }
+    .value-card p  { font-size: 0.84rem; color: var(--muted); margin: 0; }
+
+    /* ── Price chart visual ── */
+    .price-chart {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.75rem 1.75rem 1.25rem;
+      margin: 1.5rem 0;
+    }
+    .chart-label {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+    .chart-bars {
+      display: flex;
+      align-items: flex-end;
+      gap: 6px;
+      height: 140px;
+      padding-bottom: 28px;
+      position: relative;
+    }
+    .chart-bars::after {
+      content: '';
+      position: absolute;
+      bottom: 28px; left: 0; right: 0;
+      height: 1px;
+      background: var(--border);
+    }
+    .bar-wrap {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      height: 100%;
+      justify-content: flex-end;
+    }
+    .bar {
+      width: 100%;
+      border-radius: 3px 3px 0 0;
+      transition: opacity 0.3s;
+      min-height: 4px;
+    }
+    .bar-year {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.65rem;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+    .chart-note {
+      font-size: 0.8rem;
+      font-style: italic;
+      color: var(--muted);
+      margin-top: 0.6rem;
+      text-align: center;
+    }
+
+    /* ── Price comparison ── */
+    .price-compare {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1.4rem 0;
+    }
+    @media (max-width: 520px) { .price-compare { grid-template-columns: 1fr; } }
+    .pc-item {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.1rem 1.25rem;
+    }
+    .pc-label {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      margin-bottom: 0.3rem;
+    }
+    .pc-value {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--gold-lt);
+    }
+    .pc-desc {
+      font-size: 0.84rem;
+      color: var(--muted);
+      margin-top: 0.2rem;
+    }
+
+    /* ── Psychology drivers ── */
+    .psych-list {
+      list-style: none;
+      padding: 0;
+      margin: 1.25rem 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+    }
+    @media (max-width: 520px) { .psych-list { grid-template-columns: 1fr; } }
+    .psych-item {
+      background: var(--card);
+      border-left: 3px solid var(--red);
+      border-radius: 0 6px 6px 0;
+      padding: 0.9rem 1.1rem;
+    }
+    .psych-item .p-head {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--red-lt);
+      margin-bottom: 0.2rem;
+    }
+    .psych-item p { font-size: 0.85rem; color: var(--muted); margin: 0; }
+
+    /* ── Crash timeline ── */
+    .crash-flow {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      margin: 1.5rem 0;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .cf-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--border);
+      transition: background 0.2s;
+    }
+    .cf-step:last-child { border-bottom: none; }
+    .cf-step:hover { background: var(--card); }
+    .cf-num {
+      font-family: 'Syne', sans-serif;
+      font-weight: 800;
+      font-size: 1.4rem;
+      color: var(--red);
+      line-height: 1;
+      flex-shrink: 0;
+      width: 30px;
+    }
+    .cf-text h3 { font-size: 0.95rem; margin-bottom: 0.2rem; color: #fff; }
+    .cf-text p  { font-size: 0.86rem; color: var(--muted); margin: 0; }
+
+    /* ── Myth vs Reality ── */
+    .myth-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 1.4rem 0;
+    }
+    @media (max-width: 520px) { .myth-grid { grid-template-columns: 1fr; } }
+    .myth-col { padding: 1.25rem 1.35rem; }
+    .myth-col:first-child { background: rgba(201,48,48,0.12); border-right: 1px solid var(--border); }
+    .myth-col:last-child  { background: rgba(46,125,90,0.12); }
+    .myth-col .col-head {
+      font-family: 'Syne', sans-serif;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .myth-col:first-child .col-head { color: var(--red-lt); }
+    .myth-col:last-child  .col-head { color: var(--green-lt); }
+    .myth-entry { margin-bottom: 1rem; }
+    .myth-entry:last-child { margin-bottom: 0; }
+    .myth-entry p { font-size: 0.9rem; margin: 0; }
+    .myth-entry .strike { text-decoration: line-through; color: var(--muted); font-size: 0.88rem; margin-bottom: 0.15rem; }
+
+    /* ── Modern parallels ── */
+    .parallels {
+      display: flex;
+      gap: 0.85rem;
+      flex-wrap: wrap;
+      margin: 1.25rem 0;
+    }
+    .parallel-pill {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 0.75rem 1.1rem;
+      flex: 1 1 170px;
+      display: flex;
+      gap: 0.6rem;
+      align-items: flex-start;
+    }
+    .parallel-pill .p-icon { font-size: 1.3rem; flex-shrink: 0; }
+    .parallel-pill h3 { font-size: 0.88rem; margin-bottom: 0.15rem; color: var(--gold-lt); }
+    .parallel-pill p  { font-size: 0.82rem; color: var(--muted); margin: 0; }
+
+    /* ── Lessons box ── */
+    .lessons-box {
+      background: linear-gradient(135deg, var(--surface) 0%, var(--card) 100%);
+      border: 1px solid var(--gold);
+      border-radius: 10px;
+      padding: 1.75rem 2rem;
+      margin: 1.5rem 0;
+    }
+    .lessons-box h3 { color: var(--gold-lt); margin-bottom: 1rem; font-size: 1rem; }
+    .lessons-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+    }
+    @media (max-width: 480px) { .lessons-grid { grid-template-columns: 1fr; } }
+    .lesson {
+      display: flex;
+      gap: 0.6rem;
+      align-items: flex-start;
+      font-size: 0.9rem;
+      color: var(--text);
+    }
+    .lesson::before { content: '💡'; font-size: 0.85rem; flex-shrink: 0; margin-top: 2px; }
+
+    /* ── Images ── */
+    .article-img {
+      width: 100%;
+      border-radius: 8px;
+      margin: 2rem 0 0.5rem;
+      display: block;
+      object-fit: cover;
+      max-height: 420px;
+      border: 1px solid var(--border);
+      filter: saturate(0.85);
+    }
+    .img-caption {
+      text-align: center;
+      font-style: italic;
+      font-size: 0.83rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+
+    /* ── Related ── */
+    .related {
+      background: var(--card);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin-top: 1.5rem;
+      border: 1px solid var(--border);
+    }
+    .related h3 { font-family:'Syne',sans-serif; font-size: 0.78rem; text-transform:uppercase; letter-spacing:0.12em; color: var(--gold); margin-bottom: 0.75rem; }
+    .related a {
+      display: block;
+      color: rgba(232,228,220,0.75);
+      font-size: 0.91rem;
+      text-decoration: none;
+      padding: 0.28rem 0;
+      border-bottom: 1px solid var(--border);
+      transition: color 0.2s;
+    }
+    .related a:last-child { border-bottom: none; }
+    .related a:hover { color: var(--gold-lt); }
+    .related a::before { content: '→  '; color: var(--gold); }
+
+    /* ── FAQ ── */
+    .faq-list { list-style: none; padding: 0; margin-top: 1rem; }
+    .faq-item {
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      margin-bottom: 0.7rem;
+      overflow: hidden;
+    }
+    .faq-q {
+      width: 100%;
+      background: var(--card);
+      border: none;
+      text-align: left;
+      padding: 1rem 1.25rem;
+      font-family: 'Syne', sans-serif;
+      font-size: 0.96rem;
+      font-weight: 600;
+      color: #fff;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      transition: background 0.2s;
+    }
+    .faq-q:hover { background: rgba(212,168,67,0.1); }
+    .faq-q .arr { font-size: 0.7rem; transition: transform 0.25s; flex-shrink: 0; color: var(--gold); }
+    .faq-a {
+      display: none;
+      padding: 1rem 1.25rem;
+      font-size: 0.94rem;
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+      color: rgba(232,228,220,0.85);
+    }
+    .faq-item.open .faq-a { display: block; }
+    .faq-item.open .arr  { transform: rotate(180deg); }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--surface);
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      text-align: center;
+      padding: 2rem 1rem;
+      font-family: 'Syne', sans-serif;
+      font-size: 0.79rem;
+      margin-top: 3.5rem;
+    }
+    footer a { color: var(--gold); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<!-- Hero -->
+<div class="hero">
+  <img
+    class="hero-img"
+    src="https://storage.googleapis.com/kreatewebsites/photos1000/tulips-festival-banner.jpg"
+    alt="Tulip fields — site of history's most famous flower speculation"
+    width="1000" height="560"
+    loading="eager"
+  />
+  <div class="hero-lines"></div>
+  <div class="hero-content">
+    <p class="hero-kicker">🌷 Article 5 of 20 &nbsp;·&nbsp; Finance &amp; History</p>
+    <h1>Tulip Mania:<br><span class="accent">The World's First</span><br>Financial Bubble</h1>
+    <p class="hero-sub">How a flower bulb became worth more than a house — and what happened next.</p>
+    <div class="hero-ticker" aria-label="Market snapshot 1637">
+      <div class="ticker-item">
+        <span class="ticker-label">Peak Year</span>
+        <span class="ticker-val">1637</span>
+      </div>
+      <span class="ticker-sep">|</span>
+      <div class="ticker-item">
+        <span class="ticker-label">Market</span>
+        <span class="ticker-val">Netherlands</span>
+      </div>
+      <span class="ticker-sep">|</span>
+      <div class="ticker-item">
+        <span class="ticker-label">Crash</span>
+        <span class="ticker-val">Feb 1637</span>
+      </div>
+      <span class="ticker-sep">|</span>
+      <div class="ticker-item">
+        <span class="ticker-label">Status</span>
+        <span class="ticker-val" style="color:var(--red-lt);">▼ Collapsed</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Series nav -->
+<nav class="topnav" aria-label="Series navigation">
+  <a href="/tulip-meaning-symbolism">① Meaning</a>
+  <span class="sep">·</span>
+  <a href="/why-tulips-are-perfect-spring-flower">② Spring</a>
+  <span class="sep">·</span>
+  <a href="/tulips-in-art-poetry-design">③ Art &amp; Design</a>
+  <span class="sep">·</span>
+  <a href="/history-of-tulips">④ History</a>
+  <span class="sep">·</span>
+  <strong style="color:var(--gold);">⑤ Tulip Mania</strong>
+  <span class="sep">·</span>
+  <a href="/tulips">More →</a>
+</nav>
+
+<!-- Breadcrumb -->
+<div class="breadcrumb">
+  <a href="/">Home</a> &rsaquo; <a href="/flowers">Flowers</a> &rsaquo; <a href="/tulips">Tulips</a> &rsaquo; Tulip Mania Explained
+</div>
+
+<div class="container">
+
+  <!-- Snippet -->
+  <div class="snippet" aria-label="Quick Answer">
+    <strong>🔍 Quick Answer</strong>
+    Tulip Mania was a financial bubble in the Netherlands during the <strong>1630s</strong> when tulip bulb prices skyrocketed due to speculation and then collapsed, causing widespread financial losses. It is considered <strong>one of the first recorded economic bubbles in history</strong>.
+  </div>
+
+  <!-- Intro -->
+  <section id="intro">
+    <h2>A Flower That Cost More Than a House</h2>
+    <p>Imagine paying the equivalent of a luxury home — or several years of a skilled worker's salary — for a single flower bulb. Not for a painting, not for land, not for gold. For a <em>bulb</em>, buried in the ground, not yet bloomed.</p>
+    <p>This is not a fable. It happened in the Netherlands during the 1630s, in an event that has fascinated economists, historians, and investors ever since. Tulip Mania is the story of how beauty met greed, how markets lost their minds, and what the wreckage left behind.</p>
+  </section>
+
+  <!-- What led to it -->
+  <section id="causes">
+    <h2>What Made Tulips So Extraordinarily Valuable?</h2>
+    <p>Tulips had arrived in Europe from the Ottoman Empire in the late 1500s and quickly became a coveted luxury. But a luxury item is not a bubble. Several specific forces combined to turn admiration into mania.</p>
+
+    <div class="value-grid">
+      <div class="value-card">
+        <span class="v-icon">💎</span>
+        <h3>Rarity</h3>
+        <p>Certain varieties took years to propagate, making supply genuinely scarce</p>
+      </div>
+      <div class="value-card">
+        <span class="v-icon">🦠</span>
+        <h3>Broken Tulips</h3>
+        <p>A mosaic virus created unpredictable flame and feather patterns — beautiful and unrepeatable</p>
+      </div>
+      <div class="value-card">
+        <span class="v-icon">👑</span>
+        <h3>Status Symbol</h3>
+        <p>Owning rare tulips signaled wealth and refinement in Dutch society</p>
+      </div>
+      <div class="value-card">
+        <span class="v-icon">🌍</span>
+        <h3>Exotic Origin</h3>
+        <p>Tulips still felt foreign and extraordinary — unlike any native European flower</p>
+      </div>
+    </div>
+
+    <img
+      class="article-img"
+      src="https://storage.googleapis.com/kreatewebsites/photos800/tulip-festival-28_2.jpg"
+      alt="Rare and striking tulip varieties — the kind that drove Tulip Mania prices"
+      width="800" height="400"
+      loading="lazy"
+    />
+    <p class="img-caption">Rare color-broken tulips — produced by a mosaic virus — were the most prized and expensive of all during the mania.</p>
+  </section>
+
+  <!-- Price rise -->
+  <section id="prices">
+    <h2>How Prices Skyrocketed: The Speculation Machine</h2>
+    <p>By the early 1630s, tulips had crossed a threshold — they were no longer merely luxury goods. They had become <strong>investment vehicles</strong>, traded in a market driven by the expectation that prices would keep rising forever.</p>
+
+    <!-- Stylized bar chart -->
+    <div class="price-chart" aria-label="Illustrative tulip price trajectory 1620–1637">
+      <p class="chart-label">Illustrative price trajectory — Tulip bulb values 1620–1637</p>
+      <div class="chart-bars">
+        <div class="bar-wrap">
+          <div class="bar" style="height:8%;background:var(--green);"></div>
+          <span class="bar-year">1620</span>
+        </div>
+        <div class="bar-wrap">
+          <div class="bar" style="height:12%;background:var(--green);"></div>
+          <span class="bar-year">1625</span>
+        </div>
+        <div class="bar-wrap">
+          <div class="bar" style="height:22%;background:var(--gold);"></div>
+          <span class="bar-year">1630</span>
+        </div>
+        <div class="bar-wrap">
+          <div class="bar" style="height:45%;background:var(--gold);"></div>
+          <span class="bar-year">1634</span>
+        </div>
+        <div class="bar-wrap">
+          <div class="bar" style="height:80%;background:var(--gold-lt);"></div>
+          <span class="bar-year">1636</span>
+        </div>
+        <div class="bar-wrap">
+          <div class="bar" style="height:100%;background:var(--red-lt);"></div>
+          <span class="bar-year">Peak</span>
+        </div>
+        <div class="bar-wrap">
+          <div class="bar" style="height:6%;background:var(--red);"></div>
+          <span class="bar-year">Crash</span>
+        </div>
+        <div class="bar-wrap">
+          <div class="bar" style="height:3%;background:var(--muted);"></div>
+          <span class="bar-year">1638</span>
+        </div>
+      </div>
+      <p class="chart-note">Conceptual illustration — actual price records were incomplete, but the rise-and-fall pattern is historically documented.</p>
+    </div>
+
+    <p>What made Tulip Mania structurally modern was the use of <strong>futures contracts</strong> — agreements to buy bulbs at a set price at a future date. Buyers were speculating on tulips still in the ground. This was, in many respects, derivatives trading in 1630s Amsterdam.</p>
+
+    <div class="price-compare">
+      <div class="pc-item">
+        <div class="pc-label">Peak bulb price (Semper Augustus variety)</div>
+        <div class="pc-value">~10,000 guilders</div>
+        <div class="pc-desc">Equivalent to a grand Amsterdam canal house with garden</div>
+      </div>
+      <div class="pc-item">
+        <div class="pc-label">Skilled craftsman's annual wage (c.1637)</div>
+        <div class="pc-value">~300 guilders</div>
+        <div class="pc-desc">A single bulb could cost over 30 years of skilled labor income</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Psychology -->
+  <section id="psychology">
+    <h2>The Psychology Behind the Bubble</h2>
+    <p>Tulip Mania was not merely an economic event — it was a collective psychological episode. The same forces that drove the mania are recognizable in every speculative bubble that has followed it across nearly four centuries.</p>
+
+    <ul class="psych-list" aria-label="Psychological drivers of Tulip Mania">
+      <li class="psych-item">
+        <div class="p-head">Fear of Missing Out (FOMO)</div>
+        <p>Watching neighbors get rich made people feel they had to participate before it was too late</p>
+      </li>
+      <li class="psych-item">
+        <div class="p-head">Herd Mentality</div>
+        <p>When everyone around you is buying, selling feels irrational — until it isn't</p>
+      </li>
+      <li class="psych-item">
+        <div class="p-head">Infinite Optimism</div>
+        <p>The sincere belief that this time, prices really would keep rising forever</p>
+      </li>
+      <li class="psych-item">
+        <div class="p-head">Low Barrier Entry</div>
+        <p>Futures contracts meant even ordinary citizens without capital could speculate</p>
+      </li>
+    </ul>
+
+    <p>Perhaps most striking: tulip investors were not fools. Many were educated, successful merchants and traders — people who knew markets. The mania swallowed them anyway. That is what makes it such a lasting lesson.</p>
+  </section>
+
+  <!-- The Crash -->
+  <section id="crash">
+    <h2>The Crash: How It All Unraveled</h2>
+    <p>Financial bubbles rarely announce themselves before they pop. Tulip Mania's collapse was sudden, brutal, and almost comically swift — beginning with a single missed auction in Haarlem in February 1637.</p>
+
+    <div class="crash-flow" aria-label="Sequence of events in the Tulip Mania crash">
+      <div class="cf-step">
+        <span class="cf-num">1</span>
+        <div class="cf-text">
+          <h3>Buyers Fail to Appear</h3>
+          <p>In early February 1637, buyers stop showing up at routine tulip auctions in Haarlem. Sellers begin to panic.</p>
+        </div>
+      </div>
+      <div class="cf-step">
+        <span class="cf-num">2</span>
+        <div class="cf-text">
+          <h3>Prices Begin to Slide</h3>
+          <p>Without buyers, sellers cut prices. Price cuts confirm fears. More buyers disappear.</p>
+        </div>
+      </div>
+      <div class="cf-step">
+        <span class="cf-num">3</span>
+        <div class="cf-text">
+          <h3>Panic Spreads</h3>
+          <p>News travels fast in a small market. Investors holding futures contracts rush to sell. There are almost no takers.</p>
+        </div>
+      </div>
+      <div class="cf-step">
+        <span class="cf-num">4</span>
+        <div class="cf-text">
+          <h3>Contracts Become Worthless</h3>
+          <p>Futures contracts — agreements to buy bulbs at peak prices — become impossible to honor or enforce. Legal chaos follows.</p>
+        </div>
+      </div>
+      <div class="cf-step">
+        <span class="cf-num">5</span>
+        <div class="cf-text">
+          <h3>Markets Collapse</h3>
+          <p>Within weeks, prices have fallen by 99% or more for most varieties. The bubble is over. The tulips, meanwhile, keep growing.</p>
+        </div>
+      </div>
+    </div>
+
+    <img
+      class="article-img"
+      src="https://storage.googleapis.com/kreatewebsites/photos700/tulip-festival-046_2.jpg"
+      alt="Tulip fields — a reminder that flowers outlasted the speculation"
+      width="700" height="380"
+      loading="lazy"
+    />
+    <p class="img-caption">The flowers survived the crash. The fortunes of many investors did not.</p>
+  </section>
+
+  <!-- Myths vs Reality -->
+  <section id="myths">
+    <h2>Myths vs. Reality</h2>
+    <p>Tulip Mania has been retold so many times that myth and history have become thoroughly entangled. Here is what the historical record actually supports.</p>
+
+    <div class="myth-grid" aria-label="Tulip Mania myths vs reality">
+      <div class="myth-col">
+        <div class="col-head">❌ The Myth</div>
+        <div class="myth-entry">
+          <div class="strike">Tulip Mania destroyed the Dutch economy</div>
+          <div class="myth-entry">
+          <div class="strike">Everyone in the Netherlands was involved</div>
+        </div>
+        <div class="myth-entry">
+          <div class="strike">Tulips themselves became worthless afterward</div>
+        </div>
+        </div>
+      </div>
+      <div class="myth-col">
+        <div class="col-head">✅ The Reality</div>
+        <div class="myth-entry">
+          <p>The Dutch economy remained largely stable. The broader financial impact was limited, though individual losses could be severe.</p>
+        </div>
+        <div class="myth-entry">
+          <p>Participation was mostly concentrated among certain merchants and traders — not a nationwide frenzy of all social classes.</p>
+        </div>
+        <div class="myth-entry">
+          <p>Tulips remained popular and the Dutch continued cultivating them — eventually building the global industry that exists today.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modern Parallels -->
+  <section id="modern">
+    <h2>Tulip Mania &amp; Modern Market Bubbles</h2>
+    <p>The reason economists and historians keep returning to Tulip Mania is that its patterns repeat — across centuries, industries, and technologies — with remarkable consistency.</p>
+
+    <div class="parallels">
+      <div class="parallel-pill">
+        <span class="p-icon">📈</span>
+        <div>
+          <h3>Dot-com Bubble (2000)</h3>
+          <p>Tech companies valued at billions with no earnings — same speculative logic, different asset</p>
+        </div>
+      </div>
+      <div class="parallel-pill">
+        <span class="p-icon">🏠</span>
+        <div>
+          <h3>US Housing Crisis (2008)</h3>
+          <p>Mortgage-backed securities and the belief that house prices only ever rise</p>
+        </div>
+      </div>
+      <div class="parallel-pill">
+        <span class="p-icon">₿</span>
+        <div>
+          <h3>Crypto Cycles</h3>
+          <p>Rapid price surges driven by speculation, FOMO, and futures markets — then sharp corrections</p>
+        </div>
+      </div>
+      <div class="parallel-pill">
+        <span class="p-icon">🃏</span>
+        <div>
+          <h3>NFT Mania (2021)</h3>
+          <p>Digital "rare" assets — like broken tulips — selling for fortunes before markets collapsed</p>
+        </div>
+      </div>
+    </div>
+
+    <p>The common thread across all of them: assets priced on narrative rather than fundamental value, fueled by the human conviction that <em>this time is different</em>. It never is.</p>
+
+    <div class="lessons-box">
+      <h3>💡 Key Lessons from Tulip Mania</h3>
+      <div class="lessons-grid">
+        <div class="lesson">Prices driven by hype and narrative alone are inherently unstable</div>
+        <div class="lesson">Markets are moved by human emotion as much as rational analysis</div>
+        <div class="lesson">Futures and derivatives amplify both gains and losses dramatically</div>
+        <div class="lesson">Not all trends are sustainable — timing an exit is everything</div>
+        <div class="lesson">Rarity can be manufactured, perceived, or destroyed overnight</div>
+        <div class="lesson">Even sophisticated investors can be swept up in collective delusion</div>
+      </div>
+    </div>
+
+    <div class="related" aria-label="Related articles">
+      <h3>📚 More in This Series</h3>
+      <a href="/history-of-tulips">④ History of Tulips — From Turkey to the Netherlands</a>
+      <a href="/tulip-meaning-symbolism">① Tulip Meaning &amp; Symbolism — What Every Color Represents</a>
+      <a href="/tulips-in-art-poetry-design">③ Tulips in Art, Poetry &amp; Design</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <ul class="faq-list" role="list">
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          What caused Tulip Mania? <span class="arr">▼</span>
+        </button>
+        <div class="faq-a">
+          Tulip Mania was caused by a combination of factors: genuine scarcity of rare varieties, their status as luxury symbols in Dutch society, the creation of futures markets that allowed speculation on unplanted bulbs, and classic crowd psychology — FOMO, herd mentality, and the belief that prices would never fall.
+        </div>
+      </li>
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          How expensive were tulips during Tulip Mania? <span class="arr">▼</span>
+        </button>
+        <div class="faq-a">
+          At peak prices, the rarest varieties — particularly the Semper Augustus — reportedly sold for around 10,000 guilders per bulb. To put that in context, a skilled craftsman of the period earned roughly 300 guilders per year, and a comfortable Amsterdam canal house could be purchased for a similar sum.
+        </div>
+      </li>
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          When did Tulip Mania happen and when did it crash? <span class="arr">▼</span>
+        </button>
+        <div class="faq-a">
+          The speculative frenzy built through the mid-1630s, reaching its peak in late 1636 and early 1637. The crash began in February 1637 when buyers stopped appearing at auctions in Haarlem. Within weeks, prices had collapsed by the vast majority of their peak value.
+        </div>
+      </li>
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Did Tulip Mania destroy the Dutch economy? <span class="arr">▼</span>
+        </button>
+        <div class="faq-a">
+          This is one of the most persistent myths about Tulip Mania. The historical evidence suggests the broader Dutch economy remained relatively stable. Individual losses could be significant, but the event was more financially contained than its legendary status implies. The Dutch continued to thrive — and continued growing tulips.
+        </div>
+      </li>
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Why is Tulip Mania still studied today? <span class="arr">▼</span>
+        </button>
+        <div class="faq-a">
+          Tulip Mania is considered one of the earliest documented examples of a speculative financial bubble — and its psychological and structural patterns have reappeared in virtually every major market bubble since. It is studied in economics, finance, behavioral psychology, and history as a foundational case study in how markets can fail.
+        </div>
+      </li>
+    </ul>
+  </section>
+
+</div><!-- /container -->
+
+<footer>
+  <p>© 2025 The Garden Journal &nbsp;·&nbsp; <a href="/privacy">Privacy</a> &nbsp;·&nbsp; <a href="/contact">Contact</a> &nbsp;·&nbsp; <a href="/tulips">All Tulip Articles</a></p>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tulip Color Meanings: What Each Tulip Color Symbolizes (Full Guide)</title>
+  <meta name="description" content="Discover tulip color meanings and symbolism. Learn what red, yellow, white, pink, and purple tulips represent and how to choose the right tulip color." />
+  <link rel="canonical" href="https://yoursite.com/tulip-color-meanings" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What do tulip colors mean?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tulip colors represent different emotions such as love, happiness, forgiveness, and admiration."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What color tulips symbolize love?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Red tulips symbolize true love and romance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What do yellow tulips symbolize today?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yellow tulips symbolize happiness and positivity."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are white tulips for funerals?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "White tulips can be used for sympathy but also represent peace and new beginnings."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg:      #fdfaf6;
+      --surface: #f7f2eb;
+      --border:  #e2d9ce;
+      --ink:     #1a1410;
+      --muted:   #7a6e62;
+
+      /* color palette per tulip */
+      --c-red:    #c0312b;
+      --c-red-lt: #f5e8e8;
+      --c-yel:    #c89430;
+      --c-yel-lt: #fef8e6;
+      --c-whi:    #7a8c8a;
+      --c-whi-lt: #f2f6f5;
+      --c-pnk:    #c46080;
+      --c-pnk-lt: #fdf0f4;
+      --c-pur:    #7550a0;
+      --c-pur-lt: #f4eefb;
+      --c-org:    #c8601a;
+      --c-org-lt: #fff2ea;
+      --c-mix:    #5a7a5a;
+      --c-mix-lt: #edf5ed;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Jost', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.82;
+      font-size: 16.5px;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      min-height: 520px;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      overflow: hidden;
+      position: relative;
+    }
+    /* color stripe panels */
+    .hero-stripe {
+      height: 100%;
+      min-height: 520px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-stripe img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+    .hero-stripe:hover img { transform: scale(1.06); }
+    .hero-stripe::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.1) 50%, transparent 100%);
+    }
+    /* center overlay with title */
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      text-align: center;
+      background: rgba(10,6,4,0.42);
+    }
+    .hero-kicker {
+      font-size: 0.74rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 1rem;
+      opacity: 0;
+      animation: rise 0.6s 0.1s ease forwards;
+    }
+    .hero h1 {
+      font-family: 'Bodoni Moda', serif;
+      font-size: clamp(2.2rem, 6vw, 4.2rem);
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+      opacity: 0;
+      animation: rise 0.6s 0.3s ease forwards;
+    }
+    .hero h1 em { font-style: italic; }
+    .hero-sub {
+      font-size: 1rem;
+      font-weight: 300;
+      color: rgba(255,255,255,0.75);
+      max-width: 520px;
+      opacity: 0;
+      animation: rise 0.6s 0.5s ease forwards;
+    }
+    /* color dot row */
+    .hero-dots {
+      display: flex;
+      gap: 0.6rem;
+      margin-top: 1.5rem;
+      opacity: 0;
+      animation: rise 0.6s 0.65s ease forwards;
+    }
+    .hero-dot {
+      width: 14px; height: 14px;
+      border-radius: 50%;
+      border: 2px solid rgba(255,255,255,0.6);
+    }
+
+    @media (max-width: 640px) {
+      .hero { grid-template-columns: repeat(4, 1fr); }
+      .hero-stripe:nth-child(n+5) { display: none; }
+    }
+    @media (max-width: 400px) {
+      .hero { grid-template-columns: repeat(3, 1fr); }
+      .hero-stripe:nth-child(n+4) { display: none; }
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(14px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── Nav ── */
+    .topnav {
+      background: var(--ink);
+      display: flex;
+      justify-content: center;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+      padding: 0.5rem 1rem;
+      font-size: 0.76rem;
+      font-weight: 500;
+    }
+    .topnav a { color: rgba(255,255,255,0.55); text-decoration: none; padding: 0.15rem 0.55rem; border-radius: 3px; transition: color 0.2s; }
+    .topnav a:hover { color: #fff; }
+    .topnav .sep { color: rgba(255,255,255,0.2); }
+
+    /* ── Breadcrumb ── */
+    .breadcrumb {
+      font-size: 0.79rem;
+      padding: 0.85rem 1.5rem;
+      color: var(--muted);
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .breadcrumb a { color: var(--c-red); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    /* ── Layout ── */
+    .container { max-width: 900px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* ── Snippet ── */
+    .snippet {
+      background: var(--surface);
+      border-left: 4px solid var(--c-red);
+      border-radius: 4px;
+      padding: 1.35rem 1.7rem;
+      margin: 2rem 0 2.5rem;
+      font-size: 1.01rem;
+    }
+    .snippet strong {
+      display: block;
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--c-red);
+      margin-bottom: 0.4rem;
+      font-weight: 700;
+    }
+
+    /* ── Sections ── */
+    section { padding: 2.5rem 0; border-bottom: 1px solid var(--border); }
+    section:last-of-type { border-bottom: none; }
+
+    h2 {
+      font-family: 'Bodoni Moda', serif;
+      font-size: clamp(1.5rem, 3vw, 2.1rem);
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+    p { margin-bottom: 1rem; color: #2e251c; }
+    p:last-child { margin-bottom: 0; }
+
+    /* ── Quick reference bar ── */
+    .quick-ref {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 0;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 1.5rem 0;
+    }
+    @media (max-width: 600px) { .quick-ref { grid-template-columns: repeat(4, 1fr); } }
+    @media (max-width: 380px) { .quick-ref { grid-template-columns: repeat(3, 1fr); } }
+    .qr-item {
+      padding: 0.85rem 0.4rem;
+      text-align: center;
+      border-right: 1px solid var(--border);
+      cursor: default;
+      transition: opacity 0.2s;
+    }
+    .qr-item:last-child { border-right: none; }
+    .qr-item:hover { opacity: 0.8; }
+    .qr-dot { width: 28px; height: 28px; border-radius: 50%; margin: 0 auto 0.4rem; }
+    .qr-label { font-size: 0.72rem; font-weight: 600; color: var(--ink); }
+    .qr-word  { font-size: 0.65rem; color: var(--muted); }
+
+    /* ── Color section layout ── */
+    .color-section {
+      border-radius: 12px;
+      overflow: hidden;
+      margin: 2rem 0;
+      border: 1px solid var(--border);
+      display: grid;
+      grid-template-columns: 200px 1fr;
+    }
+    @media (max-width: 580px) { .color-section { grid-template-columns: 1fr; } }
+
+    .cs-photo {
+      position: relative;
+      overflow: hidden;
+      min-height: 220px;
+    }
+    .cs-photo img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+    .cs-photo .cs-badge {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      padding: 0.5rem 0.75rem;
+      font-family: 'Bodoni Moda', serif;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #fff;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+    }
+
+    .cs-body { padding: 1.5rem 1.75rem; background: #fff; }
+    .cs-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 0.75rem;
+    }
+    .cs-title {
+      font-family: 'Bodoni Moda', serif;
+      font-size: 1.35rem;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    .cs-emotion {
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      padding: 0.25rem 0.75rem;
+      border-radius: 100px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .cs-desc { font-size: 0.95rem; color: #2e251c; margin-bottom: 1rem; }
+
+    .cs-cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+    }
+    @media (max-width: 480px) { .cs-cols { grid-template-columns: 1fr; } }
+
+    .cs-col { }
+    .cs-col-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 0.4rem;
+    }
+    .cs-col ul { list-style: none; padding: 0; }
+    .cs-col ul li {
+      font-size: 0.88rem;
+      padding: 0.22rem 0;
+      color: var(--ink);
+      display: flex;
+      gap: 0.45rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .cs-col ul li:last-child { border-bottom: none; }
+    .cs-col ul li::before { content: '·'; color: var(--muted); flex-shrink: 0; }
+
+    /* Color-specific theming */
+    .cs-red    .cs-title { color: var(--c-red); }
+    .cs-red    .cs-emotion { background: var(--c-red-lt); color: var(--c-red); }
+    .cs-red    .cs-col-label { color: var(--c-red); }
+    .cs-red    .cs-photo .cs-badge { background: linear-gradient(to top, rgba(192,49,43,0.85), transparent); }
+
+    .cs-yellow .cs-title { color: var(--c-yel); }
+    .cs-yellow .cs-emotion { background: var(--c-yel-lt); color: var(--c-yel); }
+    .cs-yellow .cs-col-label { color: var(--c-yel); }
+    .cs-yellow .cs-photo .cs-badge { background: linear-gradient(to top, rgba(200,148,48,0.85), transparent); }
+
+    .cs-white  .cs-title { color: var(--c-whi); }
+    .cs-white  .cs-emotion { background: var(--c-whi-lt); color: var(--c-whi); }
+    .cs-white  .cs-col-label { color: var(--c-whi); }
+    .cs-white  .cs-photo .cs-badge { background: linear-gradient(to top, rgba(90,110,108,0.85), transparent); }
+
+    .cs-pink   .cs-title { color: var(--c-pnk); }
+    .cs-pink   .cs-emotion { background: var(--c-pnk-lt); color: var(--c-pnk); }
+    .cs-pink   .cs-col-label { color: var(--c-pnk); }
+    .cs-pink   .cs-photo .cs-badge { background: linear-gradient(to top, rgba(196,96,128,0.85), transparent); }
+
+    .cs-purple .cs-title { color: var(--c-pur); }
+    .cs-purple .cs-emotion { background: var(--c-pur-lt); color: var(--c-pur); }
+    .cs-purple .cs-col-label { color: var(--c-pur); }
+    .cs-purple .cs-photo .cs-badge { background: linear-gradient(to top, rgba(117,80,160,0.85), transparent); }
+
+    .cs-orange .cs-title { color: var(--c-org); }
+    .cs-orange .cs-emotion { background: var(--c-org-lt); color: var(--c-org); }
+    .cs-orange .cs-col-label { color: var(--c-org); }
+    .cs-orange .cs-photo .cs-badge { background: linear-gradient(to top, rgba(200,96,26,0.85), transparent); }
+
+    .cs-multi  .cs-title { color: var(--c-mix); }
+    .cs-multi  .cs-emotion { background: var(--c-mix-lt); color: var(--c-mix); }
+    .cs-multi  .cs-col-label { color: var(--c-mix); }
+    .cs-multi  .cs-photo .cs-badge { background: linear-gradient(to top, rgba(90,122,90,0.85), transparent); }
+
+    /* ── Emotion map ── */
+    .emotion-map {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      margin: 1.25rem 0;
+    }
+    @media (max-width: 560px) { .emotion-map { grid-template-columns: repeat(3, 1fr); } }
+    .em-item {
+      padding: 1.25rem 0.6rem;
+      text-align: center;
+      border-right: 1px solid var(--border);
+    }
+    .em-item:last-child { border-right: none; }
+    .em-emoji  { font-size: 1.6rem; display: block; margin-bottom: 0.3rem; }
+    .em-emotion { font-size: 0.78rem; font-weight: 600; color: var(--ink); }
+    .em-arrow  { font-size: 0.7rem; color: var(--muted); display: block; margin: 0.15rem 0; }
+    .em-color  { font-size: 0.75rem; font-weight: 600; }
+
+    /* ── Occasion chooser ── */
+    .chooser {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.25rem 0;
+      font-size: 0.93rem;
+    }
+    .chooser thead th {
+      background: var(--ink);
+      color: #fff;
+      padding: 0.7rem 1rem;
+      text-align: left;
+      font-weight: 600;
+      font-size: 0.85rem;
+      letter-spacing: 0.04em;
+    }
+    .chooser tbody td {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid var(--border);
+      vertical-align: middle;
+    }
+    .chooser tbody tr:last-child td { border-bottom: none; }
+    .chooser tbody tr:nth-child(even) td { background: var(--surface); }
+    .color-swatch {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 600;
+    }
+    .swatch-dot {
+      width: 12px; height: 12px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* ── Combination cards ── */
+    .combos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.9rem;
+      margin: 1.25rem 0;
+    }
+    @media (max-width: 560px) { .combos { grid-template-columns: 1fr; } }
+    .combo-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem 1.1rem;
+      text-align: center;
+      transition: transform 0.18s;
+    }
+    .combo-card:hover { transform: translateY(-2px); }
+    .combo-swatches {
+      display: flex;
+      justify-content: center;
+      gap: 0.3rem;
+      margin-bottom: 0.6rem;
+    }
+    .combo-dot {
+      width: 22px; height: 22px;
+      border-radius: 50%;
+      border: 2px solid rgba(0,0,0,0.08);
+    }
+    .combo-card h3 { font-size: 0.9rem; font-family: 'Bodoni Moda', serif; margin-bottom: 0.2rem; }
+    .combo-card p  { font-size: 0.82rem; color: var(--muted); margin: 0; }
+
+    /* ── Photo gallery strip ── */
+    .photo-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.6rem;
+      margin: 2rem 0;
+    }
+    @media (max-width: 520px) { .photo-strip { grid-template-columns: repeat(2, 1fr); } }
+    .photo-strip img {
+      width: 100%; aspect-ratio: 1;
+      object-fit: cover;
+      border-radius: 6px;
+      display: block;
+      border: 1px solid var(--border);
+      transition: transform 0.2s;
+    }
+    .photo-strip img:hover { transform: scale(1.02); }
+
+    /* ── Related ── */
+    .related {
+      background: var(--surface);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin-top: 1.5rem;
+      border: 1px solid var(--border);
+    }
+    .related h3 { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--c-red); margin-bottom: 0.7rem; font-weight: 700; }
+    .related a {
+      display: block;
+      color: var(--c-red);
+      font-size: 0.91rem;
+      text-decoration: none;
+      padding: 0.28rem 0;
+      border-bottom: 1px dashed var(--border);
+    }
+    .related a:last-child { border-bottom: none; }
+    .related a:hover { text-decoration: underline; }
+    .related a::before { content: '→  '; }
+
+    /* ── FAQ ── */
+    .faq-list { list-style: none; padding: 0; margin-top: 1rem; }
+    .faq-item { border: 1px solid var(--border); border-radius: 6px; margin-bottom: 0.7rem; overflow: hidden; }
+    .faq-q {
+      width: 100%;
+      background: var(--surface);
+      border: none;
+      text-align: left;
+      padding: 1rem 1.25rem;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.96rem;
+      font-weight: 600;
+      color: var(--ink);
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      transition: background 0.2s;
+    }
+    .faq-q:hover { background: var(--c-red-lt); }
+    .faq-q .arr { font-size: 0.7rem; transition: transform 0.25s; flex-shrink: 0; color: var(--c-red); }
+    .faq-a {
+      display: none;
+      padding: 1rem 1.25rem;
+      font-size: 0.93rem;
+      border-top: 1px solid var(--border);
+      background: #fff;
+      color: var(--ink);
+    }
+    .faq-item.open .faq-a { display: block; }
+    .faq-item.open .arr { transform: rotate(180deg); }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--ink);
+      color: rgba(255,255,255,0.45);
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.8rem;
+      margin-top: 3.5rem;
+    }
+    footer a { color: #c8a870; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<!-- Hero: seven color stripe columns -->
+<div class="hero" aria-label="Colorful tulip hero image">
+  <div class="hero-stripe">
+    <img src="https://storage.googleapis.com/kreatewebsites/photos500/tulips-red-yellow.jpg" alt="Red and yellow tulips" loading="eager" />
+  </div>
+  <div class="hero-stripe">
+    <img src="https://storage.googleapis.com/kreatewebsites/photos500/yellow-tulips.jpg" alt="Yellow tulips" loading="eager" />
+  </div>
+  <div class="hero-stripe">
+    <img src="https://storage.googleapis.com/kreatewebsites/photos500/tulip-festival-portrait.jpg" alt="Tulip portrait" loading="eager" />
+  </div>
+  <div class="hero-stripe">
+    <img src="https://storage.googleapis.com/kreatewebsites/photos500/pink.jpg" alt="Pink tulips" loading="eager" />
+  </div>
+  <div class="hero-stripe">
+    <img src="https://storage.googleapis.com/kreatewebsites/photos500/orange.jpg" alt="Orange tulips" loading="eager" />
+  </div>
+  <div class="hero-stripe">
+    <img src="https://storage.googleapis.com/kreatewebsites/photos500/tulip-festival-12.jpg" alt="Tulip festival" loading="eager" />
+  </div>
+  <div class="hero-stripe">
+    <img src="https://storage.googleapis.com/kreatewebsites/photos500/tulips.jpg" alt="Mixed tulips" loading="eager" />
+  </div>
+  <div class="hero-overlay">
+    <p class="hero-kicker">🌷 Article 7 of 20 &nbsp;·&nbsp; Flower Symbolism</p>
+    <h1>Tulip <em>Color</em> Meanings</h1>
+    <p class="hero-sub">A complete guide to what every tulip shade symbolizes — so you always give the right flower for the moment.</p>
+    <div class="hero-dots" aria-hidden="true">
+      <div class="hero-dot" style="background:var(--c-red);"></div>
+      <div class="hero-dot" style="background:var(--c-yel);"></div>
+      <div class="hero-dot" style="background:#e8e8e8;"></div>
+      <div class="hero-dot" style="background:var(--c-pnk);"></div>
+      <div class="hero-dot" style="background:var(--c-pur);"></div>
+      <div class="hero-dot" style="background:var(--c-org);"></div>
+      <div class="hero-dot" style="background:var(--c-mix);"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Series nav -->
+<nav class="topnav" aria-label="Series navigation">
+  <a href="/tulip-meaning-symbolism">① Meaning</a>
+  <span class="sep">·</span>
+  <a href="/why-tulips-are-perfect-spring-flower">② Spring</a>
+  <span class="sep">·</span>
+  <a href="/tulips-in-art-poetry-design">③ Art</a>
+  <span class="sep">·</span>
+  <a href="/history-of-tulips">④ History</a>
+  <span class="sep">·</span>
+  <a href="/tulip-mania-explained">⑤ Mania</a>
+  <span class="sep">·</span>
+  <a href="/how-to-grow-tulips">⑥ Growing</a>
+  <span class="sep">·</span>
+  <strong style="color:#fff;">⑦ Colors</strong>
+  <span class="sep">·</span>
+  <a href="/tulips">More →</a>
+</nav>
+
+<!-- Breadcrumb -->
+<nav class="breadcrumb" aria-label="Breadcrumb">
+  <a href="/">Home</a> &rsaquo; <a href="/flowers">Flowers</a> &rsaquo; <a href="/tulips">Tulips</a> &rsaquo; Tulip Color Meanings
+</nav>
+
+<div class="container">
+
+  <!-- Snippet -->
+  <div class="snippet" aria-label="Quick Answer">
+    <strong>🔍 Quick Answer</strong>
+    <strong>Red</strong> tulips = true love &nbsp;·&nbsp; <strong>Yellow</strong> = happiness &nbsp;·&nbsp; <strong>White</strong> = forgiveness &nbsp;·&nbsp; <strong>Pink</strong> = affection &nbsp;·&nbsp; <strong>Purple</strong> = royalty &amp; elegance &nbsp;·&nbsp; <strong>Orange</strong> = energy &amp; enthusiasm.
+  </div>
+
+  <!-- Intro -->
+  <section id="intro">
+    <h2>Why Tulip Color Matters</h2>
+    <p>Flowers have always been a language — a way of expressing what words sometimes can't. Tulips in particular offer one of the richest color vocabularies in the floral world. Choose red and you're declaring deep romantic love. Choose yellow and you're celebrating joy. Choose white and you're offering peace or forgiveness.</p>
+    <p>Understanding what each color means lets you go beyond "pretty flowers" and give something genuinely meaningful — whether for a birthday, an apology, a wedding, or simply to tell someone you care.</p>
+
+    <!-- Quick reference -->
+    <div class="quick-ref" aria-label="Quick color reference">
+      <div class="qr-item" style="background:var(--c-red-lt);">
+        <div class="qr-dot" style="background:var(--c-red);"></div>
+        <div class="qr-label">Red</div>
+        <div class="qr-word">Love</div>
+      </div>
+      <div class="qr-item" style="background:var(--c-yel-lt);">
+        <div class="qr-dot" style="background:var(--c-yel);"></div>
+        <div class="qr-label">Yellow</div>
+        <div class="qr-word">Happiness</div>
+      </div>
+      <div class="qr-item" style="background:var(--c-whi-lt);">
+        <div class="qr-dot" style="background:var(--c-whi);"></div>
+        <div class="qr-label">White</div>
+        <div class="qr-word">Forgiveness</div>
+      </div>
+      <div class="qr-item" style="background:var(--c-pnk-lt);">
+        <div class="qr-dot" style="background:var(--c-pnk);"></div>
+        <div class="qr-label">Pink</div>
+        <div class="qr-word">Affection</div>
+      </div>
+      <div class="qr-item" style="background:var(--c-pur-lt);">
+        <div class="qr-dot" style="background:var(--c-pur);"></div>
+        <div class="qr-label">Purple</div>
+        <div class="qr-word">Royalty</div>
+      </div>
+      <div class="qr-item" style="background:var(--c-org-lt);">
+        <div class="qr-dot" style="background:var(--c-org);"></div>
+        <div class="qr-label">Orange</div>
+        <div class="qr-word">Energy</div>
+      </div>
+      <div class="qr-item" style="background:var(--c-mix-lt);">
+        <div class="qr-dot" style="background:var(--c-mix);"></div>
+        <div class="qr-label">Mixed</div>
+        <div class="qr-word">Diversity</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RED -->
+  <section id="red">
+    <h2>❤️ Red Tulips — True Love</h2>
+    <div class="color-section cs-red">
+      <div class="cs-photo">
+        <img src="https://storage.googleapis.com/kreatewebsites/photos400/tulips-red-yellow.jpg" alt="Vibrant red tulips symbolizing true love" loading="lazy" />
+        <div class="cs-badge">Red Tulips</div>
+      </div>
+      <div class="cs-body">
+        <div class="cs-header">
+          <h3 class="cs-title">True Love &amp; Deep Passion</h3>
+          <span class="cs-emotion">❤️ Romance</span>
+        </div>
+        <p class="cs-desc">Red tulips are the boldest declaration in the tulip vocabulary — a direct expression of deep romantic love. They offer a modern, elegant alternative to red roses while carrying equal emotional weight. The intensity of the color mirrors the intensity of the feeling.</p>
+        <div class="cs-cols">
+          <div class="cs-col">
+            <div class="cs-col-label">What They Represent</div>
+            <ul>
+              <li>True love</li>
+              <li>Deep romance</li>
+              <li>Emotional connection</li>
+              <li>Passionate devotion</li>
+            </ul>
+          </div>
+          <div class="cs-col">
+            <div class="cs-col-label">Best Occasions</div>
+            <ul>
+              <li>Anniversaries</li>
+              <li>Valentine's Day</li>
+              <li>Romantic gestures</li>
+              <li>Declarations of love</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- YELLOW -->
+  <section id="yellow">
+    <h2>🌼 Yellow Tulips — Happiness &amp; Sunshine</h2>
+    <div class="color-section cs-yellow">
+      <div class="cs-photo">
+        <img src="https://storage.googleapis.com/kreatewebsites/photos400/yellow-tulips.jpg" alt="Bright yellow tulips representing happiness" loading="lazy" />
+        <div class="cs-badge">Yellow Tulips</div>
+      </div>
+      <div class="cs-body">
+        <div class="cs-header">
+          <h3 class="cs-title">Joy, Friendship &amp; Positivity</h3>
+          <span class="cs-emotion">😊 Happiness</span>
+        </div>
+        <p class="cs-desc">Yellow tulips are a burst of sunshine in flower form. Historically linked to jealousy in the Victorian language of flowers, their meaning has evolved entirely — today they represent warm, cheerful energy, close friendship, and optimism for what lies ahead.</p>
+        <div class="cs-cols">
+          <div class="cs-col">
+            <div class="cs-col-label">What They Represent</div>
+            <ul>
+              <li>Happiness &amp; joy</li>
+              <li>Friendship &amp; warmth</li>
+              <li>Optimism</li>
+              <li>Positive energy</li>
+            </ul>
+          </div>
+          <div class="cs-col">
+            <div class="cs-col-label">Best Occasions</div>
+            <ul>
+              <li>Get-well gifts</li>
+              <li>Celebrations</li>
+              <li>Friendship gestures</li>
+              <li>Housewarming</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHITE -->
+  <section id="white">
+    <h2>🤍 White Tulips — Forgiveness &amp; Peace</h2>
+    <div class="color-section cs-white">
+      <div class="cs-photo">
+        <img src="https://storage.googleapis.com/kreatewebsites/photos400/WP_000610.jpg" alt="White tulips representing purity and forgiveness" loading="lazy" />
+        <div class="cs-badge">White Tulips</div>
+      </div>
+      <div class="cs-body">
+        <div class="cs-header">
+          <h3 class="cs-title">Forgiveness, Purity &amp; New Beginnings</h3>
+          <span class="cs-emotion">🤍 Peace</span>
+        </div>
+        <p class="cs-desc">White tulips carry a quiet, profound meaning. Their clean simplicity communicates what elaborate words often fail to — forgiveness, respect, and the possibility of a fresh start. They work equally well in joyful settings like weddings and in solemn ones like sympathy arrangements.</p>
+        <div class="cs-cols">
+          <div class="cs-col">
+            <div class="cs-col-label">What They Represent</div>
+            <ul>
+              <li>Forgiveness &amp; reconciliation</li>
+              <li>Peace &amp; respect</li>
+              <li>Purity &amp; innocence</li>
+              <li>New beginnings</li>
+            </ul>
+          </div>
+          <div class="cs-col">
+            <div class="cs-col-label">Best Occasions</div>
+            <ul>
+              <li>Apologies</li>
+              <li>Weddings</li>
+              <li>Sympathy &amp; condolences</li>
+              <li>Fresh starts</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PINK -->
+  <section id="pink">
+    <h2>🌸 Pink Tulips — Affection &amp; Care</h2>
+    <div class="color-section cs-pink">
+      <div class="cs-photo">
+        <img src="https://storage.googleapis.com/kreatewebsites/photos400/pink.jpg" alt="Soft pink tulips representing affection and kindness" loading="lazy" />
+        <div class="cs-badge">Pink Tulips</div>
+      </div>
+      <div class="cs-body">
+        <div class="cs-header">
+          <h3 class="cs-title">Gentle Affection &amp; Kindness</h3>
+          <span class="cs-emotion">💕 Warmth</span>
+        </div>
+        <p class="cs-desc">Pink tulips occupy the warm middle ground between the passionate intensity of red and the platonic cheerfulness of yellow. They express affection that is genuine but gentle — perfect for the relationships you cherish most: family, close friends, and the people who make everyday life better.</p>
+        <div class="cs-cols">
+          <div class="cs-col">
+            <div class="cs-col-label">What They Represent</div>
+            <ul>
+              <li>Affection &amp; care</li>
+              <li>Kindness</li>
+              <li>Good wishes</li>
+              <li>Gentle love</li>
+            </ul>
+          </div>
+          <div class="cs-col">
+            <div class="cs-col-label">Best Occasions</div>
+            <ul>
+              <li>Gifts for friends &amp; family</li>
+              <li>Thank-you bouquets</li>
+              <li>Mother's Day</li>
+              <li>Celebrations</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PURPLE -->
+  <section id="purple">
+    <h2>💜 Purple Tulips — Royalty &amp; Elegance</h2>
+    <div class="color-section cs-purple">
+      <div class="cs-photo">
+        <img src="https://storage.googleapis.com/kreatewebsites/photos400/tulip-festival-portrait.jpg" alt="Deep purple tulips representing royalty and admiration" loading="lazy" />
+        <div class="cs-badge">Purple Tulips</div>
+      </div>
+      <div class="cs-body">
+        <div class="cs-header">
+          <h3 class="cs-title">Royalty, Luxury &amp; Admiration</h3>
+          <span class="cs-emotion">👑 Prestige</span>
+        </div>
+        <p class="cs-desc">Purple has been the color of royalty for millennia — costly to produce and reserved for emperors and kings. Purple tulips carry that legacy beautifully, conveying deep admiration, sophistication, and a refined sense of respect. They make a lasting impression in formal arrangements.</p>
+        <div class="cs-cols">
+          <div class="cs-col">
+            <div class="cs-col-label">What They Represent</div>
+            <ul>
+              <li>Royalty &amp; luxury</li>
+              <li>Deep admiration</li>
+              <li>Elegance &amp; prestige</li>
+              <li>Respect</li>
+            </ul>
+          </div>
+          <div class="cs-col">
+            <div class="cs-col-label">Best Occasions</div>
+            <ul>
+              <li>Formal occasions</li>
+              <li>Respectful gestures</li>
+              <li>Luxury arrangements</li>
+              <li>Awards &amp; recognition</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORANGE -->
+  <section id="orange">
+    <h2>🧡 Orange Tulips — Energy &amp; Enthusiasm</h2>
+    <div class="color-section cs-orange">
+      <div class="cs-photo">
+        <img src="https://storage.googleapis.com/kreatewebsites/photos400/orange.jpg" alt="Vibrant orange tulips representing enthusiasm and confidence" loading="lazy" />
+        <div class="cs-badge">Orange Tulips</div>
+      </div>
+      <div class="cs-body">
+        <div class="cs-header">
+          <h3 class="cs-title">Energy, Confidence &amp; Passion</h3>
+          <span class="cs-emotion">🔥 Bold</span>
+        </div>
+        <p class="cs-desc">Orange tulips are perhaps the most energetic flower in the palette — warm and enthusiastic, impossible to ignore. They carry the passion of red softened into something more outgoing and celebratory. Perfect for marking achievements, exciting new chapters, and people who light up a room.</p>
+        <div class="cs-cols">
+          <div class="cs-col">
+            <div class="cs-col-label">What They Represent</div>
+            <ul>
+              <li>Enthusiasm &amp; energy</li>
+              <li>Confidence</li>
+              <li>Warmth &amp; vibrancy</li>
+              <li>Exciting beginnings</li>
+            </ul>
+          </div>
+          <div class="cs-col">
+            <div class="cs-col-label">Best Occasions</div>
+            <ul>
+              <li>Congratulations</li>
+              <li>New job or promotion</li>
+              <li>Graduation gifts</li>
+              <li>Autumn arrangements</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MULTICOLORED -->
+  <section id="multi">
+    <h2>🌈 Multicolored Tulips — Diversity &amp; Beauty</h2>
+    <div class="color-section cs-multi">
+      <div class="cs-photo">
+        <img src="https://storage.googleapis.com/kreatewebsites/photos400/tulip-festival-7.jpg" alt="Mixed colorful tulips representing diversity and creativity" loading="lazy" />
+        <div class="cs-badge">Mixed Tulips</div>
+      </div>
+      <div class="cs-body">
+        <div class="cs-header">
+          <h3 class="cs-title">Creativity, Diversity &amp; Joy</h3>
+          <span class="cs-emotion">🎨 Creative</span>
+        </div>
+        <p class="cs-desc">A mixed bouquet of tulips is a celebration in itself — a statement that beauty comes in many forms and that life is richer for its variety. Mixed arrangements also let you layer meanings, combining colors to create a message that is uniquely personal and impossible to misread.</p>
+        <div class="cs-cols">
+          <div class="cs-col">
+            <div class="cs-col-label">What They Represent</div>
+            <ul>
+              <li>Diversity &amp; creativity</li>
+              <li>Unique beauty</li>
+              <li>Joyful abundance</li>
+              <li>Layered meaning</li>
+            </ul>
+          </div>
+          <div class="cs-col">
+            <div class="cs-col-label">Best Occasions</div>
+            <ul>
+              <li>Birthdays</li>
+              <li>Spring celebrations</li>
+              <li>General appreciation</li>
+              <li>Creative gatherings</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery strip -->
+  <section id="gallery">
+    <h2>Tulips in Full Color</h2>
+    <p>A glimpse of tulip fields and blooms — a reminder that no description quite captures what color does in person.</p>
+    <div class="photo-strip" aria-label="Tulip photo gallery">
+      <img src="https://storage.googleapis.com/kreatewebsites/photos300/tulip-festival-5.jpg"    alt="Colorful tulip fields" loading="lazy" />
+      <img src="https://storage.googleapis.com/kreatewebsites/photos300/tulip-festival-11.jpg"   alt="Festival tulip display" loading="lazy" />
+      <img src="https://storage.googleapis.com/kreatewebsites/photos300/WP_000611.jpg"           alt="Tulip bloom close-up" loading="lazy" />
+      <img src="https://storage.googleapis.com/kreatewebsites/photos300/tulip-festival-10.jpg"   alt="Spring tulip rows" loading="lazy" />
+    </div>
+  </section>
+
+  <!-- Emotional expression map -->
+  <section id="emotions">
+    <h2>Tulips as Emotional Language</h2>
+    <p>One of the reasons tulips remain so popular as gifts is how precisely each color maps to a distinct emotional register. This makes choosing a tulip color an act of intentional communication.</p>
+
+    <div class="emotion-map" aria-label="Color to emotion mapping">
+      <div class="em-item" style="background:var(--c-red-lt);">
+        <span class="em-emoji">❤️</span>
+        <span class="em-emotion">Love</span>
+        <span class="em-arrow">↓</span>
+        <span class="em-color" style="color:var(--c-red);">Red</span>
+      </div>
+      <div class="em-item" style="background:var(--c-yel-lt);">
+        <span class="em-emoji">😊</span>
+        <span class="em-emotion">Happiness</span>
+        <span class="em-arrow">↓</span>
+        <span class="em-color" style="color:var(--c-yel);">Yellow</span>
+      </div>
+      <div class="em-item" style="background:var(--c-whi-lt);">
+        <span class="em-emoji">🤍</span>
+        <span class="em-emotion">Apology</span>
+        <span class="em-arrow">↓</span>
+        <span class="em-color" style="color:var(--c-whi);">White</span>
+      </div>
+      <div class="em-item" style="background:var(--c-pnk-lt);">
+        <span class="em-emoji">💕</span>
+        <span class="em-emotion">Care</span>
+        <span class="em-arrow">↓</span>
+        <span class="em-color" style="color:var(--c-pnk);">Pink</span>
+      </div>
+      <div class="em-item" style="background:var(--c-pur-lt);">
+        <span class="em-emoji">👑</span>
+        <span class="em-emotion">Admiration</span>
+        <span class="em-arrow">↓</span>
+        <span class="em-color" style="color:var(--c-pur);">Purple</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Occasion chooser -->
+  <section id="chooser">
+    <h2>How to Choose the Right Tulip Color</h2>
+    <p>Not sure which color to give? Use this simple reference to match the moment to the message.</p>
+    <table class="chooser" aria-label="Tulip color by occasion guide">
+      <thead>
+        <tr>
+          <th>Occasion</th>
+          <th>Best Tulip Color</th>
+          <th>Message Sent</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Romantic gift</td>
+          <td><span class="color-swatch"><span class="swatch-dot" style="background:var(--c-red);"></span> Red</span></td>
+          <td>Deep love and passion</td>
+        </tr>
+        <tr>
+          <td>Friendship</td>
+          <td><span class="color-swatch"><span class="swatch-dot" style="background:var(--c-yel);"></span> Yellow</span></td>
+          <td>Joy and warm affection</td>
+        </tr>
+        <tr>
+          <td>Apology</td>
+          <td><span class="color-swatch"><span class="swatch-dot" style="background:var(--c-whi);"></span> White</span></td>
+          <td>Sincerity and forgiveness</td>
+        </tr>
+        <tr>
+          <td>Family appreciation</td>
+          <td><span class="color-swatch"><span class="swatch-dot" style="background:var(--c-pnk);"></span> Pink</span></td>
+          <td>Gentle love and gratitude</td>
+        </tr>
+        <tr>
+          <td>Formal event</td>
+          <td><span class="color-swatch"><span class="swatch-dot" style="background:var(--c-pur);"></span> Purple</span></td>
+          <td>Respect and admiration</td>
+        </tr>
+        <tr>
+          <td>Congratulations</td>
+          <td><span class="color-swatch"><span class="swatch-dot" style="background:var(--c-org);"></span> Orange</span></td>
+          <td>Enthusiasm and energy</td>
+        </tr>
+        <tr>
+          <td>Any celebration</td>
+          <td><span class="color-swatch"><span class="swatch-dot" style="background:var(--c-mix);"></span> Mixed</span></td>
+          <td>Joy, creativity, abundance</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Combinations -->
+  <section id="combinations">
+    <h2>Tulip Color Combinations</h2>
+    <p>Combining tulip colors creates layered meanings — ideal for bouquets where you want to express more than one feeling at once.</p>
+
+    <div class="combos">
+      <div class="combo-card">
+        <div class="combo-swatches">
+          <div class="combo-dot" style="background:var(--c-red);"></div>
+          <div class="combo-dot" style="background:#e8e8e8; border:1px solid #ccc;"></div>
+        </div>
+        <h3>Red + White</h3>
+        <p>Love combined with forgiveness — heartfelt and vulnerable</p>
+      </div>
+      <div class="combo-card">
+        <div class="combo-swatches">
+          <div class="combo-dot" style="background:var(--c-yel);"></div>
+          <div class="combo-dot" style="background:var(--c-pnk);"></div>
+        </div>
+        <h3>Yellow + Pink</h3>
+        <p>Joy layered with affection — perfect for someone you cherish</p>
+      </div>
+      <div class="combo-card">
+        <div class="combo-swatches">
+          <div class="combo-dot" style="background:var(--c-pur);"></div>
+          <div class="combo-dot" style="background:#e8e8e8; border:1px solid #ccc;"></div>
+        </div>
+        <h3>Purple + White</h3>
+        <p>Elegance with peace — sophisticated and serene</p>
+      </div>
+      <div class="combo-card">
+        <div class="combo-swatches">
+          <div class="combo-dot" style="background:var(--c-org);"></div>
+          <div class="combo-dot" style="background:var(--c-yel);"></div>
+        </div>
+        <h3>Orange + Yellow</h3>
+        <p>Warmth and happiness — a joyful, uplifting arrangement</p>
+      </div>
+      <div class="combo-card">
+        <div class="combo-swatches">
+          <div class="combo-dot" style="background:var(--c-red);"></div>
+          <div class="combo-dot" style="background:var(--c-pnk);"></div>
+        </div>
+        <h3>Red + Pink</h3>
+        <p>Deep love with tenderness — romantic but soft</p>
+      </div>
+      <div class="combo-card">
+        <div class="combo-swatches">
+          <div class="combo-dot" style="background:var(--c-pur);"></div>
+          <div class="combo-dot" style="background:var(--c-org);"></div>
+        </div>
+        <h3>Purple + Orange</h3>
+        <p>Admiration with bold energy — striking and memorable</p>
+      </div>
+    </div>
+
+    <div class="related" aria-label="Related articles">
+      <h3>📚 More in This Series</h3>
+      <a href="/tulip-meaning-symbolism">① Tulip Meaning &amp; Symbolism — The Complete Overview</a>
+      <a href="/how-to-grow-tulips">⑥ How to Grow Tulips — The Complete Beginner's Guide</a>
+      <a href="/tulip-gift-ideas">Tulip Gift Ideas — Which Tulips to Give &amp; When</a>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <ul class="faq-list" role="list">
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          What do tulip colors mean in general? <span class="arr">▼</span>
+        </button>
+        <div class="faq-a">
+          Tulip colors each carry a distinct symbolic meaning: red represents romantic love, yellow represents happiness and friendship, white represents forgiveness and peace, pink represents affection and care, purple represents royalty and admiration, and orange represents energy and enthusiasm. Mixed arrangements celebrate diversity and joy.
+        </div>
+      </li>
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          What color tulip means love? <span class="arr">▼</span>
+        </button>
+        <div class="faq-a">
+          Red tulips are the primary symbol of true romantic love. They carry the same passionate message as red roses but offer a more contemporary and elegant alternative. Pink tulips also represent love, though in a softer, more affectionate form suited to family and close friends.
+        </div>
+      </li>
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          What do yellow tulips symbolize today? <span class="arr">▼</span>
+        </button>
+        <div class="faq-a">
+          Today, yellow tulips symbolize happiness, joy, friendship, and optimism. While they were historically associated with jealousy in 19th-century flower symbolism, that meaning is essentially obsolete. Modern yellow tulips are among the most cheerful gifts you can give — ideal for get-well wishes, celebrations, and close friendships.
+        </div>
+      </li>
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Are white tulips appropriate for funerals? <span class="arr">▼</span>
+        </button>
+        <div class="faq-a">
+          Yes — white tulips are entirely appropriate for sympathy and funeral settings. Their symbolism of peace, purity, and respect makes them a thoughtful and culturally neutral choice. They also represent new beginnings, which carries its own comforting meaning in times of loss. White tulips work equally well at weddings and joyful occasions.
+        </div>
+      </li>
+      <li class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          Can you mix different tulip colors in one bouquet? <span class="arr">▼</span>
+        </button>
+        <div class="faq-a">
+          Absolutely — mixed tulip bouquets are popular precisely because they layer meanings. Some classic combinations: Red + White (love and forgiveness), Yellow + Pink (happiness and affection), Purple + White (elegance and peace). You can also simply mix colors for visual impact without worrying too much about symbolic precision — the gesture itself is what matters most.
+        </div>
+      </li>
+    </ul>
+  </section>
+
+</div><!-- /container -->
+
+<footer>
+  <p>© 2025 The Garden Journal &nbsp;·&nbsp; <a href="/privacy">Privacy</a> &nbsp;·&nbsp; <a href="/contact">Contact</a> &nbsp;·&nbsp; <a href="/tulips">All Tulip Articles</a></p>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
