@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What to Do with Tulips After They Bloom – Care Guide for Next Year</title>
+  <meta name="description" content="Learn how to care for tulips after blooming. Discover when to cut, water, and store bulbs to ensure tulips return next spring." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --white:     #ffffff;
+      --petal:     #fff5f7;
+      --sunshine:  #fffbee;
+      --meadow:    #f4fdf4;
+      --sky:       #f0f8ff;
+      --lavender:  #f7f4ff;
+      --ink:       #2c2018;
+      --ink-soft:  #5a4a38;
+      --muted:     #9a8a7a;
+      --border:    #e8ddd4;
+
+      --tulip-red:    #e03a3a;
+      --tulip-pink:   #d9547a;
+      --tulip-yellow: #e8a820;
+      --tulip-purple: #7c5faa;
+      --tulip-green:  #4a8a54;
+      --tulip-blue:   #4a7eaa;
+
+      --fix-bg:   #eef7ee;
+      --fix-txt:  #3a7a40;
+      --fix-bdr:  #b4d8b8;
+      --warn-bg:  #fff8ee;
+      --warn-txt: #b86a20;
+      --warn-bdr: #f0d8b0;
+      --bad-bg:   #fff0ee;
+      --bad-txt:  #b84030;
+      --bad-bdr:  #f0c0b8;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--white);
+      color: var(--ink);
+      font-family: 'Nunito', sans-serif;
+      font-size: 17px;
+      line-height: 1.75;
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 64px;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .nav-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem; font-weight: 700; color: var(--ink);
+      display: flex; align-items: center; gap: 8px;
+    }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a {
+      font-size: 13px; font-weight: 600; color: var(--muted);
+      text-decoration: none; letter-spacing: 0.04em; transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--tulip-green); }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(160deg, #f4fdf4 0%, #fffdf0 50%, #fff5f7 100%);
+      display: grid; grid-template-columns: 1fr 1fr;
+      min-height: 86vh; overflow: hidden;
+    }
+    .hero-left {
+      padding: 100px 64px 80px 80px;
+      display: flex; flex-direction: column; justify-content: center;
+    }
+    .hero-pill {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #f0faf0; border: 1.5px solid #c0e0c0;
+      color: var(--tulip-green);
+      font-size: 11px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase;
+      padding: 7px 18px; border-radius: 100px; margin-bottom: 28px; width: fit-content;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.4rem, 4vw, 3.8rem); font-weight: 900; line-height: 1.1;
+      color: var(--ink); margin-bottom: 24px;
+    }
+    .hero h1 em { font-style: italic; color: var(--tulip-green); }
+    .hero-sub {
+      font-size: 16px; color: var(--ink-soft); max-width: 460px;
+      margin-bottom: 44px; line-height: 1.75;
+    }
+    .hero-stats {
+      display: flex; border: 1.5px solid var(--border); width: fit-content;
+      background: var(--white); border-radius: 12px; overflow: hidden;
+      box-shadow: 0 4px 20px rgba(60,100,60,0.07);
+    }
+    .hero-stat { padding: 18px 28px; text-align: center; border-right: 1.5px solid var(--border); }
+    .hero-stat:last-child { border-right: none; }
+    .hero-stat .num {
+      font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 900;
+      color: var(--tulip-green); line-height: 1;
+    }
+    .hero-stat .lbl {
+      font-size: 11px; color: var(--muted); font-weight: 600;
+      letter-spacing: 0.08em; text-transform: uppercase; margin-top: 4px;
+    }
+    .hero-right { position: relative; overflow: hidden; }
+    .hero-right img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 8s ease; }
+    .hero-right:hover img { transform: scale(1.04); }
+    .hero-right::before {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to right, #f4fdf4 0%, transparent 18%);
+      z-index: 1; pointer-events: none;
+    }
+    .hero-right::after {
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 100px;
+      background: linear-gradient(to top, #fffdf0 0%, transparent 100%);
+      z-index: 1; pointer-events: none;
+    }
+
+    /* ── SNIPPET ── */
+    .snippet-wrap {
+      background: var(--sunshine);
+      border-top: 1px solid #f0e8d0; border-bottom: 1px solid #f0e8d0;
+      padding: 52px 80px 64px;
+    }
+    .snippet {
+      background: var(--white); border: 2px solid #f8e8c0;
+      border-left: 5px solid var(--tulip-yellow); border-radius: 12px;
+      padding: 36px 48px; display: flex; gap: 32px; align-items: flex-start;
+      max-width: 1040px; margin: 0 auto;
+      box-shadow: 0 4px 24px rgba(200,150,30,0.08);
+    }
+    .snippet-icon { font-size: 44px; flex-shrink: 0; margin-top: 4px; }
+    .snippet-label {
+      font-size: 11px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--tulip-yellow); margin-bottom: 6px;
+    }
+    .snippet h2 { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--ink); margin-bottom: 10px; }
+    .snippet p { font-size: 15px; color: var(--ink-soft); line-height: 1.7; max-width: 700px; }
+
+    /* ── SHARED ── */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 80px; }
+    .sec-eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--tulip-green); margin-bottom: 10px; }
+    .sec-title { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 3vw, 2.8rem); font-weight: 900; color: var(--ink); line-height: 1.15; margin-bottom: 14px; }
+    .sec-rule { width: 52px; height: 3px; background: var(--tulip-green); border-radius: 2px; margin-bottom: 48px; }
+    .sec-sub { font-size: 16px; color: var(--ink-soft); max-width: 600px; margin-bottom: 48px; line-height: 1.75; }
+
+    /* ── STEPS SECTION ── */
+    .steps-section { padding: 80px 0 96px; }
+
+    .step-block {
+      display: grid; grid-template-columns: 80px 1fr; gap: 0;
+      margin-bottom: 4px; position: relative;
+    }
+    /* vertical connector line */
+    .step-block:not(:last-child) .step-left::after {
+      content: ''; position: absolute;
+      left: 39px; top: 80px; bottom: -4px;
+      width: 2px; background: linear-gradient(to bottom, var(--tulip-green), #c8e8c8);
+    }
+    .step-left {
+      display: flex; flex-direction: column; align-items: center;
+      padding-top: 0; position: relative;
+    }
+    .step-circle {
+      width: 56px; height: 56px; border-radius: 50%;
+      background: var(--tulip-green); color: var(--white);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 900;
+      flex-shrink: 0; box-shadow: 0 4px 16px rgba(74,138,84,0.25);
+      transition: transform 0.3s, box-shadow 0.3s;
+      position: relative; z-index: 1;
+    }
+    .step-block:hover .step-circle { transform: scale(1.08); box-shadow: 0 8px 24px rgba(74,138,84,0.35); }
+
+    .step-right {
+      background: var(--white); border: 1.5px solid var(--border); border-radius: 16px;
+      padding: 32px 36px 28px; margin-left: 24px; margin-bottom: 0;
+      transition: box-shadow 0.3s, border-color 0.3s;
+      overflow: hidden;
+    }
+    .step-right:hover { box-shadow: 0 10px 36px rgba(74,138,84,0.10); border-color: #c0e0c0; }
+
+    .step-head { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; flex-wrap: wrap; }
+    .step-emoji { font-size: 24px; }
+    .step-title { font-family: 'Playfair Display', serif; font-size: 1.35rem; font-weight: 700; color: var(--ink); }
+    .step-imp-tag {
+      font-size: 10px; font-weight: 700; letter-spacing: 0.1em;
+      background: #fff8ee; color: var(--warn-txt);
+      border: 1px solid var(--warn-bdr); padding: 3px 10px; border-radius: 100px;
+    }
+    .step-body { font-size: 15px; color: var(--ink-soft); line-height: 1.75; margin-bottom: 16px; }
+
+    .do-dont { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px; }
+    .do-box, .dont-box {
+      border-radius: 10px; padding: 16px 18px;
+    }
+    .do-box { background: var(--fix-bg); border: 1.5px solid var(--fix-bdr); }
+    .dont-box { background: var(--bad-bg); border: 1.5px solid var(--bad-bdr); }
+    .box-label {
+      font-size: 10px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .do-box .box-label { color: var(--fix-txt); }
+    .dont-box .box-label { color: var(--bad-txt); }
+    .box-items { list-style: none; display: flex; flex-direction: column; gap: 5px; }
+    .box-items li { font-size: 13.5px; line-height: 1.5; display: flex; gap: 7px; align-items: flex-start; }
+    .do-box .box-items li { color: var(--fix-txt); }
+    .dont-box .box-items li { color: var(--bad-txt); }
+    .do-box .box-items li::before { content: '✓'; flex-shrink: 0; font-weight: 700; }
+    .dont-box .box-items li::before { content: '✕'; flex-shrink: 0; font-weight: 700; }
+
+    .tip-callout {
+      background: var(--sunshine); border-left: 4px solid var(--tulip-yellow);
+      border-radius: 0 8px 8px 0; padding: 14px 18px; margin-top: 16px;
+      font-size: 14px; color: var(--ink-soft);
+      display: flex; align-items: flex-start; gap: 10px;
+    }
+    .tip-callout .ti { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+
+    /* Option cards (lift vs leave) */
+    .option-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px; }
+    .option-card { border-radius: 12px; padding: 22px 20px; border: 1.5px solid; }
+    .option-card.leave { background: var(--fix-bg); border-color: var(--fix-bdr); }
+    .option-card.lift  { background: var(--sky); border-color: #c8def0; }
+    .option-card-title { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; }
+    .option-card.leave .option-card-title { color: var(--fix-txt); }
+    .option-card.lift  .option-card-title { color: var(--tulip-blue); }
+    .option-card ul { list-style: none; font-size: 13.5px; line-height: 1.55; display: flex; flex-direction: column; gap: 5px; }
+    .option-card.leave ul li { color: var(--fix-txt); }
+    .option-card.lift  ul li { color: #3a6a90; }
+    .option-card ul li::before { content: '→ '; font-weight: 700; }
+
+    /* image inside step */
+    .step-img { width: 100%; height: 200px; object-fit: cover; border-radius: 10px; display: block; margin-top: 18px; }
+
+    /* ── PHOTO STRIP ── */
+    .photo-strip {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px;
+      padding: 0 80px; margin-bottom: 96px;
+    }
+    .ps-item { border-radius: 14px; overflow: hidden; position: relative; height: 240px; }
+    .ps-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease; }
+    .ps-item:hover img { transform: scale(1.07); }
+    .ps-label {
+      position: absolute; bottom: 12px; left: 12px;
+      background: rgba(255,255,255,0.85); color: var(--ink);
+      font-size: 11px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase;
+      padding: 4px 12px; border-radius: 100px; backdrop-filter: blur(4px);
+    }
+
+    /* ── MISTAKES ── */
+    .mistakes-section {
+      background: var(--petal); border-top: 1px solid #f0d8e0; border-bottom: 1px solid #f0d8e0;
+      padding: 80px; margin-bottom: 96px;
+    }
+    .mistakes-inner { max-width: 1200px; margin: 0 auto; }
+    .mistakes-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 0; }
+    .mistake-card {
+      background: var(--white); border: 1.5px solid #f0d8e0; border-radius: 16px;
+      padding: 32px 28px; border-top: 3px solid var(--bad-txt);
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+    .mistake-card:hover { box-shadow: 0 12px 36px rgba(180,60,40,0.09); transform: translateY(-3px); }
+    .mistake-x { font-size: 1.8rem; margin-bottom: 12px; }
+    .mistake-title { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: var(--ink); margin-bottom: 10px; }
+    .mistake-desc { font-size: 14px; color: var(--ink-soft); line-height: 1.7; }
+
+    /* ── CHECKLIST ── */
+    .checklist-section {
+      background: linear-gradient(135deg, #f4fdf4 0%, #fffdf0 100%);
+      border-top: 1px solid #d8f0d8; border-bottom: 1px solid #f0ead0;
+      padding: 80px; margin-bottom: 96px;
+    }
+    .checklist-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+    .checklist-left p { font-size: 16px; color: var(--ink-soft); margin-bottom: 28px; line-height: 1.75; }
+    .checklist-img { width: 100%; height: 320px; object-fit: cover; border-radius: 16px; display: block; box-shadow: 0 16px 48px rgba(60,100,60,0.12); }
+    .check-list { display: flex; flex-direction: column; }
+    .check-row {
+      display: flex; align-items: center; gap: 14px;
+      padding: 16px 0; border-bottom: 1px solid #ddf0dd;
+      font-size: 15px; color: var(--ink-soft); font-weight: 500; transition: color 0.2s;
+    }
+    .check-row:last-child { border-bottom: none; }
+    .check-row:hover { color: var(--ink); }
+    .check-icon {
+      width: 26px; height: 26px; background: var(--fix-bg);
+      border: 2px solid var(--fix-bdr); border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 13px; color: var(--tulip-green); flex-shrink: 0;
+    }
+
+    /* ── SOIL SECTION ── */
+    .soil-section { padding: 0 0 96px; }
+    .soil-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+    .soil-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .soil-photos img { width: 100%; height: 200px; object-fit: cover; border-radius: 12px; display: block; transition: transform 0.4s; }
+    .soil-photos img:first-child { height: 260px; }
+    .soil-photos img:hover { transform: scale(1.03); }
+
+    .soil-types { display: flex; flex-direction: column; gap: 10px; margin-top: 28px; }
+    .soil-type-card { border-radius: 12px; padding: 18px 20px; border: 1.5px solid; display: flex; align-items: flex-start; gap: 14px; transition: transform 0.2s; }
+    .soil-type-card:hover { transform: translateX(4px); }
+    .soil-type-card.best { background: var(--fix-bg); border-color: var(--fix-bdr); }
+    .soil-type-card.good { background: var(--sunshine); border-color: #f0e0a0; }
+    .soil-type-card.bad  { background: var(--bad-bg);  border-color: var(--bad-bdr); }
+    .soil-badge { font-size: 10px; font-weight: 700; letter-spacing: 0.1em; padding: 4px 10px; border-radius: 100px; flex-shrink: 0; margin-top: 2px; }
+    .soil-type-card.best .soil-badge { background: #d0f0d0; color: var(--fix-txt); }
+    .soil-type-card.good .soil-badge { background: #f8e8a0; color: #8a6010; }
+    .soil-type-card.bad  .soil-badge { background: #f8d0c8; color: var(--bad-txt); }
+    .soil-type-name { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
+    .soil-type-desc { font-size: 13.5px; color: var(--ink-soft); line-height: 1.55; }
+
+    .ph-bar {
+      background: var(--sky); border: 1.5px solid #c8def0; border-radius: 14px;
+      padding: 28px 32px; margin-top: 24px;
+    }
+    .ph-label { font-size: 12px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--tulip-blue); margin-bottom: 14px; }
+    .ph-track { height: 16px; border-radius: 100px; background: linear-gradient(to right, #f08080 0%, #f8d070 20%, #90d090 40%, #90d090 65%, #f8d070 80%, #f08080 100%); position: relative; }
+    .ph-marker {
+      position: absolute; top: -8px;
+      transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center;
+    }
+    .ph-marker.ideal { left: 42%; }
+    .ph-marker .arrow { width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 12px solid var(--tulip-green); }
+    .ph-marker .ph-val { font-size: 11px; font-weight: 700; color: var(--tulip-green); margin-top: 6px; white-space: nowrap; }
+    .ph-scale { display: flex; justify-content: space-between; margin-top: 8px; font-size: 11px; color: var(--muted); font-weight: 600; }
+
+    /* ── SOIL TIPS ── */
+    .soil-improve-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 48px; }
+    .improve-card { background: var(--white); border: 1.5px solid var(--border); border-radius: 14px; padding: 28px 22px; text-align: center; transition: box-shadow 0.3s, transform 0.3s; }
+    .improve-card:hover { box-shadow: 0 10px 30px rgba(60,100,60,0.09); transform: translateY(-3px); }
+    .improve-icon { font-size: 32px; margin-bottom: 12px; }
+    .improve-title { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: var(--ink); margin-bottom: 8px; }
+    .improve-desc { font-size: 13px; color: var(--ink-soft); line-height: 1.6; }
+
+    /* ── SOIL STEPS ── */
+    .soil-steps-section {
+      background: var(--lavender); border-top: 1px solid #e0d8f0; border-bottom: 1px solid #e0d8f0;
+      padding: 80px; margin-bottom: 96px;
+    }
+    .soil-steps-inner { max-width: 1200px; margin: 0 auto; }
+    .prep-steps { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; margin-top: 48px; counter-reset: prep; }
+    .prep-step { text-align: center; padding: 0 16px; position: relative; }
+    .prep-step:not(:last-child)::after {
+      content: '→'; position: absolute; right: -8px; top: 24px;
+      font-size: 1.2rem; color: #c0b0e0; font-weight: 700;
+    }
+    .prep-num {
+      width: 52px; height: 52px; border-radius: 50%;
+      background: var(--tulip-purple); color: var(--white);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 900;
+      margin: 0 auto 16px;
+      box-shadow: 0 4px 16px rgba(124,95,170,0.25);
+    }
+    .prep-title { font-family: 'Playfair Display', serif; font-size: 0.95rem; font-weight: 700; color: var(--ink); margin-bottom: 8px; }
+    .prep-desc { font-size: 13px; color: var(--ink-soft); line-height: 1.55; }
+
+    /* ── FAQ ── */
+    .faq-section { padding: 0 0 96px; }
+    .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .faq-card {
+      background: var(--sky); border: 1.5px solid #ddeeff; border-radius: 16px;
+      padding: 32px 28px; transition: box-shadow 0.3s, transform 0.3s;
+    }
+    .faq-card:hover { box-shadow: 0 10px 32px rgba(80,100,160,0.09); transform: translateY(-3px); }
+    .faq-q {
+      font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700;
+      color: var(--ink); margin-bottom: 12px; display: flex; gap: 10px; align-items: flex-start;
+    }
+    .faq-q-mark {
+      background: #ddeeff; color: #4478aa;
+      font-family: 'Playfair Display', serif; font-size: 0.9rem; font-weight: 700;
+      width: 26px; height: 26px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;
+    }
+    .faq-a { font-size: 14px; color: var(--ink-soft); line-height: 1.75; padding-left: 36px; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: linear-gradient(160deg, #f4fdf4 0%, #fffdf0 60%, #fff5f7 100%);
+      border-top: 2px solid var(--border); padding: 80px 60px; text-align: center;
+    }
+    .footer-flower { font-size: 48px; margin-bottom: 16px; display: block; }
+    .footer-title { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 3vw, 2.4rem); font-weight: 900; color: var(--ink); margin-bottom: 14px; }
+    .footer-title em { font-style: italic; color: var(--tulip-green); }
+    .footer-sub { font-size: 15px; color: var(--ink-soft); margin-bottom: 36px; }
+    .footer-links { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .footer-btn {
+      display: inline-block; font-weight: 700; font-size: 14px; letter-spacing: 0.06em;
+      padding: 15px 36px; border-radius: 100px; text-decoration: none; transition: opacity 0.2s, transform 0.2s;
+    }
+    .footer-btn:hover { opacity: 0.88; transform: translateY(-2px); }
+    .footer-btn.primary { background: var(--tulip-green); color: var(--white); }
+    .footer-btn.secondary { background: var(--white); color: var(--tulip-green); border: 2px solid var(--tulip-green); }
+    .footer-copy { margin-top: 56px; font-size: 12.5px; color: var(--muted); letter-spacing: 0.04em; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 960px) {
+      nav { padding: 0 24px; }
+      .nav-links { display: none; }
+      .hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-left { padding: 60px 24px 48px; }
+      .hero-right { height: 280px; }
+      .snippet-wrap { padding: 40px 24px 52px; }
+      .snippet { flex-direction: column; padding: 28px 24px; }
+      .container { padding: 0 24px; }
+      .step-block { grid-template-columns: 56px 1fr; }
+      .step-left::after { left: 27px !important; }
+      .do-dont { grid-template-columns: 1fr; }
+      .option-cards { grid-template-columns: 1fr; }
+      .photo-strip { grid-template-columns: 1fr 1fr; padding: 0 24px; }
+      .mistakes-section { padding: 52px 24px; }
+      .mistakes-grid { grid-template-columns: 1fr; }
+      .checklist-section { padding: 52px 24px; }
+      .checklist-inner { grid-template-columns: 1fr; gap: 40px; }
+      .soil-grid { grid-template-columns: 1fr; gap: 40px; }
+      .soil-improve-grid { grid-template-columns: 1fr 1fr; }
+      .prep-steps { grid-template-columns: 1fr 1fr; }
+      .prep-step:not(:last-child)::after { display: none; }
+      .soil-steps-section { padding: 60px 24px; }
+      .faq-grid { grid-template-columns: 1fr; }
+      footer { padding: 60px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav>
+    <div class="nav-brand">🌷 TulipGuide</div>
+    <ul class="nav-links">
+      <li><a href="#steps">Care Steps</a></li>
+      <li><a href="#mistakes">Mistakes</a></li>
+      <li><a href="#soil">Best Soil</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="hero-pill">🌿 Post-Bloom Care Guide</div>
+      <h1>What to Do with Tulips <em>After They Bloom</em></h1>
+      <p class="hero-sub">Your tulips have bloomed beautifully — but now what? The steps you take after flowering determine whether they return next spring. Here's exactly what to do.</p>
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="num">6</div><div class="lbl">Simple Steps</div></div>
+        <div class="hero-stat"><div class="num">3</div><div class="lbl">Mistakes to Avoid</div></div>
+        <div class="hero-stat"><div class="num">1yr</div><div class="lbl">To Next Bloom</div></div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="https://storage.googleapis.com/kreatewebsites/photos1000/IMG_6135.JPG"
+           srcset="https://storage.googleapis.com/kreatewebsites/photos700/IMG_6135.JPG 700w,
+                   https://storage.googleapis.com/kreatewebsites/photos1000/IMG_6135.JPG 1000w"
+           sizes="50vw" alt="Pink tulips in spring garden" loading="eager" />
+    </div>
+  </section>
+
+  <!-- ── SNIPPET ── -->
+  <div class="snippet-wrap">
+    <div class="snippet">
+      <div class="snippet-icon">💡</div>
+      <div>
+        <div class="snippet-label">Quick Answer</div>
+        <h2>What should you do with tulips after they bloom?</h2>
+        <p>After tulips bloom, remove the spent flowers, keep the leaves until they turn yellow, water lightly, and allow bulbs to store energy for next season before cutting back foliage. These steps are what make the difference between tulips that return and those that don't.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 6 STEPS ── -->
+  <div class="container" id="steps">
+    <div class="steps-section">
+      <div class="sec-eyebrow">Step-by-Step</div>
+      <div class="sec-title">How to Care for Tulips After Blooming</div>
+      <div class="sec-rule"></div>
+      <p class="sec-sub">Follow these six steps in order and give your tulip bulbs the best possible start for next season's spectacular display.</p>
+
+      <!-- Step 1 -->
+      <div class="step-block">
+        <div class="step-left">
+          <div class="step-circle">1</div>
+        </div>
+        <div class="step-right">
+          <div class="step-head">
+            <span class="step-emoji">✂️</span>
+            <div class="step-title">Deadhead the Flowers</div>
+          </div>
+          <p class="step-body">Once tulip blooms fade and petals drop, remove the spent flower head by cutting just below the bloom. This stops the plant wasting precious energy on producing seeds — energy that should go back into the bulb instead.</p>
+          <div class="do-dont">
+            <div class="do-box">
+              <div class="box-label">✔ Do This</div>
+              <ul class="box-items">
+                <li>Remove faded flower heads promptly</li>
+                <li>Cut cleanly just below the bloom</li>
+                <li>Use clean, sharp scissors or secateurs</li>
+              </ul>
+            </div>
+            <div class="dont-box">
+              <div class="box-label">✕ Don't Do This</div>
+              <ul class="box-items">
+                <li>Don't remove or cut the leaves — not yet</li>
+                <li>Don't pull the flower off by hand</li>
+              </ul>
+            </div>
+          </div>
+          <img class="step-img" src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6072.JPG" alt="Red tulips in bloom" loading="lazy" />
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="step-block">
+        <div class="step-left">
+          <div class="step-circle">2</div>
+        </div>
+        <div class="step-right">
+          <div class="step-head">
+            <span class="step-emoji">🌿</span>
+            <div class="step-title">Leave the Leaves Alone</div>
+            <span class="step-imp-tag">MOST IMPORTANT</span>
+          </div>
+          <p class="step-body">This is the single most important post-bloom rule and the most commonly broken one. Tulip leaves are solar panels — they capture sunlight and funnel energy back into the bulb, building the reserves needed for next year's flowers. Cut them early and you starve the bulb.</p>
+          <div class="tip-callout">
+            <span class="ti">⏳</span>
+            <span>Wait until leaves turn fully yellow or brown and collapse naturally on their own — usually 4–6 weeks after blooming. Only then is it safe to remove them.</span>
+          </div>
+          <img class="step-img" src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6132.JPG" alt="Pink tulip foliage care" loading="lazy" />
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="step-block">
+        <div class="step-left">
+          <div class="step-circle">3</div>
+        </div>
+        <div class="step-right">
+          <div class="step-head">
+            <span class="step-emoji">💧</span>
+            <div class="step-title">Water Lightly</div>
+          </div>
+          <p class="step-body">Tulips need far less water after blooming than during their growth phase. The goal is to keep soil slightly moist while the leaves are still working — but never wet or waterlogged. As the leaves begin to yellow, reduce watering further and let the soil dry out gradually.</p>
+          <div class="do-dont">
+            <div class="do-box">
+              <div class="box-label">✔ Watering Tips</div>
+              <ul class="box-items">
+                <li>Keep soil just slightly moist</li>
+                <li>Reduce as leaves start yellowing</li>
+                <li>Let dry out once foliage is gone</li>
+              </ul>
+            </div>
+            <div class="dont-box">
+              <div class="box-label">✕ Avoid These</div>
+              <ul class="box-items">
+                <li>Overwatering leads to bulb rot</li>
+                <li>Soggy or waterlogged soil at all times</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="step-block">
+        <div class="step-left">
+          <div class="step-circle">4</div>
+        </div>
+        <div class="step-right">
+          <div class="step-head">
+            <span class="step-emoji">🌱</span>
+            <div class="step-title">Fertilize for Next Year</div>
+          </div>
+          <p class="step-body">While the leaves are still green and actively working, give the bulbs a nutrient boost. This is the best window to fertilize — the bulb is actively absorbing and storing nutrition for the next growing cycle. A balanced fertilizer or a bulb-specific product both work well.</p>
+          <div class="tip-callout">
+            <span class="ti">🌟</span>
+            <span>Apply fertilizer right after blooming while leaves are still fully green. Don't wait — by the time leaves yellow, the bulb's absorption window is closing.</span>
+          </div>
+          <img class="step-img" src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6094.JPG" alt="Purple tulips healthy garden" loading="lazy" />
+        </div>
+      </div>
+
+      <!-- Step 5 -->
+      <div class="step-block">
+        <div class="step-left">
+          <div class="step-circle">5</div>
+        </div>
+        <div class="step-right">
+          <div class="step-head">
+            <span class="step-emoji">🪴</span>
+            <div class="step-title">Decide — Leave or Lift the Bulbs</div>
+          </div>
+          <p class="step-body">Once foliage has fully died back, you have a choice: leave bulbs in the ground for next year or lift and store them. The right answer depends on your climate and soil conditions.</p>
+          <div class="option-cards">
+            <div class="option-card leave">
+              <div class="option-card-title">🌿 Leave in Ground</div>
+              <ul>
+                <li>Best for cold climates (Zones 3–7)</li>
+                <li>Only in well-drained soil</li>
+                <li>Low-maintenance option</li>
+                <li>Mark spots so you don't disturb bulbs</li>
+              </ul>
+            </div>
+            <div class="option-card lift">
+              <div class="option-card-title">🧺 Lift &amp; Store Bulbs</div>
+              <ul>
+                <li>After leaves die back completely</li>
+                <li>Dry bulbs before storing</li>
+                <li>Cool, dark, dry location</li>
+                <li>Replant in fall — fresh start</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 6 -->
+      <div class="step-block" style="margin-bottom:0;">
+        <div class="step-left">
+          <div class="step-circle">6</div>
+        </div>
+        <div class="step-right">
+          <div class="step-head">
+            <span class="step-emoji">🌸</span>
+            <div class="step-title">Clean Up the Garden Bed</div>
+          </div>
+          <p class="step-body">Once all foliage has died back completely, tidy up the bed. Remove dead leaves and any plant debris that could harbour disease or pests. This is also the ideal time to add compost or improve soil structure before the next planting season arrives in autumn.</p>
+          <div class="do-dont">
+            <div class="do-box">
+              <div class="box-label">✔ Clean-Up Tasks</div>
+              <ul class="box-items">
+                <li>Remove dead leaves and stems</li>
+                <li>Clear any fallen debris from bed</li>
+                <li>Add compost to refresh the soil</li>
+              </ul>
+            </div>
+            <div class="dont-box">
+              <div class="box-label">✕ Don't Forget</div>
+              <ul class="box-items">
+                <li>Don't clean up while any green remains</li>
+                <li>Don't skip soil improvement for next year</li>
+              </ul>
+            </div>
+          </div>
+          <img class="step-img" src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6069.JPG" alt="Yellow tulips garden cleanup" loading="lazy" />
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ── PHOTO STRIP ── -->
+  <div class="photo-strip">
+    <div class="ps-item">
+      <img src="https://storage.googleapis.com/kreatewebsites/photos600/IMG_6011.JPG" alt="Red tulips" loading="lazy" />
+      <div class="ps-label">🔴 Red</div>
+    </div>
+    <div class="ps-item">
+      <img src="https://storage.googleapis.com/kreatewebsites/photos600/IMG_6139.JPG" alt="Pink tulips" loading="lazy" />
+      <div class="ps-label">🩷 Pink</div>
+    </div>
+    <div class="ps-item">
+      <img src="https://storage.googleapis.com/kreatewebsites/photos600/IMG_6155.JPG" alt="Yellow tulips" loading="lazy" />
+      <div class="ps-label">💛 Yellow</div>
+    </div>
+    <div class="ps-item">
+      <img src="https://storage.googleapis.com/kreatewebsites/photos600/IMG_6106.JPG" alt="Purple tulips" loading="lazy" />
+      <div class="ps-label">💜 Purple</div>
+    </div>
+  </div>
+
+  <!-- ── MISTAKES ── -->
+  <div class="mistakes-section" id="mistakes">
+    <div class="mistakes-inner">
+      <div class="sec-eyebrow" style="color:var(--bad-txt);">Avoid These Pitfalls</div>
+      <div class="sec-title">3 Common Post-Bloom Mistakes</div>
+      <div class="sec-rule" style="background:var(--bad-txt);"></div>
+      <div class="mistakes-grid">
+        <div class="mistake-card">
+          <div class="mistake-x">✕</div>
+          <div class="mistake-title">Cutting Leaves Too Early</div>
+          <div class="mistake-desc">The #1 reason tulips don't return. Leaves feed the bulb for weeks after blooming — removing them while still green cuts off the energy supply needed for next season's flowers.</div>
+        </div>
+        <div class="mistake-card">
+          <div class="mistake-x">✕</div>
+          <div class="mistake-title">Overwatering After Bloom</div>
+          <div class="mistake-desc">Once flowers fade, tulip bulbs need far less moisture. Continued heavy watering after blooming creates exactly the waterlogged conditions that lead to bulb rot and fungal problems.</div>
+        </div>
+        <div class="mistake-card">
+          <div class="mistake-x">✕</div>
+          <div class="mistake-title">Skipping Fertilizer</div>
+          <div class="mistake-desc">The post-bloom period is the best window to feed your bulbs. Miss it and the bulb enters summer with depleted reserves — producing smaller or no blooms the following spring.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── CHECKLIST ── -->
+  <div class="checklist-section">
+    <div class="checklist-inner">
+      <div class="checklist-left">
+        <div class="sec-eyebrow">Quick Reference</div>
+        <div class="sec-title" style="font-size:2.1rem;">Post-Bloom Care Checklist</div>
+        <div class="sec-rule"></div>
+        <p>Use this as your quick reference after your tulips finish flowering each spring. Tick each one off and your bulbs will be in great shape for next season.</p>
+        <img class="checklist-img" src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6103.JPG" alt="Purple tulips spring garden" loading="lazy" />
+      </div>
+      <div>
+        <div class="check-list">
+          <div class="check-row"><div class="check-icon">✓</div>Deadhead faded flowers (cut below bloom)</div>
+          <div class="check-row"><div class="check-icon">✓</div>Leave all green leaves in place — do not cut</div>
+          <div class="check-row"><div class="check-icon">✓</div>Water lightly to keep soil barely moist</div>
+          <div class="check-row"><div class="check-icon">✓</div>Fertilize while leaves are still green</div>
+          <div class="check-row"><div class="check-icon">✓</div>Wait for leaves to turn fully yellow before removing</div>
+          <div class="check-row"><div class="check-icon">✓</div>Decide to lift or leave bulbs for summer</div>
+          <div class="check-row"><div class="check-icon">✓</div>Store lifted bulbs in cool, dry, dark location</div>
+          <div class="check-row"><div class="check-icon">✓</div>Clear dead foliage and refresh soil when done</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── BEST SOIL ── -->
+  <div class="container" id="soil">
+    <div class="soil-section">
+      <div class="sec-eyebrow">Soil Guide</div>
+      <div class="sec-title">Best Soil for Tulips</div>
+      <div class="sec-rule"></div>
+      <p class="sec-sub">If your tulips aren't thriving, the problem might be underground. Soil quality directly affects drainage, root development, and bloom quality — here's exactly what they need.</p>
+
+      <div class="soil-grid">
+        <div class="soil-photos">
+          <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6104.JPG" alt="Purple tulips in good soil" loading="lazy" />
+          <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6021.JPG" alt="Yellow tulips healthy" loading="lazy" />
+          <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6013.JPG" alt="Red tulips thriving" loading="lazy" />
+          <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6158.JPG" alt="Blue tulips" loading="lazy" />
+        </div>
+        <div>
+          <p style="font-size:15px;color:var(--ink-soft);line-height:1.75;margin-bottom:24px;">Tulips prefer soil that is well-drained, loose, slightly sandy, and rich in organic matter. Drainage is the single most critical factor — waterlogged soil will rot bulbs before they ever get a chance to bloom.</p>
+
+          <div class="soil-types">
+            <div class="soil-type-card best">
+              <span class="soil-badge">BEST</span>
+              <div>
+                <div class="soil-type-name">Sandy Soil</div>
+                <div class="soil-type-desc">Excellent natural drainage, warms quickly in spring, and prevents bulb rot. The ideal native environment for tulips.</div>
+              </div>
+            </div>
+            <div class="soil-type-card good">
+              <span class="soil-badge">GOOD</span>
+              <div>
+                <div class="soil-type-name">Loamy Soil</div>
+                <div class="soil-type-desc">Well-balanced texture that holds nutrients while still draining effectively. Works very well for tulips.</div>
+              </div>
+            </div>
+            <div class="soil-type-card bad">
+              <span class="soil-badge">AVOID</span>
+              <div>
+                <div class="soil-type-name">Clay Soil</div>
+                <div class="soil-type-desc">Holds too much water, drains poorly, and compacts around bulbs. Needs significant amendment before tulips will thrive.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ph-bar">
+            <div class="ph-label">🧪 Ideal Soil pH Range</div>
+            <div class="ph-track">
+              <div class="ph-marker ideal">
+                <div class="arrow"></div>
+                <div class="ph-val">Ideal: 6.0 – 7.0</div>
+              </div>
+            </div>
+            <div class="ph-scale">
+              <span>4.0 Acidic</span>
+              <span>5.0</span>
+              <span>6.0</span>
+              <span>7.0 Neutral</span>
+              <span>8.0</span>
+              <span>9.0 Alkaline</span>
+            </div>
+          </div>
+
+          <div class="soil-improve-grid">
+            <div class="improve-card">
+              <div class="improve-icon">🏖️</div>
+              <div class="improve-title">Add Sand</div>
+              <div class="improve-desc">Loosens heavy clay soil and dramatically improves drainage</div>
+            </div>
+            <div class="improve-card">
+              <div class="improve-icon">🌿</div>
+              <div class="improve-title">Add Compost</div>
+              <div class="improve-desc">Boosts fertility, improves structure, and feeds beneficial soil life</div>
+            </div>
+            <div class="improve-card">
+              <div class="improve-icon">🪨</div>
+              <div class="improve-title">Raised Beds</div>
+              <div class="improve-desc">Perfect solution if your native soil drains poorly regardless of amendments</div>
+            </div>
+            <div class="improve-card">
+              <div class="improve-icon">🧪</div>
+              <div class="improve-title">Test pH</div>
+              <div class="improve-desc">Inexpensive soil test kits help you dial in the right pH before planting</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── SOIL PREP STEPS ── -->
+  <div class="soil-steps-section">
+    <div class="soil-steps-inner">
+      <div class="sec-eyebrow" style="color:var(--tulip-purple);">Before You Plant</div>
+      <div class="sec-title">How to Prepare Soil for Tulips</div>
+      <div class="sec-rule" style="background:var(--tulip-purple);"></div>
+      <div class="prep-steps">
+        <div class="prep-step">
+          <div class="prep-num">1</div>
+          <div class="prep-title">Loosen the Soil</div>
+          <div class="prep-desc">Dig down 8–12 inches to break up compaction and allow root penetration</div>
+        </div>
+        <div class="prep-step">
+          <div class="prep-num">2</div>
+          <div class="prep-title">Remove Debris</div>
+          <div class="prep-desc">Clear rocks, clumps, and old roots that could impede bulb growth</div>
+        </div>
+        <div class="prep-step">
+          <div class="prep-num">3</div>
+          <div class="prep-title">Add Organic Matter</div>
+          <div class="prep-desc">Mix in compost or aged manure to boost nutrition and improve texture</div>
+        </div>
+        <div class="prep-step">
+          <div class="prep-num">4</div>
+          <div class="prep-title">Ensure Drainage</div>
+          <div class="prep-desc">Water the area and check it drains freely within an hour — if not, amend further</div>
+        </div>
+        <div class="prep-step">
+          <div class="prep-num">5</div>
+          <div class="prep-title">Level &amp; Plant</div>
+          <div class="prep-desc">Rake smooth, then plant bulbs at the correct depth and spacing for best results</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── FAQ ── -->
+  <div class="container" id="faq">
+    <div class="faq-section">
+      <div class="sec-eyebrow">FAQ</div>
+      <div class="sec-title">Common Questions Answered</div>
+      <div class="sec-rule"></div>
+      <div class="faq-grid">
+        <div class="faq-card">
+          <div class="faq-q"><span class="faq-q-mark">Q</span>Should I cut tulips down after they bloom?</div>
+          <div class="faq-a">Only remove the spent flower head — never the leaves. Leaves must stay until they turn yellow and die back naturally, usually 4–6 weeks after blooming. They're actively feeding the bulb the entire time.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q"><span class="faq-q-mark">Q</span>How long should tulip leaves stay after blooming?</div>
+          <div class="faq-a">Until they turn fully yellow or brown and begin to collapse on their own. This usually takes 4–6 weeks after the flowers have faded. Rushing this process reduces bloom quality the following year.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q"><span class="faq-q-mark">Q</span>Can tulips bloom again next year?</div>
+          <div class="faq-a">Yes, with proper post-bloom care. The key steps are: leave the leaves until yellow, fertilize while leaves are green, water lightly without overwatering, and either lift and store bulbs or leave them in well-drained ground for the following season.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q"><span class="faq-q-mark">Q</span>What is the best soil for tulips?</div>
+          <div class="faq-a">Well-drained, loose, slightly sandy soil with a pH of 6.0–7.0. Good drainage is the most critical factor — tulip bulbs rot quickly in waterlogged conditions. If your soil is heavy clay, amend it with coarse sand and compost before planting.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q"><span class="faq-q-mark">Q</span>Should I dig up tulip bulbs every year?</div>
+          <div class="faq-a">Not necessarily. In cold climates with well-drained soil, you can leave bulbs in the ground. In warm climates or heavy soil, lifting them after the foliage dies back and storing them cool and dry before replanting in autumn gives better results.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q"><span class="faq-q-mark">Q</span>Can tulips grow in clay soil?</div>
+          <div class="faq-a">Yes, but it requires preparation. Amend heavy clay with plenty of coarse sand and compost to improve drainage. Alternatively, plant in raised beds filled with a sandy loam mix — this gives tulips the drainage conditions they need to thrive.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <span class="footer-flower">🌷</span>
+    <div class="footer-title">Care for them <em>well this season,</em> and they'll reward you next spring.</div>
+    <p class="footer-sub">Follow the six steps above and your bulbs will be healthy, energised, and ready to bloom again.</p>
+    <div class="footer-links">
+      <a class="footer-btn primary" href="when-to-plant-tulips.html">→ When to Plant Tulips</a>
+      <a class="footer-btn secondary" href="why-tulips-not-blooming.html">→ Why Tulips Aren't Blooming</a>
+    </div>
+    <div class="footer-copy">🌷 &nbsp; The Complete Tulip Growing Guide Series</div>
+  </footer>
+
+</body>
+</html>

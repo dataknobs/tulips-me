@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Store Tulip Bulbs: Step-by-Step Guide for Replanting Success</title>
+  <meta name="description" content="Learn how to store tulip bulbs properly after blooming. Follow this step-by-step guide to keep bulbs healthy and ready for next season." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --white:     #ffffff;
+      --cream:     #fdf8f2;
+      --warm:      #f8f2ea;
+      --earth:     #f2ead8;
+      --soil:      #e8dcc8;
+      --petal:     #fdf2f5;
+      --meadow:    #f2faf4;
+      --sky:       #f2f7fd;
+      --sun:       #fdf8ee;
+
+      --ink:       #1e1608;
+      --ink-mid:   #4a3c20;
+      --ink-soft:  #7a6840;
+      --muted:     #a89868;
+      --border:    #e4d8c0;
+      --border-lt: #f0e8d8;
+
+      --sage:      #5a8860;
+      --sage-lt:   #a8c8a8;
+      --brown:     #8a6030;
+      --brown-lt:  #c8a870;
+      --amber:     #c88820;
+      --amber-lt:  #f0c860;
+      --rust:      #b85030;
+      --rust-lt:   #e0a880;
+      --pink:      #c85068;
+      --pink-lt:   #f0b8c8;
+      --sky-blue:  #4878a8;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--cream);
+      color: var(--ink);
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 17px;
+      line-height: 1.75;
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(253,248,242,0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 72px;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .nav-brand {
+      font-family: 'Lora', serif;
+      font-size: 1.1rem; font-weight: 700; color: var(--ink);
+      display: flex; align-items: center; gap: 10px;
+    }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a {
+      font-size: 13px; font-weight: 500; color: var(--ink-soft);
+      text-decoration: none; letter-spacing: 0.04em; transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--sage); }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(150deg, #f5f0e8 0%, #f0ede0 50%, #e8f0e8 100%);
+      display: grid; grid-template-columns: 1fr 1fr;
+      min-height: 88vh; overflow: hidden;
+    }
+    .hero-left {
+      padding: 96px 64px 80px 80px;
+      display: flex; flex-direction: column; justify-content: center;
+    }
+    .hero-season {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-size: 10px; font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase;
+      color: var(--sage); margin-bottom: 28px; width: fit-content;
+    }
+    .hero-season::before {
+      content: '';
+      width: 32px; height: 1px; background: var(--sage-lt);
+    }
+    .hero h1 {
+      font-family: 'Lora', serif;
+      font-size: clamp(2.4rem, 4.2vw, 3.8rem); font-weight: 700;
+      line-height: 1.1; color: var(--ink); margin-bottom: 24px;
+    }
+    .hero h1 em { font-style: italic; color: var(--sage); }
+    .hero-sub {
+      font-size: 16px; color: var(--ink-soft); max-width: 480px;
+      line-height: 1.85; margin-bottom: 44px;
+    }
+    .hero-facts {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: 0; border: 1.5px solid var(--border);
+      background: var(--white); border-radius: 12px; overflow: hidden;
+      box-shadow: 0 4px 20px rgba(90,136,96,0.08);
+    }
+    .hero-fact {
+      padding: 20px 22px; text-align: center;
+      border-right: 1.5px solid var(--border);
+    }
+    .hero-fact:last-child { border-right: none; }
+    .hero-fact .num {
+      font-family: 'Lora', serif; font-size: 1.9rem; font-weight: 700;
+      color: var(--sage); line-height: 1; display: block;
+    }
+    .hero-fact .lbl {
+      font-size: 11px; font-weight: 600; color: var(--muted);
+      letter-spacing: 0.08em; text-transform: uppercase; margin-top: 4px;
+    }
+
+    .hero-right { position: relative; overflow: hidden; }
+    .hero-right img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 8s ease; }
+    .hero-right:hover img { transform: scale(1.04); }
+    .hero-right::before {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to right, #f5f0e8 0%, transparent 18%);
+      z-index: 1; pointer-events: none;
+    }
+    .hero-right::after {
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 100px;
+      background: linear-gradient(to top, #f0ede0 0%, transparent 100%);
+      z-index: 1; pointer-events: none;
+    }
+
+    /* ── SNIPPET ── */
+    .snippet-wrap {
+      background: var(--earth);
+      border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+      padding: 48px 80px;
+    }
+    .snippet {
+      background: var(--white); border: 1.5px solid var(--border);
+      border-left: 5px solid var(--amber); border-radius: 12px;
+      padding: 32px 44px; display: flex; gap: 28px; align-items: flex-start;
+      max-width: 1040px; margin: 0 auto;
+      box-shadow: 0 4px 20px rgba(200,136,32,0.08);
+    }
+    .snippet-icon { font-size: 40px; flex-shrink: 0; }
+    .snippet-label { font-size: 10px; font-weight: 700; letter-spacing: 0.28em; text-transform: uppercase; color: var(--amber); margin-bottom: 5px; }
+    .snippet h2 { font-family: 'Lora', serif; font-size: 1.2rem; font-weight: 700; color: var(--ink); margin-bottom: 8px; }
+    .snippet p { font-size: 15px; color: var(--ink-soft); line-height: 1.7; }
+
+    /* ── SHARED ── */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 80px; }
+    .sec-label { font-size: 10px; font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase; color: var(--sage); margin-bottom: 10px; }
+    .sec-title { font-family: 'Lora', serif; font-size: clamp(2rem, 3.2vw, 2.8rem); font-weight: 700; color: var(--ink); line-height: 1.15; margin-bottom: 14px; }
+    .sec-rule { width: 44px; height: 2px; border-radius: 2px; margin-bottom: 48px; }
+    .sec-sub { font-size: 16px; color: var(--ink-soft); max-width: 600px; margin-bottom: 48px; line-height: 1.8; }
+
+    /* ── TIMING BAND ── */
+    .timing-band {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 64px 80px;
+    }
+    .timing-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .timing-img { border-radius: 16px; overflow: hidden; height: 340px; box-shadow: 0 16px 48px rgba(0,0,0,0.10); }
+    .timing-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .timing-boxes { display: flex; flex-direction: column; gap: 14px; }
+    .timing-box {
+      border-radius: 12px; padding: 22px 24px; border: 1.5px solid;
+      display: flex; gap: 16px; align-items: flex-start;
+      transition: transform 0.2s;
+    }
+    .timing-box:hover { transform: translateX(4px); }
+    .timing-box.do  { background: var(--meadow); border-color: #b8dcc0; }
+    .timing-box.dont { background: #fff5f2; border-color: #f0c0b0; }
+    .timing-icon { font-size: 26px; flex-shrink: 0; }
+    .timing-badge {
+      font-size: 10px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase;
+      padding: 3px 10px; border-radius: 4px; display: inline-block; margin-bottom: 6px;
+    }
+    .timing-box.do .timing-badge   { background: #d0ecd8; color: var(--sage); }
+    .timing-box.dont .timing-badge { background: #f8d8d0; color: var(--rust); }
+    .timing-title { font-family: 'Lora', serif; font-size: 1.05rem; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
+    .timing-desc  { font-size: 13.5px; color: var(--ink-soft); line-height: 1.6; }
+
+    /* ── STEPS ── */
+    .steps-section { padding: 88px 0 100px; }
+    .steps-track { display: flex; flex-direction: column; gap: 0; }
+
+    .step-row {
+      display: grid; gap: 0; border-bottom: 1px solid var(--border-lt);
+      transition: background 0.25s;
+    }
+    .step-row:last-child { border-bottom: none; }
+    .step-row.layout-left  { grid-template-columns: 480px 1fr; }
+    .step-row.layout-right { grid-template-columns: 1fr 480px; }
+    .step-row.layout-full  { grid-template-columns: 1fr; }
+    .step-row:hover { background: var(--warm); }
+
+    .step-img { overflow: hidden; }
+    .step-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 6s ease; }
+    .step-row:hover .step-img img { transform: scale(1.04); }
+    .step-img.h380 { min-height: 380px; }
+    .step-img.h320 { min-height: 320px; }
+
+    .step-body {
+      padding: 56px 60px;
+      display: flex; flex-direction: column; justify-content: center;
+    }
+
+    .step-header { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; }
+    .step-num-badge {
+      width: 52px; height: 52px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Lora', serif; font-size: 1.3rem; font-weight: 700;
+      color: var(--white); flex-shrink: 0;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.16);
+    }
+    .step-tag {
+      font-size: 10px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase;
+      padding: 5px 14px; border-radius: 4px;
+    }
+    .step-title { font-family: 'Lora', serif; font-size: 1.7rem; font-weight: 700; color: var(--ink); margin-bottom: 14px; line-height: 1.25; }
+    .step-body p { font-size: 15px; color: var(--ink-soft); line-height: 1.8; margin-bottom: 18px; }
+
+    .do-dont-mini { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 4px; }
+    .dd-box { border-radius: 10px; padding: 14px 16px; }
+    .dd-box.do   { background: var(--meadow); border: 1.5px solid #b8dcc0; }
+    .dd-box.dont { background: #fff5f2;        border: 1.5px solid #f0c0b0; }
+    .dd-lbl { font-size: 10px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 8px; }
+    .dd-box.do   .dd-lbl { color: var(--sage); }
+    .dd-box.dont .dd-lbl { color: var(--rust); }
+    .dd-list { list-style: none; display: flex; flex-direction: column; gap: 5px; }
+    .dd-list li { font-size: 13px; line-height: 1.5; display: flex; gap: 7px; align-items: flex-start; }
+    .dd-box.do   .dd-list li { color: #3a7040; }
+    .dd-box.dont .dd-list li { color: var(--rust); }
+    .dd-box.do   .dd-list li::before { content: '✓'; font-weight: 700; flex-shrink: 0; }
+    .dd-box.dont .dd-list li::before { content: '✕'; font-weight: 700; flex-shrink: 0; }
+
+    .step-tip {
+      display: flex; gap: 10px; align-items: flex-start;
+      background: var(--sun); border-left: 3px solid var(--amber-lt);
+      border-radius: 0 8px 8px 0; padding: 14px 16px; margin-top: 18px;
+      font-size: 13px; color: var(--ink-mid); line-height: 1.55;
+    }
+
+    /* step colour themes */
+    .step-row.s1 .step-num-badge { background: var(--sage); }
+    .step-row.s1 .step-tag       { background: #d0ecd8; color: var(--sage); }
+    .step-row.s2 .step-num-badge { background: var(--brown); }
+    .step-row.s2 .step-tag       { background: #e8d8c0; color: var(--brown); }
+    .step-row.s3 .step-num-badge { background: var(--amber); }
+    .step-row.s3 .step-tag       { background: #f8eac0; color: #a87010; }
+    .step-row.s4 .step-num-badge { background: var(--rust); }
+    .step-row.s4 .step-tag       { background: #f8e0d0; color: var(--rust); }
+    .step-row.s5 .step-num-badge { background: var(--sky-blue); }
+    .step-row.s5 .step-tag       { background: #d8e8f8; color: var(--sky-blue); }
+    .step-row.s6 .step-num-badge { background: var(--brown); }
+    .step-row.s6 .step-tag       { background: #e8d8c0; color: var(--brown); }
+    .step-row.s7 .step-num-badge { background: var(--sage); }
+    .step-row.s7 .step-tag       { background: #d0ecd8; color: var(--sage); }
+
+    /* ── STORAGE CONDITIONS ── */
+    .storage-section {
+      background: var(--earth);
+      border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+      padding: 88px 80px; margin-bottom: 0;
+    }
+    .storage-inner { max-width: 1200px; margin: 0 auto; }
+    .storage-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 0; }
+    .storage-card {
+      background: var(--white); border-radius: 16px; padding: 32px 28px;
+      border: 1.5px solid var(--border-lt);
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+    .storage-card:hover { box-shadow: 0 12px 36px rgba(0,0,0,0.08); transform: translateY(-4px); }
+    .storage-icon { font-size: 36px; margin-bottom: 16px; display: block; }
+    .storage-title { font-family: 'Lora', serif; font-size: 1.15rem; font-weight: 700; color: var(--ink); margin-bottom: 8px; }
+    .storage-ideal {
+      display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: 0.12em;
+      background: var(--meadow); color: var(--sage); border: 1px solid var(--sage-lt);
+      padding: 4px 12px; border-radius: 4px; margin-bottom: 12px;
+    }
+    .storage-desc { font-size: 13.5px; color: var(--ink-soft); line-height: 1.65; }
+
+    /* storage containers */
+    .containers-section { padding: 88px 0 100px; }
+    .cont-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+    .cont-img { border-radius: 20px; overflow: hidden; height: 440px; box-shadow: 0 20px 60px rgba(0,0,0,0.10); }
+    .cont-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .cont-options { display: flex; flex-direction: column; gap: 12px; }
+    .cont-option {
+      display: flex; gap: 18px; align-items: flex-start;
+      padding: 20px 22px; border-radius: 14px; border: 1.5px solid var(--border-lt);
+      background: var(--white); transition: border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+    }
+    .cont-option:hover { border-color: var(--sage-lt); box-shadow: 0 6px 20px rgba(90,136,96,0.10); transform: translateX(4px); }
+    .cont-option.bad { background: #fff5f2; border-color: #f0c0b0; }
+    .cont-option.bad:hover { border-color: #e09880; box-shadow: 0 6px 20px rgba(184,80,48,0.08); }
+    .cont-icon { font-size: 26px; flex-shrink: 0; }
+    .cont-badge {
+      font-size: 10px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase;
+      padding: 3px 10px; border-radius: 4px; display: inline-block; margin-bottom: 6px;
+    }
+    .cont-option:not(.bad) .cont-badge { background: #d0ecd8; color: var(--sage); }
+    .cont-option.bad .cont-badge { background: #f8d8d0; color: var(--rust); }
+    .cont-title { font-family: 'Lora', serif; font-size: 1rem; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
+    .cont-desc { font-size: 13.5px; color: var(--ink-soft); line-height: 1.6; }
+
+    /* ── STORE VS LEAVE ── */
+    .svl-section {
+      background: var(--white);
+      border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+      padding: 88px 80px; margin-bottom: 100px;
+    }
+    .svl-inner { max-width: 1200px; margin: 0 auto; }
+    .svl-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 0; }
+    .svl-card { border-radius: 20px; overflow: hidden; }
+    .svl-img { height: 260px; overflow: hidden; }
+    .svl-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s; }
+    .svl-card:hover .svl-img img { transform: scale(1.06); }
+    .svl-body { padding: 32px 32px; }
+    .svl-card.store { border: 1.5px solid var(--sage-lt); }
+    .svl-card.store .svl-body { background: var(--meadow); }
+    .svl-card.leave { border: 1.5px solid var(--brown-lt); }
+    .svl-card.leave .svl-body { background: var(--sun); }
+    .svl-head { font-size: 10px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; margin-bottom: 8px; }
+    .svl-card.store .svl-head { color: var(--sage); }
+    .svl-card.leave .svl-head { color: var(--brown); }
+    .svl-title { font-family: 'Lora', serif; font-size: 1.4rem; font-weight: 700; color: var(--ink); margin-bottom: 14px; }
+    .svl-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .svl-list li { font-size: 14px; color: var(--ink-mid); display: flex; gap: 10px; align-items: flex-start; line-height: 1.55; }
+    .svl-card.store .svl-list li::before { content: '→'; color: var(--sage); font-weight: 700; flex-shrink: 0; }
+    .svl-card.leave .svl-list li::before { content: '→'; color: var(--brown); font-weight: 700; flex-shrink: 0; }
+
+    /* ── PHOTO MOSAIC ── */
+    .mosaic-section { padding: 0 0 100px; }
+    .mosaic {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-rows: 240px 240px;
+      gap: 8px;
+    }
+    .mc { border-radius: 14px; overflow: hidden; }
+    .mc img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s; }
+    .mc:hover img { transform: scale(1.07); }
+    .mc:nth-child(1) { grid-row: span 2; }
+    .mc:nth-child(4) { grid-column: span 2; }
+
+    /* ── MISTAKES & CHECKLIST ── */
+    .mc2-section { padding: 0 0 100px; }
+    .mc2-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+
+    .mistakes-block {
+      background: #fff5f2; border: 1.5px solid #f0c0b0;
+      border-radius: 20px; padding: 40px 36px;
+    }
+    .mistakes-block .bh-label { font-size: 10px; font-weight: 700; letter-spacing: 0.28em; text-transform: uppercase; color: var(--rust); margin-bottom: 6px; }
+    .mistakes-block .bh-title { font-family: 'Lora', serif; font-size: 1.6rem; font-weight: 700; color: var(--ink); margin-bottom: 28px; }
+    .mistake-item {
+      display: flex; gap: 16px; align-items: flex-start;
+      padding: 18px 0; border-bottom: 1px solid #f0d0c8;
+    }
+    .mistake-item:last-child { border-bottom: none; }
+    .mx {
+      width: 34px; height: 34px; border-radius: 50%;
+      background: #f8d8d0; border: 1.5px solid #f0b8a8;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--rust); font-size: 14px; font-weight: 700; flex-shrink: 0;
+    }
+    .mistake-title { font-family: 'Lora', serif; font-size: 1rem; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
+    .mistake-desc { font-size: 13.5px; color: var(--ink-soft); line-height: 1.6; }
+
+    .checklist-block {
+      background: var(--meadow); border: 1.5px solid #b8d8c0;
+      border-radius: 20px; padding: 40px 36px;
+    }
+    .checklist-block .bh-label { font-size: 10px; font-weight: 700; letter-spacing: 0.28em; text-transform: uppercase; color: var(--sage); margin-bottom: 6px; }
+    .checklist-block .bh-title { font-family: 'Lora', serif; font-size: 1.6rem; font-weight: 700; color: var(--ink); margin-bottom: 28px; }
+    .check-list { display: flex; flex-direction: column; }
+    .check-row {
+      display: flex; align-items: center; gap: 14px;
+      padding: 15px 0; border-bottom: 1px solid #c0e0c8;
+      font-size: 15px; color: var(--ink-mid); font-weight: 500; transition: color 0.2s;
+    }
+    .check-row:last-child { border-bottom: none; }
+    .check-row:hover { color: var(--ink); }
+    .check-box {
+      width: 26px; height: 26px; background: #e0f0e4;
+      border: 2px solid var(--sage-lt); border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 13px; color: var(--sage); flex-shrink: 0;
+    }
+
+    /* ── PRO TIPS ── */
+    .tips-section {
+      background: var(--earth);
+      border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+      padding: 88px 80px; margin-bottom: 100px;
+    }
+    .tips-inner { max-width: 1200px; margin: 0 auto; }
+    .tips-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 0; }
+    .tip-card {
+      background: var(--white); border-radius: 16px; padding: 28px 24px; text-align: center;
+      border: 1.5px solid var(--border-lt);
+      border-top: 3px solid transparent;
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+    .tip-card:hover { box-shadow: 0 12px 36px rgba(0,0,0,0.08); transform: translateY(-4px); }
+    .tip-card:nth-child(1) { border-top-color: var(--sage-lt); }
+    .tip-card:nth-child(2) { border-top-color: var(--amber-lt); }
+    .tip-card:nth-child(3) { border-top-color: var(--rust-lt); }
+    .tip-card:nth-child(4) { border-top-color: var(--brown-lt); }
+    .tip-icon { font-size: 34px; margin-bottom: 14px; display: block; }
+    .tip-title { font-family: 'Lora', serif; font-size: 1rem; font-weight: 700; color: var(--ink); margin-bottom: 8px; }
+    .tip-desc { font-size: 13.5px; color: var(--ink-soft); line-height: 1.65; }
+
+    /* ── REPLANT TIMELINE ── */
+    .timeline-section { padding: 0 0 100px; }
+    .timeline-track {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;
+      position: relative; margin-top: 0;
+    }
+    .timeline-track::before {
+      content: ''; position: absolute;
+      top: 36px; left: 12.5%; right: 12.5%; height: 2px;
+      background: linear-gradient(to right, var(--sage-lt), var(--amber-lt), var(--rust-lt), var(--sage-lt));
+    }
+    .tl-item { text-align: center; padding: 0 20px 48px; position: relative; }
+    .tl-dot {
+      width: 24px; height: 24px; border-radius: 50%;
+      margin: 24px auto 28px; position: relative; z-index: 2;
+    }
+    .tl-item:nth-child(1) .tl-dot { background: var(--sage); box-shadow: 0 0 0 5px rgba(90,136,96,0.18); }
+    .tl-item:nth-child(2) .tl-dot { background: var(--amber); box-shadow: 0 0 0 5px rgba(200,136,32,0.18); }
+    .tl-item:nth-child(3) .tl-dot { background: var(--rust); box-shadow: 0 0 0 5px rgba(184,80,48,0.18); }
+    .tl-item:nth-child(4) .tl-dot { background: var(--sage); box-shadow: 0 0 0 5px rgba(90,136,96,0.18); }
+    .tl-season {
+      font-size: 10px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 6px;
+    }
+    .tl-title { font-family: 'Lora', serif; font-size: 1.1rem; font-weight: 700; color: var(--ink); margin-bottom: 10px; }
+    .tl-desc { font-size: 13.5px; color: var(--ink-soft); line-height: 1.6; }
+    .tl-img { width: 100%; height: 160px; object-fit: cover; border-radius: 12px; display: block; margin-top: 20px; }
+
+    /* ── FAQ ── */
+    .faq-section { padding: 0 0 100px; }
+    .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .faq-card {
+      background: var(--white); border: 1.5px solid var(--border-lt); border-radius: 16px;
+      padding: 30px 28px; transition: box-shadow 0.3s, transform 0.3s, border-color 0.3s;
+    }
+    .faq-card:hover { box-shadow: 0 10px 30px rgba(90,136,96,0.08); transform: translateY(-3px); border-color: var(--sage-lt); }
+    .faq-q {
+      font-family: 'Lora', serif; font-size: 1.05rem; font-weight: 700;
+      color: var(--ink); margin-bottom: 12px; display: flex; gap: 12px; align-items: flex-start;
+    }
+    .faq-qm {
+      background: var(--meadow); border: 1.5px solid var(--sage-lt);
+      color: var(--sage); font-family: 'Lora', serif;
+      font-size: 0.85rem; font-weight: 700;
+      width: 28px; height: 28px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px;
+    }
+    .faq-a { font-size: 14.5px; color: var(--ink-soft); line-height: 1.78; padding-left: 40px; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: linear-gradient(150deg, #f2ead8 0%, #e8f0e4 60%, #ede8d8 100%);
+      border-top: 2px solid var(--border); padding: 80px 72px; text-align: center;
+    }
+    .footer-icon { font-size: 48px; margin-bottom: 16px; display: block; }
+    .footer-title { font-family: 'Lora', serif; font-size: clamp(1.8rem, 2.8vw, 2.4rem); font-weight: 700; color: var(--ink); margin-bottom: 14px; }
+    .footer-title em { font-style: italic; color: var(--sage); }
+    .footer-sub { font-size: 15px; color: var(--ink-soft); margin-bottom: 36px; max-width: 520px; margin-left: auto; margin-right: auto; line-height: 1.8; }
+    .footer-links { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .fl {
+      display: inline-block; font-size: 13px; font-weight: 600; letter-spacing: 0.06em;
+      padding: 13px 28px; border-radius: 8px; text-decoration: none;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .fl:hover { opacity: 0.86; transform: translateY(-2px); }
+    .fl-sage  { background: var(--sage); color: var(--white); box-shadow: 0 6px 20px rgba(90,136,96,0.28); }
+    .fl-amber { background: var(--amber); color: var(--white); box-shadow: 0 6px 20px rgba(200,136,32,0.24); }
+    .fl-pink  { background: var(--pink); color: var(--white); box-shadow: 0 6px 20px rgba(200,80,104,0.24); }
+    .footer-copy { margin-top: 56px; font-size: 12px; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 960px) {
+      nav { padding: 0 24px; }
+      .nav-links { display: none; }
+      .hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-left { padding: 60px 24px 48px; }
+      .hero-right { height: 280px; }
+      .snippet-wrap { padding: 40px 24px; }
+      .snippet { flex-direction: column; padding: 28px 24px; }
+      .timing-band { padding: 52px 24px; }
+      .timing-inner { grid-template-columns: 1fr; gap: 40px; }
+      .timing-img { height: 240px; }
+      .container { padding: 0 24px; }
+      .step-row.layout-left, .step-row.layout-right { grid-template-columns: 1fr; }
+      .step-img.h380, .step-img.h320 { min-height: 240px; }
+      .step-body { padding: 32px 28px; }
+      .do-dont-mini { grid-template-columns: 1fr; }
+      .storage-section { padding: 60px 24px; }
+      .storage-grid { grid-template-columns: 1fr 1fr; }
+      .cont-grid { grid-template-columns: 1fr; gap: 40px; }
+      .cont-img { height: 240px; }
+      .svl-section { padding: 60px 24px; }
+      .svl-grid { grid-template-columns: 1fr; }
+      .mosaic { grid-template-columns: 1fr 1fr; grid-template-rows: auto; }
+      .mc:nth-child(n) { grid-column: span 1; grid-row: span 1; height: 180px; }
+      .mc2-grid { grid-template-columns: 1fr; }
+      .tips-section { padding: 60px 24px; }
+      .tips-grid { grid-template-columns: 1fr 1fr; }
+      .timeline-track { grid-template-columns: 1fr 1fr; }
+      .timeline-track::before { display: none; }
+      .faq-grid { grid-template-columns: 1fr; }
+      footer { padding: 60px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav>
+    <div class="nav-brand">🌷 TulipGuide</div>
+    <ul class="nav-links">
+      <li><a href="#timing">When to Dig</a></li>
+      <li><a href="#steps">7 Steps</a></li>
+      <li><a href="#storage">Storage</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="hero-season">Post-Bloom Bulb Guide</div>
+      <h1>How to Store <em>Tulip Bulbs</em> for Next Season</h1>
+      <p class="hero-sub">Storing tulip bulbs correctly is the difference between spectacular blooms next spring and nothing at all. Dig, dry, and store them right — it's simpler than you think.</p>
+      <div class="hero-facts">
+        <div class="hero-fact"><span class="num">7</span><span class="lbl">Simple Steps</span></div>
+        <div class="hero-fact"><span class="num">1–2 wks</span><span class="lbl">Drying Time</span></div>
+        <div class="hero-fact"><span class="num">35–55°F</span><span class="lbl">Ideal Storage</span></div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="https://storage.googleapis.com/kreatewebsites/photos1000/IMG_6025.JPG"
+           srcset="https://storage.googleapis.com/kreatewebsites/photos700/IMG_6025.JPG 700w,
+                   https://storage.googleapis.com/kreatewebsites/photos1000/IMG_6025.JPG 1000w"
+           sizes="50vw" alt="Tulip bulbs in garden soil ready to dig" loading="eager" />
+    </div>
+  </section>
+
+  <!-- ── SNIPPET ── -->
+  <div class="snippet-wrap">
+    <div class="snippet">
+      <div class="snippet-icon">🧅</div>
+      <div>
+        <div class="snippet-label">Quick Answer</div>
+        <h2>How do you store tulip bulbs after blooming?</h2>
+        <p>Dig bulbs up after leaves die back naturally, shake off soil (don't wash), dry in a shaded ventilated area for 1–2 weeks, inspect and discard any damaged ones, then store in paper or mesh bags in a cool, dark, dry place (35–55°F) until fall planting.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── TIMING ── -->
+  <div class="timing-band" id="timing">
+    <div class="timing-inner">
+      <div class="timing-img">
+        <img src="https://storage.googleapis.com/kreatewebsites/photos700/IMG_6026.JPG" alt="Tulip foliage dying back naturally" loading="lazy" />
+      </div>
+      <div>
+        <div class="sec-label">Timing is Everything</div>
+        <div class="sec-title" style="font-size:2rem;margin-bottom:14px;">When to Dig Up Tulip Bulbs</div>
+        <div class="sec-rule" style="background:var(--sage);margin-bottom:28px;"></div>
+        <p style="font-size:16px;color:var(--ink-soft);line-height:1.8;margin-bottom:24px;">Dig too early and bulbs won't have stored enough energy for next year. Dig too late and you risk them rotting in wet summer soil. The leaves tell you exactly when the time is right.</p>
+        <div class="timing-boxes">
+          <div class="timing-box do">
+            <div class="timing-icon">✅</div>
+            <div>
+              <div class="timing-badge">Correct Timing</div>
+              <div class="timing-title">After Leaves Turn Yellow & Dry</div>
+              <div class="timing-desc">Wait until all foliage has turned fully yellow or brown and begins to collapse naturally. This confirms the bulb has finished storing energy for next season — usually 4–6 weeks after blooming ends.</div>
+            </div>
+          </div>
+          <div class="timing-box do">
+            <div class="timing-icon">✅</div>
+            <div>
+              <div class="timing-badge">Also Good</div>
+              <div class="timing-title">Before Summer Rains Arrive</div>
+              <div class="timing-desc">In warmer or wetter climates, dig bulbs before the soil becomes waterlogged in midsummer. Bulbs sitting in wet soil over summer are the primary cause of rot and mould.</div>
+            </div>
+          </div>
+          <div class="timing-box dont">
+            <div class="timing-icon">❌</div>
+            <div>
+              <div class="timing-badge">Avoid This</div>
+              <div class="timing-title">While Leaves Are Still Green</div>
+              <div class="timing-desc">Green leaves mean the bulb is still actively photosynthesising — storing energy for next year's flowers. Dig too early and you remove the bulb's power source before it's finished charging. The result: weak or absent blooms next season.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 7 STEPS ── -->
+  <div class="container" id="steps">
+    <div class="steps-section">
+      <div class="sec-label">Step by Step</div>
+      <div class="sec-title">7 Steps to Store Tulip Bulbs Properly</div>
+      <div class="sec-rule" style="background:var(--sage);"></div>
+      <p class="sec-sub">Follow these steps in order after your tulip foliage has fully died back. Each step matters — skipping any one of them is the most common reason stored bulbs fail.</p>
+
+      <div class="steps-track">
+
+        <!-- Step 1: Dig -->
+        <div class="step-row layout-left s1" style="border-radius:16px 16px 0 0;">
+          <div class="step-img h380">
+            <img src="https://storage.googleapis.com/kreatewebsites/photos700/IMG_6027.JPG" alt="Digging up tulip bulbs" loading="lazy" />
+          </div>
+          <div class="step-body">
+            <div class="step-header">
+              <div class="step-num-badge">1</div>
+              <span class="step-tag">Digging</span>
+            </div>
+            <div class="step-title">Dig Up the Bulbs Carefully</div>
+            <p>Use a garden fork or trowel and insert it several inches away from where the stems emerge — not directly beneath them. Lever the soil gently upward to lift the bulbs without piercing or cutting them. Damaged bulbs won't store well and may spread rot to healthy neighbours.</p>
+            <div class="do-dont-mini">
+              <div class="dd-box do">
+                <div class="dd-lbl">✔ Do This</div>
+                <ul class="dd-list">
+                  <li>Use a garden fork or trowel</li>
+                  <li>Dig around, not directly under</li>
+                  <li>Lift gently — don't yank</li>
+                </ul>
+              </div>
+              <div class="dd-box dont">
+                <div class="dd-lbl">✕ Avoid</div>
+                <ul class="dd-list">
+                  <li>Stabbing directly into bulbs</li>
+                  <li>Pulling stems to lift bulbs</li>
+                  <li>Digging after heavy rain</li>
+                </ul>
+              </div>
+            </div>
+            <div class="step-tip">⚠️ Tulip bulbs can be deeper than expected — 6 to 8 inches is common. Dig wide and deep to avoid missing or splitting offset bulblets.</div>
+          </div>
+        </div>
+
+        <!-- Step 2: Clean -->
+        <div class="step-row layout-right s2">
+          <div class="step-body">
+            <div class="step-header">
+              <div class="step-num-badge">2</div>
+              <span class="step-tag">Cleaning</span>
+            </div>
+            <div class="step-title">Clean the Bulbs — Without Water</div>
+            <p>Shake off excess soil from the bulbs by hand. Brush away any remaining dirt gently with your fingers or a soft brush. Remove any papery outer skin that's already peeling away on its own.</p>
+            <div class="do-dont-mini">
+              <div class="dd-box do">
+                <div class="dd-lbl">✔ Do This</div>
+                <ul class="dd-list">
+                  <li>Shake off loose soil</li>
+                  <li>Brush gently by hand</li>
+                  <li>Remove loose papery skin</li>
+                </ul>
+              </div>
+              <div class="dd-box dont">
+                <div class="dd-lbl">✕ Avoid</div>
+                <ul class="dd-list">
+                  <li>Washing bulbs with water</li>
+                  <li>Scrubbing the outer skin</li>
+                  <li>Forcing off firm tunic layers</li>
+                </ul>
+              </div>
+            </div>
+            <div class="step-tip">💡 Water is your biggest enemy at this stage. Wet bulbs going into storage is the leading cause of mould — even a quick rinse creates moisture that lingers.</div>
+          </div>
+          <div class="step-img h380">
+            <img src="https://storage.googleapis.com/kreatewebsites/photos700/IMG_6028.JPG" alt="Cleaning tulip bulbs soil" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- Step 3: Dry -->
+        <div class="step-row layout-left s3">
+          <div class="step-img h380">
+            <img src="https://storage.googleapis.com/kreatewebsites/photos700/IMG_6029.JPG" alt="Drying curing tulip bulbs" loading="lazy" />
+          </div>
+          <div class="step-body">
+            <div class="step-header">
+              <div class="step-num-badge">3</div>
+              <span class="step-tag">Curing / Drying</span>
+            </div>
+            <div class="step-title">Dry the Bulbs for 1–2 Weeks</div>
+            <p>Lay bulbs out in a single layer — never stacked — in a dry, shaded, well-ventilated area such as a garage, porch, or garden shed. This "curing" process hardens the outer skin and drives out residual moisture that would cause mould in storage.</p>
+            <div class="do-dont-mini">
+              <div class="dd-box do">
+                <div class="dd-lbl">✔ Ideal Conditions</div>
+                <ul class="dd-list">
+                  <li>Shaded, no direct sunlight</li>
+                  <li>Good airflow around bulbs</li>
+                  <li>Cool, dry temperature</li>
+                  <li>Single layer — don't pile</li>
+                </ul>
+              </div>
+              <div class="dd-box dont">
+                <div class="dd-lbl">✕ Avoid</div>
+                <ul class="dd-list">
+                  <li>Direct sun (cooks the bulb)</li>
+                  <li>Damp basements or garages</li>
+                  <li>Stacking or piling up bulbs</li>
+                </ul>
+              </div>
+            </div>
+            <div class="step-tip">⏳ Allow a full 1–2 weeks of drying before moving to storage. Rushing this step is the second most common cause of storage failure after wet bulbs.</div>
+          </div>
+        </div>
+
+        <!-- Step 4: Remove Foliage -->
+        <div class="step-row layout-right s4">
+          <div class="step-body">
+            <div class="step-header">
+              <div class="step-num-badge">4</div>
+              <span class="step-tag">Trim & Tidy</span>
+            </div>
+            <div class="step-title">Remove Dead Foliage & Roots</div>
+            <p>Once bulbs are fully cured and dry, use clean scissors or your fingers to trim off any remaining dried stems, roots, and dead material. This keeps storage containers tidy and prevents dead matter from introducing fungal spores to healthy bulbs.</p>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:8px;margin-top:4px;">
+              <li style="font-size:14px;color:var(--ink-mid);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--sage);font-weight:700;">→</span>Trim dried stems down to the base of the bulb</li>
+              <li style="font-size:14px;color:var(--ink-mid);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--sage);font-weight:700;">→</span>Remove dried root fibres from the base plate</li>
+              <li style="font-size:14px;color:var(--ink-mid);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--sage);font-weight:700;">→</span>Leave the papery tunic (outer skin) intact — it protects the bulb</li>
+              <li style="font-size:14px;color:var(--ink-mid);display:flex;gap:10px;align-items:flex-start;"><span style="color:var(--sage);font-weight:700;">→</span>Detach any offset bulblets and store separately for propagation</li>
+            </ul>
+          </div>
+          <div class="step-img h320">
+            <img src="https://storage.googleapis.com/kreatewebsites/photos700/IMG_6030.JPG" alt="Trimming tulip bulb foliage roots" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- Step 5: Inspect -->
+        <div class="step-row layout-left s5">
+          <div class="step-img h320">
+            <img src="https://storage.googleapis.com/kreatewebsites/photos700/IMG_6031.JPG" alt="Inspecting tulip bulbs healthy damaged" loading="lazy" />
+          </div>
+          <div class="step-body">
+            <div class="step-header">
+              <div class="step-num-badge">5</div>
+              <span class="step-tag">Quality Check</span>
+            </div>
+            <div class="step-title">Inspect and Sort Every Bulb</div>
+            <p>Before anything goes into storage, hold each bulb and squeeze it gently. Healthy bulbs feel firm — like a firm onion. Soft, squishy spots, visible mould, or shrunken dehydrated bulbs should all be discarded. One rotten bulb in storage can infect a whole batch.</p>
+            <div class="do-dont-mini">
+              <div class="dd-box do">
+                <div class="dd-lbl">✔ Keep These</div>
+                <ul class="dd-list">
+                  <li>Firm, solid bulbs with no soft spots</li>
+                  <li>Intact papery outer tunic</li>
+                  <li>No visible mould or discolouration</li>
+                </ul>
+              </div>
+              <div class="dd-box dont">
+                <div class="dd-lbl">✕ Discard These</div>
+                <ul class="dd-list">
+                  <li>Soft, squishy, or hollow bulbs</li>
+                  <li>Any showing mould or fungal spots</li>
+                  <li>Very small, shrunken, or damaged bulbs</li>
+                </ul>
+              </div>
+            </div>
+            <div class="step-tip">✦ Healthy bulbs = healthy blooms. Be ruthless in discarding borderline bulbs — they'll never produce good flowers and risk spreading disease to good ones.</div>
+          </div>
+        </div>
+
+        <!-- Step 6: Store -->
+        <div class="step-row layout-right s6">
+          <div class="step-body">
+            <div class="step-header">
+              <div class="step-num-badge">6</div>
+              <span class="step-tag">Storage</span>
+            </div>
+            <div class="step-title">Store in a Cool, Dark, Dry Place</div>
+            <p>Place bulbs in paper bags, mesh bags, or open cardboard boxes — anything that allows air to circulate freely. Label the bags with variety name and colour if you have multiple types. Choose a storage location that stays consistently cool, dark, and dry from summer through to autumn planting.</p>
+            <div class="do-dont-mini">
+              <div class="dd-box do">
+                <div class="dd-lbl">✔ Best Conditions</div>
+                <ul class="dd-list">
+                  <li>Temperature: 35–55°F (2–13°C)</li>
+                  <li>Dark — away from any light</li>
+                  <li>Dry — low humidity essential</li>
+                  <li>Good airflow in container</li>
+                </ul>
+              </div>
+              <div class="dd-box dont">
+                <div class="dd-lbl">✕ Avoid</div>
+                <ul class="dd-list">
+                  <li>Plastic bags — trap moisture</li>
+                  <li>Refrigerator if storing near fruit</li>
+                  <li>Warm rooms above 60°F</li>
+                  <li>Humid basements or bathrooms</li>
+                </ul>
+              </div>
+            </div>
+            <div class="step-tip">🍎 Keep stored bulbs well away from apples and other fruit. Fruit releases ethylene gas which causes bulbs to deteriorate — even through paper bags.</div>
+          </div>
+          <div class="step-img h320">
+            <img src="https://storage.googleapis.com/kreatewebsites/photos700/IMG_6033.JPG" alt="Storing tulip bulbs paper bags boxes" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- Step 7: Check -->
+        <div class="step-row layout-full s7" style="border-radius:0 0 16px 16px;">
+          <div class="step-body" style="padding:48px 60px;background:var(--meadow);">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;">
+              <div>
+                <div class="step-header">
+                  <div class="step-num-badge">7</div>
+                  <span class="step-tag">Until Autumn</span>
+                </div>
+                <div class="step-title">Monitor Until Fall Planting</div>
+                <p>Check on stored bulbs every 2–3 weeks. Remove any that have developed soft spots, mould, or a foul smell immediately. Keep the storage area well-ventilated and dry throughout summer. Replant bulbs in autumn when soil temperature drops to around 50°F (10°C) — typically September through November.</p>
+                <div class="step-tip" style="margin-top:20px;">🗓 Mark your calendar for fall planting (Sept–Nov). Store bulbs for no longer than 5–6 months — the sooner they're back in the ground, the better their performance next spring.</div>
+              </div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+                <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6035.JPG" alt="Checking stored tulip bulbs" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px;display:block;" />
+                <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6036.JPG" alt="Replanting tulip bulbs autumn" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px;display:block;" />
+                <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6034.JPG" alt="Healthy tulip bulbs ready to plant" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:12px;display:block;grid-column:span 2;" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ── STORAGE CONDITIONS ── -->
+  <div class="storage-section" id="storage">
+    <div class="storage-inner">
+      <div class="sec-label" style="color:var(--brown);">Optimal Conditions</div>
+      <div class="sec-title">The 3 Rules of Tulip Bulb Storage</div>
+      <div class="sec-rule" style="background:var(--brown);"></div>
+      <div class="storage-grid">
+        <div class="storage-card">
+          <span class="storage-icon">❄️</span>
+          <div class="storage-title">Keep it Cool</div>
+          <div class="storage-ideal">35–55°F &nbsp;/&nbsp; 2–13°C</div>
+          <div class="storage-desc">Tulip bulbs need cool conditions to remain dormant and prevent premature sprouting. A basement, garage, or cellar typically maintains the ideal temperature range naturally through summer. Check with a thermometer — anything above 60°F risks triggering early growth inside the bulb.</div>
+        </div>
+        <div class="storage-card">
+          <span class="storage-icon">🌑</span>
+          <div class="storage-title">Keep it Dark</div>
+          <div class="storage-ideal">No light exposure</div>
+          <div class="storage-desc">Light can trigger the bulb's internal growth signals even when temperatures are correct. Store in paper bags, cardboard boxes, or a dark cupboard well away from windows, skylights, or artificial light sources that stay on for long periods.</div>
+        </div>
+        <div class="storage-card">
+          <span class="storage-icon">💨</span>
+          <div class="storage-title">Keep it Dry & Airy</div>
+          <div class="storage-ideal">Low humidity, good airflow</div>
+          <div class="storage-desc">Humidity is the enemy of stored bulbs — it encourages mould and rot to spread rapidly. Always use breathable containers (paper, mesh, cardboard — never plastic). Keep storage areas ventilated and check humidity levels if possible. Above 70% humidity, consider adding silica gel packets to your storage boxes.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── STORAGE CONTAINERS ── -->
+  <div class="container">
+    <div class="containers-section">
+      <div class="sec-label">Container Options</div>
+      <div class="sec-title">Best Storage Containers for Tulip Bulbs</div>
+      <div class="sec-rule" style="background:var(--amber);"></div>
+      <div class="cont-grid">
+        <div class="cont-img">
+          <img src="https://storage.googleapis.com/kreatewebsites/photos700/IMG_6024.JPG" alt="Tulip bulbs in storage containers" loading="lazy" />
+        </div>
+        <div>
+          <p style="font-size:16px;color:var(--ink-soft);line-height:1.8;margin-bottom:24px;">The container you choose has a big impact on how well bulbs survive storage. The rule is simple: breathable is always better. Airflow prevents moisture from building up around the bulbs.</p>
+          <div class="cont-options">
+            <div class="cont-option">
+              <div class="cont-icon">🧻</div>
+              <div>
+                <div class="cont-badge">BEST</div>
+                <div class="cont-title">Paper Bags</div>
+                <div class="cont-desc">Inexpensive, breathable, and easy to label. Paper bags allow excellent airflow while keeping bulbs in a dark environment. Use separate bags per variety and write the colour, variety name, and dig date on each bag.</div>
+              </div>
+            </div>
+            <div class="cont-option">
+              <div class="cont-icon">🕸️</div>
+              <div>
+                <div class="cont-badge">EXCELLENT</div>
+                <div class="cont-title">Mesh or Net Bags</div>
+                <div class="cont-desc">Maximum airflow makes mesh bags ideal. Often sold as produce bags or purpose-made bulb storage nets. Hang them if possible so air circulates around all surfaces of every bulb.</div>
+              </div>
+            </div>
+            <div class="cont-option">
+              <div class="cont-icon">📦</div>
+              <div>
+                <div class="cont-badge">GOOD</div>
+                <div class="cont-title">Cardboard Boxes</div>
+                <div class="cont-desc">Open cardboard boxes lined with newspaper work well for larger quantities. Spread bulbs in a single layer and store somewhere dark and dry. Check regularly for moisture or mould.</div>
+              </div>
+            </div>
+            <div class="cont-option bad">
+              <div class="cont-icon">🗑️</div>
+              <div>
+                <div class="cont-badge">AVOID</div>
+                <div class="cont-title">Plastic Bags or Airtight Containers</div>
+                <div class="cont-desc">Plastic traps moisture against the bulb surface and creates the humid, airless conditions that rot and mould thrive in. Even bulbs that appear dry when packed will release small amounts of moisture over time — with no way to escape in plastic.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── STORE VS LEAVE ── -->
+  <div class="svl-section">
+    <div class="svl-inner">
+      <div class="sec-label" style="color:var(--brown);">Decision Guide</div>
+      <div class="sec-title">Should You Store or Leave Bulbs in the Ground?</div>
+      <div class="sec-rule" style="background:var(--brown);"></div>
+      <div class="svl-grid">
+        <div class="svl-card store">
+          <div class="svl-img">
+            <img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6094.JPG" alt="Digging tulip bulbs to store" loading="lazy" />
+          </div>
+          <div class="svl-body">
+            <div class="svl-head">Option A</div>
+            <div class="svl-title">🧺 Lift & Store Bulbs</div>
+            <ul class="svl-list">
+              <li>You live in a warm climate (Zone 8+)</li>
+              <li>Your soil is heavy clay or stays wet in summer</li>
+              <li>You want to rearrange or replant in a different spot</li>
+              <li>You've had problems with bulb rot in past seasons</li>
+              <li>You want to control vernalisation (pre-chilling)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="svl-card leave">
+          <div class="svl-img">
+            <img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6046.JPG" alt="Tulips left in ground" loading="lazy" />
+          </div>
+          <div class="svl-body">
+            <div class="svl-head">Option B</div>
+            <div class="svl-title">🌿 Leave in the Ground</div>
+            <ul class="svl-list">
+              <li>You live in a cold climate (Zones 3–7)</li>
+              <li>Your soil drains freely and doesn't waterlog</li>
+              <li>You're growing species or Darwin Hybrid varieties</li>
+              <li>You prefer a low-maintenance approach</li>
+              <li>The bed is well-established and performing well</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── MOSAIC ── -->
+  <div class="container">
+    <div class="mosaic-section">
+      <div class="sec-label">Inspiration</div>
+      <div class="sec-title" style="margin-bottom:32px;">Beautiful Tulips Worth Storing For</div>
+      <div class="mosaic">
+        <div class="mc"><img src="https://storage.googleapis.com/kreatewebsites/photos700/IMG_6078.JPG" alt="Pink tulips worth saving" loading="lazy" /></div>
+        <div class="mc"><img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6106.JPG" alt="Purple tulips" loading="lazy" /></div>
+        <div class="mc"><img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6073.JPG" alt="Red tulips" loading="lazy" /></div>
+        <div class="mc"><img src="https://storage.googleapis.com/kreatewebsites/photos700/IMG_6155.JPG" alt="Yellow tulips" loading="lazy" /></div>
+        <div class="mc"><img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6022.JPG" alt="Blue accent tulips" loading="lazy" /></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── MISTAKES & CHECKLIST ── -->
+  <div class="container">
+    <div class="mc2-section">
+      <div class="mc2-grid">
+        <div class="mistakes-block">
+          <div class="bh-label">Avoid These Mistakes</div>
+          <div class="bh-title">Common Storage Failures</div>
+          <div class="mistake-item">
+            <div class="mx">✕</div>
+            <div>
+              <div class="mistake-title">Storing Bulbs While Still Wet</div>
+              <div class="mistake-desc">Digging bulbs after rain or failing to cure them properly before storage is the #1 cause of rot. Wet bulbs in an enclosed container create the perfect conditions for mould to spread to every bulb in the bag within days.</div>
+            </div>
+          </div>
+          <div class="mistake-item">
+            <div class="mx">✕</div>
+            <div>
+              <div class="mistake-title">Using Plastic Bags</div>
+              <div class="mistake-desc">Plastic prevents the tiny amount of moisture that bulbs naturally release from escaping. This moisture accumulates and creates humid conditions right against the bulb skin — exactly where mould forms first.</div>
+            </div>
+          </div>
+          <div class="mistake-item">
+            <div class="mx">✕</div>
+            <div>
+              <div class="mistake-title">Storing in a Warm Room</div>
+              <div class="mistake-desc">Temperatures above 60°F can signal to the bulb that spring has arrived. This causes premature sprouting inside storage — the bulb expends all its energy before it's even planted, resulting in very weak or dead plants come autumn.</div>
+            </div>
+          </div>
+          <div class="mistake-item">
+            <div class="mx">✕</div>
+            <div>
+              <div class="mistake-title">Skipping the Inspection Step</div>
+              <div class="mistake-desc">One rotten bulb in a bag or box can quietly spread mould to every healthy bulb around it. Inspect every bulb individually before storage and recheck every 2–3 weeks during the storage period.</div>
+            </div>
+          </div>
+        </div>
+        <div class="checklist-block">
+          <div class="bh-label">Quick Reference</div>
+          <div class="bh-title">Bulb Storage Checklist</div>
+          <div class="check-list">
+            <div class="check-row"><div class="check-box">✓</div>Wait until all leaves are fully yellow before digging</div>
+            <div class="check-row"><div class="check-box">✓</div>Dig carefully with fork or trowel — not directly under bulbs</div>
+            <div class="check-row"><div class="check-box">✓</div>Clean off soil by hand — do NOT wash with water</div>
+            <div class="check-row"><div class="check-box">✓</div>Cure/dry in single layer for 1–2 weeks, shaded with airflow</div>
+            <div class="check-row"><div class="check-box">✓</div>Trim dried roots and stems once fully dry</div>
+            <div class="check-row"><div class="check-box">✓</div>Inspect every bulb — discard any soft or mouldy ones</div>
+            <div class="check-row"><div class="check-box">✓</div>Store in paper/mesh bags or open cardboard box</div>
+            <div class="check-row"><div class="check-box">✓</div>Label bags with variety name and colour</div>
+            <div class="check-row"><div class="check-box">✓</div>Keep at 35–55°F, dark, dry, and well-ventilated</div>
+            <div class="check-row"><div class="check-box">✓</div>Check every 2–3 weeks and remove any rotting bulbs</div>
+            <div class="check-row"><div class="check-box">✓</div>Replant in autumn (Sept–Nov) when soil cools to ~50°F</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── PRO TIPS ── -->
+  <div class="tips-section">
+    <div class="tips-inner">
+      <div class="sec-label" style="color:var(--brown);">Expert Advice</div>
+      <div class="sec-title">Pro Tips for Storage Success</div>
+      <div class="sec-rule" style="background:var(--brown);"></div>
+      <div class="tips-grid">
+        <div class="tip-card">
+          <span class="tip-icon">🏷️</span>
+          <div class="tip-title">Label Every Variety</div>
+          <div class="tip-desc">Always label bags with the tulip name, colour, and dig date. By autumn they all look identical — and you'll never remember which purple is which without labels.</div>
+        </div>
+        <div class="tip-card">
+          <span class="tip-icon">🌬️</span>
+          <div class="tip-title">Use Breathable Containers</div>
+          <div class="tip-desc">Paper bags, mesh nets, and open cardboard boxes all allow air to circulate. Even slight airflow prevents the moisture accumulation that causes mould and rot in storage.</div>
+        </div>
+        <div class="tip-card">
+          <span class="tip-icon">🏠</span>
+          <div class="tip-title">Basement or Garage is Best</div>
+          <div class="tip-desc">These spaces naturally maintain the cool, stable temperatures tulip bulbs need. Avoid living areas — they're usually too warm — and avoid outdoor sheds that freeze in winter.</div>
+        </div>
+        <div class="tip-card">
+          <span class="tip-icon">🍎</span>
+          <div class="tip-title">Keep Away from Fruit</div>
+          <div class="tip-desc">Apples, pears, and ripening fruit release ethylene gas which accelerates bulb deterioration. Keep stored tulips in a completely separate area from any fruit storage.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── TIMELINE ── -->
+  <div class="container" id="replant">
+    <div class="timeline-section">
+      <div class="sec-label">Full Cycle</div>
+      <div class="sec-title">The Complete Tulip Bulb Calendar</div>
+      <div class="sec-rule" style="background:var(--sage);"></div>
+      <div class="timeline-track">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-season">Spring</div>
+          <div class="tl-title">Tulips Bloom</div>
+          <div class="tl-desc">Enjoy flowers in March–May. Deadhead spent blooms but leave all foliage in place to feed the bulb.</div>
+          <img class="tl-img" src="https://storage.googleapis.com/kreatewebsites/photos300/IMG_6132.JPG" alt="Spring tulips blooming" loading="lazy" />
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-season">Late Spring</div>
+          <div class="tl-title">Leaves Die Back</div>
+          <div class="tl-desc">Allow foliage to yellow fully — 4–6 weeks after blooming. Once brown and collapsed, it's time to dig.</div>
+          <img class="tl-img" src="https://storage.googleapis.com/kreatewebsites/photos300/IMG_6064.JPG" alt="Tulip foliage dying" loading="lazy" />
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-season">Summer</div>
+          <div class="tl-title">Dig, Dry & Store</div>
+          <div class="tl-desc">Follow the 7 steps. Cure for 2 weeks, inspect, store cool and dry in paper or mesh until autumn arrives.</div>
+          <img class="tl-img" src="https://storage.googleapis.com/kreatewebsites/photos300/IMG_6095.JPG" alt="Storing bulbs summer" loading="lazy" />
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-season">Autumn</div>
+          <div class="tl-title">Replant Bulbs</div>
+          <div class="tl-desc">Replant September–November when soil drops to ~50°F. And get ready to do it all again next spring.</div>
+          <img class="tl-img" src="https://storage.googleapis.com/kreatewebsites/photos300/IMG_6103.JPG" alt="Replanting tulip bulbs autumn" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── FAQ ── -->
+  <div class="container" id="faq">
+    <div class="faq-section">
+      <div class="sec-label">FAQ</div>
+      <div class="sec-title">Tulip Bulb Storage Questions Answered</div>
+      <div class="sec-rule" style="background:var(--sage);"></div>
+      <div class="faq-grid">
+        <div class="faq-card">
+          <div class="faq-q"><span class="faq-qm">Q</span>How long can you store tulip bulbs?</div>
+          <div class="faq-a">Tulip bulbs can be stored for several months — typically from when you dig them in late spring/early summer until fall planting (September–November). That's around 3–6 months. Beyond 6 months, bulbs begin losing their stored energy and viability. The sooner you can replant, the better the results.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q"><span class="faq-qm">Q</span>Can you leave tulip bulbs in the ground?</div>
+          <div class="faq-a">Yes — in cold climates (Zones 3–7) with free-draining soil, tulip bulbs can stay in the ground year-round. They naturally experience the cold winter they need for vernalisation. However, in warm climates or heavy clay soils that stay wet in summer, lifting and storing is strongly recommended to prevent rot.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q"><span class="faq-qm">Q</span>Do tulip bulbs need to be dried before storing?</div>
+          <div class="faq-a">Yes — drying (or "curing") is essential and non-negotiable. Bulbs placed into storage while still moist from the soil will develop mould and rot within days. Allow a full 1–2 weeks of drying in a shaded, well-ventilated spot before placing bulbs into any storage container.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q"><span class="faq-qm">Q</span>What happens if tulip bulbs get wet in storage?</div>
+          <div class="faq-a">Wet conditions in storage cause mould and rot to develop rapidly. What starts on one bulb can spread to an entire batch within a week or two. If you notice moisture in your storage container, remove all bulbs immediately, re-dry them in a ventilated area for a few days, inspect carefully, discard any affected ones, and re-store in a drier location.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q"><span class="faq-qm">Q</span>Can I store tulip bulbs in the refrigerator?</div>
+          <div class="faq-a">Yes, with caution. A refrigerator can work well if you're in a warm climate and need to pre-chill bulbs for vernalisation. Use the vegetable drawer and store in a paper bag. However, never store bulbs near fruit — ethylene gas from apples or pears will damage the bulbs significantly even in a cold environment.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q"><span class="faq-qm">Q</span>When should I replant stored tulip bulbs?</div>
+          <div class="faq-a">Replant stored tulip bulbs in autumn, typically September through November, when soil temperatures drop to around 50°F (10°C). This gives roots time to establish before the ground freezes, and ensures bulbs complete their full cold dormancy cycle before spring growth begins. Check soil temperature with a thermometer rather than relying on calendar dates alone.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <span class="footer-icon">🧅</span>
+    <div class="footer-title">Store Them Right — <em>They'll Bloom Again</em></div>
+    <p class="footer-sub">A few simple steps this summer means a spectacular spring display next year. Follow the guide, stay patient, and trust the process.</p>
+    <div class="footer-links">
+      <a class="fl fl-sage"  href="when-to-plant-tulips.html">🌷 When to Plant Tulips</a>
+      <a class="fl fl-amber" href="tulip-care-after-bloom.html">🌷 Post-Bloom Care</a>
+      <a class="fl fl-pink"  href="why-tulips-not-blooming.html">🌷 Troubleshooting Guide</a>
+    </div>
+    <div class="footer-copy">🌷 &nbsp; The Complete Tulip Guide Series — Growing · Caring · Storing · Decorating · Celebrating</div>
+  </footer>
+
+</body>
+</html>

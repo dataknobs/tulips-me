@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tulip Wedding Ideas: Beautiful Floral Arrangements for a Perfect Spring Wedding</title>
+  <meta name="description" content="Discover stunning tulip wedding ideas and floral arrangements. Get inspiration for bouquets, centerpieces, and décor for a romantic spring wedding." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --white:       #ffffff;
+      --petal:       #fff5f7;
+      --blush:       #fdf0f4;
+      --rose-mist:   #f8e8ee;
+      --sunshine:    #fffbee;
+      --sky:         #f0f8ff;
+      --meadow:      #f4fdf4;
+      --ink:         #2c1820;
+      --ink-soft:    #5a3848;
+      --muted:       #a08090;
+      --border:      #f0d8e4;
+      --border-lt:   #faeaf0;
+
+      --pink:        #d9547a;
+      --pink-deep:   #b83060;
+      --pink-light:  #f4a0b8;
+      --blush-dark:  #e87898;
+      --gold:        #c8962a;
+      --purple:      #8c6aaa;
+      --green:       #5a8860;
+      --cream-gold:  #f8f0e0;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--white);
+      color: var(--ink);
+      font-family: 'Nunito', sans-serif;
+      font-size: 17px;
+      line-height: 1.75;
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 64px;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .nav-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem; font-weight: 700; color: var(--ink);
+      display: flex; align-items: center; gap: 8px;
+    }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a {
+      font-size: 13px; font-weight: 600; color: var(--muted);
+      text-decoration: none; letter-spacing: 0.04em; transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--pink); }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(160deg, #fff5f7 0%, #fdeef4 40%, #fff9f0 100%);
+      display: grid; grid-template-columns: 1fr 1fr;
+      min-height: 88vh; overflow: hidden;
+    }
+    .hero-left {
+      padding: 100px 64px 80px 80px;
+      display: flex; flex-direction: column; justify-content: center;
+    }
+    .hero-pill {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #fff0f4; border: 1.5px solid #f8c8d8;
+      color: var(--pink);
+      font-size: 11px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase;
+      padding: 7px 18px; border-radius: 100px; margin-bottom: 28px; width: fit-content;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.4rem, 4.2vw, 4rem); font-weight: 900; line-height: 1.1;
+      color: var(--ink); margin-bottom: 24px;
+    }
+    .hero h1 em { font-style: italic; color: var(--pink); }
+    .hero-sub {
+      font-size: 16px; color: var(--ink-soft); max-width: 460px;
+      margin-bottom: 44px; line-height: 1.8;
+    }
+    .hero-stats {
+      display: flex; border: 1.5px solid var(--border); width: fit-content;
+      background: var(--white); border-radius: 12px; overflow: hidden;
+      box-shadow: 0 4px 24px rgba(200,80,120,0.08);
+    }
+    .hero-stat { padding: 18px 26px; text-align: center; border-right: 1.5px solid var(--border); }
+    .hero-stat:last-child { border-right: none; }
+    .hero-stat .num {
+      font-family: 'Playfair Display', serif; font-size: 1.9rem; font-weight: 900;
+      color: var(--pink); line-height: 1;
+    }
+    .hero-stat .lbl {
+      font-size: 11px; color: var(--muted); font-weight: 600;
+      letter-spacing: 0.08em; text-transform: uppercase; margin-top: 4px;
+    }
+    .hero-right { position: relative; overflow: hidden; }
+    .hero-right img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 8s ease; }
+    .hero-right:hover img { transform: scale(1.04); }
+    .hero-right::before {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to right, #fff5f7 0%, transparent 20%);
+      z-index: 1; pointer-events: none;
+    }
+    .hero-right::after {
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 100px;
+      background: linear-gradient(to top, #fdeef4 0%, transparent 100%);
+      z-index: 1; pointer-events: none;
+    }
+
+    /* ── SNIPPET ── */
+    .snippet-wrap {
+      background: var(--cream-gold);
+      border-top: 1px solid #f0e0c0; border-bottom: 1px solid #f0e0c0;
+      padding: 52px 80px 64px;
+    }
+    .snippet {
+      background: var(--white); border: 2px solid #f8e4c0;
+      border-left: 5px solid var(--gold); border-radius: 14px;
+      padding: 36px 48px; display: flex; gap: 32px; align-items: flex-start;
+      max-width: 1040px; margin: 0 auto;
+      box-shadow: 0 4px 24px rgba(200,150,40,0.08);
+    }
+    .snippet-icon { font-size: 44px; flex-shrink: 0; margin-top: 4px; }
+    .snippet-label { font-size: 11px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
+    .snippet h2 { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--ink); margin-bottom: 10px; }
+    .snippet p { font-size: 15px; color: var(--ink-soft); line-height: 1.7; max-width: 700px; }
+
+    /* ── SHARED ── */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 80px; }
+    .sec-eyebrow { font-size: 11px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: var(--pink); margin-bottom: 10px; }
+    .sec-title { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 3vw, 2.8rem); font-weight: 900; color: var(--ink); line-height: 1.15; margin-bottom: 14px; }
+    .sec-rule { width: 52px; height: 3px; background: var(--pink); border-radius: 2px; margin-bottom: 48px; }
+    .sec-sub { font-size: 16px; color: var(--ink-soft); max-width: 600px; margin-bottom: 48px; line-height: 1.75; }
+
+    /* ── WHY CHOOSE TULIPS ── */
+    .why-section { padding: 80px 0 96px; }
+    .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+    .why-img-stack { position: relative; height: 520px; }
+    .why-img-main {
+      position: absolute; top: 0; left: 0; right: 60px; bottom: 60px;
+      border-radius: 20px; overflow: hidden; box-shadow: 0 20px 60px rgba(200,80,120,0.18);
+    }
+    .why-img-main img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 6s ease; }
+    .why-img-main:hover img { transform: scale(1.05); }
+    .why-img-accent {
+      position: absolute; bottom: 0; right: 0; width: 220px; height: 220px;
+      border-radius: 16px; overflow: hidden;
+      border: 4px solid var(--white); box-shadow: 0 12px 40px rgba(200,80,120,0.2);
+    }
+    .why-img-accent img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .why-badges { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .why-badge {
+      background: var(--petal); border: 1.5px solid var(--border);
+      border-radius: 14px; padding: 22px 20px;
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+    .why-badge:hover { box-shadow: 0 8px 28px rgba(200,80,120,0.10); transform: translateY(-3px); }
+    .why-badge-icon { font-size: 28px; margin-bottom: 10px; display: block; }
+    .why-badge-title { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: var(--ink); margin-bottom: 6px; }
+    .why-badge-desc { font-size: 13.5px; color: var(--ink-soft); line-height: 1.55; }
+
+    /* ── BOUQUET IDEAS ── */
+    .bouquet-section {
+      background: var(--blush);
+      border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+      padding: 80px; margin-bottom: 96px;
+    }
+    .bouquet-inner { max-width: 1200px; margin: 0 auto; }
+    .bouquet-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 0; }
+    .bouquet-card {
+      background: var(--white); border-radius: 16px; overflow: hidden;
+      border: 1.5px solid var(--border-lt);
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+    .bouquet-card:hover { box-shadow: 0 16px 48px rgba(200,80,120,0.14); transform: translateY(-5px); }
+    .bouquet-img { height: 220px; overflow: hidden; }
+    .bouquet-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s; }
+    .bouquet-card:hover .bouquet-img img { transform: scale(1.08); }
+    .bouquet-body { padding: 22px 20px; }
+    .bouquet-icon { font-size: 20px; margin-bottom: 8px; }
+    .bouquet-title { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; color: var(--ink); margin-bottom: 8px; }
+    .bouquet-desc { font-size: 13.5px; color: var(--ink-soft); line-height: 1.6; }
+
+    /* ── GALLERY MASONRY ── */
+    .gallery-section { padding: 0 0 96px; }
+    .masonry {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: 200px;
+      gap: 10px;
+    }
+    .m-item { border-radius: 14px; overflow: hidden; position: relative; }
+    .m-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease; }
+    .m-item:hover img { transform: scale(1.07); }
+    .m-item:nth-child(1) { grid-column: span 2; grid-row: span 2; }
+    .m-item:nth-child(4) { grid-column: span 2; }
+    .m-item:nth-child(7) { grid-column: span 2; grid-row: span 2; }
+    .m-label {
+      position: absolute; bottom: 12px; left: 12px;
+      background: rgba(255,255,255,0.88); color: var(--ink);
+      font-size: 11px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase;
+      padding: 4px 12px; border-radius: 100px; backdrop-filter: blur(4px);
+    }
+
+    /* ── COLOR THEMES ── */
+    .themes-section {
+      background: var(--rose-mist);
+      border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+      padding: 80px; margin-bottom: 96px;
+    }
+    .themes-inner { max-width: 1200px; margin: 0 auto; }
+    .themes-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 0; }
+    .theme-card {
+      border-radius: 20px; overflow: hidden;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .theme-card:hover { transform: translateY(-6px); box-shadow: 0 20px 56px rgba(0,0,0,0.14); }
+    .theme-img { height: 260px; overflow: hidden; }
+    .theme-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s; }
+    .theme-card:hover .theme-img img { transform: scale(1.08); }
+    .theme-body { padding: 22px 20px 24px; }
+    .theme-swatch {
+      display: flex; gap: 6px; margin-bottom: 12px;
+    }
+    .swatch { width: 18px; height: 18px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.8); }
+    .theme-name { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; color: var(--ink); margin-bottom: 6px; }
+    .theme-desc { font-size: 13px; color: var(--ink-soft); line-height: 1.55; }
+    .theme-card:nth-child(1) .theme-body { background: #f8f8f8; }
+    .theme-card:nth-child(2) .theme-body { background: #fff5f7; }
+    .theme-card:nth-child(3) .theme-body { background: #fffdf0; }
+    .theme-card:nth-child(4) .theme-body { background: #f7f4ff; }
+
+    /* ── CEREMONY & RECEPTION ── */
+    .ceremony-section { padding: 0 0 96px; }
+    .cer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .cer-card {
+      border-radius: 20px; overflow: hidden; position: relative;
+      height: 420px; transition: transform 0.3s;
+    }
+    .cer-card:hover { transform: scale(1.02); }
+    .cer-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .cer-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(30,10,20,0.75) 0%, transparent 55%);
+    }
+    .cer-body {
+      position: absolute; bottom: 0; left: 0; right: 0; padding: 36px 32px;
+    }
+    .cer-tag {
+      display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--pink-light); margin-bottom: 10px;
+      background: rgba(255,255,255,0.1); padding: 4px 12px; border-radius: 100px;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    .cer-title { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 700; color: var(--white); margin-bottom: 12px; }
+    .cer-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+    .cer-list li { font-size: 14px; color: rgba(255,255,255,0.85); display: flex; gap: 8px; align-items: center; }
+    .cer-list li::before { content: '✦'; color: var(--pink-light); font-size: 9px; flex-shrink: 0; }
+
+    /* ── BUDGET TIPS ── */
+    .budget-section {
+      background: var(--meadow);
+      border-top: 1px solid #d8f0d8; border-bottom: 1px solid #d8f0d8;
+      padding: 80px; margin-bottom: 96px;
+    }
+    .budget-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+    .budget-img { border-radius: 20px; overflow: hidden; height: 440px; box-shadow: 0 20px 60px rgba(80,140,80,0.14); }
+    .budget-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .budget-tips { display: flex; flex-direction: column; gap: 14px; margin-top: 0; }
+    .budget-tip {
+      background: var(--white); border: 1.5px solid #d8f0d8; border-radius: 14px;
+      padding: 20px 22px; display: flex; gap: 16px; align-items: flex-start;
+      transition: box-shadow 0.3s, border-color 0.3s;
+    }
+    .budget-tip:hover { box-shadow: 0 8px 24px rgba(80,140,80,0.10); border-color: #a8d8a8; }
+    .budget-tip-icon { font-size: 26px; flex-shrink: 0; }
+    .budget-tip-title { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
+    .budget-tip-desc { font-size: 13.5px; color: var(--ink-soft); line-height: 1.6; }
+
+    /* ── GREENERY COMBOS ── */
+    .greenery-section { padding: 0 0 96px; }
+    .greenery-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .greenery-card {
+      background: var(--petal); border: 1.5px solid var(--border); border-radius: 16px;
+      padding: 32px 28px; text-align: center; transition: box-shadow 0.3s, transform 0.3s;
+    }
+    .greenery-card:hover { box-shadow: 0 12px 36px rgba(200,80,120,0.09); transform: translateY(-4px); }
+    .greenery-img { width: 100%; height: 180px; object-fit: cover; border-radius: 12px; display: block; margin-bottom: 20px; }
+    .greenery-icon { font-size: 32px; margin-bottom: 12px; display: block; }
+    .greenery-name { font-family: 'Playfair Display', serif; font-size: 1.15rem; font-weight: 700; color: var(--ink); margin-bottom: 8px; }
+    .greenery-desc { font-size: 14px; color: var(--ink-soft); line-height: 1.6; }
+
+    /* ── UNIQUE IDEAS ── */
+    .unique-section {
+      background: linear-gradient(135deg, #fff5f7 0%, #f7f0ff 100%);
+      border-top: 1px solid var(--border); border-bottom: 1px solid #e8d8f8;
+      padding: 80px; margin-bottom: 96px;
+    }
+    .unique-inner { max-width: 1200px; margin: 0 auto; }
+    .unique-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 0; }
+    .unique-card {
+      background: var(--white); border-radius: 14px; padding: 28px 22px; text-align: center;
+      border: 1.5px solid rgba(200,80,120,0.15);
+      transition: box-shadow 0.3s, transform 0.3s, border-color 0.3s;
+    }
+    .unique-card:hover { box-shadow: 0 12px 36px rgba(140,106,170,0.12); transform: translateY(-4px); border-color: rgba(140,106,170,0.35); }
+    .unique-num {
+      font-family: 'Playfair Display', serif; font-size: 3rem; font-weight: 900;
+      color: #f8d8e8; line-height: 1; margin-bottom: 8px;
+    }
+    .unique-icon { font-size: 28px; margin-bottom: 12px; display: block; }
+    .unique-title { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: var(--ink); margin-bottom: 8px; }
+    .unique-desc { font-size: 13px; color: var(--ink-soft); line-height: 1.6; }
+
+    /* ── PHOTO ROW ── */
+    .photo-row {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px;
+      padding: 0 80px; margin-bottom: 96px;
+    }
+    .pr-item { border-radius: 14px; overflow: hidden; height: 240px; position: relative; }
+    .pr-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s; }
+    .pr-item:hover img { transform: scale(1.08); }
+
+    /* ── PHOTOGRAPHY ── */
+    .photo-tip-section { padding: 0 0 96px; }
+    .photo-tip-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+    .photo-tip-img { border-radius: 20px; overflow: hidden; height: 500px; box-shadow: 0 20px 60px rgba(200,80,120,0.14); }
+    .photo-tip-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .photo-reasons { display: flex; flex-direction: column; gap: 0; margin-top: 32px; }
+    .photo-reason {
+      display: flex; gap: 18px; align-items: flex-start;
+      padding: 20px 0; border-bottom: 1px solid var(--border-lt);
+    }
+    .photo-reason:last-child { border-bottom: none; }
+    .photo-reason-icon {
+      width: 44px; height: 44px; border-radius: 50%;
+      background: var(--petal); border: 1.5px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; flex-shrink: 0;
+    }
+    .photo-reason-title { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
+    .photo-reason-desc { font-size: 13.5px; color: var(--ink-soft); line-height: 1.6; }
+
+    /* ── FAQ ── */
+    .faq-section { padding: 0 0 96px; }
+    .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .faq-card {
+      background: var(--sky); border: 1.5px solid #ddeeff; border-radius: 16px;
+      padding: 32px 28px; transition: box-shadow 0.3s, transform 0.3s;
+    }
+    .faq-card:hover { box-shadow: 0 10px 32px rgba(80,100,160,0.09); transform: translateY(-3px); }
+    .faq-q {
+      font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700;
+      color: var(--ink); margin-bottom: 12px; display: flex; gap: 10px; align-items: flex-start;
+    }
+    .faq-q-mark {
+      background: #ddeeff; color: #4478aa;
+      font-family: 'Playfair Display', serif; font-size: 0.9rem; font-weight: 700;
+      width: 26px; height: 26px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;
+    }
+    .faq-a { font-size: 14px; color: var(--ink-soft); line-height: 1.75; padding-left: 36px; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: linear-gradient(160deg, #fff5f7 0%, #fdeef4 50%, #fff9f0 100%);
+      border-top: 2px solid var(--border); padding: 80px 60px; text-align: center;
+    }
+    .footer-flower { font-size: 52px; margin-bottom: 16px; display: block; }
+    .footer-title { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 900; color: var(--ink); margin-bottom: 14px; }
+    .footer-title em { font-style: italic; color: var(--pink); }
+    .footer-sub { font-size: 15px; color: var(--ink-soft); margin-bottom: 36px; max-width: 560px; margin-left: auto; margin-right: auto; line-height: 1.75; }
+    .footer-links { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+    .footer-btn {
+      display: inline-block; font-weight: 700; font-size: 14px; letter-spacing: 0.06em;
+      padding: 15px 36px; border-radius: 100px; text-decoration: none; transition: opacity 0.2s, transform 0.2s;
+    }
+    .footer-btn:hover { opacity: 0.88; transform: translateY(-2px); }
+    .footer-btn.primary { background: var(--pink); color: var(--white); }
+    .footer-btn.secondary { background: var(--white); color: var(--pink); border: 2px solid var(--pink); }
+    .footer-copy { margin-top: 56px; font-size: 12.5px; color: var(--muted); letter-spacing: 0.04em; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 960px) {
+      nav { padding: 0 24px; }
+      .nav-links { display: none; }
+      .hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-left { padding: 60px 24px 48px; }
+      .hero-right { height: 300px; }
+      .snippet-wrap { padding: 40px 24px 52px; }
+      .snippet { flex-direction: column; padding: 28px 24px; }
+      .container { padding: 0 24px; }
+      .why-grid { grid-template-columns: 1fr; gap: 48px; }
+      .why-img-stack { height: 320px; }
+      .why-img-accent { width: 140px; height: 140px; }
+      .why-badges { grid-template-columns: 1fr; }
+      .bouquet-section { padding: 52px 24px; }
+      .bouquet-grid { grid-template-columns: 1fr 1fr; }
+      .masonry { grid-template-columns: 1fr 1fr; }
+      .m-item:nth-child(n) { grid-column: span 1; grid-row: span 1; }
+      .themes-section { padding: 52px 24px; }
+      .themes-grid { grid-template-columns: 1fr 1fr; }
+      .cer-grid { grid-template-columns: 1fr; }
+      .budget-section { padding: 52px 24px; }
+      .budget-inner { grid-template-columns: 1fr; gap: 40px; }
+      .budget-img { height: 280px; }
+      .greenery-row { grid-template-columns: 1fr; }
+      .unique-section { padding: 52px 24px; }
+      .unique-grid { grid-template-columns: 1fr 1fr; }
+      .photo-row { grid-template-columns: 1fr 1fr; padding: 0 24px; }
+      .photo-tip-grid { grid-template-columns: 1fr; gap: 40px; }
+      .photo-tip-img { height: 280px; }
+      .faq-grid { grid-template-columns: 1fr; }
+      footer { padding: 60px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav>
+    <div class="nav-brand">🌷 TulipGuide</div>
+    <ul class="nav-links">
+      <li><a href="#bouquets">Bouquets</a></li>
+      <li><a href="#themes">Color Themes</a></li>
+      <li><a href="#ceremony">Ceremony</a></li>
+      <li><a href="#budget">Budget Tips</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="hero-pill">💍 Wedding Inspiration Guide</div>
+      <h1>Tulip Wedding Ideas: <em>Elegant & Romantic</em> Floral Inspiration</h1>
+      <p class="hero-sub">Tulips bring graceful beauty, deep symbolism, and natural charm to any wedding. Whether you're planning an intimate spring celebration or a lavish event, here's everything you need to know.</p>
+      <div class="hero-stats">
+        <div class="hero-stat"><div class="num">4</div><div class="lbl">Color Themes</div></div>
+        <div class="hero-stat"><div class="num">4+</div><div class="lbl">Bouquet Styles</div></div>
+        <div class="hero-stat"><div class="num">💰</div><div class="lbl">Budget-Friendly</div></div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="https://storage.googleapis.com/kreatewebsites/photos1000/IMG_6138.JPG"
+           srcset="https://storage.googleapis.com/kreatewebsites/photos700/IMG_6138.JPG 700w,
+                   https://storage.googleapis.com/kreatewebsites/photos1000/IMG_6138.JPG 1000w"
+           sizes="50vw" alt="Romantic pink tulips for wedding" loading="eager" />
+    </div>
+  </section>
+
+  <!-- ── SNIPPET ── -->
+  <div class="snippet-wrap">
+    <div class="snippet">
+      <div class="snippet-icon">💍</div>
+      <div>
+        <div class="snippet-label">Quick Answer</div>
+        <h2>Are tulips good for weddings?</h2>
+        <p>Yes — tulips are perfect for weddings. They symbolize love, elegance, and new beginnings, are more affordable than many luxury flowers, and come in a stunning range of colors. Whether you're going minimalist or full-bloom luxe, tulips can transform your wedding into a breathtaking spring celebration.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── WHY CHOOSE TULIPS ── -->
+  <div class="container">
+    <div class="why-section">
+      <div class="why-grid">
+        <div class="why-img-stack">
+          <div class="why-img-main">
+            <img src="https://storage.googleapis.com/kreatewebsites/photos700/IMG_6065.JPG"
+                 alt="Pink tulips bridal flowers" loading="lazy" />
+          </div>
+          <div class="why-img-accent">
+            <img src="https://storage.googleapis.com/kreatewebsites/photos300/IMG_6136.JPG"
+                 alt="Pink tulip close-up" loading="lazy" />
+          </div>
+        </div>
+        <div>
+          <div class="sec-eyebrow">Why Tulips?</div>
+          <div class="sec-title">The Perfect Wedding Flower</div>
+          <div class="sec-rule"></div>
+          <p style="font-size:16px;color:var(--ink-soft);line-height:1.8;margin-bottom:32px;">Few flowers bring the graceful combination of elegance, symbolism, and versatility that tulips offer. They work for everything from intimate garden ceremonies to luxury ballroom receptions — and they won't break your floral budget.</p>
+          <div class="why-badges">
+            <div class="why-badge">
+              <span class="why-badge-icon">🌷</span>
+              <div class="why-badge-title">Symbol of Love</div>
+              <div class="why-badge-desc">Tulips represent love, happiness, and new beginnings — perfect for a wedding day</div>
+            </div>
+            <div class="why-badge">
+              <span class="why-badge-icon">💰</span>
+              <div class="why-badge-title">Budget-Friendly</div>
+              <div class="why-badge-desc">More affordable than roses or peonies, letting you create lush arrangements without overspending</div>
+            </div>
+            <div class="why-badge">
+              <span class="why-badge-icon">🎨</span>
+              <div class="why-badge-title">Every Color</div>
+              <div class="why-badge-desc">From pure white to deep purple — tulips match any palette or wedding color scheme</div>
+            </div>
+            <div class="why-badge">
+              <span class="why-badge-icon">🌿</span>
+              <div class="why-badge-title">Effortlessly Elegant</div>
+              <div class="why-badge-desc">Their clean lines suit minimalist, modern, romantic, and rustic wedding styles equally</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── BOUQUET IDEAS ── -->
+  <div class="bouquet-section" id="bouquets">
+    <div class="bouquet-inner">
+      <div class="sec-eyebrow">Bridal Bouquets</div>
+      <div class="sec-title">Tulip Bouquet Styles for Every Bride</div>
+      <div class="sec-rule"></div>
+      <div class="bouquet-grid">
+        <div class="bouquet-card">
+          <div class="bouquet-img">
+            <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6132.JPG" alt="Classic pink tulip bouquet" loading="lazy" />
+          </div>
+          <div class="bouquet-body">
+            <div class="bouquet-icon">🌸</div>
+            <div class="bouquet-title">Classic All-Tulip</div>
+            <div class="bouquet-desc">Simple, single-flower arrangements that let tulips' graceful shape speak for itself. Timeless and elegant.</div>
+          </div>
+        </div>
+        <div class="bouquet-card">
+          <div class="bouquet-img">
+            <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6139.JPG" alt="Mixed flower bouquet with tulips" loading="lazy" />
+          </div>
+          <div class="bouquet-body">
+            <div class="bouquet-icon">🌷</div>
+            <div class="bouquet-title">Mixed Flower Bouquet</div>
+            <div class="bouquet-desc">Tulips paired with roses, peonies, or ranunculus for added depth, texture, and a lush romantic feel.</div>
+          </div>
+        </div>
+        <div class="bouquet-card">
+          <div class="bouquet-img">
+            <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6173.JPG" alt="White tulip bouquet" loading="lazy" />
+          </div>
+          <div class="bouquet-body">
+            <div class="bouquet-icon">🤍</div>
+            <div class="bouquet-title">White & Cream Bouquet</div>
+            <div class="bouquet-desc">Clean, modern, and sophisticated. White tulips create an airy, minimal aesthetic perfect for contemporary weddings.</div>
+          </div>
+        </div>
+        <div class="bouquet-card">
+          <div class="bouquet-img">
+            <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6134.JPG" alt="Colorful tulip bouquet" loading="lazy" />
+          </div>
+          <div class="bouquet-body">
+            <div class="bouquet-icon">🌈</div>
+            <div class="bouquet-title">Colourful Spring Mix</div>
+            <div class="bouquet-desc">Mix bright pink, yellow, red, and purple for a vibrant, joyful spring bouquet full of personality.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── GALLERY ── -->
+  <div class="container">
+    <div class="gallery-section">
+      <div class="sec-eyebrow">Floral Inspiration</div>
+      <div class="sec-title">Tulip Wedding Arrangements Gallery</div>
+      <div class="sec-rule"></div>
+      <div class="masonry">
+        <div class="m-item">
+          <img src="https://storage.googleapis.com/kreatewebsites/photos700/IMG_6078.JPG" alt="Pink tulips romantic arrangement" loading="lazy" />
+          <div class="m-label">🩷 Romantic Pink</div>
+        </div>
+        <div class="m-item">
+          <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6011.JPG" alt="Red tulips bold arrangement" loading="lazy" />
+          <div class="m-label">🔴 Bold Red</div>
+        </div>
+        <div class="m-item">
+          <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6104.JPG" alt="Purple tulips luxury" loading="lazy" />
+          <div class="m-label">💜 Purple Luxe</div>
+        </div>
+        <div class="m-item">
+          <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6020.JPG" alt="Yellow tulips sunshine" loading="lazy" />
+          <div class="m-label">💛 Sunshine Yellow</div>
+        </div>
+        <div class="m-item">
+          <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6094.JPG" alt="Purple elegant wedding" loading="lazy" />
+        </div>
+        <div class="m-item">
+          <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6137.JPG" alt="Pink centerpiece" loading="lazy" />
+        </div>
+        <div class="m-item">
+          <img src="https://storage.googleapis.com/kreatewebsites/photos700/IMG_6072.JPG" alt="Red tulips ceremony" loading="lazy" />
+          <div class="m-label">🌹 Ceremony Red</div>
+        </div>
+        <div class="m-item">
+          <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6155.JPG" alt="Yellow spring wedding" loading="lazy" />
+        </div>
+        <div class="m-item">
+          <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6022.JPG" alt="Blue accent flowers" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── COLOR THEMES ── -->
+  <div class="themes-section" id="themes">
+    <div class="themes-inner">
+      <div class="sec-eyebrow">Color Palettes</div>
+      <div class="sec-title">Tulip Wedding Color Themes</div>
+      <div class="sec-rule"></div>
+      <div class="themes-grid">
+        <div class="theme-card">
+          <div class="theme-img">
+            <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6170.JPG" alt="White and green tulip theme" loading="lazy" />
+          </div>
+          <div class="theme-body">
+            <div class="theme-swatch">
+              <div class="swatch" style="background:#f5f5f5;border-color:#ddd;"></div>
+              <div class="swatch" style="background:#6a9a6a;"></div>
+              <div class="swatch" style="background:#e8e8e0;"></div>
+            </div>
+            <div class="theme-name">White & Green</div>
+            <div class="theme-desc">Elegant, modern, and timeless. White tulips with eucalyptus or fern greenery for a fresh, sophisticated look.</div>
+          </div>
+        </div>
+        <div class="theme-card">
+          <div class="theme-img">
+            <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6133.JPG" alt="Pink and blush tulip theme" loading="lazy" />
+          </div>
+          <div class="theme-body">
+            <div class="theme-swatch">
+              <div class="swatch" style="background:#e87898;"></div>
+              <div class="swatch" style="background:#f8c8d8;"></div>
+              <div class="swatch" style="background:#fff5f0;"></div>
+            </div>
+            <div class="theme-name">Pink & Blush</div>
+            <div class="theme-desc">Soft, romantic, and feminine. The quintessential spring wedding palette — warm, dreamy, and universally loved.</div>
+          </div>
+        </div>
+        <div class="theme-card">
+          <div class="theme-img">
+            <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6071.JPG" alt="Yellow and white tulip theme" loading="lazy" />
+          </div>
+          <div class="theme-body">
+            <div class="theme-swatch">
+              <div class="swatch" style="background:#e8c830;"></div>
+              <div class="swatch" style="background:#f8f8e8;"></div>
+              <div class="swatch" style="background:#f0c860;"></div>
+            </div>
+            <div class="theme-name">Yellow & White</div>
+            <div class="theme-desc">Bright, cheerful, and full of spring energy. Yellow tulips with white accents bring joy and warmth to any venue.</div>
+          </div>
+        </div>
+        <div class="theme-card">
+          <div class="theme-img">
+            <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6106.JPG" alt="Purple and cream tulip theme" loading="lazy" />
+          </div>
+          <div class="theme-body">
+            <div class="theme-swatch">
+              <div class="swatch" style="background:#8c6aaa;"></div>
+              <div class="swatch" style="background:#c8b0e0;"></div>
+              <div class="swatch" style="background:#f8f0e8;"></div>
+            </div>
+            <div class="theme-name">Purple & Cream</div>
+            <div class="theme-desc">Luxurious, bold, and dramatic. Deep purple tulips against cream accents create a regal, unforgettable atmosphere.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── CEREMONY & RECEPTION ── -->
+  <div class="container" id="ceremony">
+    <div class="ceremony-section">
+      <div class="sec-eyebrow">Venue Décor</div>
+      <div class="sec-title">Ceremony & Reception with Tulips</div>
+      <div class="sec-rule"></div>
+      <div class="cer-grid">
+        <div class="cer-card">
+          <img src="https://storage.googleapis.com/kreatewebsites/photos700/IMG_6046.JPG" alt="Tulip ceremony decor aisle" loading="lazy" />
+          <div class="cer-overlay"></div>
+          <div class="cer-body">
+            <div class="cer-tag">Ceremony</div>
+            <div class="cer-title">Create a Stunning Ceremony Setting</div>
+            <ul class="cer-list">
+              <li>Aisle lined with loose tulip stems in glass vases</li>
+              <li>Floral arch woven with tulips and greenery</li>
+              <li>Tulip petals scattered along the walkway</li>
+              <li>Pew markers with single-stem tulip bunches</li>
+            </ul>
+          </div>
+        </div>
+        <div class="cer-card">
+          <img src="https://storage.googleapis.com/kreatewebsites/photos700/IMG_6073.JPG" alt="Tulip reception centerpieces" loading="lazy" />
+          <div class="cer-overlay"></div>
+          <div class="cer-body">
+            <div class="cer-tag">Reception</div>
+            <div class="cer-title">Extend the Theme Into Your Reception</div>
+            <ul class="cer-list">
+              <li>Minimalist tulip stems in tall glass vases</li>
+              <li>Lush centerpieces mixed with candles and greenery</li>
+              <li>Hanging tulip installations over tables</li>
+              <li>Tulip petals scattered for a romantic welcome table</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── BUDGET TIPS ── -->
+  <div class="budget-section" id="budget">
+    <div class="budget-inner">
+      <div class="budget-img">
+        <img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6103.JPG" alt="Budget friendly tulip wedding arrangements" loading="lazy" />
+      </div>
+      <div>
+        <div class="sec-eyebrow" style="color:var(--green);">Save Without Sacrificing Beauty</div>
+        <div class="sec-title" style="font-size:2.1rem;">Budget-Friendly Tulip Wedding Tips</div>
+        <div class="sec-rule" style="background:var(--green);"></div>
+        <p style="font-size:15px;color:var(--ink-soft);line-height:1.75;margin-bottom:28px;">Tulips are one of the most cost-effective wedding flowers available — here's how to make the most of your budget without compromising on elegance.</p>
+        <div class="budget-tips">
+          <div class="budget-tip">
+            <div class="budget-tip-icon">🌷</div>
+            <div>
+              <div class="budget-tip-title">Use Tulips as the Primary Flower</div>
+              <div class="budget-tip-desc">Build your entire floral design around tulips instead of using them as accent flowers. You'll get more blooms for less money while keeping a cohesive look.</div>
+            </div>
+          </div>
+          <div class="budget-tip">
+            <div class="budget-tip-icon">📅</div>
+            <div>
+              <div class="budget-tip-title">Choose In-Season Blooms</div>
+              <div class="budget-tip-desc">Spring tulips are at their peak quality and lowest cost from March through May. Plan a spring or early summer wedding date to maximise freshness and savings.</div>
+            </div>
+          </div>
+          <div class="budget-tip">
+            <div class="budget-tip-icon">🏡</div>
+            <div>
+              <div class="budget-tip-title">Source Locally</div>
+              <div class="budget-tip-desc">Local flower farms and markets offer fresher tulips at lower prices than imported stems. Ask your florist about sourcing from nearby growers in the spring season.</div>
+            </div>
+          </div>
+          <div class="budget-tip">
+            <div class="budget-tip-icon">✂️</div>
+            <div>
+              <div class="budget-tip-title">DIY Your Arrangements</div>
+              <div class="budget-tip-desc">Tulips are one of the easiest flowers to arrange yourself. Use simple glass vases, keep bunches loose and natural, and mix in some inexpensive greenery for depth.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── GREENERY COMBOS ── -->
+  <div class="container">
+    <div class="greenery-section">
+      <div class="sec-eyebrow">Pairings & Texture</div>
+      <div class="sec-title">Tulip + Greenery Combinations</div>
+      <div class="sec-rule"></div>
+      <div class="greenery-row">
+        <div class="greenery-card">
+          <img class="greenery-img" src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6105.JPG" alt="Tulips with eucalyptus" loading="lazy" />
+          <span class="greenery-icon">🌿</span>
+          <div class="greenery-name">Tulips + Eucalyptus</div>
+          <div class="greenery-desc">The silver-green leaves of eucalyptus add aromatic freshness and a modern, organic feel. A classic combination for spring weddings.</div>
+        </div>
+        <div class="greenery-card">
+          <img class="greenery-img" src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6021.JPG" alt="Tulips with ferns" loading="lazy" />
+          <span class="greenery-icon">🌱</span>
+          <div class="greenery-name">Tulips + Ferns</div>
+          <div class="greenery-desc">Lush green ferns create a dramatic, garden-party aesthetic alongside tulips. Works beautifully for outdoor or woodland-themed ceremonies.</div>
+        </div>
+        <div class="greenery-card">
+          <img class="greenery-img" src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6149.JPG" alt="Tulips with olive branches" loading="lazy" />
+          <span class="greenery-icon">🫒</span>
+          <div class="greenery-name">Tulips + Olive Branches</div>
+          <div class="greenery-desc">Olive branches add a Mediterranean, rustic elegance alongside tulips — giving arrangements an artful, asymmetric quality. Perfect for destination weddings.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── UNIQUE IDEAS ── -->
+  <div class="unique-section">
+    <div class="unique-inner">
+      <div class="sec-eyebrow" style="color:var(--purple);">Stand Out</div>
+      <div class="sec-title">Unique Tulip Wedding Ideas</div>
+      <div class="sec-rule" style="background:var(--purple);"></div>
+      <div class="unique-grid">
+        <div class="unique-card">
+          <div class="unique-num">01</div>
+          <span class="unique-icon">💧</span>
+          <div class="unique-title">Floating Tulip Centerpieces</div>
+          <div class="unique-desc">Tulip heads floating in wide, shallow bowls of water create a serene, ethereal table centrepiece that guests will love.</div>
+        </div>
+        <div class="unique-card">
+          <div class="unique-num">02</div>
+          <span class="unique-icon">🛤️</span>
+          <div class="unique-title">Tulip-Lined Aisle</div>
+          <div class="unique-desc">Line your ceremony aisle with alternating colors of tulips in simple glass vases for a romantic, garden-path effect.</div>
+        </div>
+        <div class="unique-card">
+          <div class="unique-num">03</div>
+          <span class="unique-icon">🎨</span>
+          <div class="unique-title">Monochrome Tulip Theme</div>
+          <div class="unique-desc">Commit to a single tulip color throughout your entire wedding — from bouquets to centerpieces — for a bold, sophisticated statement.</div>
+        </div>
+        <div class="unique-card">
+          <div class="unique-num">04</div>
+          <span class="unique-icon">🖼️</span>
+          <div class="unique-title">Tulip Wall Installation</div>
+          <div class="unique-desc">A full wall or arch of tulips creates a breathtaking backdrop for wedding portraits and a stunning focal point for your reception.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── PHOTO ROW ── -->
+  <div class="photo-row">
+    <div class="pr-item"><img src="https://storage.googleapis.com/kreatewebsites/photos600/IMG_6013.JPG" alt="Red tulips wedding" loading="lazy" /></div>
+    <div class="pr-item"><img src="https://storage.googleapis.com/kreatewebsites/photos600/IMG_6154.JPG" alt="Pink tulips bridal" loading="lazy" /></div>
+    <div class="pr-item"><img src="https://storage.googleapis.com/kreatewebsites/photos600/IMG_6070.JPG" alt="Yellow tulips sunny" loading="lazy" /></div>
+    <div class="pr-item"><img src="https://storage.googleapis.com/kreatewebsites/photos600/IMG_6095.JPG" alt="Purple tulips luxe" loading="lazy" /></div>
+  </div>
+
+  <!-- ── PHOTOGRAPHY ── -->
+  <div class="container">
+    <div class="photo-tip-section">
+      <div class="photo-tip-grid">
+        <div class="photo-tip-img">
+          <img src="https://storage.googleapis.com/kreatewebsites/photos700/IMG_6135.JPG" alt="Tulips in wedding photography" loading="lazy" />
+        </div>
+        <div>
+          <div class="sec-eyebrow">Photography Tips</div>
+          <div class="sec-title" style="font-size:2.2rem;">Why Tulips Look Stunning in Photos</div>
+          <div class="sec-rule"></div>
+          <p style="font-size:15px;color:var(--ink-soft);line-height:1.8;margin-bottom:8px;">Tulips have a natural photogenic quality that makes every shot look effortlessly beautiful — from close-up detail shots to wide venue panoramas.</p>
+          <div class="photo-reasons">
+            <div class="photo-reason">
+              <div class="photo-reason-icon">🎨</div>
+              <div>
+                <div class="photo-reason-title">Soft, Painterly Colors</div>
+                <div class="photo-reason-desc">Tulip petals have a gentle, almost watercolor quality in photographs — they glow in natural light and add warmth to every image.</div>
+              </div>
+            </div>
+            <div class="photo-reason">
+              <div class="photo-reason-icon">✨</div>
+              <div>
+                <div class="photo-reason-title">Natural Elegance</div>
+                <div class="photo-reason-desc">The clean, elongated shape of tulips creates beautiful lines in bouquet shots, detail photos, and ceremony wide angles.</div>
+              </div>
+            </div>
+            <div class="photo-reason">
+              <div class="photo-reason-icon">🌸</div>
+              <div>
+                <div class="photo-reason-title">Seasonal Charm</div>
+                <div class="photo-reason-desc">Tulips instantly evoke spring — their presence in your photos gives your wedding album a timeless, seasonal warmth that never dates.</div>
+              </div>
+            </div>
+            <div class="photo-reason">
+              <div class="photo-reason-icon">📐</div>
+              <div>
+                <div class="photo-reason-title">Versatile in Every Shot</div>
+                <div class="photo-reason-desc">From intimate bouquet portraits to sweeping ceremony tableaux, tulips compose beautifully at every scale and focal length.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── FAQ ── -->
+  <div class="container" id="faq">
+    <div class="faq-section">
+      <div class="sec-eyebrow">FAQ</div>
+      <div class="sec-title">Tulip Wedding Questions Answered</div>
+      <div class="sec-rule"></div>
+      <div class="faq-grid">
+        <div class="faq-card">
+          <div class="faq-q"><span class="faq-q-mark">Q</span>Are tulips expensive for weddings?</div>
+          <div class="faq-a">Tulips are generally more affordable than many traditional wedding flowers like roses or peonies. When bought in-season (spring) and sourced locally, they offer exceptional value — allowing you to create lush, full arrangements on a modest budget.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q"><span class="faq-q-mark">Q</span>What do tulips symbolize in weddings?</div>
+          <div class="faq-a">Tulips symbolize love, happiness, and new beginnings — all deeply meaningful for a wedding. Different colors carry their own meanings: red for passionate love, pink for affection, white for purity, purple for royalty, and yellow for cheerful warmth.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q"><span class="faq-q-mark">Q</span>Can tulips be used year-round for weddings?</div>
+          <div class="faq-a">Tulips are naturally best suited to spring and early summer weddings (March–June) when they are at peak quality and most affordable. They can be sourced year-round through specialist growers, but may cost more and offer fewer variety choices outside their natural season.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q"><span class="faq-q-mark">Q</span>How long do tulips last in wedding arrangements?</div>
+          <div class="faq-a">Tulips typically last 5–10 days in arrangements with proper care. Keep them in fresh water, away from direct sunlight and heat, and re-cut stems at an angle every couple of days. For weddings, purchase blooms 2–3 days before the event to allow them to open to their best.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q"><span class="faq-q-mark">Q</span>Can I DIY tulip wedding arrangements?</div>
+          <div class="faq-a">Absolutely — tulips are one of the best flowers for DIY wedding florals. Their simple, upright shape means they look beautiful with minimal styling. Use simple glass vases, keep bunches loose and natural, and add a little greenery. No specialist skills required.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q"><span class="faq-q-mark">Q</span>What flowers pair well with tulips at weddings?</div>
+          <div class="faq-a">Tulips pair beautifully with roses, peonies, ranunculus, and sweet peas for a romantic feel. For greenery, eucalyptus, ferns, and olive branches add texture and balance. For a minimalist look, single-flower tulip arrangements in clean glass vases are striking on their own.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <span class="footer-flower">🌷</span>
+    <div class="footer-title">Make your wedding day <em>unforgettably beautiful.</em></div>
+    <p class="footer-sub">Tulips bring romance, elegance, and spring magic to every part of your celebration — from the first bouquet to the last centerpiece on the table.</p>
+    <div class="footer-links">
+      <a class="footer-btn primary" href="when-to-plant-tulips.html">→ When to Plant Tulips</a>
+      <a class="footer-btn secondary" href="why-tulips-not-blooming.html">→ Troubleshooting Guide</a>
+    </div>
+    <div class="footer-copy">🌷 &nbsp; The Complete Tulip Growing & Inspiration Guide Series</div>
+  </footer>
+
+</body>
+</html>

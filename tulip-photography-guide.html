@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How to Photograph Tulip Fields: Best Tips, Camera Settings & Locations</title>
+<meta name="description" content="Learn how to capture stunning tulip field photos with expert tips, camera settings, and composition ideas. Perfect for beginners and pros.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --cream: #fffdf5;
+    --tulip-red: #c0392b;
+    --tulip-pink: #d4698a;
+    --tulip-purple: #7b5ea7;
+    --tulip-yellow: #e8b84b;
+    --sun-gold: #f7c948;
+    --sun-orange: #f4934a;
+    --sky-blue: #a8d8f0;
+    --spring-green: #b8e0a0;
+    --text-body: #2d1f10;
+    --text-muted: #7a6050;
+    --border: #f0dfc0;
+    --section-gap: 96px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: linear-gradient(180deg, #fffdf5 0%, #fff8e8 100%);
+    color: var(--text-body);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+  }
+
+  .hero-left {
+    background:
+      radial-gradient(ellipse at 15% 8%, rgba(255,230,100,0.62) 0%, transparent 52%),
+      radial-gradient(ellipse at 85% 88%, rgba(255,160,80,0.3) 0%, transparent 52%),
+      linear-gradient(160deg, #fff8e1 0%, #ffe4a0 35%, #ffd0a0 65%, #ffc8b0 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 60px 80px 80px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+  }
+
+  /* Sunbeam conic rays */
+  .hero-left::before {
+    content: '';
+    position: absolute;
+    top: -120px; left: -120px;
+    width: 700px; height: 700px;
+    background: conic-gradient(
+      from 210deg,
+      transparent 0deg, rgba(255,220,60,0.16) 8deg, transparent 16deg,
+      transparent 26deg, rgba(255,220,60,0.11) 34deg, transparent 42deg,
+      transparent 52deg, rgba(255,220,60,0.14) 60deg, transparent 68deg,
+      transparent 78deg, rgba(255,220,60,0.09) 86deg, transparent 94deg,
+      transparent 250deg
+    );
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  /* Glowing sun orb */
+  .hero-left::after {
+    content: '';
+    position: absolute;
+    top: 36px; right: -24px;
+    width: 170px; height: 170px;
+    background: radial-gradient(circle, rgba(255,230,50,0.65) 0%, rgba(255,200,60,0.22) 45%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: sunPulse 4s ease-in-out infinite;
+  }
+
+  @keyframes sunPulse {
+    0%,100% { transform: scale(1); opacity: 0.85; }
+    50%      { transform: scale(1.12); opacity: 1; }
+  }
+
+  .hero-eyebrow {
+    font-size: 11px; font-weight: 500;
+    letter-spacing: 4px; text-transform: uppercase;
+    color: #a0520a; margin-bottom: 28px; position: relative;
+  }
+
+  .hero-camera { font-size: 48px; margin-bottom: 16px; display: block; animation: floatCam 5s ease-in-out infinite; }
+  @keyframes floatCam {
+    0%,100% { transform: translateY(0); }
+    50%      { transform: translateY(-8px); }
+  }
+
+  .hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(38px, 4.8vw, 66px);
+    font-weight: 900; line-height: 1.06;
+    color: #3a2010; margin-bottom: 24px; position: relative;
+  }
+  .hero-title em { font-style: italic; color: #c0392b; }
+
+  .hero-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 19px; font-style: italic;
+    color: rgba(80,40,10,0.72);
+    margin-bottom: 44px; max-width: 400px;
+    line-height: 1.65; position: relative;
+  }
+
+  .hero-pills {
+    display: flex; flex-wrap: wrap; gap: 10px; position: relative;
+  }
+
+  .pill {
+    padding: 8px 18px;
+    background: rgba(255,255,255,0.65);
+    border: 1.5px solid rgba(192,57,43,0.2);
+    font-size: 12px; font-weight: 500;
+    color: #7a3010; border-radius: 100px;
+    backdrop-filter: blur(4px);
+  }
+
+  .hero-right { position: relative; overflow: hidden; }
+  .hero-right img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 8s ease; }
+  .hero-right:hover img { transform: scale(1.04); }
+  .hero-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(135deg, rgba(255,200,50,0.12) 0%, transparent 50%);
+  }
+
+  .hero-badge {
+    position: absolute; bottom: 36px; right: 36px;
+    background: linear-gradient(135deg, #f7c948, #f4934a);
+    color: #3a1a00; font-family: 'Playfair Display', serif;
+    font-size: 13px; padding: 16px 22px;
+    text-align: center; line-height: 1.4;
+    box-shadow: 0 8px 32px rgba(244,147,74,0.4);
+  }
+  .hero-badge strong { display: block; font-size: 20px; font-weight: 700; }
+
+  /* ── INTRO STRIP ── */
+  .intro-strip {
+    background: linear-gradient(135deg, #f7c948 0%, #f4934a 60%, #e86060 100%);
+    color: rgba(60,26,0,0.88);
+    padding: 28px 80px;
+    display: flex; align-items: center; gap: 60px;
+  }
+  .intro-strip p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px; font-style: italic;
+    line-height: 1.5; flex: 1;
+  }
+  .intro-strip .divider { width: 1px; height: 50px; background: rgba(60,26,0,0.2); flex-shrink: 0; }
+
+  /* ── SECTION LABELS ── */
+  .section-label {
+    font-size: 11px; font-weight: 500;
+    letter-spacing: 4px; text-transform: uppercase;
+    color: var(--tulip-pink); margin-bottom: 14px; display: block;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 3.5vw, 48px);
+    font-weight: 700; color: #3a2010; line-height: 1.15;
+  }
+
+  /* ── PHOTO STRIP ── */
+  .photo-strip { display: flex; gap: 4px; overflow: hidden; }
+  .photo-strip-item { flex: 1; overflow: hidden; position: relative; }
+  .photo-strip-item img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+    transition: transform 0.6s, filter 0.3s; filter: saturate(0.88);
+  }
+  .photo-strip-item:hover img { transform: scale(1.07); filter: saturate(1.3); }
+
+  /* ── TIPS GRID (main section) ── */
+  .tips-section { padding: var(--section-gap) 80px; }
+
+  .tips-header { text-align: center; margin-bottom: 64px; }
+  .tips-header p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px; font-style: italic;
+    color: var(--text-muted); margin-top: 12px;
+  }
+
+  .tips-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+  }
+
+  /* Featured tip — spans 2 columns */
+  .tip-card {
+    background: white;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+  }
+  .tip-card:hover { transform: translateY(-4px); box-shadow: 0 20px 50px rgba(0,0,0,0.10); }
+
+  .tip-card.featured {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+  }
+
+  .tip-card-img { overflow: hidden; position: relative; }
+  .tip-card-img img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+    transition: transform 0.6s;
+  }
+  .tip-card:hover .tip-card-img img { transform: scale(1.05); }
+  .tip-card:not(.featured) .tip-card-img { height: 220px; }
+
+  .tip-card-img-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(255,160,50,0.22) 0%, transparent 55%);
+  }
+
+  .tip-card-body { padding: 36px 40px; display: flex; flex-direction: column; justify-content: center; }
+  .tip-card:not(.featured) .tip-card-body { padding: 28px 32px; }
+
+  .tip-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 64px; font-weight: 900;
+    color: #f0e0c8; line-height: 1; margin-bottom: 4px;
+  }
+  .tip-card:not(.featured) .tip-number { font-size: 44px; }
+
+  .tip-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    font-size: 10px; font-weight: 500;
+    letter-spacing: 2.5px; text-transform: uppercase;
+    border-radius: 1px; margin-bottom: 12px; color: white;
+  }
+
+  .tip-title-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px; font-weight: 700;
+    color: #3a2010; line-height: 1.2; margin-bottom: 10px;
+  }
+  .tip-card:not(.featured) .tip-title-text { font-size: 18px; }
+
+  .tip-desc {
+    font-size: 14px; color: var(--text-muted);
+    line-height: 1.75; margin-bottom: 18px;
+  }
+  .tip-card:not(.featured) .tip-desc { margin-bottom: 14px; }
+
+  .tip-bullets { display: flex; flex-direction: column; gap: 8px; }
+  .tip-bullet {
+    display: flex; align-items: center; gap: 10px;
+    font-size: 13px; color: var(--text-body);
+  }
+  .tip-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--tulip-pink); flex-shrink: 0;
+  }
+
+  /* ── CAMERA SETTINGS PANEL ── */
+  .camera-panel {
+    background:
+      radial-gradient(ellipse at 90% 10%, rgba(255,230,100,0.5) 0%, transparent 50%),
+      radial-gradient(ellipse at 10% 90%, rgba(180,230,255,0.45) 0%, transparent 50%),
+      linear-gradient(135deg, #e0f4ff 0%, #fff8d6 40%, #ffedb8 70%, #ffe0d0 100%);
+    padding: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: start;
+    position: relative; overflow: hidden;
+  }
+
+  .camera-panel::before {
+    content: '';
+    position: absolute; top: -80px; right: -80px;
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, rgba(255,220,50,0.38) 0%, rgba(255,200,60,0.1) 50%, transparent 70%);
+    border-radius: 50%; pointer-events: none;
+  }
+
+  .settings-grid { display: flex; flex-direction: column; gap: 20px; margin-top: 36px; }
+
+  .setting-card {
+    background: white;
+    padding: 24px 28px;
+    display: flex; gap: 20px; align-items: flex-start;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    transition: transform 0.3s;
+  }
+  .setting-card:hover { transform: translateX(6px); }
+
+  .setting-icon { font-size: 32px; flex-shrink: 0; margin-top: 2px; }
+  .setting-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px; font-weight: 700;
+    color: #3a2010; margin-bottom: 6px;
+  }
+  .setting-values { display: flex; flex-direction: column; gap: 4px; }
+  .setting-value {
+    display: flex; align-items: center; gap: 10px;
+    font-size: 13px;
+  }
+  .setting-code {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500; font-size: 12px;
+    background: #fff4e0;
+    color: #b05010;
+    padding: 2px 10px; border-radius: 100px;
+    white-space: nowrap;
+  }
+  .setting-note { font-size: 12px; color: var(--text-muted); }
+
+  /* Smartphone tips card */
+  .phone-card {
+    background: white;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  }
+
+  .phone-tips { display: flex; flex-direction: column; gap: 18px; margin-top: 28px; }
+  .phone-tip {
+    display: flex; gap: 16px; align-items: flex-start;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--border);
+  }
+  .phone-tip:last-child { border-bottom: none; padding-bottom: 0; }
+
+  .phone-tip-icon { font-size: 24px; flex-shrink: 0; margin-top: 2px; }
+  .phone-tip-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px; font-weight: 700;
+    color: #3a2010; margin-bottom: 3px;
+  }
+  .phone-tip-desc { font-size: 13px; color: var(--text-muted); line-height: 1.55; }
+
+  /* ── MISTAKES PANEL ── */
+  .mistakes {
+    padding: var(--section-gap) 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+  }
+
+  .mistakes-img { position: relative; overflow: hidden; }
+  .mistakes-img img { width: 100%; height: 500px; object-fit: cover; display: block; }
+
+  .mistakes-list { display: flex; flex-direction: column; gap: 20px; margin-top: 36px; }
+
+  .mistake-item {
+    display: flex; gap: 16px; align-items: flex-start;
+    padding: 20px 24px;
+    border-left: 3px solid;
+    background: white;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+  }
+  .mistake-item:hover { transform: translateX(6px); }
+  .mistake-item.bad  { border-color: var(--tulip-red); }
+  .mistake-item.good { border-color: #5a9a5a; }
+
+  .mistake-icon { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
+  .mistake-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px; font-weight: 700;
+    color: #3a2010; margin-bottom: 4px;
+  }
+  .mistake-desc { font-size: 13px; color: var(--text-muted); line-height: 1.55; }
+
+  /* ── CREATIVE IDEAS ── */
+  .creative {
+    background:
+      radial-gradient(ellipse at 20% 0%, rgba(255,230,80,0.4) 0%, transparent 50%),
+      radial-gradient(ellipse at 80% 100%, rgba(255,180,100,0.3) 0%, transparent 50%),
+      linear-gradient(160deg, #fff8e0 0%, #fff0d0 50%, #ffe8d0 100%);
+    padding: var(--section-gap) 80px;
+    position: relative; overflow: hidden;
+  }
+
+  .creative::after {
+    content: '✦';
+    position: absolute; top: 40px; right: 80px;
+    font-size: 120px; color: rgba(232,184,75,0.12);
+    pointer-events: none;
+    animation: spin 30s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .creative-header { text-align: center; margin-bottom: 56px; }
+
+  .ideas-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+  }
+
+  .idea-card {
+    position: relative; overflow: hidden;
+    background: white;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .idea-card:hover { transform: translateY(-6px); box-shadow: 0 24px 60px rgba(0,0,0,0.13); }
+
+  .idea-img { overflow: hidden; height: 200px; }
+  .idea-img img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+    transition: transform 0.6s, filter 0.3s;
+    filter: saturate(0.85);
+  }
+  .idea-card:hover .idea-img img { transform: scale(1.08); filter: saturate(1.3); }
+
+  .idea-body { padding: 24px 22px; }
+  .idea-emoji { font-size: 24px; margin-bottom: 8px; display: block; }
+  .idea-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px; font-weight: 700;
+    color: #3a2010; margin-bottom: 8px;
+  }
+  .idea-desc { font-size: 13px; color: var(--text-muted); line-height: 1.55; }
+
+  /* ── CHECKLIST ── */
+  .checklist-section {
+    padding: var(--section-gap) 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+  }
+
+  .checklist-visual { position: relative; overflow: hidden; }
+  .checklist-visual img { width: 100%; height: 480px; object-fit: cover; display: block; }
+  .checklist-visual::after {
+    content: '';
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(247,201,72,0.25) 0%, transparent 50%);
+  }
+
+  .checklist-items { display: flex; flex-direction: column; gap: 16px; margin-top: 28px; }
+
+  .checklist-item {
+    display: flex; gap: 16px; align-items: center;
+    padding: 18px 24px;
+    background: white;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+    border-radius: 2px;
+    transition: transform 0.25s;
+    cursor: default;
+  }
+  .checklist-item:hover { transform: translateX(6px); }
+
+  .check-box {
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #f7c948, #f4934a);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; font-size: 14px; color: white; font-weight: 700;
+  }
+
+  .checklist-text {
+    font-size: 15px; font-weight: 400; color: var(--text-body);
+  }
+
+  /* ── FAQ ── */
+  .faq {
+    background:
+      radial-gradient(ellipse at 80% 0%, rgba(180,240,150,0.4) 0%, transparent 50%),
+      radial-gradient(ellipse at 0% 100%, rgba(255,230,100,0.3) 0%, transparent 50%),
+      linear-gradient(160deg, #f0fce8 0%, #fffbe0 50%, #fff5d0 100%);
+    padding: var(--section-gap) 80px;
+  }
+
+  .faq-header { text-align: center; margin-bottom: 52px; }
+  .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+  .faq-item {
+    background: white; padding: 36px 40px;
+    border-left: 3px solid var(--tulip-pink);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+  }
+  .faq-item:hover { transform: translateY(-3px); }
+  .faq-q {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px; font-weight: 700;
+    color: #3a2010; margin-bottom: 12px; line-height: 1.3;
+  }
+  .faq-a { font-size: 14px; color: var(--text-muted); line-height: 1.75; }
+
+  /* ── FOOTER ── */
+  footer {
+    background:
+      radial-gradient(ellipse at 20% 50%, rgba(255,230,80,0.4) 0%, transparent 55%),
+      radial-gradient(ellipse at 80% 30%, rgba(255,160,80,0.25) 0%, transparent 50%),
+      linear-gradient(120deg, #fff3c0 0%, #ffe8a0 40%, #ffd8b0 100%);
+    color: rgba(60,30,10,0.6);
+    padding: 48px 80px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .footer-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px; color: #3a2010; font-style: italic;
+  }
+  .footer-links { display: flex; gap: 28px; font-size: 13px; }
+  .footer-links a { color: rgba(60,30,10,0.6); text-decoration: none; transition: color 0.2s; }
+  .footer-links a:hover { color: var(--tulip-red); }
+
+  /* ── ANIMATIONS ── */
+  .fade-up {
+    opacity: 0; transform: translateY(28px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .fade-up.visible { opacity: 1; transform: none; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 1100px) {
+    .tips-grid { grid-template-columns: 1fr 1fr; }
+    .tip-card.featured { grid-column: span 2; }
+    .ideas-grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 1024px) {
+    .hero { grid-template-columns: 1fr; min-height: auto; }
+    .hero-left { padding: 60px 40px; }
+    .hero-right { height: 400px; }
+    .camera-panel, .mistakes, .checklist-section { grid-template-columns: 1fr; padding: 60px 40px; gap: 48px; }
+    .tips-section, .creative, .faq { padding: 60px 40px; }
+    .intro-strip { padding: 24px 40px; flex-direction: column; gap: 20px; }
+    footer { padding: 40px; flex-direction: column; gap: 20px; text-align: center; }
+  }
+  @media (max-width: 640px) {
+    .tips-grid { grid-template-columns: 1fr; }
+    .tip-card.featured { grid-column: auto; grid-template-columns: 1fr; }
+    .tip-card.featured .tip-card-img { height: 240px; }
+    .ideas-grid { grid-template-columns: 1fr 1fr; }
+    .faq-grid { grid-template-columns: 1fr; }
+    .tips-section, .creative, .faq, .mistakes, .checklist-section { padding: 48px 20px; }
+    .hero-left { padding: 48px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-left">
+    <p class="hero-eyebrow">Photography Guide · Tips, Settings &amp; Shots</p>
+    <span class="hero-camera">📷</span>
+    <h1 class="hero-title">Capture <em>Stunning</em> Tulip Field Photos</h1>
+    <p class="hero-subtitle">From golden hour light to low-angle drama — master the art of tulip field photography with expert tips for every camera and skill level.</p>
+    <div class="hero-pills">
+      <span class="pill">🌅 Golden Hour</span>
+      <span class="pill">📐 Composition</span>
+      <span class="pill">⚙️ Camera Settings</span>
+      <span class="pill">📱 Smartphone Tips</span>
+      <span class="pill">🎨 Color &amp; Contrast</span>
+    </div>
+  </div>
+  <div class="hero-right">
+    <img src="https://storage.googleapis.com/kreatewebsites/photos1000/IMG_6064.JPG" alt="Tulip field photography golden hour" loading="eager">
+    <div class="hero-overlay"></div>
+    <div class="hero-badge">
+      <strong>15</strong>
+      Pro Tips Inside
+    </div>
+  </div>
+</section>
+
+<!-- ── INTRO STRIP ── -->
+<div class="intro-strip">
+  <p>Tulip fields offer a dream setting for photographers — but capturing their true beauty takes more than just pointing and shooting. The right light, angle, and settings make all the difference.</p>
+  <div class="divider"></div>
+  <p>Whether you're using a smartphone or a professional DSLR, these techniques will transform your tulip shots from ordinary to extraordinary.</p>
+</div>
+
+<!-- ── PHOTO STRIP 1 ── -->
+<div class="photo-strip" style="height:220px;">
+  <div class="photo-strip-item"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6011.JPG" alt="Red tulips" loading="lazy"></div>
+  <div class="photo-strip-item"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6133.JPG" alt="Pink tulips" loading="lazy"></div>
+  <div class="photo-strip-item"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6095.JPG" alt="Purple tulips" loading="lazy"></div>
+  <div class="photo-strip-item"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6069.JPG" alt="Yellow tulips" loading="lazy"></div>
+  <div class="photo-strip-item"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6022.JPG" alt="Blue tulips" loading="lazy"></div>
+  <div class="photo-strip-item"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6046.JPG" alt="Red tulips field" loading="lazy"></div>
+</div>
+
+<!-- ── TIPS GRID ── -->
+<section class="tips-section">
+  <div class="tips-header">
+    <span class="section-label">15 Expert Techniques</span>
+    <h2 class="section-title">Master Every Shot</h2>
+    <p>From lighting and composition to angles and editing — your complete field guide.</p>
+  </div>
+
+  <div class="tips-grid">
+
+    <!-- TIP 1 — FEATURED: Golden Hour -->
+    <div class="tip-card featured fade-up">
+      <div class="tip-card-img">
+        <img src="https://storage.googleapis.com/kreatewebsites/photos800/IMG_6071.JPG" alt="Golden hour tulip photography" loading="lazy">
+        <div class="tip-card-img-overlay"></div>
+      </div>
+      <div class="tip-card-body">
+        <div class="tip-number">01</div>
+        <span class="tip-tag" style="background:linear-gradient(135deg,#f7c948,#f4934a);color:#3a1a00;">Most Important</span>
+        <div class="tip-title-text">Shoot During Golden Hour</div>
+        <p class="tip-desc">Lighting is everything in photography. The soft, directional warmth of sunrise and sunset transforms tulip fields — long shadows create depth, colors saturate beautifully, and the scene takes on an almost painterly glow. Avoid harsh midday sun at all costs.</p>
+        <div class="tip-bullets">
+          <div class="tip-bullet"><span class="tip-dot"></span>Early morning (sunrise) — dewdrops on petals, mist in fields</div>
+          <div class="tip-bullet"><span class="tip-dot"></span>Late afternoon (sunset) — warm amber tones, dramatic shadows</div>
+          <div class="tip-bullet"><span class="tip-dot"></span>Avoid 10am–3pm — harsh overhead light kills color</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TIP 2: Location -->
+    <div class="tip-card fade-up">
+      <div class="tip-card-img">
+        <img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6026.JPG" alt="Best tulip photography locations" loading="lazy">
+        <div class="tip-card-img-overlay"></div>
+      </div>
+      <div class="tip-card-body">
+        <div class="tip-number">02</div>
+        <span class="tip-tag" style="background:var(--tulip-red);">Location</span>
+        <div class="tip-title-text">Choose the Right Location</div>
+        <p class="tip-desc">World-class tulip spots: Keukenhof (Netherlands), Skagit Valley (Washington), Michigan festivals. Arrive early to claim prime positions before crowds arrive.</p>
+        <div class="tip-bullets">
+          <div class="tip-bullet"><span class="tip-dot"></span>Netherlands — Keukenhof &amp; Lisse fields</div>
+          <div class="tip-bullet"><span class="tip-dot"></span>Washington — Skagit Valley mountain backdrops</div>
+          <div class="tip-bullet"><span class="tip-dot"></span>Michigan — classic Midwest tulip festivals</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TIP 3 — FEATURED: Leading Lines -->
+    <div class="tip-card featured fade-up" style="direction:ltr;">
+      <div class="tip-card-body" style="order:1;">
+        <div class="tip-number">03</div>
+        <span class="tip-tag" style="background:var(--tulip-purple);">Composition</span>
+        <div class="tip-title-text">Use Leading Lines for Stunning Composition</div>
+        <p class="tip-desc">Tulip fields naturally create perfect leading lines — long rows of color that guide the viewer's eye deep into the frame. Position yourself to shoot along these lines for maximum depth and visual impact. The vanishing point creates irresistible perspective.</p>
+        <div class="tip-bullets">
+          <div class="tip-bullet"><span class="tip-dot"></span>Shoot directly along tulip rows — not across them</div>
+          <div class="tip-bullet"><span class="tip-dot"></span>Place horizon in upper or lower third (rule of thirds)</div>
+          <div class="tip-bullet"><span class="tip-dot"></span>Include a strong vanishing point for dramatic depth</div>
+        </div>
+      </div>
+      <div class="tip-card-img" style="order:2;">
+        <img src="https://storage.googleapis.com/kreatewebsites/photos800/IMG_6028.JPG" alt="Leading lines tulip field rows" loading="lazy">
+        <div class="tip-card-img-overlay"></div>
+      </div>
+    </div>
+
+    <!-- TIP 4: Low Angle -->
+    <div class="tip-card fade-up">
+      <div class="tip-card-img">
+        <img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6073.JPG" alt="Low angle tulip photography" loading="lazy">
+        <div class="tip-card-img-overlay"></div>
+      </div>
+      <div class="tip-card-body">
+        <div class="tip-number">04</div>
+        <span class="tip-tag" style="background:var(--tulip-pink);">Angle</span>
+        <div class="tip-title-text">Get Low for Drama</div>
+        <p class="tip-desc">Kneel or lie down and shoot at flower level. This immersive perspective makes tulips feel towering and majestic, with the field stretching to infinity behind.</p>
+        <div class="tip-bullets">
+          <div class="tip-bullet"><span class="tip-dot"></span>Shoot at tulip-head height</div>
+          <div class="tip-bullet"><span class="tip-dot"></span>Creates immersive, dynamic feel</div>
+          <div class="tip-bullet"><span class="tip-dot"></span>Sky becomes a clean backdrop</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TIP 5: Single Tulip Bokeh -->
+    <div class="tip-card fade-up">
+      <div class="tip-card-img">
+        <img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6094.JPG" alt="Single tulip bokeh photography" loading="lazy">
+        <div class="tip-card-img-overlay"></div>
+      </div>
+      <div class="tip-card-body">
+        <div class="tip-number">05</div>
+        <span class="tip-tag" style="background:var(--tulip-purple);">Macro</span>
+        <div class="tip-title-text">Focus on One Tulip</div>
+        <p class="tip-desc">Sometimes less is more. Isolate a single bloom with a blurred, dreamy background (bokeh). The result is an intimate, emotional portrait of the flower.</p>
+        <div class="tip-bullets">
+          <div class="tip-bullet"><span class="tip-dot"></span>Use f/2.8 for silky bokeh</div>
+          <div class="tip-bullet"><span class="tip-dot"></span>Fill the frame with one bloom</div>
+          <div class="tip-bullet"><span class="tip-dot"></span>Perfect for artistic, emotional shots</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TIP 8: Color Contrast -->
+    <div class="tip-card fade-up">
+      <div class="tip-card-img">
+        <img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6106.JPG" alt="Tulip color contrast photography" loading="lazy">
+        <div class="tip-card-img-overlay"></div>
+      </div>
+      <div class="tip-card-body">
+        <div class="tip-number">08</div>
+        <span class="tip-tag" style="background:#d4694a;">Color</span>
+        <div class="tip-title-text">Capture Color Contrast</div>
+        <p class="tip-desc">Tulip fields are all about color. Seek out rows where different hues meet — red against yellow, pink against purple — for visually striking, high-impact compositions.</p>
+        <div class="tip-bullets">
+          <div class="tip-bullet"><span class="tip-dot"></span>Contrasting color rows side by side</div>
+          <div class="tip-bullet"><span class="tip-dot"></span>Bright vs. soft tonal pairings</div>
+          <div class="tip-bullet"><span class="tip-dot"></span>Repeating color patterns as texture</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TIP 9: People for scale -->
+    <div class="tip-card fade-up">
+      <div class="tip-card-img">
+        <img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6136.JPG" alt="Person in tulip field for scale" loading="lazy">
+        <div class="tip-card-img-overlay"></div>
+      </div>
+      <div class="tip-card-body">
+        <div class="tip-number">09</div>
+        <span class="tip-tag" style="background:#5a8a5a;">Storytelling</span>
+        <div class="tip-title-text">Include People for Scale</div>
+        <p class="tip-desc">A lone figure in a vast tulip field conveys the sheer scale of the blooms and adds human emotion to the scene — turning a landscape into a story.</p>
+        <div class="tip-bullets">
+          <div class="tip-bullet"><span class="tip-dot"></span>Place subject off-center for balance</div>
+          <div class="tip-bullet"><span class="tip-dot"></span>Wide shot emphasizes field scale</div>
+          <div class="tip-bullet"><span class="tip-dot"></span>Candid moments feel most authentic</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TIP 11 — FEATURED: Perspectives -->
+    <div class="tip-card featured fade-up">
+      <div class="tip-card-img">
+        <img src="https://storage.googleapis.com/kreatewebsites/photos800/IMG_6103.JPG" alt="Different tulip photography perspectives" loading="lazy">
+        <div class="tip-card-img-overlay"></div>
+      </div>
+      <div class="tip-card-body">
+        <div class="tip-number">11</div>
+        <span class="tip-tag" style="background:var(--tulip-pink);">Perspective</span>
+        <div class="tip-title-text">Shoot Different Perspectives</div>
+        <p class="tip-desc">Don't leave the field with just one type of shot. Work the location systematically — wide establishing shots, mid-range compositions, tight close-ups, and experimental angles. Each tells a different story about the same blooms.</p>
+        <div class="tip-bullets">
+          <div class="tip-bullet"><span class="tip-dot"></span>Wide landscape — captures the full field scale</div>
+          <div class="tip-bullet"><span class="tip-dot"></span>Close-up / macro — reveals petal texture &amp; detail</div>
+          <div class="tip-bullet"><span class="tip-dot"></span>Side angles &amp; overhead — unexpected compositions</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TIP 13: Editing -->
+    <div class="tip-card fade-up">
+      <div class="tip-card-img">
+        <img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6170.JPG" alt="Editing tulip photos Lightroom" loading="lazy">
+        <div class="tip-card-img-overlay"></div>
+      </div>
+      <div class="tip-card-body">
+        <div class="tip-number">13</div>
+        <span class="tip-tag" style="background:#2c6e8a;">Editing</span>
+        <div class="tip-title-text">Edit for Maximum Impact</div>
+        <p class="tip-desc">Post-processing is the final polish. Lift shadows, boost vibrance (not saturation), add clarity, and sharpen selectively. Tools: Lightroom, Snapseed.</p>
+        <div class="tip-bullets">
+          <div class="tip-bullet"><span class="tip-dot"></span>Boost vibrance, not raw saturation</div>
+          <div class="tip-bullet"><span class="tip-dot"></span>Add clarity to bring out petal texture</div>
+          <div class="tip-bullet"><span class="tip-dot"></span>Use Lightroom or Snapseed on mobile</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── CAMERA SETTINGS PANEL ── -->
+<section class="camera-panel">
+  <div class="fade-up">
+    <span class="section-label" style="color:#a0520a;">DSLR &amp; Mirrorless</span>
+    <h2 class="section-title" style="color:#3a2010;">Best Camera Settings for Tulip Photography</h2>
+    <div class="settings-grid">
+
+      <div class="setting-card">
+        <span class="setting-icon">🔆</span>
+        <div>
+          <div class="setting-name">Aperture (f-stop)</div>
+          <div class="setting-values">
+            <div class="setting-value">
+              <span class="setting-code">f/2.8 – f/5.6</span>
+              <span class="setting-note">→ Blurred bokeh background</span>
+            </div>
+            <div class="setting-value">
+              <span class="setting-code">f/8 – f/11</span>
+              <span class="setting-note">→ Sharp landscape / full field</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="setting-card">
+        <span class="setting-icon">📊</span>
+        <div>
+          <div class="setting-name">ISO</div>
+          <div class="setting-values">
+            <div class="setting-value">
+              <span class="setting-code">ISO 100 – 200</span>
+              <span class="setting-note">→ Keep as low as possible</span>
+            </div>
+            <div class="setting-value">
+              <span class="setting-code">ISO 400+</span>
+              <span class="setting-note">→ Only if light is very low</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="setting-card">
+        <span class="setting-icon">⚡</span>
+        <div>
+          <div class="setting-name">Shutter Speed</div>
+          <div class="setting-values">
+            <div class="setting-value">
+              <span class="setting-code">1/250s+</span>
+              <span class="setting-note">→ Windy days (freeze movement)</span>
+            </div>
+            <div class="setting-value">
+              <span class="setting-code">1/60 – 1/125s</span>
+              <span class="setting-note">→ Calm conditions</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="setting-card">
+        <span class="setting-icon">📐</span>
+        <div>
+          <div class="setting-name">Focus Mode</div>
+          <div class="setting-values">
+            <div class="setting-value">
+              <span class="setting-code">Single AF</span>
+              <span class="setting-note">→ Macro / single bloom shots</span>
+            </div>
+            <div class="setting-value">
+              <span class="setting-code">Manual</span>
+              <span class="setting-note">→ Precise landscape focus</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Smartphone Tips -->
+  <div class="fade-up">
+    <div class="phone-card">
+      <span class="section-label" style="color:#a0520a;">Tip #7</span>
+      <h2 class="section-title" style="font-size:28px;color:#3a2010;">📱 Smartphone Photography Tips</h2>
+      <p style="font-family:'Cormorant Garamond',serif;font-size:16px;font-style:italic;color:var(--text-muted);margin-top:10px;">You don't need a professional camera — great tulip shots are absolutely possible with your phone.</p>
+      <div class="phone-tips">
+        <div class="phone-tip">
+          <span class="phone-tip-icon">👆</span>
+          <div>
+            <div class="phone-tip-title">Tap to Focus</div>
+            <div class="phone-tip-desc">Tap directly on the tulip you want sharp. Then slide the exposure dial to brighten or darken the scene manually.</div>
+          </div>
+        </div>
+        <div class="phone-tip">
+          <span class="phone-tip-icon">🖼️</span>
+          <div>
+            <div class="phone-tip-title">Use Portrait Mode</div>
+            <div class="phone-tip-desc">Portrait mode simulates a shallow depth of field, blurring the background beautifully around a single bloom.</div>
+          </div>
+        </div>
+        <div class="phone-tip">
+          <span class="phone-tip-icon">🚫</span>
+          <div>
+            <div class="phone-tip-title">Avoid Digital Zoom</div>
+            <div class="phone-tip-desc">Digital zoom degrades quality. Move closer physically instead, or crop in post-processing for better results.</div>
+          </div>
+        </div>
+        <div class="phone-tip">
+          <span class="phone-tip-icon">☀️</span>
+          <div>
+            <div class="phone-tip-title">Always Shoot in Natural Light</div>
+            <div class="phone-tip-desc">Phone cameras shine in good natural light. Golden hour is your phone's best friend — use it every time.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PHOTO STRIP 2 ── -->
+<div class="photo-strip" style="height:200px;">
+  <div class="photo-strip-item"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6030.JPG" alt="Tulip field rows" loading="lazy"></div>
+  <div class="photo-strip-item"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6137.JPG" alt="Pink tulips close up" loading="lazy"></div>
+  <div class="photo-strip-item"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6104.JPG" alt="Purple tulips" loading="lazy"></div>
+  <div class="photo-strip-item"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6021.JPG" alt="Yellow tulips" loading="lazy"></div>
+  <div class="photo-strip-item"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6150.JPG" alt="Blue tulips" loading="lazy"></div>
+  <div class="photo-strip-item"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6072.JPG" alt="Red tulips" loading="lazy"></div>
+  <div class="photo-strip-item"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6154.JPG" alt="Pink tulips" loading="lazy"></div>
+</div>
+
+<!-- ── MISTAKES ── -->
+<section class="mistakes">
+  <div class="mistakes-img fade-up">
+    <img src="https://storage.googleapis.com/kreatewebsites/photos700/IMG_6109.JPG" alt="Tulip photography mistakes to avoid" loading="lazy">
+  </div>
+  <div class="fade-up">
+    <span class="section-label">Tip #14</span>
+    <h2 class="section-title">Avoid These Common Mistakes</h2>
+    <p style="font-family:'Cormorant Garamond',serif;font-size:17px;font-style:italic;color:var(--text-muted);margin:12px 0 8px;">Even experienced photographers fall into these traps.</p>
+    <div class="mistakes-list">
+      <div class="mistake-item bad">
+        <span class="mistake-icon">❌</span>
+        <div>
+          <div class="mistake-title">Harsh Midday Light</div>
+          <div class="mistake-desc">Overhead sun creates deep shadows in petals, washes out colors, and makes reds look orange. Always wait for golden hour.</div>
+        </div>
+      </div>
+      <div class="mistake-item bad">
+        <span class="mistake-icon">❌</span>
+        <div>
+          <div class="mistake-title">Overexposure</div>
+          <div class="mistake-desc">Blown highlights destroy delicate petal gradients and color detail — especially in white and yellow tulips. Expose to the right carefully.</div>
+        </div>
+      </div>
+      <div class="mistake-item bad">
+        <span class="mistake-icon">❌</span>
+        <div>
+          <div class="mistake-title">Cluttered Composition</div>
+          <div class="mistake-desc">Too many visual elements compete for attention. Simplify — one strong subject, clean background, deliberate framing.</div>
+        </div>
+      </div>
+      <div class="mistake-item good">
+        <span class="mistake-icon">✅</span>
+        <div>
+          <div class="mistake-title">Use Natural Elements</div>
+          <div class="mistake-desc">Dew drops on petals, wind movement, shadows at play, and sunlight filtering through blooms add magic and texture to every frame.</div>
+        </div>
+      </div>
+      <div class="mistake-item good">
+        <span class="mistake-icon">✅</span>
+        <div>
+          <div class="mistake-title">Keep Background Clean</div>
+          <div class="mistake-desc">A simple sky, soft bokeh field, or complementary color behind your subject makes the tulip the undisputed star of the frame.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CREATIVE IDEAS ── -->
+<section class="creative">
+  <div class="creative-header">
+    <span class="section-label">Tip #15</span>
+    <h2 class="section-title">Creative Tulip Photo Ideas</h2>
+    <p style="font-family:'Cormorant Garamond',serif;font-size:18px;font-style:italic;color:var(--text-muted);margin-top:12px;">Go beyond the obvious and create images that truly stand out.</p>
+  </div>
+  <div class="ideas-grid">
+    <div class="idea-card fade-up">
+      <div class="idea-img"><img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6102.JPG" alt="Tulips with sunrise light" loading="lazy"></div>
+      <div class="idea-body">
+        <span class="idea-emoji">🌅</span>
+        <div class="idea-title">Tulips with Sunrise</div>
+        <div class="idea-desc">Arrive before first light. As the sun crests the horizon, it fires through the petals with a breathtaking glow impossible to replicate later in the day.</div>
+      </div>
+    </div>
+    <div class="idea-card fade-up">
+      <div class="idea-img"><img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6134.JPG" alt="Dew covered tulip petals" loading="lazy"></div>
+      <div class="idea-body">
+        <span class="idea-emoji">💧</span>
+        <div class="idea-title">Dew-Covered Petals</div>
+        <div class="idea-desc">Early morning dew transforms each petal into a jewelled surface. Get macro-close and let the droplets become the stars of your composition.</div>
+      </div>
+    </div>
+    <div class="idea-card fade-up">
+      <div class="idea-img"><img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6029.JPG" alt="Tulip rows disappearing into distance" loading="lazy"></div>
+      <div class="idea-body">
+        <span class="idea-emoji">🛤️</span>
+        <div class="idea-title">Rows into the Distance</div>
+        <div class="idea-desc">Position yourself low at the end of a long row and watch the tulips converge to a vanishing point. This classic perspective never fails to captivate.</div>
+      </div>
+    </div>
+    <div class="idea-card fade-up">
+      <div class="idea-img"><img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6173.JPG" alt="Tulips with mountains or sky" loading="lazy"></div>
+      <div class="idea-body">
+        <span class="idea-emoji">⛰️</span>
+        <div class="idea-title">Tulips &amp; Mountains</div>
+        <div class="idea-desc">At Skagit Valley or Kashmir, snow-capped peaks provide an extraordinary backdrop. Use a wide angle to frame both the blooms and the soaring peaks behind.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CHECKLIST ── -->
+<section class="checklist-section">
+  <div class="checklist-visual fade-up">
+    <img src="https://storage.googleapis.com/kreatewebsites/photos700/IMG_6025.JPG" alt="Tulip photography checklist" loading="lazy">
+  </div>
+  <div class="fade-up">
+    <span class="section-label">Before You Shoot</span>
+    <h2 class="section-title">Quick Photography Checklist</h2>
+    <p style="font-family:'Cormorant Garamond',serif;font-size:17px;font-style:italic;color:var(--text-muted);margin:12px 0 8px;">Run through this before every tulip field session.</p>
+    <div class="checklist-items">
+      <div class="checklist-item"><div class="check-box">✓</div><span class="checklist-text">Shoot during golden hour — sunrise or sunset only</span></div>
+      <div class="checklist-item"><div class="check-box">✓</div><span class="checklist-text">Use leading lines — shoot along rows, not across them</span></div>
+      <div class="checklist-item"><div class="check-box">✓</div><span class="checklist-text">Try low angles — get down to flower level</span></div>
+      <div class="checklist-item"><div class="check-box">✓</div><span class="checklist-text">Focus on details — isolate single blooms with bokeh</span></div>
+      <div class="checklist-item"><div class="check-box">✓</div><span class="checklist-text">Keep composition clean — simple backgrounds win</span></div>
+      <div class="checklist-item"><div class="check-box">✓</div><span class="checklist-text">Set low ISO (100–200) for clean, crisp images</span></div>
+      <div class="checklist-item"><div class="check-box">✓</div><span class="checklist-text">Vary your shots — wide, mid, close-up, overhead</span></div>
+      <div class="checklist-item"><div class="check-box">✓</div><span class="checklist-text">Edit thoughtfully — boost vibrance, add clarity</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ── -->
+<section class="faq">
+  <div class="faq-header">
+    <span class="section-label">Common Questions</span>
+    <h2 class="section-title">Photographer's FAQ</h2>
+  </div>
+  <div class="faq-grid">
+    <div class="faq-item fade-up">
+      <div class="faq-q">What is the best time to photograph tulip fields?</div>
+      <div class="faq-a">Early morning (sunrise) or late afternoon (sunset) — known as golden hour. The soft, warm, directional light creates long shadows, saturated colors, and a painterly glow that's impossible to achieve at other times of day.</div>
+    </div>
+    <div class="faq-item fade-up">
+      <div class="faq-q">What camera settings are best for tulip photography?</div>
+      <div class="faq-a">Use ISO 100–200 for clean images. Set aperture to f/2.8–f/5.6 for blurred backgrounds or f/8–f/11 for sharp landscapes. Increase shutter speed to 1/250s or faster on windy days to freeze petal movement.</div>
+    </div>
+    <div class="faq-item fade-up">
+      <div class="faq-q">Can I take good tulip photos with a smartphone?</div>
+      <div class="faq-a">Absolutely. Tap to focus on your subject, use Portrait Mode for bokeh effects, avoid digital zoom, and always shoot in natural light — preferably golden hour. The best smartphone photos come from great light and composition, not specs.</div>
+    </div>
+    <div class="faq-item fade-up">
+      <div class="faq-q">How do I make tulip photos look professional?</div>
+      <div class="faq-a">Apply composition techniques (leading lines, rule of thirds, low angles), shoot in optimal natural light, and do light editing in Lightroom or Snapseed. Boost vibrance rather than saturation, add clarity, and lift shadows slightly.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-brand">📷 Tulip Photography Guide</div>
+  <div style="font-size:13px;text-align:center;color:rgba(60,30,10,0.55);">
+    Expert tips for every skill level · Beginners to Professionals<br>
+    Best light: golden hour — arrive early, shoot often
+  </div>
+  <div class="footer-links">
+    <a href="#">World Festivals</a>
+    <a href="#">U.S. Tulip Guide</a>
+    <a href="#">Tulip Types</a>
+  </div>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>

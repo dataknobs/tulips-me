@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Top Tulip Festivals Around the World You Must Visit</title>
+<meta name="description" content="Discover the best tulip festivals around the world. Explore top destinations like the Netherlands, USA, and Turkey to see stunning tulip blooms in spring.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --cream: #fffdf5;
+    --warm-white: #fffef9;
+    --tulip-red: #c0392b;
+    --tulip-pink: #d4698a;
+    --tulip-purple: #7b5ea7;
+    --tulip-yellow: #e8b84b;
+    --sun-gold: #f7c948;
+    --sun-orange: #f4934a;
+    --sky-blue: #a8d8f0;
+    --spring-green: #b8e0a0;
+    --text-body: #2d1f10;
+    --text-muted: #7a6050;
+    --border: #f0dfc0;
+    --section-gap: 100px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: linear-gradient(180deg, #fffdf5 0%, #fff8e8 100%);
+    color: var(--text-body);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .hero-left {
+    background:
+      radial-gradient(ellipse at 15% 10%, rgba(255,230,100,0.6) 0%, transparent 52%),
+      radial-gradient(ellipse at 85% 85%, rgba(255,160,80,0.32) 0%, transparent 52%),
+      linear-gradient(160deg, #fff8e1 0%, #ffe4a0 35%, #ffd0a0 65%, #ffc8b0 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 60px 80px 80px;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+  }
+
+  /* Sunbeam rays */
+  .hero-left::before {
+    content: '';
+    position: absolute;
+    top: -120px; left: -120px;
+    width: 700px; height: 700px;
+    background: conic-gradient(
+      from 210deg,
+      transparent 0deg, rgba(255,220,60,0.16) 8deg, transparent 16deg,
+      transparent 26deg, rgba(255,220,60,0.11) 34deg, transparent 42deg,
+      transparent 52deg, rgba(255,220,60,0.14) 60deg, transparent 68deg,
+      transparent 78deg, rgba(255,220,60,0.09) 86deg, transparent 94deg,
+      transparent 250deg
+    );
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  /* Glowing sun orb */
+  .hero-left::after {
+    content: '';
+    position: absolute;
+    top: 36px; right: -24px;
+    width: 170px; height: 170px;
+    background: radial-gradient(circle, rgba(255,230,50,0.65) 0%, rgba(255,200,60,0.22) 45%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: sunPulse 4s ease-in-out infinite;
+  }
+
+  @keyframes sunPulse {
+    0%, 100% { transform: scale(1); opacity: 0.85; }
+    50% { transform: scale(1.12); opacity: 1; }
+  }
+
+  .hero-eyebrow {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #a0520a;
+    margin-bottom: 28px;
+    position: relative;
+  }
+
+  .hero-globe {
+    font-size: 52px;
+    margin-bottom: 16px;
+    display: block;
+    animation: floatGlobe 5s ease-in-out infinite;
+  }
+
+  @keyframes floatGlobe {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+
+  .hero-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(40px, 5vw, 68px);
+    font-weight: 900;
+    line-height: 1.06;
+    color: #3a2010;
+    margin-bottom: 24px;
+    position: relative;
+  }
+
+  .hero-title em {
+    font-style: italic;
+    color: #c0392b;
+  }
+
+  .hero-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 19px;
+    font-style: italic;
+    color: rgba(80,40,10,0.72);
+    margin-bottom: 44px;
+    max-width: 400px;
+    line-height: 1.65;
+    position: relative;
+  }
+
+  .hero-stats {
+    display: flex;
+    gap: 36px;
+    position: relative;
+  }
+
+  .stat { display: flex; flex-direction: column; gap: 4px; }
+  .stat-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 34px;
+    font-weight: 700;
+    color: #b05010;
+    line-height: 1;
+  }
+  .stat-label {
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(80,40,10,0.52);
+  }
+
+  .hero-right {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-right img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 8s ease;
+  }
+  .hero-right:hover img { transform: scale(1.04); }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(255,200,50,0.15) 0%, transparent 50%);
+  }
+
+  .hero-badge {
+    position: absolute;
+    bottom: 36px; right: 36px;
+    background: linear-gradient(135deg, #f7c948, #f4934a);
+    color: #3a1a00;
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    padding: 16px 22px;
+    text-align: center;
+    line-height: 1.4;
+    box-shadow: 0 8px 32px rgba(244,147,74,0.4);
+  }
+  .hero-badge strong { display: block; font-size: 20px; font-weight: 700; }
+
+  /* ── INTRO STRIP ── */
+  .intro-strip {
+    background: linear-gradient(135deg, #f7c948 0%, #f4934a 60%, #e86060 100%);
+    color: rgba(60,26,0,0.88);
+    padding: 28px 80px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+  .intro-strip p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.5;
+    flex: 1;
+  }
+  .intro-strip .divider { width: 1px; height: 50px; background: rgba(60,26,0,0.2); flex-shrink: 0; }
+
+  /* ── WHY VISIT ── */
+  .why-visit {
+    padding: 80px 80px 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+
+  .why-text .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--tulip-pink);
+    margin-bottom: 16px;
+    display: block;
+  }
+
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(30px, 4vw, 50px);
+    font-weight: 700;
+    color: #3a2010;
+    line-height: 1.15;
+    margin-bottom: 20px;
+  }
+
+  .why-desc {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-style: italic;
+    color: var(--text-muted);
+    margin-bottom: 36px;
+    line-height: 1.7;
+  }
+
+  .why-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .why-card {
+    background: white;
+    padding: 24px;
+    border-top: 3px solid var(--tulip-pink);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  }
+
+  .why-card-icon { font-size: 28px; margin-bottom: 10px; display: block; }
+  .why-card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #3a2010;
+    margin-bottom: 6px;
+  }
+  .why-card-desc { font-size: 13px; color: var(--text-muted); line-height: 1.5; }
+
+  .why-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+  }
+  .why-image img {
+    width: 100%; height: 480px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s;
+  }
+  .why-image:hover img { transform: scale(1.04); }
+
+  /* ── PHOTO STRIP ── */
+  .photo-strip {
+    display: flex;
+    gap: 4px;
+    overflow: hidden;
+  }
+  .photo-strip-item {
+    flex: 1;
+    height: 260px;
+    overflow: hidden;
+    position: relative;
+  }
+  .photo-strip-item img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s, filter 0.3s;
+    filter: saturate(0.88);
+  }
+  .photo-strip-item:hover img { transform: scale(1.07); filter: saturate(1.25); }
+
+  /* ── FESTIVALS ── */
+  .festivals {
+    padding: var(--section-gap) 80px;
+  }
+
+  .festivals-header {
+    text-align: center;
+    margin-bottom: 64px;
+  }
+
+  .section-label {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--tulip-pink);
+    margin-bottom: 14px;
+    display: block;
+  }
+
+  /* Festival grid: alternating left/right layout */
+  .festival-list { display: flex; flex-direction: column; gap: 4px; }
+
+  .festival-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: white;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .festival-card:hover { transform: translateY(-4px); box-shadow: 0 20px 60px rgba(0,0,0,0.10); }
+  .festival-card.reverse { direction: rtl; }
+  .festival-card.reverse > * { direction: ltr; }
+
+  .festival-img {
+    overflow: hidden;
+    position: relative;
+    height: 340px;
+  }
+  .festival-img img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s;
+  }
+  .festival-card:hover .festival-img img { transform: scale(1.06); }
+
+  .festival-img-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(255,180,50,0.18) 0%, transparent 50%);
+  }
+
+  .festival-body {
+    padding: 48px 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .festival-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 80px;
+    font-weight: 900;
+    color: #f0e0c8;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  .festival-tag {
+    display: inline-block;
+    padding: 4px 14px;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    border-radius: 1px;
+    margin-bottom: 14px;
+    color: white;
+  }
+
+  .festival-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: #3a2010;
+    line-height: 1.2;
+    margin-bottom: 6px;
+  }
+
+  .festival-subtitle {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    font-style: italic;
+    color: var(--tulip-pink);
+    margin-bottom: 20px;
+  }
+
+  .festival-meta {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 18px;
+  }
+
+  .meta-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  .festival-desc {
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.75;
+    margin-bottom: 22px;
+  }
+
+  .festival-highlights { display: flex; flex-direction: column; gap: 9px; }
+  .highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    color: var(--text-body);
+  }
+  .highlight-dot {
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--tulip-pink);
+    flex-shrink: 0;
+  }
+
+  .best-for {
+    margin-top: 20px;
+    padding-top: 18px;
+    border-top: 1px solid var(--border);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+  .best-for span { color: var(--tulip-red); }
+
+  /* ── CHOOSE YOUR FESTIVAL ── */
+  .choose {
+    background:
+      radial-gradient(ellipse at 90% 10%, rgba(255,230,100,0.5) 0%, transparent 50%),
+      radial-gradient(ellipse at 10% 90%, rgba(180,230,255,0.45) 0%, transparent 50%),
+      linear-gradient(135deg, #e0f4ff 0%, #fff8d6 40%, #ffedb8 70%, #ffe0d0 100%);
+    padding: 80px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .choose::before {
+    content: '';
+    position: absolute;
+    top: -80px; right: -80px;
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, rgba(255,220,50,0.42) 0%, rgba(255,200,60,0.1) 50%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  .choose-header { text-align: center; margin-bottom: 52px; }
+
+  .choose-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .choose-card {
+    background: white;
+    padding: 36px 28px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  }
+  .choose-card:hover { transform: translateY(-6px); box-shadow: 0 20px 50px rgba(0,0,0,0.12); }
+
+  .choose-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+  }
+  .choose-card:nth-child(1)::before { background: linear-gradient(90deg, #f7c948, #f4934a); }
+  .choose-card:nth-child(2)::before { background: var(--tulip-red); }
+  .choose-card:nth-child(3)::before { background: var(--tulip-purple); }
+  .choose-card:nth-child(4)::before { background: var(--tulip-pink); }
+  .choose-card:nth-child(5)::before { background: #4a8db5; }
+
+  .choose-emoji { font-size: 36px; margin-bottom: 12px; display: block; }
+  .choose-label {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+  }
+  .choose-dest {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #3a2010;
+    margin-bottom: 10px;
+  }
+  .choose-why { font-size: 13px; color: var(--text-muted); line-height: 1.5; }
+
+  /* ── TIMING ── */
+  .timing {
+    background:
+      radial-gradient(ellipse at 90% 10%, rgba(255,230,100,0.5) 0%, transparent 50%),
+      radial-gradient(ellipse at 10% 90%, rgba(180,230,255,0.45) 0%, transparent 50%),
+      linear-gradient(135deg, #fff8e0 0%, #ffefc8 40%, #ffe8d0 100%);
+    padding: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .timing::before {
+    content: '';
+    position: absolute;
+    top: -80px; right: -80px;
+    width: 300px; height: 300px;
+    background: radial-gradient(circle, rgba(255,220,50,0.38) 0%, rgba(255,200,60,0.1) 50%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  .timing-bars { display: flex; flex-direction: column; gap: 22px; margin-top: 32px; }
+  .timing-bar-item { display: flex; flex-direction: column; gap: 8px; }
+  .timing-bar-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    color: rgba(60,30,10,0.7);
+  }
+  .timing-bar-track {
+    height: 6px;
+    background: rgba(0,0,0,0.08);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .timing-bar-fill {
+    height: 100%;
+    border-radius: 3px;
+    transform-origin: left;
+    animation: growBar 1.2s ease forwards;
+    transform: scaleX(0);
+  }
+  @keyframes growBar { to { transform: scaleX(1); } }
+
+  .tips-list { display: flex; flex-direction: column; gap: 26px; }
+  .tip-item { display: flex; gap: 18px; align-items: flex-start; }
+  .tip-icon { font-size: 28px; flex-shrink: 0; margin-top: 2px; }
+  .tip-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: #3a2010;
+    margin-bottom: 4px;
+  }
+  .tip-desc { font-size: 14px; color: rgba(60,30,10,0.6); line-height: 1.6; }
+
+  /* ── FAQ ── */
+  .faq {
+    background:
+      radial-gradient(ellipse at 80% 0%, rgba(180,240,150,0.4) 0%, transparent 50%),
+      radial-gradient(ellipse at 0% 100%, rgba(255,230,100,0.3) 0%, transparent 50%),
+      linear-gradient(160deg, #f0fce8 0%, #fffbe0 50%, #fff5d0 100%);
+    padding: var(--section-gap) 80px;
+  }
+
+  .faq-header { text-align: center; margin-bottom: 52px; }
+
+  .faq-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .faq-item {
+    background: white;
+    padding: 36px 40px;
+    border-left: 3px solid var(--tulip-pink);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+  }
+  .faq-item:hover { transform: translateY(-3px); }
+
+  .faq-q {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #3a2010;
+    margin-bottom: 12px;
+    line-height: 1.3;
+  }
+  .faq-a { font-size: 14px; color: var(--text-muted); line-height: 1.75; }
+
+  /* ── FOOTER ── */
+  footer {
+    background:
+      radial-gradient(ellipse at 20% 50%, rgba(255,230,80,0.4) 0%, transparent 55%),
+      radial-gradient(ellipse at 80% 30%, rgba(255,160,80,0.25) 0%, transparent 50%),
+      linear-gradient(120deg, #fff3c0 0%, #ffe8a0 40%, #ffd8b0 100%);
+    color: rgba(60,30,10,0.6);
+    padding: 48px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: #3a2010;
+    font-style: italic;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 28px;
+    font-size: 13px;
+  }
+
+  .footer-links a {
+    color: rgba(60,30,10,0.6);
+    text-decoration: none;
+    transition: color 0.2s;
+    font-weight: 400;
+  }
+  .footer-links a:hover { color: var(--tulip-red); }
+
+  /* ── ANIMATIONS ── */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .fade-up.visible { opacity: 1; transform: none; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 1024px) {
+    .hero { grid-template-columns: 1fr; min-height: auto; }
+    .hero-left { padding: 60px 40px; }
+    .hero-right { height: 400px; }
+    .why-visit { grid-template-columns: 1fr; padding: 60px 40px; }
+    .festival-card, .festival-card.reverse { grid-template-columns: 1fr; direction: ltr; }
+    .festival-img { height: 280px; }
+    .choose-grid { grid-template-columns: 1fr 1fr; }
+    .timing { grid-template-columns: 1fr; padding: 60px 40px; gap: 48px; }
+    .festivals, .faq, .choose { padding: 60px 40px; }
+    .intro-strip { padding: 24px 40px; flex-direction: column; gap: 20px; }
+    footer { padding: 40px; flex-direction: column; gap: 20px; text-align: center; }
+  }
+
+  @media (max-width: 640px) {
+    .hero-left { padding: 48px 24px; }
+    .why-cards { grid-template-columns: 1fr; }
+    .choose-grid { grid-template-columns: 1fr; }
+    .faq-grid { grid-template-columns: 1fr; }
+    .festivals, .faq, .choose, .timing { padding: 48px 24px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-left">
+    <p class="hero-eyebrow">Global Spring Travel Guide · 7 Countries</p>
+    <span class="hero-globe">🌍</span>
+    <h1 class="hero-title">World's Most <em>Magical</em> Tulip Festivals</h1>
+    <p class="hero-subtitle">From the iconic gardens of the Netherlands to Himalayan valleys in Kashmir — these tulip festivals belong on every bucket list.</p>
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-number">7</span>
+        <span class="stat-label">Festivals</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">7+</span>
+        <span class="stat-label">Countries</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number">7M+</span>
+        <span class="stat-label">Flowers at Keukenhof</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <img src="https://storage.googleapis.com/kreatewebsites/photos1000/IMG_6105.JPG" alt="Stunning tulip fields in bloom" loading="eager">
+    <div class="hero-overlay"></div>
+    <div class="hero-badge">
+      <strong>🌷</strong>
+      Season: March<br>through October
+    </div>
+  </div>
+</section>
+
+<!-- ── INTRO STRIP ── -->
+<div class="intro-strip">
+  <p>Every spring, millions of tulips transform landscapes across the globe — from Dutch windmill farms to Himalayan terraces. These festivals are more than flowers; they're immersive journeys.</p>
+  <div class="divider"></div>
+  <p>Whether you're a photographer, a culture-seeker, or simply chasing beauty — there's a tulip festival perfectly suited for you.</p>
+</div>
+
+<!-- ── WHY VISIT ── -->
+<section class="why-visit">
+  <div class="why-text fade-up">
+    <span class="section-label">Why Go</span>
+    <h2 class="section-title">More Than Just Flowers</h2>
+    <p class="why-desc">Tulip festivals are immersive experiences combining nature, culture, and unforgettable scenery — perfect for travel, photography, and springtime celebration.</p>
+    <div class="why-cards">
+      <div class="why-card">
+        <span class="why-card-icon">🌸</span>
+        <div class="why-card-title">Massive Color Fields</div>
+        <div class="why-card-desc">Endless rows of vibrant blooms in every color imaginable.</div>
+      </div>
+      <div class="why-card" style="border-color:var(--tulip-purple);">
+        <span class="why-card-icon">📸</span>
+        <div class="why-card-title">Photography Paradise</div>
+        <div class="why-card-desc">Golden-hour light across petals creates world-class shots.</div>
+      </div>
+      <div class="why-card" style="border-color:var(--tulip-yellow);">
+        <span class="why-card-icon">🎉</span>
+        <div class="why-card-title">Cultural Festivals</div>
+        <div class="why-card-desc">Parades, music, local traditions, and seasonal celebrations.</div>
+      </div>
+      <div class="why-card" style="border-color:#4a8db5;">
+        <span class="why-card-icon">✈️</span>
+        <div class="why-card-title">Global Destinations</div>
+        <div class="why-card-desc">From Europe to Asia to the Southern Hemisphere — tulips are everywhere.</div>
+      </div>
+    </div>
+  </div>
+  <div class="why-image fade-up">
+    <img src="https://storage.googleapis.com/kreatewebsites/photos800/IMG_6094.JPG" alt="Purple tulips in bloom">
+  </div>
+</section>
+
+<!-- ── PHOTO STRIP 1 ── -->
+<div class="photo-strip">
+  <div class="photo-strip-item"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6073.JPG" alt="Red tulips" loading="lazy"></div>
+  <div class="photo-strip-item"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6133.JPG" alt="Pink tulips" loading="lazy"></div>
+  <div class="photo-strip-item"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6103.JPG" alt="Purple tulips" loading="lazy"></div>
+  <div class="photo-strip-item"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6070.JPG" alt="Yellow tulips" loading="lazy"></div>
+  <div class="photo-strip-item"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6149.JPG" alt="Blue tulips" loading="lazy"></div>
+</div>
+
+<!-- ── FESTIVALS ── -->
+<section class="festivals">
+  <div class="festivals-header">
+    <span class="section-label">Top Destinations</span>
+    <h2 class="section-title">7 Tulip Festivals You Must Visit</h2>
+    <p style="font-family:'Cormorant Garamond',serif;font-size:18px;font-style:italic;color:var(--text-muted);margin-top:10px;">Spanning continents, cultures, and seasons — find your perfect bloom.</p>
+  </div>
+
+  <div class="festival-list">
+
+    <!-- 1. Keukenhof -->
+    <div class="festival-card fade-up">
+      <div class="festival-img">
+        <img src="https://storage.googleapis.com/kreatewebsites/photos800/IMG_6106.JPG" alt="Keukenhof Gardens Netherlands" loading="lazy">
+        <div class="festival-img-overlay"></div>
+      </div>
+      <div class="festival-body">
+        <div class="festival-num">01</div>
+        <span class="festival-tag" style="background:linear-gradient(135deg,#f7c948,#f4934a);color:#3a1a00;">Most Famous · Netherlands</span>
+        <h3 class="festival-name">Keukenhof Gardens</h3>
+        <p class="festival-subtitle">The Garden of Europe</p>
+        <div class="festival-meta">
+          <span class="meta-item">📍 Lisse, Netherlands</span>
+          <span class="meta-item">📅 March – May</span>
+          <span class="meta-item">🌸 7 million flowers</span>
+        </div>
+        <p class="festival-desc">Keukenhof is the undisputed crown jewel of tulip destinations worldwide. Spread across 79 acres, it showcases over 7 million bulbs in meticulously designed garden settings — a once-in-a-lifetime spectacle that draws 1.5 million visitors every spring.</p>
+        <div class="festival-highlights">
+          <div class="highlight-item"><span class="highlight-dot"></span>Endless sculpted tulip fields and canals</div>
+          <div class="highlight-item"><span class="highlight-dot"></span>Stunning garden design and flower exhibitions</div>
+          <div class="highlight-item"><span class="highlight-dot"></span>Over 800 varieties of tulips on display</div>
+        </div>
+        <p class="best-for">Best for: <span>First-time visitors &amp; photographers</span></p>
+      </div>
+    </div>
+
+    <!-- 2. Skagit Valley -->
+    <div class="festival-card reverse fade-up">
+      <div class="festival-img">
+        <img src="https://storage.googleapis.com/kreatewebsites/photos800/IMG_6027.JPG" alt="Skagit Valley Tulip Festival Washington" loading="lazy">
+        <div class="festival-img-overlay"></div>
+      </div>
+      <div class="festival-body">
+        <div class="festival-num">02</div>
+        <span class="festival-tag" style="background:var(--tulip-red);">USA · Washington State</span>
+        <h3 class="festival-name">Skagit Valley Tulip Festival</h3>
+        <p class="festival-subtitle">America's Favorite Tulip Destination</p>
+        <div class="festival-meta">
+          <span class="meta-item">📍 Washington State, USA</span>
+          <span class="meta-item">📅 April</span>
+          <span class="meta-item">🌸 Vast farmland fields</span>
+        </div>
+        <p class="festival-desc">Set against the dramatic backdrop of the Cascade and Olympic mountains, Skagit Valley transforms every April into a painter's canvas. RoozenGaarde and Tulip Town farms draw photographers and families from across the continent.</p>
+        <div class="festival-highlights">
+          <div class="highlight-item"><span class="highlight-dot"></span>Scenic mountain panorama backdrops</div>
+          <div class="highlight-item"><span class="highlight-dot"></span>World-class local farms and gardens</div>
+          <div class="highlight-item"><span class="highlight-dot"></span>Family-friendly activities and events</div>
+        </div>
+        <p class="best-for">Best for: <span>Photography &amp; nature lovers</span></p>
+      </div>
+    </div>
+
+    <!-- 3. Istanbul -->
+    <div class="festival-card fade-up">
+      <div class="festival-img">
+        <img src="https://storage.googleapis.com/kreatewebsites/photos800/IMG_6095.JPG" alt="Istanbul Tulip Festival Turkey" loading="lazy">
+        <div class="festival-img-overlay"></div>
+      </div>
+      <div class="festival-body">
+        <div class="festival-num">03</div>
+        <span class="festival-tag" style="background:var(--tulip-purple);">Turkey · Istanbul</span>
+        <h3 class="festival-name">Istanbul Tulip Festival</h3>
+        <p class="festival-subtitle">Where Tulips Were Born</p>
+        <div class="festival-meta">
+          <span class="meta-item">📍 Istanbul, Turkey</span>
+          <span class="meta-item">📅 April</span>
+          <span class="meta-item">🌸 Millions across parks</span>
+        </div>
+        <p class="festival-desc">Tulips originated in this very region, making Istanbul's festival deeply meaningful. Historic parks like Emirgan are blanketed with millions of blooms in geometric patterns, set against stunning Ottoman architecture and the Bosphorus.</p>
+        <div class="festival-highlights">
+          <div class="highlight-item"><span class="highlight-dot"></span>Tulips in historic parks and gardens</div>
+          <div class="highlight-item"><span class="highlight-dot"></span>Cultural performances and exhibitions</div>
+          <div class="highlight-item"><span class="highlight-dot"></span>Unique designs and Ottoman-era backdrops</div>
+        </div>
+        <p class="best-for">Best for: <span>Culture &amp; history lovers</span></p>
+      </div>
+    </div>
+
+    <!-- 4. Ottawa -->
+    <div class="festival-card reverse fade-up">
+      <div class="festival-img">
+        <img src="https://storage.googleapis.com/kreatewebsites/photos800/IMG_6136.JPG" alt="Canadian Tulip Festival Ottawa" loading="lazy">
+        <div class="festival-img-overlay"></div>
+      </div>
+      <div class="festival-body">
+        <div class="festival-num">04</div>
+        <span class="festival-tag" style="background:#c0392b;">Canada · Ottawa</span>
+        <h3 class="festival-name">Canadian Tulip Festival</h3>
+        <p class="festival-subtitle">A Festival With a Historic Story</p>
+        <div class="festival-meta">
+          <span class="meta-item">📍 Ottawa, Canada</span>
+          <span class="meta-item">📅 May</span>
+          <span class="meta-item">🌸 1 million+ tulips</span>
+        </div>
+        <p class="festival-desc">Born from a post-WWII gift of tulip bulbs from the Netherlands to Canada, this festival carries deep historical significance. Commissioner's Park along the Rideau Canal becomes a tapestry of over a million blooms each May.</p>
+        <div class="festival-highlights">
+          <div class="highlight-item"><span class="highlight-dot"></span>Scenic park displays along Rideau Canal</div>
+          <div class="highlight-item"><span class="highlight-dot"></span>Spectacular night light shows</div>
+          <div class="highlight-item"><span class="highlight-dot"></span>Cultural events and food festivals</div>
+        </div>
+        <p class="best-for">Best for: <span>Families &amp; history enthusiasts</span></p>
+      </div>
+    </div>
+
+    <!-- 5. Spalding UK -->
+    <div class="festival-card fade-up">
+      <div class="festival-img">
+        <img src="https://storage.googleapis.com/kreatewebsites/photos800/IMG_6138.JPG" alt="Spalding Tulip Festival UK" loading="lazy">
+        <div class="festival-img-overlay"></div>
+      </div>
+      <div class="festival-body">
+        <div class="festival-num">05</div>
+        <span class="festival-tag" style="background:#2c6e8a;">United Kingdom</span>
+        <h3 class="festival-name">Spalding Tulip Festival</h3>
+        <p class="festival-subtitle">Traditional European Festival</p>
+        <div class="festival-meta">
+          <span class="meta-item">📍 Lincolnshire, UK</span>
+          <span class="meta-item">📅 Spring (varies)</span>
+          <span class="meta-item">🌸 Classic floral floats</span>
+        </div>
+        <p class="festival-desc">One of England's most beloved spring traditions, the Spalding festival features spectacular floral parade floats adorned with tulip heads, winding through the town's tulip-carpeted streets in a centuries-old celebration.</p>
+        <div class="festival-highlights">
+          <div class="highlight-item"><span class="highlight-dot"></span>Iconic flower-covered parade floats</div>
+          <div class="highlight-item"><span class="highlight-dot"></span>Historic Lincolnshire countryside setting</div>
+          <div class="highlight-item"><span class="highlight-dot"></span>Traditional English spring festivities</div>
+        </div>
+        <p class="best-for">Best for: <span>European charm &amp; tradition seekers</span></p>
+      </div>
+    </div>
+
+    <!-- 6. Srinagar India -->
+    <div class="festival-card reverse fade-up">
+      <div class="festival-img">
+        <img src="https://storage.googleapis.com/kreatewebsites/photos800/IMG_6104.JPG" alt="Srinagar Tulip Festival Kashmir India" loading="lazy">
+        <div class="festival-img-overlay"></div>
+      </div>
+      <div class="festival-body">
+        <div class="festival-num">06</div>
+        <span class="festival-tag" style="background:var(--tulip-purple);">India · Kashmir</span>
+        <h3 class="festival-name">Srinagar Tulip Festival</h3>
+        <p class="festival-subtitle">Asia's Largest Tulip Garden</p>
+        <div class="festival-meta">
+          <span class="meta-item">📍 Kashmir, India</span>
+          <span class="meta-item">📅 March – April</span>
+          <span class="meta-item">🌸 Thousands of varieties</span>
+        </div>
+        <p class="festival-desc">Nestled in the foothills of the Himalayas and overlooking the tranquil Dal Lake, the Indira Gandhi Memorial Tulip Garden is a breathtaking sight — terraced hillsides cascading with hundreds of thousands of tulips in every hue.</p>
+        <div class="festival-highlights">
+          <div class="highlight-item"><span class="highlight-dot"></span>Himalayan mountain backdrop</div>
+          <div class="highlight-item"><span class="highlight-dot"></span>Sweeping terraced garden design</div>
+          <div class="highlight-item"><span class="highlight-dot"></span>Extraordinary diversity of tulip varieties</div>
+        </div>
+        <p class="best-for">Best for: <span>Scenic views &amp; adventurous travelers</span></p>
+      </div>
+    </div>
+
+    <!-- 7. Tesselaar Australia -->
+    <div class="festival-card fade-up">
+      <div class="festival-img">
+        <img src="https://storage.googleapis.com/kreatewebsites/photos800/IMG_6155.JPG" alt="Tesselaar Tulip Festival Australia" loading="lazy">
+        <div class="festival-img-overlay"></div>
+      </div>
+      <div class="festival-body">
+        <div class="festival-num">07</div>
+        <span class="festival-tag" style="background:#5a8a5a;">Australia · Victoria</span>
+        <h3 class="festival-name">Tesselaar Tulip Festival</h3>
+        <p class="festival-subtitle">Southern Hemisphere's Finest Bloom</p>
+        <div class="festival-meta">
+          <span class="meta-item">📍 Victoria, Australia</span>
+          <span class="meta-item">📅 September – October</span>
+          <span class="meta-item">🌸 Vibrant spring fields</span>
+        </div>
+        <p class="festival-desc">For those in the Southern Hemisphere, Tesselaar in Victoria's Silvan Valley delivers spring tulip magic in September and October. Themed weekends, live entertainment, and food make it the region's most beloved floral event.</p>
+        <div class="festival-highlights">
+          <div class="highlight-item"><span class="highlight-dot"></span>Themed weekends with entertainment</div>
+          <div class="highlight-item"><span class="highlight-dot"></span>Vibrant fields of seasonal blooms</div>
+          <div class="highlight-item"><span class="highlight-dot"></span>Family activities and local artisan markets</div>
+        </div>
+        <p class="best-for">Best for: <span>Southern Hemisphere spring travelers</span></p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── CHOOSE YOUR FESTIVAL ── -->
+<section class="choose">
+  <div class="choose-header">
+    <span class="section-label">Which Festival Is Right for You?</span>
+    <h2 class="section-title">Find Your Perfect Bloom</h2>
+    <p style="font-family:'Cormorant Garamond',serif;font-size:18px;font-style:italic;color:var(--text-muted);margin-top:10px;">Match your travel style to the ideal destination.</p>
+  </div>
+  <div class="choose-grid">
+    <div class="choose-card fade-up">
+      <span class="choose-emoji">✈️</span>
+      <div class="choose-label">For Iconic Experience</div>
+      <div class="choose-dest">Netherlands</div>
+      <div class="choose-why">Keukenhof is simply the greatest tulip spectacle on earth. Don't miss it.</div>
+    </div>
+    <div class="choose-card fade-up">
+      <span class="choose-emoji">📸</span>
+      <div class="choose-label">For Photography</div>
+      <div class="choose-dest">Washington, USA</div>
+      <div class="choose-why">Mountain backdrops + vast farm fields = the most photogenic tulip destination.</div>
+    </div>
+    <div class="choose-card fade-up">
+      <span class="choose-emoji">🕌</span>
+      <div class="choose-label">For Culture &amp; History</div>
+      <div class="choose-dest">Istanbul, Turkey</div>
+      <div class="choose-why">See tulips where they originated, amid Ottoman palaces and the Bosphorus.</div>
+    </div>
+    <div class="choose-card fade-up">
+      <span class="choose-emoji">🏔️</span>
+      <div class="choose-label">For Scenic Views</div>
+      <div class="choose-dest">Kashmir, India</div>
+      <div class="choose-why">Asia's largest tulip garden set against the magnificent Himalayas.</div>
+    </div>
+    <div class="choose-card fade-up">
+      <span class="choose-emoji">👨‍👩‍👧</span>
+      <div class="choose-label">For Families</div>
+      <div class="choose-dest">Ottawa, Canada</div>
+      <div class="choose-why">Rich history, night light shows, and a million blooms in a safe, friendly city.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PHOTO STRIP 2 ── -->
+<div class="photo-strip">
+  <div class="photo-strip-item"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6024.JPG" alt="Red tulips" loading="lazy"></div>
+  <div class="photo-strip-item"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6139.JPG" alt="Pink tulips" loading="lazy"></div>
+  <div class="photo-strip-item"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6109.JPG" alt="Purple tulips" loading="lazy"></div>
+  <div class="photo-strip-item"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6021.JPG" alt="Yellow tulips" loading="lazy"></div>
+  <div class="photo-strip-item"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6150.JPG" alt="Blue tulips" loading="lazy"></div>
+  <div class="photo-strip-item"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6046.JPG" alt="Red tulips" loading="lazy"></div>
+</div>
+
+<!-- ── TIMING ── -->
+<section class="timing">
+  <div class="timing-left">
+    <span class="section-label" style="color:#a0520a;">Plan Your Visit</span>
+    <h2 class="section-title" style="color:#3a2010;">When to Visit Each Festival</h2>
+    <div class="timing-bars">
+      <div class="timing-bar-item">
+        <div class="timing-bar-label"><span>Texas / India / Oregon</span><span>Feb – Apr</span></div>
+        <div class="timing-bar-track"><div class="timing-bar-fill" style="width:40%;background:var(--tulip-pink);animation-delay:0.1s;"></div></div>
+      </div>
+      <div class="timing-bar-item">
+        <div class="timing-bar-label"><span>Netherlands / Turkey / USA</span><span>March – May</span></div>
+        <div class="timing-bar-track"><div class="timing-bar-fill" style="width:70%;background:var(--tulip-purple);animation-delay:0.3s;"></div></div>
+      </div>
+      <div class="timing-bar-item">
+        <div class="timing-bar-label"><span>Canada / UK</span><span>April – May</span></div>
+        <div class="timing-bar-track"><div class="timing-bar-fill" style="width:85%;background:var(--sun-orange);animation-delay:0.5s;"></div></div>
+      </div>
+      <div class="timing-bar-item">
+        <div class="timing-bar-label"><span>Australia (Southern Hemisphere)</span><span>Sep – Oct</span></div>
+        <div class="timing-bar-track"><div class="timing-bar-fill" style="width:55%;background:var(--spring-green);filter:saturate(1.5);animation-delay:0.7s;"></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="timing-right">
+    <span class="section-label" style="color:#a0520a;display:block;margin-bottom:20px;">Photography &amp; Visit Tips</span>
+    <div class="tips-list">
+      <div class="tip-item">
+        <span class="tip-icon">📅</span>
+        <div>
+          <div class="tip-title">Book Early</div>
+          <div class="tip-desc">Popular festivals like Keukenhof and Skagit Valley sell out weeks in advance. Book tickets as soon as dates are announced.</div>
+        </div>
+      </div>
+      <div class="tip-item">
+        <span class="tip-icon">🌅</span>
+        <div>
+          <div class="tip-title">Visit Early Morning</div>
+          <div class="tip-desc">The best light and fewest crowds are in the first hour after opening. Dew on petals makes for magical photography.</div>
+        </div>
+      </div>
+      <div class="tip-item">
+        <span class="tip-icon">📷</span>
+        <div>
+          <div class="tip-title">Use Natural Light</div>
+          <div class="tip-desc">Shoot during golden hour. A wide angle captures field scale; get low for dramatic foreground color.</div>
+        </div>
+      </div>
+      <div class="tip-item">
+        <span class="tip-icon">🌤️</span>
+        <div>
+          <div class="tip-title">Check Bloom Updates</div>
+          <div class="tip-desc">Bloom timing shifts by 1–2 weeks depending on winter temperatures. Follow farm social accounts for real-time updates.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ── -->
+<section class="faq">
+  <div class="faq-header">
+    <span class="section-label">Common Questions</span>
+    <h2 class="section-title">Everything You Need to Know</h2>
+  </div>
+  <div class="faq-grid">
+    <div class="faq-item fade-up">
+      <div class="faq-q">Where is the most famous tulip festival in the world?</div>
+      <div class="faq-a">Keukenhof Gardens in Lisse, Netherlands, is widely considered the most famous and spectacular tulip festival in the world, attracting over 1.5 million visitors each spring with 7+ million flowers across 79 acres.</div>
+    </div>
+    <div class="faq-item fade-up">
+      <div class="faq-q">When is tulip season around the world?</div>
+      <div class="faq-a">In the Northern Hemisphere, tulip season runs from March through May — earlier in southern regions like Texas and Turkey, later in Canada and the UK. In Australia, the Southern Hemisphere season peaks in September–October.</div>
+    </div>
+    <div class="faq-item fade-up">
+      <div class="faq-q">Are tulip festivals worth visiting?</div>
+      <div class="faq-a">Absolutely. They offer stunning natural beauty, cultural immersion, and unrivaled photography opportunities. Many festivals also include food, music, and local traditions that make them full travel experiences beyond just flowers.</div>
+    </div>
+    <div class="faq-item fade-up">
+      <div class="faq-q">Where can I see tulips in the United States?</div>
+      <div class="faq-a">The Skagit Valley Tulip Festival in Washington State is the premier U.S. destination, held each April. Other notable spots include Holland, Michigan, Woodburn, Oregon, and various farms in Texas that bloom as early as February.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-brand">🌷 World Tulip Festivals</div>
+  <div style="font-size:13px;text-align:center;color:rgba(60,30,10,0.55);">A Global Spring Travel Guide · Bloom timing varies by weather<br>Check local festival websites for exact dates each season</div>
+  <div class="footer-links">
+    <a href="#">Tulip Types Guide</a>
+    <a href="#">U.S. Tulip Guide</a>
+    <a href="#">Tulip Quotes</a>
+  </div>
+</footer>
+
+<script>
+  // Fade-up on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // Animate timing bars on scroll
+  const barObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.querySelectorAll('.timing-bar-fill').forEach(bar => {
+          bar.style.animation = 'none';
+          bar.offsetHeight;
+          bar.style.animation = '';
+        });
+      }
+    });
+  }, { threshold: 0.3 });
+  document.querySelectorAll('.timing').forEach(el => barObserver.observe(el));
+</script>
+</body>
+</html>

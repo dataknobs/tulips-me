@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DIY Tulip Arrangements: Simple Floral Ideas for Every Occasion</title>
+  <meta name="description" content="Learn how to create beautiful DIY tulip arrangements for every occasion. Easy, budget-friendly ideas for home décor, gifts, weddings, and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --white:    #ffffff;
+      --paper:    #fdf9f5;
+      --warm:     #f9f4ee;
+      --blush:    #fdf2f5;
+      --mint:     #f2faf5;
+      --sun:      #fdf8ee;
+      --sky:      #f2f7fd;
+      --lavender: #f5f2fd;
+      --kraft:    #f0e8d8;
+
+      --ink:      #1c1408;
+      --ink-mid:  #4a3820;
+      --ink-soft: #7a6448;
+      --muted:    #a89878;
+      --border:   #ece0d0;
+      --border-lt:#f4ece4;
+
+      --pink:     #d84868;
+      --pink-lt:  #f8b8c8;
+      --red:      #c83030;
+      --yellow:   #d89020;
+      --yellow-lt:#f8d880;
+      --green:    #488858;
+      --green-lt: #a8d0b0;
+      --purple:   #7848a8;
+      --coral:    #d86040;
+      --teal:     #308878;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: 'Inter', sans-serif;
+      font-size: 17px;
+      line-height: 1.75;
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(253,249,245,0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 72px;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .nav-brand {
+      font-family: 'Bitter', serif;
+      font-size: 1.1rem; font-weight: 700; color: var(--ink);
+      display: flex; align-items: center; gap: 10px;
+    }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a {
+      font-size: 13px; font-weight: 500; color: var(--ink-soft);
+      text-decoration: none; letter-spacing: 0.04em; transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--pink); }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(150deg, #fef5f8 0%, #fff8f0 40%, #f5fef8 100%);
+      display: grid; grid-template-columns: 1fr 1fr;
+      min-height: 88vh; overflow: hidden; position: relative;
+    }
+    /* scattered petal decorations */
+    .hero::before {
+      content: '🌷'; position: absolute; top: 60px; right: 52%; font-size: 18px;
+      opacity: 0.12; transform: rotate(-20deg); pointer-events: none;
+    }
+    .hero-left {
+      padding: 96px 64px 80px 80px;
+      display: flex; flex-direction: column; justify-content: center;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--kraft); border: 1.5px solid #d8c8a8;
+      color: var(--yellow); font-size: 10px; font-weight: 700;
+      letter-spacing: 0.28em; text-transform: uppercase;
+      padding: 7px 18px; border-radius: 4px; margin-bottom: 28px; width: fit-content;
+    }
+    .hero h1 {
+      font-family: 'Bitter', serif;
+      font-size: clamp(2.6rem, 4.5vw, 4.2rem); font-weight: 700;
+      line-height: 1.1; color: var(--ink); margin-bottom: 24px;
+    }
+    .hero h1 em { font-style: italic; color: var(--pink); }
+    .hero-sub {
+      font-size: 16px; color: var(--ink-soft); max-width: 480px;
+      line-height: 1.8; margin-bottom: 44px;
+    }
+    .hero-metrics {
+      display: flex; gap: 36px; margin-bottom: 44px;
+    }
+    .hero-metric { text-align: center; }
+    .hero-metric .num {
+      font-family: 'Bitter', serif; font-size: 2.4rem; font-weight: 700;
+      color: var(--pink); line-height: 1; display: block;
+    }
+    .hero-metric .lbl {
+      font-size: 11px; font-weight: 600; color: var(--muted);
+      letter-spacing: 0.1em; text-transform: uppercase;
+    }
+    .hero-metric + .hero-metric { border-left: 1px solid var(--border); padding-left: 36px; }
+    .hero-cta {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: var(--pink); color: var(--white);
+      font-size: 14px; font-weight: 600; letter-spacing: 0.06em;
+      padding: 16px 36px; border-radius: 6px; text-decoration: none;
+      box-shadow: 0 8px 28px rgba(216,72,104,0.28);
+      transition: background 0.2s, transform 0.2s;
+    }
+    .hero-cta:hover { background: var(--red); transform: translateY(-2px); }
+
+    .hero-right {
+      position: relative; overflow: hidden;
+    }
+    .hero-img-grid {
+      display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr;
+      height: 100%; gap: 4px;
+    }
+    .hero-img-grid .hig { overflow: hidden; }
+    .hero-img-grid .hig img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 6s ease; }
+    .hero-img-grid .hig:hover img { transform: scale(1.06); }
+    .hero-img-grid .hig:nth-child(1) { grid-row: span 2; }
+    .hero-right::before {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to right, #fef5f8 0%, transparent 15%);
+      z-index: 1; pointer-events: none;
+    }
+
+    /* ── SNIPPET ── */
+    .snippet-wrap {
+      background: var(--kraft);
+      border-top: 1px solid #d8c8a8; border-bottom: 1px solid #d8c8a8;
+      padding: 48px 80px;
+    }
+    .snippet {
+      background: var(--white); border: 1.5px solid #e0d0b8;
+      border-left: 5px solid var(--yellow); border-radius: 10px;
+      padding: 32px 44px; display: flex; gap: 28px; align-items: flex-start;
+      max-width: 1040px; margin: 0 auto;
+      box-shadow: 0 4px 20px rgba(200,144,32,0.08);
+    }
+    .snippet-icon { font-size: 40px; flex-shrink: 0; }
+    .snippet-label { font-size: 10px; font-weight: 700; letter-spacing: 0.28em; text-transform: uppercase; color: var(--yellow); margin-bottom: 5px; }
+    .snippet h2 { font-family: 'Bitter', serif; font-size: 1.2rem; font-weight: 700; color: var(--ink); margin-bottom: 8px; }
+    .snippet p { font-size: 15px; color: var(--ink-soft); line-height: 1.7; }
+
+    /* ── SHARED ── */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 80px; }
+    .sec-label { font-size: 10px; font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase; color: var(--pink); margin-bottom: 10px; }
+    .sec-title { font-family: 'Bitter', serif; font-size: clamp(2rem, 3.2vw, 2.8rem); font-weight: 700; color: var(--ink); line-height: 1.15; margin-bottom: 14px; }
+    .sec-rule { width: 44px; height: 2px; border-radius: 2px; margin-bottom: 48px; }
+    .sec-sub { font-size: 16px; color: var(--ink-soft); max-width: 600px; margin-bottom: 48px; line-height: 1.8; }
+
+    /* ── BASICS STEPS ── */
+    .basics-section {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 72px 80px;
+    }
+    .basics-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+    .basics-img { border-radius: 16px; overflow: hidden; height: 380px; box-shadow: 0 20px 60px rgba(0,0,0,0.10); }
+    .basics-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .basics-steps { display: flex; flex-direction: column; gap: 0; }
+    .basic-step {
+      display: flex; gap: 20px; align-items: flex-start;
+      padding: 18px 0; border-bottom: 1px solid var(--border-lt);
+      transition: transform 0.2s;
+    }
+    .basic-step:last-child { border-bottom: none; }
+    .basic-step:hover { transform: translateX(4px); }
+    .step-circle {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: var(--pink); color: var(--white);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Bitter', serif; font-size: 1.1rem; font-weight: 700;
+      flex-shrink: 0; box-shadow: 0 4px 12px rgba(216,72,104,0.25);
+    }
+    .basic-step-title { font-family: 'Bitter', serif; font-size: 1rem; font-weight: 700; color: var(--ink); margin-bottom: 3px; }
+    .basic-step-desc { font-size: 13.5px; color: var(--ink-soft); line-height: 1.6; }
+    .basics-note {
+      display: flex; gap: 10px; align-items: flex-start;
+      background: var(--blush); border-left: 3px solid var(--pink-lt);
+      border-radius: 0 8px 8px 0; padding: 14px 16px; margin-top: 20px;
+      font-size: 13px; color: var(--ink-mid); line-height: 1.55; font-style: italic;
+    }
+
+    /* ── 15 ARRANGEMENTS ── */
+    .arr-section { padding: 88px 0 100px; }
+
+    /* occasion filter tabs */
+    .occ-tabs { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 48px; }
+    .occ-tab {
+      padding: 8px 18px; border-radius: 100px;
+      font-size: 12px; font-weight: 600; letter-spacing: 0.05em;
+      border: 1.5px solid var(--border); background: var(--white);
+      color: var(--ink-soft); cursor: default; transition: all 0.2s;
+    }
+    .occ-tab.active, .occ-tab:hover { background: var(--pink); color: var(--white); border-color: var(--pink); }
+
+    /* arrangement cards grid */
+    .arr-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    /* featured card — spans 2 columns */
+    .arr-card {
+      background: var(--white); border: 1.5px solid var(--border-lt);
+      border-radius: 18px; overflow: hidden;
+      transition: box-shadow 0.3s, transform 0.3s;
+      display: flex; flex-direction: column;
+    }
+    .arr-card:hover { box-shadow: 0 16px 48px rgba(0,0,0,0.09); transform: translateY(-4px); }
+    .arr-card.featured { grid-column: span 2; flex-direction: row; }
+    .arr-card.featured .arr-img { width: 48%; flex-shrink: 0; }
+    .arr-card.featured .arr-body { flex: 1; padding: 40px 44px; display: flex; flex-direction: column; justify-content: center; }
+
+    .arr-img { overflow: hidden; }
+    .arr-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s ease; }
+    .arr-card:hover .arr-img img { transform: scale(1.07); }
+    .arr-img.h200 { height: 200px; }
+    .arr-img.h240 { height: 240px; }
+    .arr-img.h280 { height: 280px; }
+
+    .arr-body { padding: 26px 24px; flex: 1; }
+    .arr-num {
+      font-family: 'Bitter', serif; font-size: 0.75rem; font-weight: 700;
+      letter-spacing: 0.15em; color: var(--muted); margin-bottom: 8px; display: flex; align-items: center; gap: 8px;
+    }
+    .arr-occ-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+    .arr-title { font-family: 'Bitter', serif; font-size: 1.2rem; font-weight: 700; color: var(--ink); margin-bottom: 10px; line-height: 1.3; }
+    .arr-desc { font-size: 13.5px; color: var(--ink-soft); line-height: 1.65; margin-bottom: 14px; }
+    .arr-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .arr-tag {
+      font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 4px;
+      letter-spacing: 0.05em;
+    }
+    .arr-style-row {
+      display: flex; gap: 8px; align-items: center; margin-bottom: 10px;
+      font-size: 13px; color: var(--ink-mid); font-weight: 500;
+    }
+    .arr-style-row .style-label { font-size: 10px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); }
+
+    /* ── OCCASION COLOR CODING ── */
+    .occ-everyday  { background: #fff0f4; color: var(--pink); }
+    .occ-romantic  { background: #ffe8ee; color: var(--red); }
+    .occ-celebrate { background: #fff8e0; color: var(--yellow); }
+    .occ-wedding   { background: #f5f0ff; color: var(--purple); }
+    .occ-nature    { background: #e8f5ec; color: var(--green); }
+    .occ-gift      { background: #fff0e8; color: var(--coral); }
+
+    .dot-everyday  { background: var(--pink); }
+    .dot-romantic  { background: var(--red); }
+    .dot-celebrate { background: var(--yellow); }
+    .dot-wedding   { background: var(--purple); }
+    .dot-nature    { background: var(--green); }
+    .dot-gift      { background: var(--coral); }
+
+    /* card accent top border per occasion */
+    .arr-card.ev { border-top: 3px solid var(--pink-lt); }
+    .arr-card.ro { border-top: 3px solid #f8b0b0; }
+    .arr-card.ce { border-top: 3px solid var(--yellow-lt); }
+    .arr-card.we { border-top: 3px solid #c8a8e0; }
+    .arr-card.na { border-top: 3px solid var(--green-lt); }
+    .arr-card.gi { border-top: 3px solid #f8c0a0; }
+
+    /* ── COLOUR MOOD BANNER ── */
+    .mood-banner {
+      background: var(--white);
+      border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+      padding: 72px 80px; margin-bottom: 0;
+    }
+    .mood-inner { max-width: 1200px; margin: 0 auto; }
+    .mood-swatches { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-top: 0; }
+    .mood-swatch {
+      border-radius: 16px; overflow: hidden;
+      transition: transform 0.35s, box-shadow 0.35s;
+    }
+    .mood-swatch:hover { transform: translateY(-6px); box-shadow: 0 16px 44px rgba(0,0,0,0.12); }
+    .mood-swatch img { width: 100%; height: 200px; object-fit: cover; display: block; transition: transform 0.5s; }
+    .mood-swatch:hover img { transform: scale(1.07); }
+    .mood-swatch-body { padding: 18px 16px; }
+    .mood-swatch:nth-child(1) .mood-swatch-body { background: #fff0f4; }
+    .mood-swatch:nth-child(2) .mood-swatch-body { background: #fff8e0; }
+    .mood-swatch:nth-child(3) .mood-swatch-body { background: #f5f0ff; }
+    .mood-swatch:nth-child(4) .mood-swatch-body { background: #e8f5ec; }
+    .mood-swatch:nth-child(5) .mood-swatch-body { background: #fdf2f5; }
+    .mood-color-name { font-family: 'Bitter', serif; font-size: 1rem; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
+    .mood-color-use  { font-size: 12px; color: var(--ink-soft); }
+
+    /* ── PRO TIPS ── */
+    .tips-section { padding: 88px 0 0; }
+    .tips-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-top: 0; }
+    .tip-card {
+      background: var(--white); border: 1.5px solid var(--border-lt); border-radius: 16px;
+      padding: 30px 26px; text-align: center;
+      border-top: 3px solid transparent;
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+    .tip-card:hover { box-shadow: 0 12px 36px rgba(0,0,0,0.08); transform: translateY(-4px); }
+    .tip-card:nth-child(1) { border-top-color: var(--green-lt); }
+    .tip-card:nth-child(2) { border-top-color: var(--pink-lt); }
+    .tip-card:nth-child(3) { border-top-color: var(--yellow-lt); }
+    .tip-card:nth-child(4) { border-top-color: #c0a0d8; }
+    .tip-icon { font-size: 36px; margin-bottom: 14px; display: block; }
+    .tip-title { font-family: 'Bitter', serif; font-size: 1.05rem; font-weight: 700; color: var(--ink); margin-bottom: 8px; }
+    .tip-desc { font-size: 13.5px; color: var(--ink-soft); line-height: 1.65; }
+
+    /* ── MISTAKES & CHECKLIST ── */
+    .mc-section { padding: 72px 0 100px; }
+    .mc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 0; }
+
+    .mistakes-panel {
+      background: #fff5f5; border: 1.5px solid #f0c8c8; border-radius: 20px; padding: 40px 36px;
+    }
+    .panel-head { margin-bottom: 28px; }
+    .panel-head-label { font-size: 10px; font-weight: 700; letter-spacing: 0.28em; text-transform: uppercase; color: var(--red); margin-bottom: 6px; }
+    .panel-head-title { font-family: 'Bitter', serif; font-size: 1.6rem; font-weight: 700; color: var(--ink); }
+    .mistake-item {
+      display: flex; gap: 16px; align-items: flex-start;
+      padding: 18px 0; border-bottom: 1px solid #f8d8d8;
+    }
+    .mistake-item:last-child { border-bottom: none; }
+    .mx {
+      width: 34px; height: 34px; border-radius: 50%;
+      background: #ffe0e0; border: 1.5px solid #f0b8b8;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--red); font-size: 14px; font-weight: 700; flex-shrink: 0;
+    }
+    .mistake-title { font-family: 'Bitter', serif; font-size: 1rem; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
+    .mistake-desc { font-size: 13.5px; color: var(--ink-soft); line-height: 1.6; }
+
+    .checklist-panel {
+      background: var(--mint); border: 1.5px solid #c0e0c8; border-radius: 20px; padding: 40px 36px;
+    }
+    .check-list { display: flex; flex-direction: column; }
+    .check-row {
+      display: flex; align-items: center; gap: 14px;
+      padding: 15px 0; border-bottom: 1px solid #c8e8d0;
+      font-size: 15px; color: var(--ink-mid); font-weight: 500; transition: color 0.2s;
+    }
+    .check-row:last-child { border-bottom: none; }
+    .check-row:hover { color: var(--ink); }
+    .check-box {
+      width: 26px; height: 26px; background: #e8f8ec;
+      border: 2px solid var(--green-lt); border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 13px; color: var(--green); flex-shrink: 0;
+    }
+
+    /* ── PHOTO GALLERY ── */
+    .gallery-section { padding: 0 0 100px; }
+    .gallery-strip {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 220px 220px; gap: 8px;
+    }
+    .gs { border-radius: 14px; overflow: hidden; }
+    .gs img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s; }
+    .gs:hover img { transform: scale(1.07); }
+    .gs:nth-child(1) { grid-column: span 2; }
+    .gs:nth-child(6) { grid-column: span 2; }
+
+    /* ── FAQ ── */
+    .faq-section { padding: 0 0 100px; }
+    .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .faq-card {
+      background: var(--white); border: 1.5px solid var(--border-lt); border-radius: 16px;
+      padding: 30px 28px; transition: box-shadow 0.3s, transform 0.3s, border-color 0.3s;
+    }
+    .faq-card:hover { box-shadow: 0 10px 30px rgba(216,72,104,0.08); transform: translateY(-3px); border-color: var(--pink-lt); }
+    .faq-q {
+      font-family: 'Bitter', serif; font-size: 1.05rem; font-weight: 700;
+      color: var(--ink); margin-bottom: 12px; display: flex; gap: 12px; align-items: flex-start;
+    }
+    .faq-qm {
+      background: var(--blush); border: 1.5px solid var(--pink-lt);
+      color: var(--pink); font-family: 'Bitter', serif;
+      font-size: 0.85rem; font-weight: 700;
+      width: 28px; height: 28px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px;
+    }
+    .faq-a { font-size: 14px; color: var(--ink-soft); line-height: 1.78; padding-left: 40px; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: linear-gradient(150deg, #fef5f8 0%, #fff8f0 40%, #f5fef8 100%);
+      border-top: 2px solid var(--border); padding: 80px 72px; text-align: center;
+    }
+    .footer-tulips { font-size: 28px; letter-spacing: 8px; margin-bottom: 20px; opacity: 0.6; }
+    .footer-title { font-family: 'Bitter', serif; font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 700; color: var(--ink); margin-bottom: 14px; }
+    .footer-title em { font-style: italic; color: var(--pink); }
+    .footer-sub { font-size: 15px; color: var(--ink-soft); margin-bottom: 36px; max-width: 500px; margin-left: auto; margin-right: auto; line-height: 1.8; }
+    .footer-links { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .fl {
+      display: inline-block; font-size: 13px; font-weight: 600; letter-spacing: 0.06em;
+      padding: 13px 28px; border-radius: 6px; text-decoration: none;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .fl:hover { opacity: 0.86; transform: translateY(-2px); }
+    .fl-pink   { background: var(--pink); color: var(--white); box-shadow: 0 6px 20px rgba(216,72,104,0.28); }
+    .fl-yellow { background: var(--yellow); color: var(--white); box-shadow: 0 6px 20px rgba(216,144,32,0.24); }
+    .fl-green  { background: var(--green); color: var(--white); box-shadow: 0 6px 20px rgba(72,136,88,0.24); }
+    .fl-purple { background: var(--purple); color: var(--white); box-shadow: 0 6px 20px rgba(120,72,168,0.24); }
+    .footer-copy { margin-top: 56px; font-size: 12px; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 960px) {
+      nav { padding: 0 24px; }
+      .nav-links { display: none; }
+      .hero { grid-template-columns: 1fr; min-height: auto; }
+      .hero-left { padding: 60px 24px 48px; }
+      .hero-right { height: 280px; }
+      .hero-img-grid { grid-template-columns: 1fr 1fr; grid-template-rows: 140px 140px; }
+      .hero-img-grid .hig:nth-child(1) { grid-row: span 1; }
+      .snippet-wrap { padding: 40px 24px; }
+      .snippet { flex-direction: column; padding: 28px 24px; }
+      .basics-section { padding: 52px 24px; }
+      .basics-inner { grid-template-columns: 1fr; gap: 40px; }
+      .basics-img { height: 240px; }
+      .container { padding: 0 24px; }
+      .arr-grid { grid-template-columns: 1fr 1fr; }
+      .arr-card.featured { flex-direction: column; grid-column: span 2; }
+      .arr-card.featured .arr-img { width: 100%; height: 240px; }
+      .mood-banner { padding: 52px 24px; }
+      .mood-swatches { grid-template-columns: 1fr 1fr; }
+      .tips-grid { grid-template-columns: 1fr 1fr; }
+      .mc-grid { grid-template-columns: 1fr; }
+      .gallery-strip { grid-template-columns: 1fr 1fr; }
+      .gs:nth-child(n) { grid-column: span 1; height: 180px; }
+      .faq-grid { grid-template-columns: 1fr; }
+      footer { padding: 60px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav>
+    <div class="nav-brand">🌷 TulipGuide</div>
+    <ul class="nav-links">
+      <li><a href="#basics">Basics</a></li>
+      <li><a href="#arrangements">15 Ideas</a></li>
+      <li><a href="#tips">Pro Tips</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="hero-left">
+      <div class="hero-badge">✂️ DIY Floral Guide</div>
+      <h1>DIY Tulip Arrangements for <em>Every Occasion</em></h1>
+      <p class="hero-sub">Tulips are the most beginner-friendly flower for DIY arrangements — naturally elegant, minimal fuss, maximum beauty. From everyday home décor to weddings, here are 15 ideas anyone can make.</p>
+      <div class="hero-metrics">
+        <div class="hero-metric">
+          <span class="num">15</span>
+          <span class="lbl">Arrangement Ideas</span>
+        </div>
+        <div class="hero-metric">
+          <span class="num">6</span>
+          <span class="lbl">Occasions Covered</span>
+        </div>
+        <div class="hero-metric">
+          <span class="num">5</span>
+          <span class="lbl">Basic Steps</span>
+        </div>
+      </div>
+      <a class="hero-cta" href="#arrangements">Browse All 15 Ideas →</a>
+    </div>
+    <div class="hero-right">
+      <div class="hero-img-grid">
+        <div class="hig"><img src="https://storage.googleapis.com/kreatewebsites/photos1000/IMG_6134.JPG" alt="Mixed colour tulip arrangement" loading="eager" /></div>
+        <div class="hig"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6072.JPG" alt="Red romantic tulips" loading="eager" /></div>
+        <div class="hig"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6020.JPG" alt="Yellow cheerful tulips" loading="eager" /></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SNIPPET ── */
+  <div class="snippet-wrap">
+    <div class="snippet">
+      <div class="snippet-icon">✂️</div>
+      <div>
+        <div class="snippet-label">Quick Answer</div>
+        <h2>How do you arrange tulips at home?</h2>
+        <p>Trim the stems at an angle, remove any extra leaves, place in a clean vase with fresh water, and keep the arrangement loose and natural. Tulips look best with minimal styling — they should never look too "perfect". Natural is always best.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── BASIC STEPS ── -->
+  <div class="basics-section" id="basics">
+    <div class="basics-inner">
+      <div class="basics-img">
+        <img src="https://storage.googleapis.com/kreatewebsites/photos700/IMG_6133.JPG" alt="Basic tulip arrangement steps" loading="lazy" />
+      </div>
+      <div>
+        <div class="sec-label" style="color:var(--green);">Before You Start</div>
+        <div class="sec-title" style="font-size:2rem;">5 Basic Steps for Any Tulip Arrangement</div>
+        <div class="sec-rule" style="background:var(--green);margin-bottom:28px;"></div>
+        <div class="basics-steps">
+          <div class="basic-step">
+            <div class="step-circle" style="background:var(--green);">1</div>
+            <div>
+              <div class="basic-step-title">Trim Stems at an Angle</div>
+              <div class="basic-step-desc">Cut 1–2cm from each stem at a 45° angle. Do this under running water to prevent air bubbles blocking water uptake.</div>
+            </div>
+          </div>
+          <div class="basic-step">
+            <div class="step-circle" style="background:var(--teal);">2</div>
+            <div>
+              <div class="basic-step-title">Remove Extra Leaves</div>
+              <div class="basic-step-desc">Strip off any leaves that would sit below the water line — they rot quickly and cloud the water, shortening vase life.</div>
+            </div>
+          </div>
+          <div class="basic-step">
+            <div class="step-circle" style="background:var(--yellow);">3</div>
+            <div>
+              <div class="basic-step-title">Use a Clean Vase</div>
+              <div class="basic-step-desc">Rinse the vase thoroughly before filling — bacteria from a previous arrangement will shorten the life of your fresh tulips significantly.</div>
+            </div>
+          </div>
+          <div class="basic-step">
+            <div class="step-circle" style="background:var(--coral);">4</div>
+            <div>
+              <div class="basic-step-title">Fill with Fresh Cold Water</div>
+              <div class="basic-step-desc">Tulips prefer cool water. Fill the vase about two-thirds full. Add a drop of bleach or flower food if available to prevent bacteria.</div>
+            </div>
+          </div>
+          <div class="basic-step">
+            <div class="step-circle" style="background:var(--pink);">5</div>
+            <div>
+              <div class="basic-step-title">Arrange Loosely — Then Step Back</div>
+              <div class="basic-step-desc">Place stems in the vase without fussing. Step back, adjust a stem or two, and stop. Over-arranging is the most common beginner mistake.</div>
+            </div>
+          </div>
+        </div>
+        <div class="basics-note">💡 Tulips should never look too "perfect" — their natural lean and curve is exactly what makes them beautiful.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 15 ARRANGEMENTS ── -->
+  <div class="container" id="arrangements">
+    <div class="arr-section">
+      <div class="sec-label">All 15 Ideas</div>
+      <div class="sec-title">DIY Tulip Arrangements for Every Occasion</div>
+      <div class="sec-rule"></div>
+
+      <!-- Occasion legend -->
+      <div class="occ-tabs">
+        <div class="occ-tab active" style="background:var(--pink);color:var(--white);border-color:var(--pink);">🌷 Everyday</div>
+        <div class="occ-tab" style="background:#ffe8ee;color:var(--red);border-color:#f0b8b8;">💕 Romantic</div>
+        <div class="occ-tab" style="background:#fff8e0;color:var(--yellow);border-color:#f0d890;">🎉 Celebrate</div>
+        <div class="occ-tab" style="background:#f5f0ff;color:var(--purple);border-color:#c8a8e0;">💍 Wedding</div>
+        <div class="occ-tab" style="background:#e8f5ec;color:var(--green);border-color:#a8d0b0;">🌿 Nature</div>
+        <div class="occ-tab" style="background:#fff0e8;color:var(--coral);border-color:#f0c8a0;">🎁 Gift</div>
+      </div>
+
+      <div class="arr-grid">
+
+        <!-- 1. MINIMALIST — FEATURED -->
+        <div class="arr-card featured ev">
+          <div class="arr-img">
+            <img src="https://storage.googleapis.com/kreatewebsites/photos700/IMG_6078.JPG" alt="Everyday minimalist tulip arrangement" loading="lazy" />
+          </div>
+          <div class="arr-body">
+            <div class="arr-num"><span class="arr-occ-dot dot-everyday"></span> 01 · Everyday</div>
+            <div class="arr-title">Everyday Minimalist Arrangement</div>
+            <div class="arr-style-row"><span class="style-label">Style:</span> 5–10 stems · Clear glass vase · Loose and airy</div>
+            <div class="arr-desc">The foundation of all tulip styling. A handful of stems in a simple clear vase, left to fall naturally. No overcrowding, no forcing — just effortless spring beauty for living rooms, coffee tables, and everyday home décor.</div>
+            <div class="arr-tags">
+              <span class="arr-tag occ-everyday">Living Room</span>
+              <span class="arr-tag occ-everyday">Coffee Table</span>
+              <span class="arr-tag occ-everyday">Everyday</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. ROMANTIC -->
+        <div class="arr-card ro">
+          <div class="arr-img h240">
+            <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6073.JPG" alt="Romantic red tulip arrangement" loading="lazy" />
+          </div>
+          <div class="arr-body">
+            <div class="arr-num"><span class="arr-occ-dot dot-romantic"></span> 02 · Romantic</div>
+            <div class="arr-title">Romantic Red & Pink Arrangement</div>
+            <div class="arr-style-row"><span class="style-label">Style:</span> Red or pink tulips · Soft rounded shape</div>
+            <div class="arr-desc">Deep red or hot pink tulips in a rounded vase arrangement — lush, warm, and unmistakably romantic. Add sprigs of eucalyptus for a softer effect.</div>
+            <div class="arr-tags">
+              <span class="arr-tag occ-romantic">Date Night</span>
+              <span class="arr-tag occ-romantic">Anniversary</span>
+              <span class="arr-tag occ-romantic">Valentine's</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. BRIGHT & CHEERFUL -->
+        <div class="arr-card ce">
+          <div class="arr-img h240">
+            <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6021.JPG" alt="Bright cheerful yellow tulips" loading="lazy" />
+          </div>
+          <div class="arr-body">
+            <div class="arr-num"><span class="arr-occ-dot dot-celebrate"></span> 03 · Celebrate</div>
+            <div class="arr-title">Bright & Cheerful Mixed Arrangement</div>
+            <div class="arr-style-row"><span class="style-label">Style:</span> Yellow, orange & pink · Vibrant palette</div>
+            <div class="arr-desc">Mix yellow, coral, and pink tulips for a vibrant, joyful arrangement full of spring energy. Tall stems in a clear vase let the colours speak for themselves.</div>
+            <div class="arr-tags">
+              <span class="arr-tag occ-celebrate">Birthdays</span>
+              <span class="arr-tag occ-celebrate">Celebrations</span>
+              <span class="arr-tag occ-celebrate">Spring</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. ELEGANT WHITE -->
+        <div class="arr-card we">
+          <div class="arr-img h240">
+            <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6173.JPG" alt="Elegant white tulip arrangement" loading="lazy" />
+          </div>
+          <div class="arr-body">
+            <div class="arr-num"><span class="arr-occ-dot dot-wedding"></span> 04 · Wedding</div>
+            <div class="arr-title">Elegant White Tulip Arrangement</div>
+            <div class="arr-style-row"><span class="style-label">Style:</span> All white · Clean modern vase</div>
+            <div class="arr-desc">Pure white tulips in a sleek, tall vase — crisp, sophisticated, and timeless. The most versatile and universally elegant tulip arrangement you can make.</div>
+            <div class="arr-tags">
+              <span class="arr-tag occ-wedding">Weddings</span>
+              <span class="arr-tag occ-wedding">Formal Events</span>
+              <span class="arr-tag occ-wedding">Minimalist</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. RUSTIC -->
+        <div class="arr-card na">
+          <div class="arr-img h240">
+            <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6170.JPG" alt="Rustic tulip mason jar arrangement" loading="lazy" />
+          </div>
+          <div class="arr-body">
+            <div class="arr-num"><span class="arr-occ-dot dot-nature"></span> 05 · Nature</div>
+            <div class="arr-title">Rustic Mason Jar Arrangement</div>
+            <div class="arr-style-row"><span class="style-label">Style:</span> Tulips in mason jars · Greenery added</div>
+            <div class="arr-desc">Tulips in a simple mason jar or ceramic pitcher with sprigs of eucalyptus. Perfectly imperfect — this look suits farmhouse kitchens and casual gatherings beautifully.</div>
+            <div class="arr-tags">
+              <span class="arr-tag occ-nature">Farmhouse</span>
+              <span class="arr-tag occ-nature">Casual</span>
+              <span class="arr-tag occ-nature">Kitchen</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. CENTERPIECE — FEATURED -->
+        <div class="arr-card featured ce" style="margin-top:0;">
+          <div class="arr-img">
+            <img src="https://storage.googleapis.com/kreatewebsites/photos700/IMG_6046.JPG" alt="Dining table tulip centerpiece" loading="lazy" />
+          </div>
+          <div class="arr-body">
+            <div class="arr-num"><span class="arr-occ-dot dot-celebrate"></span> 06 · Dining</div>
+            <div class="arr-title">Tulip Centerpiece Arrangement</div>
+            <div class="arr-style-row"><span class="style-label">Style:</span> Low, wide vase · Balanced shape · Table-height</div>
+            <div class="arr-desc">A low, wide-mouthed vase with tulips fanned out in a balanced shape creates the perfect dining table centerpiece. Keep it below eye-level so it never blocks conversation. Mix 2–3 complementary colours for visual richness without being distracting. Pair with taper candles on either side for evening warmth.</div>
+            <div class="arr-tags">
+              <span class="arr-tag occ-celebrate">Dining Table</span>
+              <span class="arr-tag occ-celebrate">Dinner Party</span>
+              <span class="arr-tag occ-celebrate">Entertaining</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. GIFT BOUQUET -->
+        <div class="arr-card gi">
+          <div class="arr-img h200">
+            <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6138.JPG" alt="Tulip gift bouquet wrapped" loading="lazy" />
+          </div>
+          <div class="arr-body">
+            <div class="arr-num"><span class="arr-occ-dot dot-gift"></span> 07 · Gift</div>
+            <div class="arr-title">DIY Tulip Gift Bouquet</div>
+            <div class="arr-style-row"><span class="style-label">Style:</span> Wrapped in kraft paper · Tied with ribbon</div>
+            <div class="arr-desc">Gather 10–15 tulips, wrap loosely in kraft paper, secure with twine or ribbon. The simplest and most beautiful gift arrangement — no vase or florist skills needed.</div>
+            <div class="arr-tags">
+              <span class="arr-tag occ-gift">Gifts</span>
+              <span class="arr-tag occ-gift">Thank You</span>
+              <span class="arr-tag occ-gift">Birthdays</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. GREENERY -->
+        <div class="arr-card na">
+          <div class="arr-img h200">
+            <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6149.JPG" alt="Tulip and greenery arrangement" loading="lazy" />
+          </div>
+          <div class="arr-body">
+            <div class="arr-num"><span class="arr-occ-dot dot-nature"></span> 08 · Nature</div>
+            <div class="arr-title">Tulip + Greenery Arrangement</div>
+            <div class="arr-style-row"><span class="style-label">Style:</span> Tulips with eucalyptus or ferns</div>
+            <div class="arr-desc">Add eucalyptus sprigs, fern fronds, or olive branches to a tulip arrangement for texture and depth. Greenery makes a modest bunch look full and florist-quality.</div>
+            <div class="arr-tags">
+              <span class="arr-tag occ-nature">Organic Look</span>
+              <span class="arr-tag occ-nature">Any Room</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. FLOATING -->
+        <div class="arr-card ev">
+          <div class="arr-img h200">
+            <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6105.JPG" alt="Floating tulip arrangement bowl" loading="lazy" />
+          </div>
+          <div class="arr-body">
+            <div class="arr-num"><span class="arr-occ-dot dot-everyday"></span> 09 · Unique</div>
+            <div class="arr-title">Floating Tulip Arrangement</div>
+            <div class="arr-style-row"><span class="style-label">Style:</span> Tulip heads in shallow water bowl</div>
+            <div class="arr-desc">Place tulip heads (cut short) in a wide, shallow bowl filled with water. Add floating candles or scattered petals for an ethereal, unexpected centrepiece.</div>
+            <div class="arr-tags">
+              <span class="arr-tag occ-everyday">Events</span>
+              <span class="arr-tag occ-everyday">Unique Display</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10. MONOCHROME -->
+        <div class="arr-card ev">
+          <div class="arr-img h200">
+            <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6104.JPG" alt="Monochrome purple tulip arrangement" loading="lazy" />
+          </div>
+          <div class="arr-body">
+            <div class="arr-num"><span class="arr-occ-dot dot-everyday"></span> 10 · Modern</div>
+            <div class="arr-title">Monochrome Tulip Arrangement</div>
+            <div class="arr-style-row"><span class="style-label">Style:</span> Single colour only · Strong visual impact</div>
+            <div class="arr-desc">Commit to one colour — all purple for drama, all yellow for joy, all white for purity. Monochrome arrangements feel intentional, sophisticated, and designer.</div>
+            <div class="arr-tags">
+              <span class="arr-tag occ-everyday">Modern Homes</span>
+              <span class="arr-tag occ-everyday">Clean Aesthetic</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11. SPRING MIXED -->
+        <div class="arr-card ce">
+          <div class="arr-img h200">
+            <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6069.JPG" alt="Spring mixed flower arrangement" loading="lazy" />
+          </div>
+          <div class="arr-body">
+            <div class="arr-num"><span class="arr-occ-dot dot-celebrate"></span> 11 · Spring</div>
+            <div class="arr-title">Spring Mixed Flower Arrangement</div>
+            <div class="arr-style-row"><span class="style-label">Style:</span> Tulips + daffodils + hyacinths</div>
+            <div class="arr-desc">Combine tulips with other spring flowers for a full, layered, seasonal display. Mix heights and colours freely — this is spring in a vase.</div>
+            <div class="arr-tags">
+              <span class="arr-tag occ-celebrate">Seasonal</span>
+              <span class="arr-tag occ-celebrate">Spring Décor</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12. WEDDING FEATURED -->
+        <div class="arr-card featured we">
+          <div class="arr-img">
+            <img src="https://storage.googleapis.com/kreatewebsites/photos700/IMG_6135.JPG" alt="Wedding tulip bridal arrangement" loading="lazy" />
+          </div>
+          <div class="arr-body">
+            <div class="arr-num"><span class="arr-occ-dot dot-wedding"></span> 12 · Wedding</div>
+            <div class="arr-title">Wedding Tulip Arrangement</div>
+            <div class="arr-style-row"><span class="style-label">Style:</span> Soft pastel tulips · Balanced bouquet</div>
+            <div class="arr-desc">Soft pastel tulips — blush, ivory, and pale lavender — arranged in a rounded, balanced hand-tied bouquet. Hold stems together, trim to even length, wrap with satin ribbon, and secure with a pearl pin. Add eucalyptus or ranunculus for depth. Simple enough for DIY, beautiful enough for the aisle.</div>
+            <div class="arr-tags">
+              <span class="arr-tag occ-wedding">Bridal Bouquet</span>
+              <span class="arr-tag occ-wedding">Ceremony</span>
+              <span class="arr-tag occ-wedding">Pastel</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 13. SMALL SPACE -->
+        <div class="arr-card ev">
+          <div class="arr-img h200">
+            <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6022.JPG" alt="Small space desk tulip arrangement" loading="lazy" />
+          </div>
+          <div class="arr-body">
+            <div class="arr-num"><span class="arr-occ-dot dot-everyday"></span> 13 · Small Space</div>
+            <div class="arr-title">Small Space Arrangements</div>
+            <div class="arr-style-row"><span class="style-label">Style:</span> 1–3 stems · Small bud vase</div>
+            <div class="arr-desc">A single stem in a slender bud vase on a desk, bathroom shelf, or bedside table. Compact, elegant, and perfectly suited to apartments and smaller rooms.</div>
+            <div class="arr-tags">
+              <span class="arr-tag occ-everyday">Desk</span>
+              <span class="arr-tag occ-everyday">Bathroom</span>
+              <span class="arr-tag occ-everyday">Apartment</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 14. LAYERED -->
+        <div class="arr-card na">
+          <div class="arr-img h200">
+            <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6095.JPG" alt="Layered height tulip arrangement" loading="lazy" />
+          </div>
+          <div class="arr-body">
+            <div class="arr-num"><span class="arr-occ-dot dot-nature"></span> 14 · Advanced</div>
+            <div class="arr-title">Layered Height Arrangement</div>
+            <div class="arr-style-row"><span class="style-label">Style:</span> Mixed heights · Greenery base</div>
+            <div class="arr-desc">Vary stem heights by 5–10cm from back to front, with greenery filling the base. Creates depth, visual interest, and a professional florist look.</div>
+            <div class="arr-tags">
+              <span class="arr-tag occ-nature">Professional Look</span>
+              <span class="arr-tag occ-nature">Any Occasion</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 15. ENTRYWAY -->
+        <div class="arr-card gi">
+          <div class="arr-img h200">
+            <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6011.JPG" alt="Bold entryway tulip arrangement" loading="lazy" />
+          </div>
+          <div class="arr-body">
+            <div class="arr-num"><span class="arr-occ-dot dot-gift"></span> 15 · Entryway</div>
+            <div class="arr-title">Seasonal Entryway Statement</div>
+            <div class="arr-style-row"><span class="style-label">Style:</span> Bold colours · Larger vase · Tall stems</div>
+            <div class="arr-desc">A tall vase of bold red or vivid pink tulips on a console or entry table — the first thing guests see. Make it count. Go tall, go bold, go plentiful.</div>
+            <div class="arr-tags">
+              <span class="arr-tag occ-gift">Entryway</span>
+              <span class="arr-tag occ-gift">Welcome</span>
+              <span class="arr-tag occ-gift">Statement</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ── COLOUR MOOD ── -->
+  <div class="mood-banner">
+    <div class="mood-inner">
+      <div class="sec-label" style="color:var(--yellow);">Colour Guide</div>
+      <div class="sec-title" style="font-size:2rem;margin-bottom:14px;">Choose Your Colour by Occasion</div>
+      <div class="sec-rule" style="background:var(--yellow);"></div>
+      <div class="mood-swatches">
+        <div class="mood-swatch">
+          <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6032.JPG" alt="Red tulips" loading="lazy" />
+          <div class="mood-swatch-body">
+            <div class="mood-color-name">🔴 Red</div>
+            <div class="mood-color-use">Love · Romance · Drama</div>
+          </div>
+        </div>
+        <div class="mood-swatch">
+          <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6064.JPG" alt="Yellow tulips" loading="lazy" />
+          <div class="mood-swatch-body">
+            <div class="mood-color-name">💛 Yellow</div>
+            <div class="mood-color-use">Joy · Celebration · Spring</div>
+          </div>
+        </div>
+        <div class="mood-swatch">
+          <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6106.JPG" alt="Purple tulips" loading="lazy" />
+          <div class="mood-swatch-body">
+            <div class="mood-color-name">💜 Purple</div>
+            <div class="mood-color-use">Luxury · Elegance · Formal</div>
+          </div>
+        </div>
+        <div class="mood-swatch">
+          <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6103.JPG" alt="Purple-pink tulips" loading="lazy" />
+          <div class="mood-swatch-body">
+            <div class="mood-color-name">🌿 Mixed</div>
+            <div class="mood-color-use">Abundance · Variety · Fun</div>
+          </div>
+        </div>
+        <div class="mood-swatch">
+          <img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6136.JPG" alt="Pink tulips" loading="lazy" />
+          <div class="mood-swatch-body">
+            <div class="mood-color-name">🩷 Pink</div>
+            <div class="mood-color-use">Softness · Weddings · Gifts</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── PRO TIPS ── -->
+  <div class="container" id="tips">
+    <div class="tips-section">
+      <div class="sec-label" style="color:var(--green);">Expert Advice</div>
+      <div class="sec-title">Pro Tips for Stunning Arrangements</div>
+      <div class="sec-rule" style="background:var(--green);"></div>
+      <div class="tips-grid">
+        <div class="tip-card">
+          <span class="tip-icon">🌿</span>
+          <div class="tip-title">Let Them Bend Naturally</div>
+          <div class="tip-desc">Tulips grow and curve after cutting — this adds real character. Resist the urge to straighten stems. Their natural lean is part of what makes them beautiful.</div>
+        </div>
+        <div class="tip-card">
+          <span class="tip-icon">💧</span>
+          <div class="tip-title">Change Water Daily</div>
+          <div class="tip-desc">Fresh water every day is the single most effective step for longevity. Add a small drop of bleach or a copper coin to prevent bacteria buildup.</div>
+        </div>
+        <div class="tip-card">
+          <span class="tip-icon">✂️</span>
+          <div class="tip-title">Trim Every Few Days</div>
+          <div class="tip-desc">Re-cut stems at a 45° angle every 2–3 days to keep water channels clear and stems fresh. Even a centimetre makes a meaningful difference.</div>
+        </div>
+        <div class="tip-card">
+          <span class="tip-icon">🌡️</span>
+          <div class="tip-title">Avoid Heat & Direct Sun</div>
+          <div class="tip-desc">Keep arrangements in cool, bright spots — not on radiators, south-facing windowsills, or near TV sets. Cool rooms = longer lasting blooms.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── MISTAKES & CHECKLIST ── -->
+  <div class="container">
+    <div class="mc-section">
+      <div class="mc-grid">
+        <div class="mistakes-panel">
+          <div class="panel-head">
+            <div class="panel-head-label">Common Pitfalls</div>
+            <div class="panel-head-title">DIY Mistakes to Avoid</div>
+          </div>
+          <div class="mistake-item">
+            <div class="mx">✕</div>
+            <div>
+              <div class="mistake-title">Overcrowding Arrangements</div>
+              <div class="mistake-desc">Too many stems crammed together prevent each tulip from expressing its natural shape and movement. Use 5–10 stems for a standard vase — more isn't always more with tulips.</div>
+            </div>
+          </div>
+          <div class="mistake-item">
+            <div class="mx">✕</div>
+            <div>
+              <div class="mistake-title">Overdesigning the Arrangement</div>
+              <div class="mistake-desc">Tulips look best in simple, natural setups. The more you fuss and rearrange, the worse it looks. Place stems, step back, make one small adjustment, and stop.</div>
+            </div>
+          </div>
+          <div class="mistake-item">
+            <div class="mx">✕</div>
+            <div>
+              <div class="mistake-title">Ignoring Water Care</div>
+              <div class="mistake-desc">Forgetting to change water is the fastest way to shorten your arrangement's life. Dirty water breeds bacteria that block stems and causes tulips to wilt days earlier than they should.</div>
+            </div>
+          </div>
+          <div class="mistake-item">
+            <div class="mx">✕</div>
+            <div>
+              <div class="mistake-title">Choosing the Wrong Vase Size</div>
+              <div class="mistake-desc">A vase too wide lets stems splay uncontrollably; too narrow forces them into an unnatural bunch. Match vase width to the number of stems — as a guide, one finger of space per stem.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="checklist-panel">
+          <div class="panel-head">
+            <div class="panel-head-label" style="color:var(--green);">Quick Reference</div>
+            <div class="panel-head-title">DIY Arrangement Checklist</div>
+          </div>
+          <div class="check-list">
+            <div class="check-row"><div class="check-box">✓</div>Trim stems at 45° before placing in vase</div>
+            <div class="check-row"><div class="check-box">✓</div>Remove leaves below the waterline</div>
+            <div class="check-row"><div class="check-box">✓</div>Use a clean vase with fresh cold water</div>
+            <div class="check-row"><div class="check-box">✓</div>Keep arrangement loose — don't overcrowd</div>
+            <div class="check-row"><div class="check-box">✓</div>Match tulip colours to the occasion</div>
+            <div class="check-row"><div class="check-box">✓</div>Use odd numbers of stems (5, 7, 9, 11)</div>
+            <div class="check-row"><div class="check-box">✓</div>Change water daily</div>
+            <div class="check-row"><div class="check-box">✓</div>Re-trim stems every 2–3 days</div>
+            <div class="check-row"><div class="check-box">✓</div>Keep away from heat and direct sun</div>
+            <div class="check-row"><div class="check-box">✓</div>Let tulips lean and curve naturally</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── GALLERY ── -->
+  <div class="container">
+    <div class="gallery-section">
+      <div class="sec-label">Inspiration Gallery</div>
+      <div class="sec-title" style="margin-bottom:32px;">Tulip Arrangements in Every Colour</div>
+      <div class="gallery-strip">
+        <div class="gs"><img src="https://storage.googleapis.com/kreatewebsites/photos700/IMG_6132.JPG" alt="Pink arrangement" loading="lazy" /></div>
+        <div class="gs"><img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6071.JPG" alt="Yellow arrangement" loading="lazy" /></div>
+        <div class="gs"><img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6094.JPG" alt="Purple arrangement" loading="lazy" /></div>
+        <div class="gs"><img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6158.JPG" alt="Blue accent" loading="lazy" /></div>
+        <div class="gs"><img src="https://storage.googleapis.com/kreatewebsites/photos700/IMG_6154.JPG" alt="Pink blush" loading="lazy" /></div>
+        <div class="gs"><img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6025.JPG" alt="Red tulips" loading="lazy" /></div>
+        <div class="gs"><img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6155.JPG" alt="Yellow late bloom" loading="lazy" /></div>
+        <div class="gs"><img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6137.JPG" alt="Pink garden" loading="lazy" /></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── FAQ ── -->
+  <div class="container" id="faq">
+    <div class="faq-section">
+      <div class="sec-label">FAQ</div>
+      <div class="sec-title">DIY Tulip Arrangement Questions Answered</div>
+      <div class="sec-rule"></div>
+      <div class="faq-grid">
+        <div class="faq-card">
+          <div class="faq-q"><span class="faq-qm">Q</span>How many tulips should be in an arrangement?</div>
+          <div class="faq-a">Typically 5–15 stems depending on vase size and the look you want. Use odd numbers — 5, 7, 9, or 11 stems — for the most natural appearance. A narrow bud vase works with 1–3 stems; a wide, low bowl looks best with 12–15.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q"><span class="faq-qm">Q</span>How long do tulip arrangements last?</div>
+          <div class="faq-a">Tulips typically last 5–10 days in a vase with proper care. Change water daily, trim stems every 2–3 days, keep in a cool location away from heat and direct sun, and buy fresh firm buds rather than fully open blooms for maximum vase life.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q"><span class="faq-qm">Q</span>Do tulips need flower food?</div>
+          <div class="faq-a">Flower food is not strictly required, but it can help extend freshness by 1–2 days. If you don't have flower food, a small drop of household bleach in the water achieves a similar result by slowing bacterial growth. Clean water changed daily is the most important factor.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q"><span class="faq-qm">Q</span>Can you mix tulips with other flowers?</div>
+          <div class="faq-a">Yes — tulips pair beautifully with many spring flowers. Daffodils, hyacinths, ranunculus, and sweet peas all complement tulips well. For greenery, eucalyptus, ferns, and olive branches add texture and a natural organic feel. Avoid mixing with flowers that have very different water needs.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q"><span class="faq-qm">Q</span>Why do my tulips droop in the vase?</div>
+          <div class="faq-a">Drooping is usually caused by stem blockage, warm room temperature, or stale water. Re-cut stems under water, change to fresh cold water, and move to a cooler spot. For stubborn drooping, wrap the top half of stems tightly in newspaper for 2–3 hours in fresh water — this helps them stand upright again.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q"><span class="faq-qm">Q</span>What's the easiest DIY tulip arrangement for a beginner?</div>
+          <div class="faq-a">The everyday minimalist arrangement — 7 stems of the same colour in a clear glass vase, left to fall naturally. Trim stems to a similar length, remove leaves below the water line, place loosely in fresh water, and do nothing else. Step back and enjoy. It takes about 2 minutes and looks genuinely beautiful.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-tulips">🌷 🌷 🌷</div>
+    <div class="footer-title">Every Occasion <em>Deserves</em> Fresh Tulips</div>
+    <p class="footer-sub">From a quiet Sunday morning vase to a wedding centrepiece — tulips are the most joyful, accessible, and beautiful DIY flower there is. Start arranging.</p>
+    <div class="footer-links">
+      <a class="fl fl-pink"   href="style-home-with-tulips.html">🌷 Style Your Home</a>
+      <a class="fl fl-yellow" href="spring-decorating-ideas-tulips.html">🌷 Spring Décor Ideas</a>
+      <a class="fl fl-green"  href="tulip-care-after-bloom.html">🌷 Care After Bloom</a>
+      <a class="fl fl-purple" href="tulip-wedding-ideas.html">🌷 Wedding Ideas</a>
+    </div>
+    <div class="footer-copy">🌷 The Complete Tulip Guide Series — Growing · Caring · Decorating · Celebrating · Arranging</div>
+  </footer>
+
+</body>
+</html>

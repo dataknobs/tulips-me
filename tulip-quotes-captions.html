@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>100 Tulip Quotes & Captions for Instagram, Spring & Love</title>
+  <meta name="description" content="Looking for tulip quotes and captions? Discover 100 beautiful, short, romantic, and aesthetic tulip captions perfect for Instagram and spring vibes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Gloock:ital@0;1&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --white:   #ffffff;
+      --ivory:   #fefcf8;
+      --blush:   #fdf1f5;
+      --lavender:#f7f2ff;
+      --sun:     #fffcee;
+      --mint:    #f1faf4;
+      --sky:     #eef7ff;
+
+      --ink:     #160c14;
+      --ink-mid: #3a1e32;
+      --ink-soft:#7a5068;
+      --muted:   #b090a0;
+      --border:  #f0dde8;
+
+      /* category colours */
+      --cat-short:  #d83060;
+      --cat-rom:    #b83060;
+      --cat-spring: #c89020;
+      --cat-aes:    #8060c0;
+      --cat-deep:   #206080;
+      --cat-fun:    #c86030;
+      --cat-self:   #309060;
+      --cat-insta:  #d04080;
+      --cat-min:    #708090;
+      --cat-bonus:  #a050a0;
+
+      --pink:    #d83060;
+      --gold:    #c89020;
+      --purple:  #8060c0;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--ivory);
+      color: var(--ink);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(254,252,248,0.96);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 64px;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
+    .nav-brand {
+      font-family: 'Abril Fatface', serif;
+      font-size: 1.25rem; color: var(--ink);
+      display: flex; align-items: center; gap: 10px; letter-spacing: 0.02em;
+    }
+    .nav-links { display: flex; gap: 24px; list-style: none; }
+    .nav-links a {
+      font-size: 12px; font-weight: 600; color: var(--ink-soft);
+      text-decoration: none; letter-spacing: 0.06em; text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--pink); }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      background: var(--ink);
+      overflow: hidden;
+      min-height: 88vh;
+      display: flex; align-items: center; justify-content: center;
+    }
+
+    /* collage of photos behind */
+    .hero-photos {
+      position: absolute; inset: 0;
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 0; z-index: 0;
+    }
+    .hero-photos .hp { overflow: hidden; }
+    .hero-photos .hp img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+      filter: brightness(0.35) saturate(0.7);
+      transition: filter 6s ease;
+    }
+    .hero-photos .hp:hover img { filter: brightness(0.45) saturate(0.9); }
+
+    .hero-overlay {
+      position: absolute; inset: 0; z-index: 1;
+      background: radial-gradient(ellipse at center, rgba(22,12,20,0.4) 0%, rgba(22,12,20,0.75) 100%);
+    }
+    /* pink glow blob */
+    .hero-glow {
+      position: absolute; z-index: 1;
+      width: 600px; height: 600px; border-radius: 50%;
+      background: radial-gradient(circle, rgba(216,48,96,0.18) 0%, transparent 70%);
+      top: 50%; left: 50%; transform: translate(-50%, -50%);
+      pointer-events: none;
+    }
+
+    .hero-body {
+      position: relative; z-index: 2;
+      text-align: center; padding: 80px 60px;
+      max-width: 900px;
+    }
+    .hero-pre {
+      font-size: 10px; font-weight: 700; letter-spacing: 0.4em; text-transform: uppercase;
+      color: rgba(248,180,200,0.8); margin-bottom: 24px;
+      display: flex; align-items: center; justify-content: center; gap: 16px;
+    }
+    .hero-pre::before, .hero-pre::after {
+      content: ''; width: 40px; height: 1px; background: rgba(248,180,200,0.3);
+    }
+    .hero h1 {
+      font-family: 'Abril Fatface', serif;
+      font-size: clamp(3rem, 7vw, 7rem); line-height: 0.95;
+      color: var(--white); margin-bottom: 28px; letter-spacing: -0.02em;
+    }
+    .hero h1 .accent { color: #f8b4c8; }
+    .hero-sub {
+      font-size: 16px; color: rgba(255,255,255,0.7);
+      max-width: 520px; margin: 0 auto 40px; line-height: 1.85;
+    }
+    /* big quote spotlight */
+    .hero-quote {
+      display: inline-block;
+      font-family: 'Gloock', serif; font-style: italic;
+      font-size: clamp(1.2rem, 2.5vw, 2rem); color: #f8d0e0;
+      border-top: 1px solid rgba(248,180,200,0.3);
+      border-bottom: 1px solid rgba(248,180,200,0.3);
+      padding: 20px 40px; margin-top: 12px;
+      letter-spacing: 0.01em;
+    }
+    /* count badges */
+    .hero-counts {
+      display: flex; gap: 0; justify-content: center; margin-top: 48px;
+    }
+    .h-count {
+      padding: 16px 32px; text-align: center;
+      border-right: 1px solid rgba(255,255,255,0.12);
+    }
+    .h-count:last-child { border-right: none; }
+    .h-count .n {
+      font-family: 'Abril Fatface', serif; font-size: 2.2rem;
+      color: #f8b4c8; line-height: 1; display: block;
+    }
+    .h-count .l { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-top: 4px; }
+
+    /* ── SNIPPET ── */
+    .snippet-band {
+      background: var(--sun);
+      border-bottom: 1px solid #f0e0a0;
+      padding: 44px 80px;
+    }
+    .snippet {
+      background: var(--white); border: 1.5px solid #f0e4a0;
+      border-left: 5px solid var(--gold); border-radius: 12px;
+      padding: 30px 44px; display: flex; gap: 24px; align-items: flex-start;
+      max-width: 1040px; margin: 0 auto;
+    }
+    .snippet-icon { font-size: 38px; flex-shrink: 0; }
+    .snippet-label { font-size: 10px; font-weight: 700; letter-spacing: 0.28em; text-transform: uppercase; color: var(--gold); margin-bottom: 4px; }
+    .snippet h2 { font-family: 'Gloock', serif; font-size: 1.2rem; font-weight: 400; font-style: italic; color: var(--ink); margin-bottom: 8px; }
+    .snippet p { font-size: 14.5px; color: var(--ink-soft); line-height: 1.7; }
+
+    /* ── SHARED ── */
+    .container { max-width: 1220px; margin: 0 auto; padding: 0 80px; }
+    .sec-label { font-size: 10px; font-weight: 700; letter-spacing: 0.32em; text-transform: uppercase; margin-bottom: 8px; }
+    .sec-title { font-family: 'Abril Fatface', serif; font-size: clamp(2rem, 3.5vw, 3rem); color: var(--ink); line-height: 1.1; margin-bottom: 14px; }
+    .sec-rule { width: 48px; height: 2px; border-radius: 2px; margin-bottom: 44px; }
+
+    /* ── CATEGORY TABS ── */
+    .cat-nav {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 0 80px;
+      display: flex; gap: 0; overflow-x: auto;
+    }
+    .cat-tab {
+      padding: 18px 20px; font-size: 12px; font-weight: 700;
+      letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap;
+      color: var(--muted); border-bottom: 2px solid transparent;
+      text-decoration: none; transition: color 0.2s, border-color 0.2s;
+      cursor: default;
+    }
+    .cat-tab:hover { color: var(--pink); border-color: var(--pink); }
+
+    /* ── QUOTE SECTIONS ── */
+    /* Common quote card */
+    .q-card {
+      position: relative; background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 14px; padding: 28px 28px 24px;
+      transition: box-shadow 0.3s, transform 0.3s;
+      overflow: hidden;
+    }
+    .q-card:hover { box-shadow: 0 12px 40px rgba(0,0,0,0.08); transform: translateY(-3px); }
+    .q-card::before {
+      content: '"';
+      font-family: 'Gloock', serif; font-size: 5rem; font-style: italic;
+      position: absolute; top: -12px; left: 16px;
+      color: var(--border); line-height: 1; pointer-events: none;
+    }
+    .q-num {
+      font-size: 10px; font-weight: 700; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--muted); margin-bottom: 12px; display: block;
+    }
+    .q-text {
+      font-family: 'Gloock', serif; font-size: 1.05rem; font-style: italic;
+      color: var(--ink); line-height: 1.55; position: relative; z-index: 1;
+    }
+    .q-emoji { font-style: normal; }
+
+    /* Feature quote — full-width pull-quote */
+    .q-feature {
+      text-align: center; padding: 56px 80px;
+      border-radius: 20px; margin: 32px 0;
+    }
+    .q-feature .q-text {
+      font-size: clamp(1.4rem, 3vw, 2.4rem); line-height: 1.4;
+    }
+    .q-feature .q-text::before { content: '"'; }
+    .q-feature .q-text::after  { content: '"'; }
+
+    /* ── SECTION 1: SHORT ── */
+    .short-section { padding: 80px 0 0; }
+    .short-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-bottom: 48px; }
+    .short-section .q-card { border-top: 3px solid var(--cat-short); }
+    .short-section .q-card::before { color: #fce0e8; }
+
+    /* ── SECTION 2: ROMANTIC ── */
+    .romantic-section { padding: 80px 0 0; }
+    .romantic-layout { display: grid; grid-template-columns: 1fr 440px; gap: 24px; align-items: start; }
+    .romantic-quotes { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .romantic-section .q-card { border-top: 3px solid var(--cat-rom); }
+    .romantic-section .q-card::before { color: #f8d8e4; }
+    .romantic-img { border-radius: 20px; overflow: hidden; height: 100%; min-height: 500px; }
+    .romantic-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 6s ease; }
+    .romantic-img:hover img { transform: scale(1.04); }
+
+    /* ── SECTION 3: SPRING ── */
+    .spring-section { padding: 80px 0 0; background: none; }
+    .spring-banner {
+      display: grid; grid-template-columns: 1fr 1fr;
+      border-radius: 24px; overflow: hidden; margin-bottom: 32px;
+    }
+    .spring-banner-img { height: 340px; overflow: hidden; }
+    .spring-banner-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .spring-banner-body {
+      background: var(--sun); padding: 52px 48px;
+      display: flex; flex-direction: column; justify-content: center;
+    }
+    .spring-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; }
+    .spring-section .q-card { border-top: 3px solid var(--cat-spring); }
+    .spring-section .q-card::before { color: #f8eecc; }
+
+    /* ── SECTION 4: AESTHETIC ── */
+    .aesthetic-section { padding: 80px 0 0; }
+    .aes-layout { display: grid; grid-template-columns: 380px 1fr; gap: 24px; align-items: start; }
+    .aes-img-stack { display: flex; flex-direction: column; gap: 10px; }
+    .aes-img-stack .ai { border-radius: 14px; overflow: hidden; }
+    .aes-img-stack .ai img { width: 100%; height: 200px; object-fit: cover; display: block; transition: transform 0.5s; }
+    .aes-img-stack .ai:hover img { transform: scale(1.05); }
+    .aes-img-stack .ai:first-child img { height: 260px; }
+    .aes-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .aesthetic-section .q-card { border-top: 3px solid var(--cat-aes); }
+    .aesthetic-section .q-card::before { color: #e8d8f8; }
+
+    /* ── SECTION 5: DEEP ── */
+    .deep-section {
+      background: var(--ink);
+      padding: 80px; margin: 80px 0 0;
+    }
+    .deep-inner { max-width: 1220px; margin: 0 auto; }
+    .deep-section .sec-title { color: var(--white); }
+    .deep-section .sec-label { color: #88b8d0; }
+    .deep-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .deep-q-card {
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10);
+      border-top: 2px solid #4888a0;
+      border-radius: 14px; padding: 28px 26px;
+      transition: background 0.3s, transform 0.3s;
+    }
+    .deep-q-card:hover { background: rgba(255,255,255,0.10); transform: translateY(-3px); }
+    .deep-q-card::before {
+      content: '"'; font-family: 'Gloock', serif; font-size: 4rem; font-style: italic;
+      color: rgba(72,136,160,0.3); position: absolute; top: -8px; left: 16px; pointer-events: none;
+    }
+    .deep-q-card { position: relative; overflow: hidden; }
+    .deep-q-card .q-num { color: #4888a0; }
+    .deep-q-card .q-text { color: rgba(255,255,255,0.9); font-size: 1rem; }
+
+    /* ── SECTION 6: FUN ── */
+    .fun-section { padding: 80px 0 0; }
+    .fun-layout { display: grid; grid-template-columns: 1fr 380px; gap: 24px; align-items: start; }
+    .fun-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .fun-section .q-card { border-top: 3px solid var(--cat-fun); }
+    .fun-section .q-card::before { color: #f8e0cc; }
+    .fun-img { border-radius: 20px; overflow: hidden; }
+    .fun-img img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 6s ease; }
+    .fun-img:hover img { transform: scale(1.04); }
+
+    /* ── SECTION 7: SELF-LOVE ── */
+    .selflove-section {
+      background: var(--mint);
+      border-top: 1px solid #c0e8c8; border-bottom: 1px solid #c0e8c8;
+      padding: 80px 80px; margin: 80px 0 0;
+    }
+    .selflove-inner { max-width: 1220px; margin: 0 auto; }
+    .selflove-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+    .selflove-section .q-card { border-top: 3px solid var(--cat-self); }
+    .selflove-section .q-card::before { color: #c8ecd0; }
+
+    /* ── SECTION 8: INSTAGRAM ── */
+    .insta-section { padding: 80px 0 0; }
+    .insta-layout { display: grid; grid-template-columns: 440px 1fr; gap: 24px; align-items: start; }
+    .insta-img { border-radius: 20px; overflow: hidden; }
+    .insta-img img { width: 100%; height: 100%; min-height: 440px; object-fit: cover; display: block; transition: transform 6s ease; }
+    .insta-img:hover img { transform: scale(1.04); }
+    .insta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .insta-section .q-card { border-top: 3px solid var(--cat-insta); }
+    .insta-section .q-card::before { color: #f8d0e4; }
+
+    /* ── SECTION 9: MINIMAL ── */
+    .minimal-section { padding: 80px 0 0; }
+    .min-words {
+      display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 48px;
+    }
+    .min-word {
+      font-family: 'Abril Fatface', serif;
+      font-size: clamp(1.5rem, 3vw, 2.8rem);
+      padding: 14px 28px; border-radius: 10px; cursor: default;
+      transition: transform 0.25s, box-shadow 0.25s;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .min-word:hover { transform: scale(1.06); box-shadow: 0 8px 28px rgba(0,0,0,0.12); }
+    .min-word:nth-child(1)  { background: var(--blush); color: var(--cat-short); }
+    .min-word:nth-child(2)  { background: var(--sun); color: var(--cat-spring); }
+    .min-word:nth-child(3)  { background: #f0fff5; color: var(--cat-self); }
+    .min-word:nth-child(4)  { background: #fff8e8; color: var(--gold); }
+    .min-word:nth-child(5)  { background: var(--lavender); color: var(--cat-aes); }
+    .min-word:nth-child(6)  { background: #e8f5f0; color: var(--cat-deep); }
+    .min-word:nth-child(7)  { background: #fdf0ff; color: var(--cat-bonus); }
+    .min-word:nth-child(8)  { background: var(--sky); color: var(--cat-min); }
+    .min-word:nth-child(9)  { background: #f5ffe8; color: var(--cat-self); }
+    .min-word:nth-child(10) { background: var(--blush); color: var(--cat-rom); }
+
+    /* ── SECTION 10: BONUS ── */
+    .bonus-section { padding: 80px 0 100px; }
+    .bonus-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+    .bonus-img-side { overflow: hidden; border-radius: 20px 0 0 20px; }
+    .bonus-img-side img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .bonus-quotes-side {
+      background: linear-gradient(160deg, #fff5f8 0%, #f8f0ff 100%);
+      border-radius: 0 20px 20px 0;
+      border: 1.5px solid var(--border); border-left: none;
+      padding: 52px 48px;
+    }
+    .bonus-q-item {
+      padding: 18px 0; border-bottom: 1px solid var(--border);
+      display: grid; grid-template-columns: 28px 1fr; gap: 14px; align-items: start;
+    }
+    .bonus-q-item:last-child { border-bottom: none; }
+    .bonus-q-num {
+      font-family: 'Abril Fatface', serif; font-size: 0.9rem;
+      color: var(--muted); padding-top: 2px;
+    }
+    .bonus-q-text {
+      font-family: 'Gloock', serif; font-style: italic;
+      font-size: 1.05rem; color: var(--ink); line-height: 1.5;
+    }
+
+    /* ── PHOTO GALLERY STRIP ── */
+    .gallery-strip {
+      display: grid; grid-template-columns: repeat(5, 1fr); height: 220px;
+      gap: 6px; padding: 0 80px; margin: 80px 0 0;
+    }
+    .gs { border-radius: 12px; overflow: hidden; }
+    .gs img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.5s, filter 0.4s; filter: saturate(0.85); }
+    .gs:hover img { transform: scale(1.07); filter: saturate(1.2); }
+
+    /* ── USAGE TIPS ── */
+    .tips-section {
+      background: var(--lavender);
+      border-top: 1px solid #ddd0f0; border-bottom: 1px solid #ddd0f0;
+      padding: 72px 80px; margin: 80px 0 0;
+    }
+    .tips-inner { max-width: 1220px; margin: 0 auto; }
+    .tips-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .tip-card {
+      background: var(--white); border-radius: 18px; padding: 32px 28px;
+      border: 1.5px solid rgba(128,96,192,0.15);
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+    .tip-card:hover { box-shadow: 0 10px 32px rgba(128,96,192,0.10); transform: translateY(-4px); }
+    .tip-platform {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 11px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase;
+      padding: 5px 14px; border-radius: 100px; margin-bottom: 16px;
+    }
+    .tip-card:nth-child(1) .tip-platform { background: #ffe0f0; color: var(--cat-insta); }
+    .tip-card:nth-child(2) .tip-platform { background: #ffe8e0; color: var(--cat-fun); }
+    .tip-card:nth-child(3) .tip-platform { background: #e0f0ff; color: var(--cat-deep); }
+    .tip-title { font-family: 'Abril Fatface', serif; font-size: 1.2rem; color: var(--ink); margin-bottom: 12px; }
+    .tip-points { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .tip-points li { font-size: 13.5px; color: var(--ink-soft); display: flex; gap: 8px; align-items: flex-start; line-height: 1.55; }
+    .tip-points li::before { content: '→'; color: var(--purple); font-weight: 700; flex-shrink: 0; }
+    .hashtags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
+    .hashtag { font-size: 12px; font-weight: 600; background: #f0e8ff; color: var(--purple); padding: 4px 10px; border-radius: 100px; }
+
+    /* ── FAQ ── */
+    .faq-section { padding: 80px 0 100px; }
+    .faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .faq-card {
+      background: var(--white); border: 1.5px solid var(--border); border-radius: 16px;
+      padding: 28px 26px; transition: box-shadow 0.3s, transform 0.3s, border-color 0.3s;
+    }
+    .faq-card:hover { box-shadow: 0 10px 28px rgba(216,48,96,0.08); transform: translateY(-3px); border-color: #f8b4c8; }
+    .faq-q {
+      font-family: 'Gloock', serif; font-size: 1.05rem; font-style: italic;
+      color: var(--ink); margin-bottom: 10px; display: flex; gap: 12px; align-items: flex-start;
+    }
+    .faq-qm {
+      background: linear-gradient(135deg, var(--pink), var(--purple));
+      color: var(--white); font-size: 0.8rem; font-weight: 700;
+      width: 26px; height: 26px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;
+      font-family: 'Abril Fatface', serif;
+    }
+    .faq-a { font-size: 14px; color: var(--ink-soft); line-height: 1.75; padding-left: 38px; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--ink); padding: 80px 72px; text-align: center;
+    }
+    .footer-flowers { font-size: 32px; letter-spacing: 10px; margin-bottom: 20px; opacity: 0.5; }
+    .footer-title {
+      font-family: 'Abril Fatface', serif;
+      font-size: clamp(2rem, 4vw, 3.5rem); color: var(--white);
+      margin-bottom: 14px; line-height: 1.1;
+    }
+    .footer-title .accent { color: #f8b4c8; }
+    .footer-sub { font-size: 15px; color: rgba(255,255,255,0.5); margin-bottom: 40px; max-width: 480px; margin-left: auto; margin-right: auto; line-height: 1.8; }
+    .footer-links { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .fl {
+      display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; padding: 12px 24px; border-radius: 8px; text-decoration: none;
+      transition: opacity 0.2s, transform 0.2s;
+    }
+    .fl:hover { opacity: 0.85; transform: translateY(-2px); }
+    .fl-pink { background: var(--pink); color: var(--white); }
+    .fl-gold { background: var(--gold); color: var(--white); }
+    .fl-purple { background: var(--purple); color: var(--white); }
+    .fl-teal { background: #308880; color: var(--white); }
+    .footer-copy { margin-top: 56px; font-size: 11px; color: rgba(255,255,255,0.2); letter-spacing: 0.1em; text-transform: uppercase; }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .hero-body > * { animation: fadeUp 0.8s ease both; }
+    .hero-body > *:nth-child(1) { animation-delay: 0.1s; }
+    .hero-body > *:nth-child(2) { animation-delay: 0.25s; }
+    .hero-body > *:nth-child(3) { animation-delay: 0.4s; }
+    .hero-body > *:nth-child(4) { animation-delay: 0.55s; }
+    .hero-body > *:nth-child(5) { animation-delay: 0.65s; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 960px) {
+      nav { padding: 0 24px; }
+      .nav-links { display: none; }
+      .hero-photos { grid-template-columns: 1fr 1fr; }
+      .hero-photos .hp:nth-child(n+3) { display: none; }
+      .hero-body { padding: 60px 28px; }
+      .snippet-band { padding: 36px 24px; }
+      .snippet { flex-direction: column; padding: 24px 22px; }
+      .cat-nav { padding: 0 24px; }
+      .container { padding: 0 24px; }
+      .short-grid { grid-template-columns: 1fr 1fr; }
+      .romantic-layout { grid-template-columns: 1fr; }
+      .romantic-img { min-height: 240px; }
+      .romantic-quotes { grid-template-columns: 1fr; }
+      .spring-grid { grid-template-columns: 1fr 1fr; }
+      .spring-banner { grid-template-columns: 1fr; }
+      .spring-banner-img { height: 220px; }
+      .aes-layout { grid-template-columns: 1fr; }
+      .aes-grid { grid-template-columns: 1fr; }
+      .deep-section { padding: 60px 24px; }
+      .deep-grid { grid-template-columns: 1fr 1fr; }
+      .fun-layout { grid-template-columns: 1fr; }
+      .fun-grid { grid-template-columns: 1fr; }
+      .selflove-section { padding: 60px 24px; }
+      .selflove-grid { grid-template-columns: 1fr 1fr; }
+      .insta-layout { grid-template-columns: 1fr; }
+      .insta-grid { grid-template-columns: 1fr; }
+      .bonus-grid { grid-template-columns: 1fr; }
+      .bonus-img-side { border-radius: 14px; height: 240px; }
+      .bonus-quotes-side { border-radius: 14px; border-left: 1.5px solid var(--border); }
+      .gallery-strip { grid-template-columns: 1fr 1fr 1fr; padding: 0 24px; height: 180px; }
+      .gs:nth-child(n+4) { display: none; }
+      .tips-section { padding: 60px 24px; }
+      .tips-grid { grid-template-columns: 1fr; }
+      .faq-grid { grid-template-columns: 1fr; }
+      footer { padding: 60px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav>
+    <div class="nav-brand">🌷 TulipGuide</div>
+    <ul class="nav-links">
+      <li><a href="#short">Short</a></li>
+      <li><a href="#romantic">Romantic</a></li>
+      <li><a href="#spring">Spring</a></li>
+      <li><a href="#deep">Deep</a></li>
+      <li><a href="#self">Self-Love</a></li>
+      <li><a href="#bonus">Bonus</a></li>
+    </ul>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero">
+    <div class="hero-photos">
+      <div class="hp"><img src="https://storage.googleapis.com/kreatewebsites/photos1000/IMG_6078.JPG" alt="Pink tulips" loading="eager" /></div>
+      <div class="hp"><img src="https://storage.googleapis.com/kreatewebsites/photos1000/IMG_6072.JPG" alt="Red tulips" loading="eager" /></div>
+      <div class="hp"><img src="https://storage.googleapis.com/kreatewebsites/photos1000/IMG_6106.JPG" alt="Purple tulips" loading="eager" /></div>
+      <div class="hp"><img src="https://storage.googleapis.com/kreatewebsites/photos1000/IMG_6020.JPG" alt="Yellow tulips" loading="eager" /></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-body">
+      <div class="hero-pre">Quotes & Captions Collection</div>
+      <h1>100 <span class="accent">Tulip</span> Quotes</h1>
+      <p class="hero-sub">Beautiful, short, romantic, and aesthetic tulip captions perfect for Instagram, Pinterest, spring vibes, and love — all in one place.</p>
+      <div class="hero-quote">
+        "Bloom where you are planted" 🌷
+      </div>
+      <div class="hero-counts">
+        <div class="h-count"><span class="n">100</span><span class="l">Quotes</span></div>
+        <div class="h-count"><span class="n">10</span><span class="l">Categories</span></div>
+        <div class="h-count"><span class="n">∞</span><span class="l">Vibes</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SNIPPET ── -->
+  <div class="snippet-band">
+    <div class="snippet">
+      <div class="snippet-icon">✨</div>
+      <div>
+        <div class="snippet-label">Quick Answer</div>
+        <h2>What are some good tulip captions?</h2>
+        <p>Great tulip captions include "Bloom where you are planted," "Tulips are spring's smile," "Happiness blooms with tulips," and "A single tulip can brighten the soul." Whether you need something short and snappy for Instagram or something poetic and deep, you'll find it in this collection.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── CATEGORY NAV ── -->
+  <div class="cat-nav">
+    <a class="cat-tab" href="#short" style="color:var(--cat-short);border-color:var(--cat-short);">🌷 Short</a>
+    <a class="cat-tab" href="#romantic">❤️ Romantic</a>
+    <a class="cat-tab" href="#spring">🌞 Spring</a>
+    <a class="cat-tab" href="#aesthetic">✨ Aesthetic</a>
+    <a class="cat-tab" href="#deep">💭 Deep</a>
+    <a class="cat-tab" href="#fun">😂 Fun</a>
+    <a class="cat-tab" href="#self">🌸 Self-Love</a>
+    <a class="cat-tab" href="#insta">📸 Instagram</a>
+    <a class="cat-tab" href="#minimal">🤍 Minimal</a>
+    <a class="cat-tab" href="#bonus">✨ Bonus</a>
+  </div>
+
+  <!-- ── 1. SHORT CAPTIONS ── -->
+  <div class="container" id="short">
+    <div class="short-section">
+      <div class="sec-label" style="color:var(--cat-short);">01 — Short &amp; Sweet</div>
+      <div class="sec-title">Short Tulip Captions</div>
+      <div class="sec-rule" style="background:var(--cat-short);"></div>
+
+      <!-- Feature pull-quote -->
+      <div class="q-feature" style="background:var(--blush);border:1.5px solid #f8d0dc;">
+        <div class="q-text" style="color:var(--cat-short);">Tulips are my love language <span class="q-emoji">🌷</span></div>
+      </div>
+
+      <div class="short-grid">
+        <div class="q-card"><span class="q-num">#02</span><div class="q-text">Bloom where you are planted</div></div>
+        <div class="q-card"><span class="q-num">#03</span><div class="q-text">Spring starts with tulips</div></div>
+        <div class="q-card"><span class="q-num">#04</span><div class="q-text">Tulip dreams and sunny days</div></div>
+        <div class="q-card"><span class="q-num">#05</span><div class="q-text">Petals full of happiness</div></div>
+        <div class="q-card"><span class="q-num">#06</span><div class="q-text">Keep calm and love tulips</div></div>
+        <div class="q-card"><span class="q-num">#07</span><div class="q-text">Tulips make everything better</div></div>
+        <div class="q-card"><span class="q-num">#08</span><div class="q-text">A little tulip magic</div></div>
+        <div class="q-card"><span class="q-num">#09</span><div class="q-text">Fresh blooms, fresh vibes</div></div>
+        <div class="q-card"><span class="q-num">#10</span><div class="q-text">Tulips = instant joy</div></div>
+        <div class="q-card"><span class="q-num">#11</span><div class="q-text">Blooming into something beautiful</div></div>
+        <div class="q-card"><span class="q-num">#12</span><div class="q-text">Spring in every petal</div></div>
+        <div class="q-card"><span class="q-num">#13</span><div class="q-text">Just add tulips</div></div>
+        <div class="q-card"><span class="q-num">#14</span><div class="q-text">Flower power <span class="q-emoji">🌷</span></div></div>
+        <div class="q-card"><span class="q-num">#15</span><div class="q-text">Tulip season is the best season</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 2. ROMANTIC ── -->
+  <div class="container" id="romantic">
+    <div class="romantic-section" style="padding:80px 0 0;">
+      <div class="sec-label" style="color:var(--cat-rom);">02 — Romance</div>
+      <div class="sec-title">Romantic Tulip Quotes</div>
+      <div class="sec-rule" style="background:var(--cat-rom);"></div>
+      <div class="romantic-layout">
+        <div>
+          <div class="q-feature" style="background:#fff5f7;border:1.5px solid #f8d0e0;margin-top:0;">
+            <div class="q-text" style="color:var(--cat-rom);">With you, every season feels like spring</div>
+          </div>
+          <div class="romantic-quotes">
+            <div class="q-card"><span class="q-num">#16</span><div class="q-text">Like tulips in spring, love blooms softly</div></div>
+            <div class="q-card"><span class="q-num">#17</span><div class="q-text">You are my favorite bloom</div></div>
+            <div class="q-card"><span class="q-num">#18</span><div class="q-text">Our love grows like tulips in sunlight</div></div>
+            <div class="q-card"><span class="q-num">#19</span><div class="q-text">In a garden of roses, I'd still choose tulips with you</div></div>
+            <div class="q-card"><span class="q-num">#20</span><div class="q-text">Love blooms where tulips grow</div></div>
+            <div class="q-card"><span class="q-num">#21</span><div class="q-text">You make my heart bloom</div></div>
+            <div class="q-card"><span class="q-num">#22</span><div class="q-text">Tulips and love — both need care to grow</div></div>
+            <div class="q-card"><span class="q-num">#24</span><div class="q-text">My love for you blossoms daily</div></div>
+            <div class="q-card"><span class="q-num">#25</span><div class="q-text">A tulip for you, a thousand feelings</div></div>
+          </div>
+        </div>
+        <div class="romantic-img">
+          <img src="https://storage.googleapis.com/kreatewebsites/photos700/IMG_6073.JPG" alt="Romantic red tulips" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 3. SPRING ── -->
+  <div class="container" id="spring">
+    <div class="spring-section">
+      <div class="sec-label" style="color:var(--cat-spring);">03 — Spring &amp; Happiness</div>
+      <div class="sec-title">Spring & Happiness Quotes</div>
+      <div class="sec-rule" style="background:var(--cat-spring);"></div>
+      <div class="spring-banner">
+        <div class="spring-banner-img">
+          <img src="https://storage.googleapis.com/kreatewebsites/photos700/IMG_6064.JPG" alt="Yellow tulips spring sunshine" loading="lazy" />
+        </div>
+        <div class="spring-banner-body">
+          <div style="font-size:10px;font-weight:700;letter-spacing:0.28em;text-transform:uppercase;color:var(--cat-spring);margin-bottom:12px;">Featured Quote</div>
+          <div style="font-family:'Gloock',serif;font-style:italic;font-size:clamp(1.4rem,2.5vw,2.2rem);color:var(--ink);line-height:1.35;margin-bottom:16px;">"Tulips are the smile of spring"</div>
+          <div style="font-size:13.5px;color:var(--ink-soft);line-height:1.7;">A perfect caption for any spring photo — cheerful, true, and endlessly shareable.</div>
+        </div>
+      </div>
+      <div class="spring-grid">
+        <div class="q-card"><span class="q-num">#27</span><div class="q-text">Happiness blooms in tulip fields</div></div>
+        <div class="q-card"><span class="q-num">#28</span><div class="q-text">Spring whispers through tulips</div></div>
+        <div class="q-card"><span class="q-num">#29</span><div class="q-text">Where tulips grow, joy follows</div></div>
+        <div class="q-card"><span class="q-num">#30</span><div class="q-text">A field of tulips is a field of dreams</div></div>
+        <div class="q-card"><span class="q-num">#31</span><div class="q-text">Sunshine and tulips make everything right</div></div>
+        <div class="q-card"><span class="q-num">#32</span><div class="q-text">Let your happiness bloom</div></div>
+        <div class="q-card"><span class="q-num">#33</span><div class="q-text">Spring begins with a tulip</div></div>
+        <div class="q-card"><span class="q-num">#34</span><div class="q-text">Tulips bring color to life</div></div>
+        <div class="q-card"><span class="q-num">#35</span><div class="q-text">Bloom into brighter days</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── GALLERY STRIP 1 ── -->
+  <div class="gallery-strip" style="margin-top:80px;">
+    <div class="gs"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6132.JPG" alt="Pink tulips" loading="lazy" /></div>
+    <div class="gs"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6021.JPG" alt="Yellow tulips" loading="lazy" /></div>
+    <div class="gs"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6104.JPG" alt="Purple tulips" loading="lazy" /></div>
+    <div class="gs"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6046.JPG" alt="Red tulips" loading="lazy" /></div>
+    <div class="gs"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6149.JPG" alt="Blue accent" loading="lazy" /></div>
+  </div>
+
+  <!-- ── 4. AESTHETIC ── -->
+  <div class="container" id="aesthetic">
+    <div class="aesthetic-section">
+      <div class="sec-label" style="color:var(--cat-aes);">04 — Aesthetic</div>
+      <div class="sec-title">Aesthetic Tulip Captions</div>
+      <div class="sec-rule" style="background:var(--cat-aes);"></div>
+      <div class="aes-layout">
+        <div class="aes-img-stack">
+          <div class="ai"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6094.JPG" alt="Purple aesthetic tulips" loading="lazy" /></div>
+          <div class="ai"><img src="https://storage.googleapis.com/kreatewebsites/photos400/IMG_6170.JPG" alt="Yellow minimal" loading="lazy" /></div>
+        </div>
+        <div>
+          <div class="q-feature" style="background:var(--lavender);border:1.5px solid #d8c8f0;margin-top:0;text-align:left;padding:36px 40px;border-radius:16px;">
+            <div class="q-text" style="color:var(--cat-aes);">Soft petals, strong roots</div>
+          </div>
+          <div class="aes-grid" style="margin-top:12px;">
+            <div class="q-card"><span class="q-num">#37</span><div class="q-text">Nature's poetry in bloom</div></div>
+            <div class="q-card"><span class="q-num">#38</span><div class="q-text">A quiet bloom speaks volumes</div></div>
+            <div class="q-card"><span class="q-num">#39</span><div class="q-text">Tulips under golden light</div></div>
+            <div class="q-card"><span class="q-num">#40</span><div class="q-text">Petals kissed by sunshine</div></div>
+            <div class="q-card"><span class="q-num">#41</span><div class="q-text">Simplicity is beauty — just like tulips</div></div>
+            <div class="q-card"><span class="q-num">#42</span><div class="q-text">A moment of bloom</div></div>
+            <div class="q-card"><span class="q-num">#43</span><div class="q-text">Earth's softest colors</div></div>
+            <div class="q-card"><span class="q-num">#44</span><div class="q-text">Tulips and calm mornings</div></div>
+            <div class="q-card"><span class="q-num">#45</span><div class="q-text">Beauty in every petal</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 5. DEEP ── -->
+  <div class="deep-section" id="deep">
+    <div class="deep-inner">
+      <div class="sec-label" style="color:#88b8d0;">05 — Deep &amp; Meaningful</div>
+      <div class="sec-title">Deep & Meaningful Tulip Quotes</div>
+      <div class="sec-rule" style="background:#4888a0;"></div>
+      <div class="q-feature" style="background:rgba(255,255,255,0.06);border:1px solid rgba(72,136,160,0.25);border-left:4px solid #4888a0;">
+        <div class="q-text" style="color:#88ccee;font-size:clamp(1.2rem,2.5vw,2rem);">A tulip doesn't compete — it simply blooms</div>
+      </div>
+      <div class="deep-grid" style="margin-top:24px;">
+        <div class="deep-q-card"><span class="q-num" style="color:#4888a0;">#46</span><div class="q-text">Tulips teach us patience before beauty</div></div>
+        <div class="deep-q-card"><span class="q-num" style="color:#4888a0;">#47</span><div class="q-text">Growth happens quietly before blooming</div></div>
+        <div class="deep-q-card"><span class="q-num" style="color:#4888a0;">#48</span><div class="q-text">Even after winter, we bloom again</div></div>
+        <div class="deep-q-card"><span class="q-num" style="color:#4888a0;">#49</span><div class="q-text">Tulips remind us to start fresh</div></div>
+        <div class="deep-q-card"><span class="q-num" style="color:#4888a0;">#50</span><div class="q-text">Beauty follows resilience</div></div>
+        <div class="deep-q-card"><span class="q-num" style="color:#4888a0;">#52</span><div class="q-text">In stillness, growth begins</div></div>
+        <div class="deep-q-card"><span class="q-num" style="color:#4888a0;">#53</span><div class="q-text">Bloom in your own time</div></div>
+        <div class="deep-q-card"><span class="q-num" style="color:#4888a0;">#54</span><div class="q-text">Every flower has its season</div></div>
+        <div class="deep-q-card"><span class="q-num" style="color:#4888a0;">#55</span><div class="q-text">Tulips are proof that change is beautiful</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 6. FUN ── -->
+  <div class="container" id="fun">
+    <div class="fun-section">
+      <div class="sec-label" style="color:var(--cat-fun);">06 — Fun &amp; Playful</div>
+      <div class="sec-title">Fun & Playful Tulip Captions</div>
+      <div class="sec-rule" style="background:var(--cat-fun);"></div>
+      <div class="fun-layout">
+        <div>
+          <div class="q-feature" style="background:#fff8f0;border:1.5px solid #f8d8b8;margin-top:0;">
+            <div class="q-text" style="color:var(--cat-fun);">Too many tulips? Never. 🌷</div>
+          </div>
+          <div class="fun-grid" style="margin-top:12px;">
+            <div class="q-card"><span class="q-num">#56</span><div class="q-text">Tulip-obsessed <span class="q-emoji">🌷</span></div></div>
+            <div class="q-card"><span class="q-num">#57</span><div class="q-text">Stop and smell the tulips</div></div>
+            <div class="q-card"><span class="q-num">#58</span><div class="q-text">Tulip season got me like <span class="q-emoji">😍</span></div></div>
+            <div class="q-card"><span class="q-num">#60</span><div class="q-text">Living that tulip life</div></div>
+            <div class="q-card"><span class="q-num">#61</span><div class="q-text">Powered by sunshine and tulips</div></div>
+            <div class="q-card"><span class="q-num">#62</span><div class="q-text">Just one more tulip pic…</div></div>
+            <div class="q-card"><span class="q-num">#63</span><div class="q-text">Tulips > everything</div></div>
+            <div class="q-card"><span class="q-num">#64</span><div class="q-text">Bloom squad goals</div></div>
+            <div class="q-card"><span class="q-num">#65</span><div class="q-text">Warning: tulip overload</div></div>
+          </div>
+        </div>
+        <div class="fun-img" style="min-height:480px;">
+          <img src="https://storage.googleapis.com/kreatewebsites/photos700/IMG_6134.JPG" alt="Colourful tulips fun vibes" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 7. SELF-LOVE ── -->
+  <div class="selflove-section" id="self">
+    <div class="selflove-inner">
+      <div class="sec-label" style="color:var(--cat-self);">07 — Self-Love &amp; Growth</div>
+      <div class="sec-title">Self-Love & Growth Quotes</div>
+      <div class="sec-rule" style="background:var(--cat-self);"></div>
+      <div class="q-feature" style="background:var(--white);border:1.5px solid #c0e8c8;margin-bottom:32px;">
+        <div class="q-text" style="color:var(--cat-self);">Bloom unapologetically</div>
+      </div>
+      <div class="selflove-grid">
+        <div class="q-card"><span class="q-num">#66</span><div class="q-text">Bloom for yourself first</div></div>
+        <div class="q-card"><span class="q-num">#67</span><div class="q-text">Be your own kind of tulip</div></div>
+        <div class="q-card"><span class="q-num">#68</span><div class="q-text">Grow through what you go through</div></div>
+        <div class="q-card"><span class="q-num">#69</span><div class="q-text">You are allowed to bloom</div></div>
+        <div class="q-card"><span class="q-num">#70</span><div class="q-text">Strong roots, soft petals</div></div>
+        <div class="q-card"><span class="q-num">#71</span><div class="q-text">Keep growing, keep blooming</div></div>
+        <div class="q-card"><span class="q-num">#72</span><div class="q-text">Your time to bloom will come</div></div>
+        <div class="q-card"><span class="q-num">#73</span><div class="q-text">Embrace your season</div></div>
+        <div class="q-card"><span class="q-num">#74</span><div class="q-text">Beauty takes time</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 8. INSTAGRAM ── -->
+  <div class="container" id="insta">
+    <div class="insta-section">
+      <div class="sec-label" style="color:var(--cat-insta);">08 — Instagram-Ready</div>
+      <div class="sec-title">Instagram-Ready Captions</div>
+      <div class="sec-rule" style="background:var(--cat-insta);"></div>
+      <div class="insta-layout">
+        <div class="insta-img">
+          <img src="https://storage.googleapis.com/kreatewebsites/photos700/IMG_6133.JPG" alt="Pink tulips Instagram aesthetic" loading="lazy" />
+        </div>
+        <div>
+          <div class="q-feature" style="background:var(--blush);border:1.5px solid #f8c8d8;margin-top:0;">
+            <div class="q-text" style="color:var(--cat-insta);">Bloom mode: ON <span class="q-emoji">🌸</span></div>
+          </div>
+          <div class="insta-grid" style="margin-top:12px;">
+            <div class="q-card"><span class="q-num">#76</span><div class="q-text">Lost in a tulip dream <span class="q-emoji">🌷</span></div></div>
+            <div class="q-card"><span class="q-num">#77</span><div class="q-text">Spring looks good on me</div></div>
+            <div class="q-card"><span class="q-num">#78</span><div class="q-text">Bloom vibes only</div></div>
+            <div class="q-card"><span class="q-num">#79</span><div class="q-text">Tulip fields forever</div></div>
+            <div class="q-card"><span class="q-num">#80</span><div class="q-text">Living my spring aesthetic</div></div>
+            <div class="q-card"><span class="q-num">#81</span><div class="q-text">Petals + sunshine = perfection</div></div>
+            <div class="q-card"><span class="q-num">#83</span><div class="q-text">This is your sign to buy tulips</div></div>
+            <div class="q-card"><span class="q-num">#84</span><div class="q-text">Spring glow up <span class="q-emoji">🌸</span></div></div>
+            <div class="q-card"><span class="q-num">#85</span><div class="q-text">Tulips and chill</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 9. MINIMAL ── -->
+  <div class="container" id="minimal">
+    <div class="minimal-section">
+      <div class="sec-label" style="color:var(--cat-min);">09 — One-Word &amp; Minimal</div>
+      <div class="sec-title">One-Word & Minimal Captions</div>
+      <div class="sec-rule" style="background:var(--cat-min);"></div>
+      <p style="font-size:16px;color:var(--ink-soft);line-height:1.8;margin-bottom:32px;max-width:600px;">Sometimes less is everything. These single words and minimal captions carry the whole feeling of spring in just one breath.</p>
+      <div class="min-words">
+        <div class="min-word">#86 Bloom <span>🌸</span></div>
+        <div class="min-word">#87 Spring <span>🌷</span></div>
+        <div class="min-word">#88 Fresh</div>
+        <div class="min-word">#89 Alive</div>
+        <div class="min-word">#90 Radiant</div>
+        <div class="min-word">#91 Growing</div>
+        <div class="min-word">#92 Soft</div>
+        <div class="min-word">#93 Light</div>
+        <div class="min-word">#94 Renew</div>
+        <div class="min-word">#95 Flourish</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 10. BONUS ── -->
+  <div class="container" id="bonus">
+    <div class="bonus-section">
+      <div class="sec-label" style="color:var(--cat-bonus);">10 — Bonus</div>
+      <div class="sec-title">Unique & Poetic Bonus Quotes</div>
+      <div class="sec-rule" style="background:var(--cat-bonus);"></div>
+      <div class="bonus-grid">
+        <div class="bonus-img-side">
+          <img src="https://storage.googleapis.com/kreatewebsites/photos700/IMG_6137.JPG" alt="Beautiful pink tulips poetic" loading="lazy" />
+        </div>
+        <div class="bonus-quotes-side">
+          <div style="font-size:10px;font-weight:700;letter-spacing:0.28em;text-transform:uppercase;color:var(--cat-bonus);margin-bottom:20px;">✨ Five Poetic Finales</div>
+          <div class="bonus-q-item">
+            <div class="bonus-q-num">96</div>
+            <div class="bonus-q-text">Tulips whisper what words cannot say</div>
+          </div>
+          <div class="bonus-q-item">
+            <div class="bonus-q-num">97</div>
+            <div class="bonus-q-text">A single tulip can brighten the soul</div>
+          </div>
+          <div class="bonus-q-item">
+            <div class="bonus-q-num">98</div>
+            <div class="bonus-q-text">Where petals fall, beauty remains</div>
+          </div>
+          <div class="bonus-q-item">
+            <div class="bonus-q-num">99</div>
+            <div class="bonus-q-text">Tulips carry spring in their hearts</div>
+          </div>
+          <div class="bonus-q-item">
+            <div class="bonus-q-num">100</div>
+            <div class="bonus-q-text">Every bloom tells a story</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── GALLERY STRIP 2 ── -->
+  <div class="gallery-strip" style="margin-top:0;">
+    <div class="gs"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6139.JPG" alt="Pink tulips" loading="lazy" /></div>
+    <div class="gs"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6155.JPG" alt="Yellow late bloom" loading="lazy" /></div>
+    <div class="gs"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6095.JPG" alt="Purple" loading="lazy" /></div>
+    <div class="gs"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6013.JPG" alt="Red" loading="lazy" /></div>
+    <div class="gs"><img src="https://storage.googleapis.com/kreatewebsites/photos500/IMG_6158.JPG" alt="Blue accent" loading="lazy" /></div>
+  </div>
+
+  <!-- ── USAGE TIPS ── -->
+  <div class="tips-section">
+    <div class="tips-inner">
+      <div class="sec-label" style="color:var(--purple);">How to Use These</div>
+      <div class="sec-title">Tips for Every Platform</div>
+      <div class="sec-rule" style="background:var(--purple);"></div>
+      <div class="tips-grid">
+        <div class="tip-card">
+          <div class="tip-platform">📸 Instagram</div>
+          <div class="tip-title">Instagram Tips</div>
+          <ul class="tip-points">
+            <li>Use short captions with 1–2 emojis for maximum engagement</li>
+            <li>Pair with a close-up flower photo for aesthetic feeds</li>
+            <li>Post in the morning — spring content peaks 7–9am</li>
+          </ul>
+          <div class="hashtags">
+            <span class="hashtag">#tulips</span>
+            <span class="hashtag">#springvibes</span>
+            <span class="hashtag">#flowerlove</span>
+            <span class="hashtag">#bloomwhereyouareplanted</span>
+          </div>
+        </div>
+        <div class="tip-card">
+          <div class="tip-platform">📌 Pinterest</div>
+          <div class="tip-title">Pinterest Tips</div>
+          <ul class="tip-points">
+            <li>Use longer, keyword-rich captions for search discoverability</li>
+            <li>Vertical images (2:3 ratio) perform best on Pinterest</li>
+            <li>Layer quotes over photos using Canva for high-save pins</li>
+          </ul>
+          <div class="hashtags">
+            <span class="hashtag">#spring quotes</span>
+            <span class="hashtag">#tulip captions</span>
+            <span class="hashtag">#bloom quotes</span>
+          </div>
+        </div>
+        <div class="tip-card">
+          <div class="tip-platform">📝 Blogs</div>
+          <div class="tip-title">Blog & Content Tips</div>
+          <ul class="tip-points">
+            <li>Use deep quotes as pull-quotes or section headers</li>
+            <li>Create quote graphics for Pinterest traffic from your blog</li>
+            <li>Add to printables, greeting cards, or gift tags</li>
+          </ul>
+          <div class="hashtags">
+            <span class="hashtag">#content creation</span>
+            <span class="hashtag">#spring blog</span>
+            <span class="hashtag">#quote graphics</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── FAQ ── -->
+  <div class="container" id="faq">
+    <div class="faq-section">
+      <div class="sec-label" style="color:var(--pink);">FAQ</div>
+      <div class="sec-title">Tulip Quotes Questions Answered</div>
+      <div class="sec-rule" style="background:var(--pink);"></div>
+      <div class="faq-grid">
+        <div class="faq-card">
+          <div class="faq-q"><span class="faq-qm">Q</span>What are good tulip captions for Instagram?</div>
+          <div class="faq-a">Short, punchy captions work best on Instagram. Try "Bloom where you are planted," "Tulip season is the best season," "Bloom mode: ON," or "Tulips = instant joy." Pair with 3–5 relevant hashtags like #tulips, #springvibes, and #flowerlove for maximum reach.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q"><span class="faq-qm">Q</span>Are tulip quotes romantic?</div>
+          <div class="faq-a">Yes — tulips have a long association with love, making them perfect for romantic captions. Quotes like "Like tulips in spring, love blooms softly," "You make my heart bloom," and "With you, every season feels like spring" work beautifully for anniversary posts, Valentine's Day, or relationship milestones.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q"><span class="faq-qm">Q</span>What do tulips symbolize in quotes?</div>
+          <div class="faq-a">In quotes and captions, tulips most commonly symbolize love, renewal, beauty, new beginnings, patience, and growth. The "bloom" metaphor extends to personal development — many of the best tulip quotes are about becoming your best self, timing, and resilience through seasons of change.</div>
+        </div>
+        <div class="faq-card">
+          <div class="faq-q"><span class="faq-qm">Q</span>Are tulips good for birthdays captions?</div>
+          <div class="faq-a">Absolutely. Yellow tulip captions are especially perfect for birthdays — "Bloom into brighter days," "Happiness blooms in tulip fields," or the playful "Spring glow up 🌸." For milestone birthdays, the deeper quotes like "Every flower has its season" or "Bloom in your own time" carry beautiful meaning.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-flowers">🌷 🌸 🌷 🌸 🌷</div>
+    <div class="footer-title">Keep <span class="accent">Blooming.</span></div>
+    <p class="footer-sub">100 quotes, one message — bloom in your own time, in your own way, for yourself first.</p>
+    <div class="footer-links">
+      <a class="fl fl-pink"   href="tulips-as-gifts-color-meanings.html">🌷 Gift Color Guide</a>
+      <a class="fl fl-gold"   href="tulip-wedding-ideas.html">🌷 Wedding Ideas</a>
+      <a class="fl fl-purple" href="spring-decorating-ideas-tulips.html">🌷 Spring Décor</a>
+      <a class="fl fl-teal"   href="diy-tulip-arrangements.html">🌷 DIY Arrangements</a>
+    </div>
+    <div class="footer-copy">🌷 The Complete Tulip Guide Series · Growing · Caring · Decorating · Celebrating · Gifting · Blooming</div>
+  </footer>
+
+</body>
+</html>
